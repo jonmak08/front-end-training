@@ -1,0 +1,38 @@
+---
+title: Updates
+description: Check out what's new
+updates:
+ -
+  version: 1.0.0
+  major: true
+  features:
+   -
+    icon: info
+    title: Initial changes
+    description: Initial port of documentation from Social Office.
+weight: 4
+---
+
+{namespace updatesIndex}
+
+/**
+ * @param page
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			<div>
+				<header class="header">
+					<div class="container">
+						<h1 class="header-title">{$page.title}</h1>
+						<h2 class="header-subtitle">{$page.description}</h2>
+					</div>
+				</header>
+
+				{call ElectricUpdates.render}
+					{param updates: $page.updates /}
+				{/call}
+			</div>
+		{/param}
+	{/call}
+{/template}

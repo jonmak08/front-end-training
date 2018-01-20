@@ -1,0 +1,43 @@
+---
+title: "Search"
+description: "Find what you're looking for in the documentation."
+hidden: true
+---
+
+{namespace pageDocsSearch}
+
+/**
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param elementClasses: 'docs' /}
+		{param content kind="html"}
+			{call Sidebar.render}
+				{param section: $site.index.children['guide'] /}
+				{param site: $site /}
+			{/call}
+
+			<div class="sidebar-offset">
+				<div class="container-hybrid docs-home-top">
+					<div class="row">
+						<div class="col-xs-16">
+							<h1 class="docs-home-top-title">Search</h1>
+							<p class="docs-home-top-description">Search results for <span>{$site.title}</span> Guides.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-hybrid">
+							{call ElectricSearch.render}
+								{param action: '/guide/search.html' /}
+								{param dataURL: ($site.basePath ?: '') + '/site.json' /}
+								{param path: '/guide/' /}
+								{param placeholder: 'Search Guides' /}
+							{/call}
+						</div>
+					</div>
+				</div>
+			</div>
+		{/param}
+	{/call}
+{/template}

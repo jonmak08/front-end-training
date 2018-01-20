@@ -1,0 +1,104 @@
+---
+title: "Home"
+description: "Front-end internship training documents that will help and guide you to become familiar with all of Liferay's front-end."
+---
+
+{namespace pageIndex}
+
+/**
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .header data="all" /}
+			{call .about /}
+			{call .what /}
+			{call .footer /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param site
+ */
+{template .header}
+	<header class="header">
+		<div class="container">
+			<h1 class="header-title">{$site.title}</h1>
+			<h2 class="header-subtitle">{$site.index.description}</h2>
+			<div class="header-cta">
+				<a href="/guide/" class="btn btn-accent">Learn front-end development</a>
+				<a href="/tutorials" class="btn btn-default">Get started with Liferay</a>
+			</div>
+		</div>
+	</header>
+{/template}
+
+/**
+ *
+ */
+{template .about}
+	<article class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2">
+					<h3 class="about-title">Why this site?</h3>
+					<div class="about-description">
+						<p>For anyone who does not work directly with web development, concepts like front-end vs. back-end development can be challenging to wrap your head around. Pile on all of the frameworks, programming languages, APIs, and libraries that front-end developers use to build apps, and it can get very confusing.</p>
+
+						<p>The good news? You do not have to write code to understand the basics of the development process. And knowing how to talk about development is helpful whether you are a copywriter, a hiring manager, a marketer for a tech-based startup, or a product manager planning an upcoming sprint for a new app.</p>
+
+						<a href="/guide/" class="btn btn-accent">Let's learn about development!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+{/template}
+
+/**
+ *
+ */
+{template .what}
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2">
+					<h3 class="feature-title">What is front-end?</h3>
+					<div class="feature-description">
+						<p>The front-end, also called "client-side", is everything that happens in the browser. It is everything the users sees and interacts with.</p>
+
+						<img alt="front-end development" src="/images/front_end_dev.jpg" width="100%" />
+
+						<p>Front-end developers use HTML, CSS, and JavaScript to code the website and web app designs created by web designers. The code they write runs inside the user’s browser (as opposed to a back-end developer, whose code runs on the web server).</p>
+
+						<p>Think of it a little like this: the back-end developer is like the engineer who designs and creates the systems that make a city work (electricity, water and sewer, zoning, etc.), while the front-end developer is the one who lays out the streets and makes sure everything is connected properly so people can live their lives (a simplified analogy, but you get the rough idea). They are also in charge of making sure that there are no errors or bugs on the front-end, as well as making sure that the design appears as it is supposed to across various platforms and browsers.</p>
+
+						<p>To help you get started, we have written some guides and tutorials that will cover the basis for what you need to know about this area of web development. You will become familiar with everything front-end in Liferay.</p>
+
+						<a href="/guide/" class="btn btn-accent">Let's get started!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/template}
+
+/**
+ *
+ */
+{template .footer}
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<p class="footer-description col-md-6 col-md-offset-2">
+					Copyright © 2017 <a href="https://liferay.com">Liferay, Inc</a>
+				</p>
+				<p class="footer-description col-md-6">
+					Powered by <a href="http://wedeploy.com">WeDeploy™</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+{/template}
