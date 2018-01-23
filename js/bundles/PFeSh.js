@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,26,27,28],[
+webpackJsonppageComponent([12,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28198,7 +28198,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HqcgI", function() { return HqcgI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PFeSh", function() { return PFeSh; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28210,15 +28210,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-nine.soy.
+// This file was automatically generated from step-four.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace HqcgI.
+ * @fileoverview Templates in namespace PFeSh.
  * @public
  */
 
-goog.module('HqcgI.incrementaldom');
+goog.module('PFeSh.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28239,8 +28239,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28252,232 +28250,84 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param543 = function() {
+  var param532 = function() {
     ie_open('h2');
-      var dyn29 = opt_data.page.title;
-      if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
+      var dyn28 = opt_data.page.title;
+      if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
     ie_close('h2');
     ie_open('p');
-      itext('Now that we have Liferay setup and configured, we can start compiling the ');
+      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Source code');
+    ie_close('h3');
+    ie_open('p');
+      itext('Source code refers to the ');
+      ie_open('em');
+        itext('uncompiled');
+      ie_close('em');
+      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('See Liferay\'s source code.');
+      ie_close('a');
+    ie_close('p');
+    ie_open('h3');
+      itext('Compiled code');
+    ie_close('h3');
+    ie_open('p');
+      itext('Compiled code is derived from the ');
       ie_open('em');
         itext('source');
       ie_close('em');
-      itext(' code to get Liferay running.');
+      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
     ie_close('p');
     ie_open('h3');
-      itext('Getting an application server');
+      itext('Liferay Bundle');
     ie_close('h3');
     ie_open('p');
-      itext('If we want to use Liferay\'s default setup, we need to get Apache Tomcat on our machine.');
+      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
     ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        itext('Open a ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('/');
-        ie_open('em');
-          itext('Git Bash');
-        ie_close('em');
-        itext(' window.');
-      ie_close('li');
-      ie_open('li');
-        itext('Navigate to the cloned Liferay ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext(' folder.');
-      ie_close('li');
-      ie_open('li');
-        itext('Run the command below to download Apache Tomcat.');
-        $templateAlias2({code: 'ant -f build-dist.xml unzip-tomcat', mode: 'shell'}, null, opt_ijData);
-        ie_open('ul');
-          ie_open('li');
-            itext('This command tells ant to look in the ');
-            ie_open('em');
-              itext('build-dist.xml');
-            ie_close('em');
-            itext(' file and execute the ');
-            ie_open('em');
-              itext('unzip-tomcat');
-            ie_close('em');
-            itext(' command.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will delete preexisting folder names matching the application server directory defined in the ');
-            ie_open('strong');
-              itext('app.server.');
-              ie_open('em');
-                itext('USER_NAME');
-              ie_close('em');
-              itext('.properties');
-            ie_close('strong');
-            itext(' file.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will download the version of Apache Tomcat defined in the ');
-            ie_open('strong');
-              itext('app.server.');
-              ie_open('em');
-                itext('USER_NAME');
-              ie_close('em');
-              itext('.properties');
-            ie_close('strong');
-            itext(' file.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will install Apache Tomcat to the folder specified in the ');
-            ie_open('strong');
-              itext('app.server.');
-              ie_open('em');
-                itext('USER_NAME');
-              ie_close('em');
-              itext('.properties');
-            ie_close('strong');
-            itext(' file');
-          ie_close('li');
-        ie_close('ul');
-      ie_close('li');
-      ie_open('li');
-        itext('If this Ant task is successful, you will see a similar output as below.');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build-dist.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://www.liferay.com/downloads');
+        itext('See Liferay\'s bundles.');
+      ie_close('a');
+    ie_close('p');
+    ie_open('p');
+      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
+    ie_close('p');
     ie_open('h3');
-      itext('Compiling the source code');
+      itext('How do you get source code?');
     ie_close('h3');
     ie_open('p');
-      itext('Now that everything is setup, we can compile Liferay\'s ');
-      ie_open('em');
-        itext('source code');
-      ie_close('em');
-      itext('.');
+      itext('Since Liferay is an open source software, all source code is available on ');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('GitHub');
+      ie_close('a');
+      itext(' for download and use.');
     ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a ');
-          ie_open('em');
-            itext('Terminal');
-          ie_close('em');
-          itext('/');
-          ie_open('em');
-            itext('Git Bash');
-          ie_close('em');
-          itext(' window.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Navigate to the cloned Liferay\' ');
-          ie_open('em');
-            itext('source code');
-          ie_close('em');
-          itext(' folder.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Run the following command to setup Liferay.');
-        ie_close('p');
-        $templateAlias2({code: 'ant setup-sdk', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('If this Ant task is successful, you will see a similar output as below.');
-        ie_close('p');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Compile Liferay\'s ');
-          ie_open('em');
-            itext('source code');
-          ie_close('em');
-          itext(' by running the following command.');
-        ie_close('p');
-        $templateAlias2({code: 'ant all', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('If this Ant task is successful, you will see a similar output as below.');
-        ie_close('p');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Navigate to the ');
-          ie_open('em');
-            itext('bin');
-          ie_close('em');
-          itext(' folder in the Apache Tomcat application server folder. (e.g. ');
-          ie_open('em');
-            itext('liferay-portal/tomcat-8.0.32/bin');
-          ie_close('em');
-          itext(').');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Start Apache Tomcat by running the following command.');
-          ie_open('strong');
-            itext('Mac/Linux');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: './catalina.sh run', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          ie_open('strong');
-            itext('Windows');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'catalina.bat run', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('We use catalina instead of the startup executables so that we can conveniently see the console and any errors that it may throw.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a web browser and go to  ');
-          ie_open('em');
-            itext('http://localhost:8080');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Login to Liferay using the following credentials.');
-          ie_open('strong');
-            itext('Username');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'test@liferay.com', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          ie_open('strong');
-            itext('Password');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'test', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('To stop the server, go to the ');
-          ie_open('em');
-            itext('Terminal');
-          ie_close('em');
-          itext('/');
-          ie_open('em');
-            itext('Git Bash');
-          ie_close('em');
-          itext(' window and hit ');
-          ie_open('em');
-            itext('CTRL + c');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-    ie_close('ol');
+    ie_open('p');
+      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Why do I need the source code?');
+    ie_close('h3');
+    ie_open('p');
+      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
+    ie_close('p');
+    ie_open('p');
+      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('strong');
+        itext('Ex.');
+      ie_close('strong');
+      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28487,11 +28337,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param543}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param532}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'HqcgI.render';
+  $render.soyTemplateName = 'PFeSh.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28501,8 +28351,8 @@ return exports;
 
 });
 
-class HqcgI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HqcgI, templates);
+class PFeSh extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PFeSh, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -28528,7 +28378,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HqcgI, templates);
 /* 251 */,
 /* 252 */,
 /* 253 */,
-/* 254 */
+/* 254 */,
+/* 255 */,
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28562,9 +28414,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepNineSoy = __webpack_require__(234);
+var _stepFourSoy = __webpack_require__(234);
 
-var _stepNineSoy2 = _interopRequireDefault(_stepNineSoy);
+var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28574,23 +28426,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HqcgI = function (_Component) {
-  _inherits(HqcgI, _Component);
+var PFeSh = function (_Component) {
+  _inherits(PFeSh, _Component);
 
-  function HqcgI() {
-    _classCallCheck(this, HqcgI);
+  function PFeSh() {
+    _classCallCheck(this, PFeSh);
 
-    return _possibleConstructorReturn(this, (HqcgI.__proto__ || Object.getPrototypeOf(HqcgI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PFeSh.__proto__ || Object.getPrototypeOf(PFeSh)).apply(this, arguments));
   }
 
-  return HqcgI;
+  return PFeSh;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(HqcgI, _stepNineSoy2.default);
+_metalSoy2.default.register(PFeSh, _stepFourSoy2.default);
 
-exports.default = HqcgI;
+exports.default = PFeSh;
 
 /***/ })
-],[254]);
+],[256]);

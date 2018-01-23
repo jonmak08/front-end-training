@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,26,27,28],[
+webpackJsonppageComponent([9,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28179,12 +28179,27 @@ exports.default = parseFromAnchor;
 /* 217 */,
 /* 218 */,
 /* 219 */,
-/* 220 */
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ojfJG", function() { return ojfJG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YEnSZ", function() { return YEnSZ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28196,15 +28211,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from glossary.soy.
+// This file was automatically generated from step-nine.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace ojfJG.
+ * @fileoverview Templates in namespace YEnSZ.
  * @public
  */
 
-goog.module('ojfJG.incrementaldom');
+goog.module('YEnSZ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28225,7 +28240,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -28236,119 +28253,232 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param398 = function() {
-    ie_open('h6');
-      var dyn20 = opt_data.page.description;
-      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('Branch');
-      ie_close('h2');
-      ie_open('p');
-        itext('A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Centralized Workflow');
-      ie_close('h2');
-      ie_open('p');
-        itext('If your developers are already comfortable with Subversion, the Centralized Workflow lets you experience the benefits of Git without having to adapt to an entirely new process. It also serves as a friendly transition into more Git-oriented workflows.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Feature Branch Workflow');
-      ie_close('h2');
-      ie_open('p');
-        itext('The Feature Branch Workflow builds on the Centralized Workflow by encapsulating new features into dedicated branches. This enables the use of pull requests as a means to discuss changes before they\u2019re integrated into the official project.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('Forking');
-      ie_close('h2');
-      ie_open('p');
-        itext('Instead of using a single server-side repository to act as the \u201Ccentral\u201D codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('HEAD');
-      ie_close('h2');
-      ie_open('p');
-        itext('Git\u2019s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a \u201Cdetached HEAD\u201D state.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '6');
-      ie_open('h2');
-        itext('Hook');
-      ie_close('h2');
-      ie_open('p');
-        itext('A script that runs automatically every time a particular event occurs in a Git repository. Hooks let you customize Git\u2019s internal behavior and trigger customizable actions at key points in the development life cycle.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '7');
-      ie_open('h2');
-        itext('Master');
-      ie_close('h2');
-      ie_open('p');
-        itext('The default development branch. Whenever you create a git repository, a branch named "master" is created, and becomes the active branch.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '8');
-      ie_open('h2');
-        itext('Pull Request');
-      ie_close('h2');
-      ie_open('p');
-        itext('Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '9');
-      ie_open('h2');
-        itext('Repository');
-      ie_close('h2');
-      ie_open('p');
-        itext('A collection of commits, and branches and tags to identify commits.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '10');
-      ie_open('h2');
-        itext('Tag');
-      ie_close('h2');
-      ie_open('p');
-        itext('A reference typically used to mark a particular point in the commit chain. In contrast to a head, a tag is not updated by the commit command.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '11');
-      ie_open('h2');
-        itext('Verison Control');
-      ie_close('h2');
-      ie_open('p');
-        itext('A system that records changes to a file or set of files over time so that you can recall specific versions later.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '12');
-      ie_open('h2');
-        itext('Working Tree');
-      ie_close('h2');
-      ie_open('p');
-        itext('The tree of actual checked out files, normally containing the contents of the HEAD commit\'s tree and any local changes you\'ve made but haven\'t yet committed.');
-      ie_close('p');
-    ie_close('article');
+  var param543 = function() {
+    ie_open('h2');
+      var dyn29 = opt_data.page.title;
+      if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
+    ie_close('h2');
+    ie_open('p');
+      itext('Now that we have Liferay setup and configured, we can start compiling the ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code to get Liferay running.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Getting an application server');
+    ie_close('h3');
+    ie_open('p');
+      itext('If we want to use Liferay\'s default setup, we need to get Apache Tomcat on our machine.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('Open a ');
+        ie_open('em');
+          itext('Terminal');
+        ie_close('em');
+        itext('/');
+        ie_open('em');
+          itext('Git Bash');
+        ie_close('em');
+        itext(' window.');
+      ie_close('li');
+      ie_open('li');
+        itext('Navigate to the cloned Liferay ');
+        ie_open('em');
+          itext('source code');
+        ie_close('em');
+        itext(' folder.');
+      ie_close('li');
+      ie_open('li');
+        itext('Run the command below to download Apache Tomcat.');
+        $templateAlias2({code: 'ant -f build-dist.xml unzip-tomcat', mode: 'shell'}, null, opt_ijData);
+        ie_open('ul');
+          ie_open('li');
+            itext('This command tells ant to look in the ');
+            ie_open('em');
+              itext('build-dist.xml');
+            ie_close('em');
+            itext(' file and execute the ');
+            ie_open('em');
+              itext('unzip-tomcat');
+            ie_close('em');
+            itext(' command.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will delete preexisting folder names matching the application server directory defined in the ');
+            ie_open('strong');
+              itext('app.server.');
+              ie_open('em');
+                itext('USER_NAME');
+              ie_close('em');
+              itext('.properties');
+            ie_close('strong');
+            itext(' file.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will download the version of Apache Tomcat defined in the ');
+            ie_open('strong');
+              itext('app.server.');
+              ie_open('em');
+                itext('USER_NAME');
+              ie_close('em');
+              itext('.properties');
+            ie_close('strong');
+            itext(' file.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will install Apache Tomcat to the folder specified in the ');
+            ie_open('strong');
+              itext('app.server.');
+              ie_open('em');
+                itext('USER_NAME');
+              ie_close('em');
+              itext('.properties');
+            ie_close('strong');
+            itext(' file');
+          ie_close('li');
+        ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+        itext('If this Ant task is successful, you will see a similar output as below.');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build-dist.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h3');
+      itext('Compiling the source code');
+    ie_close('h3');
+    ie_open('p');
+      itext('Now that everything is setup, we can compile Liferay\'s ');
+      ie_open('em');
+        itext('source code');
+      ie_close('em');
+      itext('.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal');
+          ie_close('em');
+          itext('/');
+          ie_open('em');
+            itext('Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Navigate to the cloned Liferay\' ');
+          ie_open('em');
+            itext('source code');
+          ie_close('em');
+          itext(' folder.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Run the following command to setup Liferay.');
+        ie_close('p');
+        $templateAlias2({code: 'ant setup-sdk', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('If this Ant task is successful, you will see a similar output as below.');
+        ie_close('p');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Compile Liferay\'s ');
+          ie_open('em');
+            itext('source code');
+          ie_close('em');
+          itext(' by running the following command.');
+        ie_close('p');
+        $templateAlias2({code: 'ant all', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('If this Ant task is successful, you will see a similar output as below.');
+        ie_close('p');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Navigate to the ');
+          ie_open('em');
+            itext('bin');
+          ie_close('em');
+          itext(' folder in the Apache Tomcat application server folder. (e.g. ');
+          ie_open('em');
+            itext('liferay-portal/tomcat-8.0.32/bin');
+          ie_close('em');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Start Apache Tomcat by running the following command.');
+          ie_open('strong');
+            itext('Mac/Linux');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: './catalina.sh run', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Windows');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'catalina.bat run', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('We use catalina instead of the startup executables so that we can conveniently see the console and any errors that it may throw.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a web browser and go to  ');
+          ie_open('em');
+            itext('http://localhost:8080');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Login to Liferay using the following credentials.');
+          ie_open('strong');
+            itext('Username');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'test@liferay.com', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Password');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'test', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('To stop the server, go to the ');
+          ie_open('em');
+            itext('Terminal');
+          ie_close('em');
+          itext('/');
+          ie_open('em');
+            itext('Git Bash');
+          ie_close('em');
+          itext(' window and hit ');
+          ie_open('em');
+            itext('CTRL + c');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28358,11 +28488,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param398}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param543}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'ojfJG.render';
+  $render.soyTemplateName = 'YEnSZ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28372,29 +28502,14 @@ return exports;
 
 });
 
-class ojfJG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ojfJG, templates);
+class YEnSZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YEnSZ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28406,7 +28521,19 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ojfJG, templates);
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28440,9 +28567,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _glossarySoy = __webpack_require__(220);
+var _stepNineSoy = __webpack_require__(235);
 
-var _glossarySoy2 = _interopRequireDefault(_glossarySoy);
+var _stepNineSoy2 = _interopRequireDefault(_stepNineSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28452,23 +28579,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ojfJG = function (_Component) {
-  _inherits(ojfJG, _Component);
+var YEnSZ = function (_Component) {
+  _inherits(YEnSZ, _Component);
 
-  function ojfJG() {
-    _classCallCheck(this, ojfJG);
+  function YEnSZ() {
+    _classCallCheck(this, YEnSZ);
 
-    return _possibleConstructorReturn(this, (ojfJG.__proto__ || Object.getPrototypeOf(ojfJG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YEnSZ.__proto__ || Object.getPrototypeOf(YEnSZ)).apply(this, arguments));
   }
 
-  return ojfJG;
+  return YEnSZ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ojfJG, _glossarySoy2.default);
+_metalSoy2.default.register(YEnSZ, _stepNineSoy2.default);
 
-exports.default = ojfJG;
+exports.default = YEnSZ;
 
 /***/ })
-],[247]);
+],[259]);

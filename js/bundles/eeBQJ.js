@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([24,26,27,28],[
+webpackJsonppageComponent([6,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28176,12 +28176,31 @@ exports.default = parseFromAnchor;
 /* 214 */,
 /* 215 */,
 /* 216 */,
-/* 217 */
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eBdjO", function() { return eBdjO; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eeBQJ", function() { return eeBQJ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28193,15 +28212,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from step-one.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace eBdjO.
+ * @fileoverview Templates in namespace eeBQJ.
  * @public
  */
 
-goog.module('eBdjO.incrementaldom');
+goog.module('eeBQJ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28222,7 +28241,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -28233,146 +28252,201 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param260 = function() {
-    ie_open('h6');
-      var dyn17 = opt_data.page.description;
-      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is CSS?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('CSS stands for ');
-          ie_open('strong');
-            itext('Cascading Style Sheet');
-          ie_close('strong');
-          itext('.');
-        ie_close('li');
-        ie_open('li');
-          itext('CSS defines the ');
-          ie_open('em');
-            itext('look and feel');
-          ie_close('em');
-          itext(' of HTML elements on a web page.');
-        ie_close('li');
-        ie_open('li');
-          itext('CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://www.codecademy.com/tracks/web');
-            itext('Codecademy\'s HTML & CSS');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/adventures-in-web-animations');
-            itext('Code School\'s Adventures in Web Animations');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/blasting-off-with-bootstrap');
-            itext('Code School\'s Blasting Off with Bootstrap');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/css-cross-country');
-            itext('Code School\'s CSS Cross-Country');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Learn/CSS');
-            itext('MDN\'s Learn to style HTML using CSS');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/css/default.asp');
-            itext('w3school\'s CSS Tutorial');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/articles/glossary-css');
-            itext('Codecademy\'s CSS glossary');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/CSS');
-            itext('MDN\'s CSS reference');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/cssref/default.asp');
-            itext('w3school\'s CSS reference');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('CSS Quiz');
-      ie_close('h2');
-      ie_open('p');
-        itext('After you have finished the tutorials, please take the ');
+  var param604 = function() {
+    ie_open('h2');
+      var dyn30 = opt_data.page.title;
+      if (typeof dyn30 == 'function') dyn30(); else if (dyn30 != null) itext(dyn30);
+    ie_close('h2');
+    ie_open('p');
+      itext('Download and install the following software. ');
+      ie_open('em');
+        itext('There are options listed for each category, so feel free to pick whichever you prefer.');
+      ie_close('em');
+    ie_close('p');
+    ie_open('h3');
+      itext('7zip');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
         ie_open('a', null, null,
-            'href', 'https://www.w3schools.com/css/css_quiz.asp');
-          itext('HTML Quiz');
+            'href', 'https://sourceforge.net/projects/sevenzip');
+          itext('7zip');
         ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('Advanced Tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of CSS, please review these advanced tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/assembling-sass');
-            itext('Code School\'s Assembling Sass');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://sass-lang.com/guide');
-            itext('Sass Basics');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Apache Ant');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://ant.apache.org');
+          itext('Apache Ant');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Chat/IM Client');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://hangouts.google.com/webchat/start');
+          itext('Google Hangouts');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.skype.com/en/new');
+          itext('Skype');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://slack.com');
+          itext('Slack');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Java JDK');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
+          itext('Java JDK 8');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Git');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://git-scm.com');
+          itext('Git');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Text Editor');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://atom.io');
+          itext('Atom');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://brackets.io');
+          itext('Brackets');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://notepad-plus-plus.org');
+          itext('Notepad++');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.sublimetext.com');
+          itext('Sublime Text');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.vim.org');
+          itext('Vim');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://code.visualstudio.com');
+          itext('Visual Studio Code');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Version Control GUI');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://desktop.github.com');
+          itext('GitHub Desktop');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.collab.net/products/giteye');
+          itext('GitEye');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://wiki.gnome.org/Apps/Gitg');
+          itext('Gitg');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.syntevo.com/smartgit');
+          itext('SmartGit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.sourcetreeapp.com');
+          itext('SourceTree');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://tortoisegit.org');
+          itext('TortoiseGit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://github.com/FredrikNoren/ungit');
+          itext('ungit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://git-scm.com/downloads/guis');
+          itext('And many more...');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Web Browsers');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.google.com/chrome');
+          itext('Chrome');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.mozilla.org/en-US/firefox/new');
+          itext('Firefox');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads');
+          itext('Internet Explorer');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28382,11 +28456,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param260}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param604}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'eBdjO.render';
+  $render.soyTemplateName = 'eeBQJ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28396,40 +28470,40 @@ return exports;
 
 });
 
-class eBdjO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eBdjO, templates);
+class eeBQJ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eeBQJ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
 /* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28463,9 +28537,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(217);
+var _stepOneSoy = __webpack_require__(236);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stepOneSoy2 = _interopRequireDefault(_stepOneSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28475,23 +28549,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var eBdjO = function (_Component) {
-  _inherits(eBdjO, _Component);
+var eeBQJ = function (_Component) {
+  _inherits(eeBQJ, _Component);
 
-  function eBdjO() {
-    _classCallCheck(this, eBdjO);
+  function eeBQJ() {
+    _classCallCheck(this, eeBQJ);
 
-    return _possibleConstructorReturn(this, (eBdjO.__proto__ || Object.getPrototypeOf(eBdjO)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (eeBQJ.__proto__ || Object.getPrototypeOf(eeBQJ)).apply(this, arguments));
   }
 
-  return eBdjO;
+  return eeBQJ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(eBdjO, _indexSoy2.default);
+_metalSoy2.default.register(eeBQJ, _stepOneSoy2.default);
 
-exports.default = eBdjO;
+exports.default = eeBQJ;
 
 /***/ })
-],[243]);
+],[262]);

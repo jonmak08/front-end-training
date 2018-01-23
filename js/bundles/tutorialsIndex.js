@@ -28187,7 +28187,8 @@ exports.default = parseFromAnchor;
 /* 225 */,
 /* 226 */,
 /* 227 */,
-/* 228 */
+/* 228 */,
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28294,7 +28295,6 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialsIndex, templ
 
 
 /***/ }),
-/* 229 */,
 /* 230 */,
 /* 231 */,
 /* 232 */,
@@ -28331,7 +28331,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialsIndex, templ
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */
+/* 266 */,
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28365,7 +28366,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(228);
+var _indexSoy = __webpack_require__(229);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28396,4 +28397,4 @@ _metalSoy2.default.register(tutorialsIndex, _indexSoy2.default);
 exports.default = tutorialsIndex;
 
 /***/ })
-],[266]);
+],[267]);

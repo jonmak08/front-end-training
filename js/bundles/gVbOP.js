@@ -28190,12 +28190,19 @@ exports.default = parseFromAnchor;
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tLtdQ", function() { return tLtdQ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gVbOP", function() { return gVbOP; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28207,15 +28214,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-eleven.soy.
+// This file was automatically generated from step-six.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tLtdQ.
+ * @fileoverview Templates in namespace gVbOP.
  * @public
  */
 
-goog.module('tLtdQ.incrementaldom');
+goog.module('gVbOP.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28236,6 +28243,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28247,162 +28256,136 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param485 = function() {
+  var param661 = function() {
     ie_open('h2');
-      var dyn26 = opt_data.page.title;
-      if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
+      var dyn32 = opt_data.page.title;
+      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
     ie_close('h2');
     ie_open('p');
-      itext('Congratulations! You have successfully setup Liferay on your machine and are able to start using it.');
+      itext('We are going to setup our Git account so we can begin development.');
     ie_close('p');
     ie_open('h3');
-      itext('Take the quiz');
+      itext('Create an account on GitHub.com');
     ie_close('h3');
     ie_open('p');
-      itext('Be sure you are able to answer the following questions about Liferay successfully before proceeding.');
+      itext('Please replace the place holders tokens in the following tutorials with the correct values (ie. FIRSTNAME, LASTNAME, etc).');
     ie_close('p');
     ie_open('ol');
       ie_open('li');
-        itext('What is the ');
+        itext('Create an account on ');
+        ie_open('a', null, null,
+            'href', 'https://github.com');
+          itext('Github.com');
+        ie_close('a');
+        itext(' using your Liferay email address (');
         ie_open('em');
-          itext('Command Line');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
         ie_close('em');
-        itext('/');
+        itext(') as your email address. Do not use the word ');
+        ie_open('strong');
+          itext('liferay');
+        ie_close('strong');
+        itext(' in your username.');
+      ie_close('li');
+      ie_open('li');
+        itext('Add your Full Name to your GitHub.com public profile.');
+      ie_close('li');
+      ie_open('li');
+        itext('Add a picture using ');
+        ie_open('a', null, null,
+            'href', 'https://en.gravatar.com');
+          itext('gravatar');
+        ie_close('a');
+        itext('. Be sure to use your ');
         ie_open('em');
-          itext('Terminal');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
         ie_close('em');
-        itext('?');
+        itext(' email address when registering with gravatar.');
       ie_close('li');
       ie_open('li');
-        itext('What is the difference between ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext(' and ');
-        ie_open('em');
-          itext('compiled code');
-        ie_close('em');
-        itext('?');
+        itext('Follow ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/brianchandotcom');
+          itext('Brian Chan');
+        ie_close('a');
+        itext(' on GitHub.com.');
       ie_close('li');
       ie_open('li');
-        itext('What is the difference between ');
-        ie_open('em');
-          itext('trunk');
-        ie_close('em');
-        itext(' and the ');
-        ie_open('em');
-          itext('branches');
-        ie_close('em');
-        itext(' in Git?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where do I find Liferay\'s ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext('?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I update Liferay\'s ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext('?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my ');
-        ie_open('em');
-          itext('local');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my remote ');
-        ie_open('em');
-          itext('origin');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my remote ');
-        ie_open('em');
-          itext('upstream');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('What are git remotes?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I update my git remote URLs?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where can I find my ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext(' file?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I update my ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext(' file?');
-      ie_close('li');
-      ie_open('li');
-        itext('What do I need to run Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is an application server?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is a database?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is my current instance of Liferay using for it\'s application server?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my application server located?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is my current instance of Liferay using for it\'s database?');
-      ie_close('li');
-      ie_open('li');
-        itext('What does the portal-ext.properties file do?');
-      ie_close('li');
-      ie_open('li');
-        itext('What customizations do I currently have applied to my current Liferay instance?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where do you run the command ');
-        ie_open('em');
-          itext('ant all');
-        ie_close('em');
-        itext('?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do you start my Apache Tomcat?');
-      ie_close('li');
-      ie_open('li');
-        itext('How can you tell if your Liferay is running succesfully?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where do you see if there are errors being thrown by Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I shut down my current instance of Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('Can I setup Liferay succesfully again?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is the normal Git workflow I should use when submitting changes?');
+        ie_open('strong');
+          itext('Optional');
+        ie_close('strong');
+        itext(': If you need access to any private Liferay repositories, email ');
+        ie_open('a', null, null,
+            'href', 'it-support@liferay.com');
+          itext('it-support@liferay.com');
+        ie_close('a');
+        itext(' with your GitHub.com ');
+        ie_open('strong');
+          itext('username');
+        ie_close('strong');
+        itext(', while CC-ing your manager.');
       ie_close('li');
     ie_close('ol');
-    ie_open('p');
-      itext('You are now ready to start developing on Liferay!');
-    ie_close('p');
+    ie_open('h3');
+      itext('Configuring .gitconfig');
+    ie_close('h3');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('You should have already installed Git from step 1. If you do not already have Git installed, please install it now.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add your user name to your global ');
+          ie_open('em');
+            itext('.gitconfig');
+          ie_close('em');
+          itext('. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "FIRSTNAME LASTNAME"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Example');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "Brian Chan"', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add your Liferay email address (');
+          ie_open('em');
+            itext('FIRSTNAME.LASTNAME@liferay.com');
+          ie_close('em');
+          itext(') to your ');
+          ie_open('em');
+            itext('.gitconfig');
+          ie_close('em');
+          itext('. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.email "FIRSTNAME.LASTNAME@liferay.com"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Example');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "brian.chan@liferay.com"', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('On a windows machine, you ');
+          ie_open('em');
+            itext('might');
+          ie_close('em');
+          itext(' run into an error because Git has a limit of 4096 characters for a file name; windows has a limit of 260 characters. You will need to set longpaths to true only on a ');
+          ie_open('strong');
+            itext('windows');
+          ie_close('strong');
+          itext(' machine. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global core.longpaths true', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28412,11 +28395,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param485}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param661}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tLtdQ.render';
+  $render.soyTemplateName = 'gVbOP.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28426,21 +28409,14 @@ return exports;
 
 });
 
-class tLtdQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tLtdQ, templates);
+class gVbOP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gVbOP, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -28464,7 +28440,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tLtdQ, templates);
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28498,9 +28475,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepElevenSoy = __webpack_require__(231);
+var _stepSixSoy = __webpack_require__(238);
 
-var _stepElevenSoy2 = _interopRequireDefault(_stepElevenSoy);
+var _stepSixSoy2 = _interopRequireDefault(_stepSixSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28510,23 +28487,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tLtdQ = function (_Component) {
-  _inherits(tLtdQ, _Component);
+var gVbOP = function (_Component) {
+  _inherits(gVbOP, _Component);
 
-  function tLtdQ() {
-    _classCallCheck(this, tLtdQ);
+  function gVbOP() {
+    _classCallCheck(this, gVbOP);
 
-    return _possibleConstructorReturn(this, (tLtdQ.__proto__ || Object.getPrototypeOf(tLtdQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gVbOP.__proto__ || Object.getPrototypeOf(gVbOP)).apply(this, arguments));
   }
 
-  return tLtdQ;
+  return gVbOP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tLtdQ, _stepElevenSoy2.default);
+_metalSoy2.default.register(gVbOP, _stepSixSoy2.default);
 
-exports.default = tLtdQ;
+exports.default = gVbOP;
 
 /***/ })
-],[262]);
+],[263]);

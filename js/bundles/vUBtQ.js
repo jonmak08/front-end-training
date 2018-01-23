@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,26,27,28],[
+webpackJsonppageComponent([19,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28182,22 +28182,12 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UVbub", function() { return UVbub; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vUBtQ", function() { return vUBtQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28209,15 +28199,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-four.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UVbub.
+ * @fileoverview Templates in namespace vUBtQ.
  * @public
  */
 
-goog.module('UVbub.incrementaldom');
+goog.module('vUBtQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28238,7 +28228,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28249,84 +28239,139 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param532 = function() {
-    ie_open('h2');
-      var dyn28 = opt_data.page.title;
-      if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
-    ie_close('h2');
-    ie_open('p');
-      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Source code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Source code refers to the ');
-      ie_open('em');
-        itext('uncompiled');
-      ie_close('em');
-      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('See Liferay\'s source code.');
-      ie_close('a');
-    ie_close('p');
-    ie_open('h3');
-      itext('Compiled code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Compiled code is derived from the ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Liferay Bundle');
-    ie_close('h3');
-    ie_open('p');
-      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://www.liferay.com/downloads');
-        itext('See Liferay\'s bundles.');
-      ie_close('a');
-    ie_close('p');
-    ie_open('p');
-      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
-    ie_close('p');
-    ie_open('h3');
-      itext('How do you get source code?');
-    ie_close('h3');
-    ie_open('p');
-      itext('Since Liferay is an open source software, all source code is available on ');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('GitHub');
-      ie_close('a');
-      itext(' for download and use.');
-    ie_close('p');
-    ie_open('p');
-      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Why do I need the source code?');
-    ie_close('h3');
-    ie_open('p');
-      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
-    ie_close('p');
-    ie_open('p');
-      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('Ex.');
-      ie_close('strong');
-      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
-    ie_close('p');
+  var param420 = function() {
+    ie_open('h6');
+      var dyn22 = opt_data.page.description;
+      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is HTML?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('HTML stands for ');
+          ie_open('strong');
+            itext('H');
+          ie_close('strong');
+          itext('yper ');
+          ie_open('strong');
+            itext('T');
+          ie_close('strong');
+          itext('ext ');
+          ie_open('strong');
+            itext('M');
+          ie_close('strong');
+          itext('arkup ');
+          ie_open('strong');
+            itext('L');
+          ie_close('strong');
+          itext('anguage.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is not a programming language, it is a ');
+          ie_open('em');
+            itext('markup language');
+          ie_close('em');
+          itext('. A markup language is a set of ');
+          ie_open('em');
+            itext('markup tags');
+          ie_close('em');
+          itext(' and the purpose of the tags are to describe page content.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://www.codecademy.com/tracks/web');
+            itext('Codecademy\'s HTML & CSS');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-html');
+            itext('Codecademy\'s Learn HTML');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-foundations');
+            itext('Code Schools\' Front-end Foundations');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-formations');
+            itext('Code Schools\' Front-end Formations');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/intro-to-html-and-css--ud304');
+            itext('Udacity\'s HTML and CSS Syntax');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://www.w3schools.com/html/default.asp');
+            itext('w3school\'s HTML5 Tutorial');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Other resources');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/articles/glossary-html');
+            itext('Codecademy\'s HTML glossary');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/HTML');
+            itext('MDN\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.w3schools.com/tags/default.asp');
+            itext('w3school\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('HTML Quiz');
+      ie_close('h2');
+      ie_open('p');
+        itext('After you have finished the tutorials, please take the ');
+        ie_open('a', null, null,
+            'href', 'https://www.w3schools.com/html/html_quiz.asp');
+          itext('HTML Quiz');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28336,11 +28381,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param532}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param420}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UVbub.render';
+  $render.soyTemplateName = 'vUBtQ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28350,14 +28395,24 @@ return exports;
 
 });
 
-class UVbub extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UVbub, templates);
+class vUBtQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(vUBtQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
@@ -28373,14 +28428,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UVbub, templates);
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28414,9 +28462,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepFourSoy = __webpack_require__(233);
+var _indexSoy = __webpack_require__(223);
 
-var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28426,23 +28474,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UVbub = function (_Component) {
-  _inherits(UVbub, _Component);
+var vUBtQ = function (_Component) {
+  _inherits(vUBtQ, _Component);
 
-  function UVbub() {
-    _classCallCheck(this, UVbub);
+  function vUBtQ() {
+    _classCallCheck(this, vUBtQ);
 
-    return _possibleConstructorReturn(this, (UVbub.__proto__ || Object.getPrototypeOf(UVbub)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vUBtQ.__proto__ || Object.getPrototypeOf(vUBtQ)).apply(this, arguments));
   }
 
-  return UVbub;
+  return vUBtQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UVbub, _stepFourSoy2.default);
+_metalSoy2.default.register(vUBtQ, _indexSoy2.default);
 
-exports.default = UVbub;
+exports.default = vUBtQ;
 
 /***/ })
-],[256]);
+],[249]);

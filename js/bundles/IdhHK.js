@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,26,27,28],[
+webpackJsonppageComponent([25,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28176,30 +28176,12 @@ exports.default = parseFromAnchor;
 /* 214 */,
 /* 215 */,
 /* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XDmDR", function() { return XDmDR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IdhHK", function() { return IdhHK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28211,15 +28193,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-one.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace XDmDR.
+ * @fileoverview Templates in namespace IdhHK.
  * @public
  */
 
-goog.module('XDmDR.incrementaldom');
+goog.module('IdhHK.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28240,7 +28222,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28251,201 +28233,51 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param604 = function() {
-    ie_open('h2');
-      var dyn30 = opt_data.page.title;
-      if (typeof dyn30 == 'function') dyn30(); else if (dyn30 != null) itext(dyn30);
-    ie_close('h2');
-    ie_open('p');
-      itext('Download and install the following software. ');
-      ie_open('em');
-        itext('There are options listed for each category, so feel free to pick whichever you prefer.');
-      ie_close('em');
-    ie_close('p');
-    ie_open('h3');
-      itext('7zip');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://sourceforge.net/projects/sevenzip');
-          itext('7zip');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Apache Ant');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://ant.apache.org');
-          itext('Apache Ant');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Chat/IM Client');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://hangouts.google.com/webchat/start');
-          itext('Google Hangouts');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.skype.com/en/new');
-          itext('Skype');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://slack.com');
-          itext('Slack');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Java JDK');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
-          itext('Java JDK 8');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Git');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com');
-          itext('Git');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Text Editor');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://atom.io');
-          itext('Atom');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://brackets.io');
-          itext('Brackets');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://notepad-plus-plus.org');
-          itext('Notepad++');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.sublimetext.com');
-          itext('Sublime Text');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.vim.org');
-          itext('Vim');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://code.visualstudio.com');
-          itext('Visual Studio Code');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Version Control GUI');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://desktop.github.com');
-          itext('GitHub Desktop');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.collab.net/products/giteye');
-          itext('GitEye');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://wiki.gnome.org/Apps/Gitg');
-          itext('Gitg');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.syntevo.com/smartgit');
-          itext('SmartGit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.sourcetreeapp.com');
-          itext('SourceTree');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://tortoisegit.org');
-          itext('TortoiseGit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://github.com/FredrikNoren/ungit');
-          itext('ungit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com/downloads/guis');
-          itext('And many more...');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Web Browsers');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.google.com/chrome');
-          itext('Chrome');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.mozilla.org/en-US/firefox/new');
-          itext('Firefox');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads');
-          itext('Internet Explorer');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+  var param249 = function() {
+    ie_open('h6');
+      var dyn16 = opt_data.page.description;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is the command line?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('A command-line interface or command language interpreter (CLI), also known as command-line user interface, console user interface, and character user interface (CUI), is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-the-command-line');
+            itext('Codecademy\'s Learn the Command Line');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://ryanstutorials.net/linuxtutorial');
+            itext('Ryans Tutorials Linux Tutorial');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/linux-command-line-basics--ud595');
+            itext('Udacity\'s Linux Command Line Basics');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28455,11 +28287,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param604}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param249}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'XDmDR.render';
+  $render.soyTemplateName = 'IdhHK.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28469,14 +28301,32 @@ return exports;
 
 });
 
-class XDmDR extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XDmDR, templates);
+class IdhHK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IdhHK, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28484,23 +28334,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XDmDR, templates);
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28534,9 +28368,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepOneSoy = __webpack_require__(235);
+var _indexSoy = __webpack_require__(217);
 
-var _stepOneSoy2 = _interopRequireDefault(_stepOneSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28546,23 +28380,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var XDmDR = function (_Component) {
-  _inherits(XDmDR, _Component);
+var IdhHK = function (_Component) {
+  _inherits(IdhHK, _Component);
 
-  function XDmDR() {
-    _classCallCheck(this, XDmDR);
+  function IdhHK() {
+    _classCallCheck(this, IdhHK);
 
-    return _possibleConstructorReturn(this, (XDmDR.__proto__ || Object.getPrototypeOf(XDmDR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (IdhHK.__proto__ || Object.getPrototypeOf(IdhHK)).apply(this, arguments));
   }
 
-  return XDmDR;
+  return IdhHK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(XDmDR, _stepOneSoy2.default);
+_metalSoy2.default.register(IdhHK, _indexSoy2.default);
 
-exports.default = XDmDR;
+exports.default = IdhHK;
 
 /***/ })
-],[259]);
+],[243]);

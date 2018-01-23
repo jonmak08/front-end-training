@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([10,26,27,28],[
+webpackJsonppageComponent([4,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28198,13 +28198,12 @@ exports.default = parseFromAnchor;
 /* 236 */,
 /* 237 */,
 /* 238 */,
-/* 239 */,
-/* 240 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WHiBX", function() { return WHiBX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thLjv", function() { return thLjv; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28216,15 +28215,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-two.soy.
+// This file was automatically generated from step-ten.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace WHiBX.
+ * @fileoverview Templates in namespace thLjv.
  * @public
  */
 
-goog.module('WHiBX.incrementaldom');
+goog.module('thLjv.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28258,625 +28257,56 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param769 = function() {
+  var param697 = function() {
     ie_open('h2');
-      var dyn35 = opt_data.page.title;
-      if (typeof dyn35 == 'function') dyn35(); else if (dyn35 != null) itext(dyn35);
+      var dyn33 = opt_data.page.title;
+      if (typeof dyn33 == 'function') dyn33(); else if (dyn33 != null) itext(dyn33);
     ie_close('h2');
-    ie_open('h3');
-      itext('Change your computer name');
-    ie_close('h3');
     ie_open('p');
-      itext('Change your computer name to something more user friendly because we will be using this later on when configuring Liferay.');
+      itext('Now that we have Liferay running, we have to understand how to read the messages output by the console.');
     ie_close('p');
-    ie_open('h4');
-      itext('Mac');
-    ie_close('h4');
-    ie_open('ol');
+    ie_open('ul');
       ie_open('li');
-        itext('Launch ');
+        itext('Make sure Liferay is loading your ');
         ie_open('em');
-          itext('System Preferences');
+          itext('portal-ext.properties');
         ie_close('em');
-        itext('.');
+        itext(' file correctly by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Loading file:/liferay-portal/portal-ext.properties', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('Click on ');
+        itext('Make sure Liferay is loading the correct database as defined in your ');
         ie_open('em');
-          itext('Sharing');
+          itext('portal-ext.properties');
         ie_close('em');
-        itext('.');
+        itext(' file by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO  [localhost-startStop-1][DialectDetector:77] Determine dialect for HSQL Database Engine 2.3\n[localhost-startStop-1][DialectDetector:97] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
+        itext('Make sure the version of Liferay that you are using is correct by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Starting Liferay Community Edition Portal 7.0.4 GA5 (Wilberforce / Build 7004 / October 23, 2017)', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('On the ');
+        itext('Upon startup, Liferay will automatically create a ');
         ie_open('em');
-          itext('Computer Name, domain, and workgroup settings');
+          itext('deploy');
         ie_close('em');
-        itext(' section, click the ');
-        ie_open('em');
-          itext('Change Settings...');
-        ie_close('em');
-        itext(' link.');
+        itext(' folder in your bundle.  When there are files placed in this folder, Liferay will automatically scan and consume any deployable packages. The location of this folder can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: '[localhost-startStop-1][AutoDeployDir:194] Auto deploy scanner started for /liferay-portal/deploy', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Change...');
-        ie_close('em');
-        itext(' button under the ');
-        ie_open('em');
-          itext('Computer Name');
-        ie_close('em');
-        itext(' tab.');
+        itext('Make sure Liferay has finished loading and is ready for use by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Change your folder options');
-    ie_close('h3');
-    ie_open('p');
-      itext('Show ');
-      ie_open('em');
-        itext('hidden');
-      ie_close('em');
-      itext(' files in the ');
-      ie_open('em');
-        itext('Finder');
-      ie_close('em');
-      itext('/');
-      ie_open('em');
-        itext('File Explorer');
-      ie_close('em');
-      itext(' because Liferay contains hidden files that we need to edit.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Mac');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Launch the ');
-          ie_open('em');
-            itext('Terminal');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Enter the command below.');
-        ie_close('p');
-        $templateAlias2({code: 'defaults write com.apple.Finder AppleShowAllFiles TRUE', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Relaunch the Finder to make the changes take effect.');
-        ie_close('p');
-        $templateAlias2({code: 'killall Finder', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Start Menu');
-        ie_close('em');
-        itext(' and search for ');
-        ie_open('em');
-          itext('Folder Explorer Options');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('View');
-        ie_close('em');
-        itext(' tab .');
-      ie_close('li');
-      ie_open('li');
-        itext('Under the ');
-        ie_open('em');
-          itext('Advanced settings:');
-        ie_close('em');
-        itext(' section, make sure ');
-        ie_open('em');
-          itext('Show hidden files, folders and drives');
-        ie_close('em');
-        itext(' is selected.');
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure ');
-        ie_open('em');
-          itext('Hide extensions for known file types');
-        ie_close('em');
-        itext(' is unchecked.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Set ANT_OPTS environment variable');
-    ie_close('h3');
-    ie_open('p');
-      ie_open('em');
-        itext('ANT_OPTS');
-      ie_close('em');
-      itext(' is an environment variable that provides a list of arguments that you want to pass to the Java Virtual Machine that will run Ant.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Mac');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Create a ');
-        ie_open('em');
-          itext('.bash_profile');
-        ie_close('em');
-        itext(' if one does not already exist.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the contents below into the ');
-        ie_open('em');
-          itext('.bash_profile');
-        ie_close('em');
-        itext('.');
-        $templateAlias2({code: 'export ANT_OPTS="-Xms2048m -Xmx4096m"', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Relaunch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('User variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('em');
-          itext('ANT_OPTS');
-        ie_close('em');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
+        itext('Errors in Liferay are usually prefixed with an ');
         ie_open('strong');
-          itext('ANT_OPTS');
+          itext('ERROR');
         ie_close('strong');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('-Xms2048m -Xmx4096m');
-        ie_close('strong');
-        itext('.');
+        itext(' warning message.  They can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'ERROR [Framework Event Dispatcher: Equinox Container: a029ce5e-e1fc-0017-1e71-df5549d2deba][com_liferay_util_taglib:97] FrameworkEvent ERROR\n    org.osgi.framework.BundleException: Could not resolve module: com.liferay.util.taglib [9]_  Unresolved requirement: Import-Package: javax.el_ [Sanitized]\n    at org.eclipse.osgi.container.Module.start(Module.java:429)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)\n    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)\n    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Apache Ant');
-    ie_close('h3');
-    ie_open('p');
-      itext('Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the ');
-      ie_open('a', null, null,
-          'href', 'http://ant.apache.org/');
-        itext('Apache Ant');
-      ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Unzip the downloaded file from the previous step into your C:\\ drive.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Ant directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('em');
-          itext('ANT_HOME');
-        ie_close('em');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('strong');
-          itext('ANT_HOME');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Apache Ant path you coped in step 2');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('em');
-          itext('ANT_HOME');
-        ie_close('em');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('em');
-          itext('PATH');
-        ie_close('em');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('em');
-          itext('ANT_HOME');
-        ie_close('em');
-        itext(' variable to the ');
-        ie_open('em');
-          itext('PATH');
-        ie_close('em');
-        itext(' variable.');
-        $templateAlias2({code: '%ANT_HOME%\\bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Ant is installed correctly. A message ');
-        ie_open('em');
-          itext('Buildfile: build.xml does not exist! Build failed');
-        ie_close('em');
-        itext('.');
-        $templateAlias2({code: 'ant', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Java JDK');
-    ie_close('h3');
-    ie_open('p');
-      itext('Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the ');
-      ie_open('a', null, null,
-          'href', 'http://www.oracle.com/technetwork/java/javase/downloads/index.html');
-        itext('Java JDK');
-      ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Mac');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step. (The installer should be in ');
-        ie_open('em');
-          itext('.dmg');
-        ie_close('em');
-        itext(' format).');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('To check if Java is installed, launch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step.');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Java JDK directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('em');
-          itext('JAVA_HOME');
-        ie_close('em');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('strong');
-          itext('JAVA_HOME');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Java JDK path you coped in step 3');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('em');
-          itext('JAVA_HOME');
-        ie_close('em');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('em');
-          itext('PATH');
-        ie_close('em');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('em');
-          itext('JAVA_HOME');
-        ie_close('em');
-        itext(' variable to the ');
-        ie_open('em');
-          itext('PATH');
-        ie_close('em');
-        itext(' variable.');
-        $templateAlias2({code: '%JAVA_HOME%\\bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java - version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to check if your ');
-        ie_open('em');
-          itext('PATH');
-        ie_close('em');
-        itext(' variable is set correctly. It should list the directory of your JAVA JDK.');
-        $templateAlias2({code: 'path', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
+    ie_close('ul');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28886,11 +28316,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param769}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param697}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'WHiBX.render';
+  $render.soyTemplateName = 'thLjv.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28900,14 +28330,15 @@ return exports;
 
 });
 
-class WHiBX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WHiBX, templates);
+class thLjv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(thLjv, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
@@ -28924,7 +28355,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WHiBX, templates);
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28958,9 +28396,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepTwoSoy = __webpack_require__(240);
+var _stepTenSoy = __webpack_require__(239);
 
-var _stepTwoSoy2 = _interopRequireDefault(_stepTwoSoy);
+var _stepTenSoy2 = _interopRequireDefault(_stepTenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28970,23 +28408,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WHiBX = function (_Component) {
-  _inherits(WHiBX, _Component);
+var thLjv = function (_Component) {
+  _inherits(thLjv, _Component);
 
-  function WHiBX() {
-    _classCallCheck(this, WHiBX);
+  function thLjv() {
+    _classCallCheck(this, thLjv);
 
-    return _possibleConstructorReturn(this, (WHiBX.__proto__ || Object.getPrototypeOf(WHiBX)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (thLjv.__proto__ || Object.getPrototypeOf(thLjv)).apply(this, arguments));
   }
 
-  return WHiBX;
+  return thLjv;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WHiBX, _stepTwoSoy2.default);
+_metalSoy2.default.register(thLjv, _stepTenSoy2.default);
 
-exports.default = WHiBX;
+exports.default = thLjv;
 
 /***/ })
-],[257]);
+],[264]);
