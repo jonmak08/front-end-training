@@ -79,5 +79,4 @@ Values defined in the *portal.properties* file are configurations used within Li
     velocity.engine.resource.modification.check.interval=0
     ```
 4. Set the *javascript.fast.load* propety to **false**. *Set this value to **true**, if we are trying to replicate a production environment with minified JavaScript files.
-5. When all custom configurations are complete, move the *portal-ext.properties* file to 
-one folder level above the application server directory defined in the **app.server._USER\_NAME_.properties** file. (i.e. *PATH/bundles*).
+5. When all custom configurations are complete, move the *portal-ext.properties* file to one folder level above the application server directory defined in the **app.server._USER\_NAME_.properties** file. (i.e. *PATH/bundles*).
