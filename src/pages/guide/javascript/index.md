@@ -10,7 +10,7 @@ weight: 4
 
 <article id="1">
 
-## What is HTML?
+## What is JavaScript?
 
 * JavaScript (JS) is the most popular scripting language in the world. It is the standard language used in web pages, but it is also widely used by desktop apps, mobile phone apps, and internet servers.
 * JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and much more.  Every time a web page does more than just sit there and display static information for you to look at JavaScript is probably involved.

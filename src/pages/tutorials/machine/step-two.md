@@ -134,7 +134,7 @@ Liferay is written in Java, so you will need Java on your machine in order to ha
 13. Open a new *Command Prompt*.
 14. Enter the command below in the *Command Prompt* to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.
     ```shell
-    java - version
+    java -version
     ```
 15. Enter the command below in the *Command Prompt* to check if your *PATH* variable is set correctly. It should list the directory of your JAVA JDK.
     ```shell

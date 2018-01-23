@@ -89,7 +89,7 @@ A reference typically used to mark a particular point in the commit chain. In co
 
 <article id="11">
 
-## Verison Control
+## Version Control
 
 A system that records changes to a file or set of files over time so that you can recall specific versions later.
 
