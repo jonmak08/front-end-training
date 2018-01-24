@@ -102,7 +102,7 @@ Ant does almost everything for you; it uses scripts to automate tasks and compil
 
 ### Setup Java JDK
 
-Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) in the previous step.  This will help you install and set it up.
+Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR) in the previous step.  This will help you install and set it up.
 
 #### Mac
 
