@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,26,27,28],[
+webpackJsonppageComponent([18,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
+exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
+  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn11 = opt_data.time;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.time;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     }
   ie_close('p');
 }
@@ -28184,14 +28184,12 @@ exports.default = parseFromAnchor;
 /* 222 */,
 /* 223 */,
 /* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EtuSX", function() { return EtuSX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keKRa", function() { return keKRa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28207,11 +28205,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace EtuSX.
+ * @fileoverview Templates in namespace keKRa.
  * @public
  */
 
-goog.module('EtuSX.incrementaldom');
+goog.module('keKRa.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28251,19 +28249,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('What is web design?');
+        itext('What is JavaScript?');
       ie_close('h2');
       ie_open('ul');
         ie_open('li');
-          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
+          itext('JavaScript (JS) is the most popular scripting language in the world. It is the standard language used in web pages, but it is also widely used by desktop apps, mobile phone apps, and internet servers.');
         ie_close('li');
-      ie_close('ul');
-      ie_open('h2');
-        itext('What is a website?');
-      ie_close('h2');
-      ie_open('ul');
         ie_open('li');
-          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
+          itext('JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and much more.  Every time a web page does more than just sit there and display static information for you to look at JavaScript is probably involved.');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28278,20 +28271,56 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
-            itext('Code School\'s Fundamentals of Design');
+              'href', 'https://www.w3schools.com/js/default.asp');
+            itext('w3school\'s JavaScript Tutorial');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
-            itext('Code School\'s The Elements of Web Design');
+              'href', 'https://www.codecademy.com/tracks/javascript');
+            itext('Codecademy\'s JavaScript');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
-            itext('Code School\'s Journey Into Mobile');
+              'href', 'https://www.codecademy.com/learn/learn-javascript');
+            itext('Codecademy\'s Learn JavaScript');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/javascript-road-trip-part-1');
+            itext('Code School\'s JavaSCript Road Trip Part 1');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/javascript-road-trip-part-2');
+            itext('Code School\'s JavaScript Road Trip Part 2');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/javascript-road-trip-part-3');
+            itext('Code School\'s JavaScript Road Trip Part 3');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/javascript-best-practices');
+            itext('Code School\'s JavaScript Best Practices');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript');
+            itext('MDN\'s JavaScript Tutorial');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/intro-to-javascript--ud803');
+            itext('Udacity\'s Intro to JavaScript');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28299,22 +28328,80 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('article', null, null,
         'id', '3');
       ie_open('h2');
-        itext('Advanced Tutorials');
+        itext('Other resources');
       ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
-      ie_close('p');
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
-            itext('Codecademy\'s Make an Interactive Website');
+              'href', 'https://www.codecademy.com/articles/glossary-javascript');
+            itext('Codecademy\'s JavaScript glossary');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/howto/howto_website.asp');
-            itext('w3school\'s How To - Build a Web Site');
+              'href', 'https://www.w3schools.com/jsref/default.asp');
+            itext('w3school\'s JavaScript and HTML DOM reference');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript');
+            itext('MDN\'s JavaScript reference');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('JavaScript Quiz');
+      ie_close('h2');
+      ie_open('p');
+        itext('After you have finished the tutorials, please take the ');
+        ie_open('a', null, null,
+            'href', 'https://www.w3schools.com/js/js_quiz.asp');
+          itext('JavaScript Quiz');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '5');
+      ie_open('h2');
+        itext('Advanced Tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Once you have a good understanding of JavaScript, please review these advanced tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come');
+            itext('Code School\'s ES2015: The Shape of JavaScript to Come');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://ccoenraets.github.io/es6-tutorial');
+            itext('ECMASCript 6 Tutorial');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://metaljs.com/docs/tutorials');
+            itext('Metal.js Tutorials');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://reactjs.org/tutorial/tutorial.html');
+            itext('Tutorial: Intro to React');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://redux.js.org/docs/basics/');
+            itext('Redux Tutorial');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28332,7 +28419,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'EtuSX.render';
+  $render.soyTemplateName = 'keKRa.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28342,14 +28429,16 @@ return exports;
 
 });
 
-class EtuSX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(EtuSX, templates);
+class keKRa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(keKRa, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 226 */,
+/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -28372,10 +28461,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(EtuSX, templates);
 /* 247 */,
 /* 248 */,
 /* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28409,7 +28495,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(227);
+var _indexSoy = __webpack_require__(225);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28421,23 +28507,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EtuSX = function (_Component) {
-  _inherits(EtuSX, _Component);
+var keKRa = function (_Component) {
+  _inherits(keKRa, _Component);
 
-  function EtuSX() {
-    _classCallCheck(this, EtuSX);
+  function keKRa() {
+    _classCallCheck(this, keKRa);
 
-    return _possibleConstructorReturn(this, (EtuSX.__proto__ || Object.getPrototypeOf(EtuSX)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (keKRa.__proto__ || Object.getPrototypeOf(keKRa)).apply(this, arguments));
   }
 
-  return EtuSX;
+  return keKRa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(EtuSX, _indexSoy2.default);
+_metalSoy2.default.register(keKRa, _indexSoy2.default);
 
-exports.default = EtuSX;
+exports.default = keKRa;
 
 /***/ })
-],[253]);
+],[250]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,26,27,28],[
+webpackJsonppageComponent([4,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
+exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
+  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn11 = opt_data.time;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.time;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     }
   ie_close('p');
 }
@@ -28200,7 +28200,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eeBQJ", function() { return eeBQJ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gVSCF", function() { return gVSCF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28216,11 +28216,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace eeBQJ.
+ * @fileoverview Templates in namespace gVSCF.
  * @public
  */
 
-goog.module('eeBQJ.incrementaldom');
+goog.module('gVSCF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28460,7 +28460,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'eeBQJ.render';
+  $render.soyTemplateName = 'gVSCF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28470,8 +28470,8 @@ return exports;
 
 });
 
-class eeBQJ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eeBQJ, templates);
+class gVSCF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gVSCF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -28503,7 +28503,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eeBQJ, templates);
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28549,23 +28551,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var eeBQJ = function (_Component) {
-  _inherits(eeBQJ, _Component);
+var gVSCF = function (_Component) {
+  _inherits(gVSCF, _Component);
 
-  function eeBQJ() {
-    _classCallCheck(this, eeBQJ);
+  function gVSCF() {
+    _classCallCheck(this, gVSCF);
 
-    return _possibleConstructorReturn(this, (eeBQJ.__proto__ || Object.getPrototypeOf(eeBQJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gVSCF.__proto__ || Object.getPrototypeOf(gVSCF)).apply(this, arguments));
   }
 
-  return eeBQJ;
+  return gVSCF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(eeBQJ, _stepOneSoy2.default);
+_metalSoy2.default.register(gVSCF, _stepOneSoy2.default);
 
-exports.default = eeBQJ;
+exports.default = gVSCF;
 
 /***/ })
-],[262]);
+],[264]);

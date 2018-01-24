@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([12,26,27,28],[
+webpackJsonppageComponent([20,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
+exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
+  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn11 = opt_data.time;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.time;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     }
   ie_close('p');
 }
@@ -28180,25 +28180,12 @@ exports.default = parseFromAnchor;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PFeSh", function() { return PFeSh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YcvHj", function() { return YcvHj; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28210,15 +28197,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-four.soy.
+// This file was automatically generated from glossary.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace PFeSh.
+ * @fileoverview Templates in namespace YcvHj.
  * @public
  */
 
-goog.module('PFeSh.incrementaldom');
+goog.module('YcvHj.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28239,7 +28226,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28250,84 +28237,119 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param532 = function() {
-    ie_open('h2');
-      var dyn28 = opt_data.page.title;
-      if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
-    ie_close('h2');
-    ie_open('p');
-      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Source code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Source code refers to the ');
-      ie_open('em');
-        itext('uncompiled');
-      ie_close('em');
-      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('See Liferay\'s source code.');
-      ie_close('a');
-    ie_close('p');
-    ie_open('h3');
-      itext('Compiled code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Compiled code is derived from the ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Liferay Bundle');
-    ie_close('h3');
-    ie_open('p');
-      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://www.liferay.com/downloads');
-        itext('See Liferay\'s bundles.');
-      ie_close('a');
-    ie_close('p');
-    ie_open('p');
-      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
-    ie_close('p');
-    ie_open('h3');
-      itext('How do you get source code?');
-    ie_close('h3');
-    ie_open('p');
-      itext('Since Liferay is an open source software, all source code is available on ');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('GitHub');
-      ie_close('a');
-      itext(' for download and use.');
-    ie_close('p');
-    ie_open('p');
-      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Why do I need the source code?');
-    ie_close('h3');
-    ie_open('p');
-      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
-    ie_close('p');
-    ie_open('p');
-      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('Ex.');
-      ie_close('strong');
-      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
-    ie_close('p');
+  var param398 = function() {
+    ie_open('h6');
+      var dyn20 = opt_data.page.description;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('Branch');
+      ie_close('h2');
+      ie_open('p');
+        itext('A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Centralized Workflow');
+      ie_close('h2');
+      ie_open('p');
+        itext('If your developers are already comfortable with Subversion, the Centralized Workflow lets you experience the benefits of Git without having to adapt to an entirely new process. It also serves as a friendly transition into more Git-oriented workflows.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Feature Branch Workflow');
+      ie_close('h2');
+      ie_open('p');
+        itext('The Feature Branch Workflow builds on the Centralized Workflow by encapsulating new features into dedicated branches. This enables the use of pull requests as a means to discuss changes before they\u2019re integrated into the official project.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('Forking');
+      ie_close('h2');
+      ie_open('p');
+        itext('Instead of using a single server-side repository to act as the \u201Ccentral\u201D codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '5');
+      ie_open('h2');
+        itext('HEAD');
+      ie_close('h2');
+      ie_open('p');
+        itext('Git\u2019s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a \u201Cdetached HEAD\u201D state.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '6');
+      ie_open('h2');
+        itext('Hook');
+      ie_close('h2');
+      ie_open('p');
+        itext('A script that runs automatically every time a particular event occurs in a Git repository. Hooks let you customize Git\u2019s internal behavior and trigger customizable actions at key points in the development life cycle.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '7');
+      ie_open('h2');
+        itext('Master');
+      ie_close('h2');
+      ie_open('p');
+        itext('The default development branch. Whenever you create a git repository, a branch named "master" is created, and becomes the active branch.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '8');
+      ie_open('h2');
+        itext('Pull Request');
+      ie_close('h2');
+      ie_open('p');
+        itext('Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '9');
+      ie_open('h2');
+        itext('Repository');
+      ie_close('h2');
+      ie_open('p');
+        itext('A collection of commits, and branches and tags to identify commits.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '10');
+      ie_open('h2');
+        itext('Tag');
+      ie_close('h2');
+      ie_open('p');
+        itext('A reference typically used to mark a particular point in the commit chain. In contrast to a head, a tag is not updated by the commit command.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '11');
+      ie_open('h2');
+        itext('Version Control');
+      ie_close('h2');
+      ie_open('p');
+        itext('A system that records changes to a file or set of files over time so that you can recall specific versions later.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '12');
+      ie_open('h2');
+        itext('Working Tree');
+      ie_close('h2');
+      ie_open('p');
+        itext('The tree of actual checked out files, normally containing the contents of the HEAD commit\'s tree and any local changes you\'ve made but haven\'t yet committed.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28337,11 +28359,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param532}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param398}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'PFeSh.render';
+  $render.soyTemplateName = 'YcvHj.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28351,14 +28373,27 @@ return exports;
 
 });
 
-class PFeSh extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PFeSh, templates);
+class YcvHj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YcvHj, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
 /* 235 */,
 /* 236 */,
 /* 237 */,
@@ -28372,15 +28407,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PFeSh, templates);
 /* 245 */,
 /* 246 */,
 /* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28414,9 +28441,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepFourSoy = __webpack_require__(234);
+var _glossarySoy = __webpack_require__(221);
 
-var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
+var _glossarySoy2 = _interopRequireDefault(_glossarySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28426,23 +28453,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PFeSh = function (_Component) {
-  _inherits(PFeSh, _Component);
+var YcvHj = function (_Component) {
+  _inherits(YcvHj, _Component);
 
-  function PFeSh() {
-    _classCallCheck(this, PFeSh);
+  function YcvHj() {
+    _classCallCheck(this, YcvHj);
 
-    return _possibleConstructorReturn(this, (PFeSh.__proto__ || Object.getPrototypeOf(PFeSh)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YcvHj.__proto__ || Object.getPrototypeOf(YcvHj)).apply(this, arguments));
   }
 
-  return PFeSh;
+  return YcvHj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PFeSh, _stepFourSoy2.default);
+_metalSoy2.default.register(YcvHj, _glossarySoy2.default);
 
-exports.default = PFeSh;
+exports.default = YcvHj;
 
 /***/ })
-],[256]);
+],[248]);

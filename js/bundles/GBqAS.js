@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([22,26,27,28],[
+webpackJsonppageComponent([15,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
+exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
+  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn11 = opt_data.time;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.time;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     }
   ie_close('p');
 }
@@ -28181,12 +28181,17 @@ exports.default = parseFromAnchor;
 /* 219 */,
 /* 220 */,
 /* 221 */,
-/* 222 */
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GrIPy", function() { return GrIPy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GBqAS", function() { return GBqAS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28202,11 +28207,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GrIPy.
+ * @fileoverview Templates in namespace GBqAS.
  * @public
  */
 
-goog.module('GrIPy.incrementaldom');
+goog.module('GBqAS.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28238,22 +28243,27 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param409 = function() {
+  var param442 = function() {
     ie_open('h6');
-      var dyn21 = opt_data.page.description;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+      var dyn24 = opt_data.page.description;
+      if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('What is Git?');
+        itext('What is web design?');
       ie_close('h2');
       ie_open('ul');
         ie_open('li');
-          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
+          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
         ie_close('li');
+      ie_close('ul');
+      ie_open('h2');
+        itext('What is a website?');
+      ie_close('h2');
+      ie_open('ul');
         ie_open('li');
-          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
+          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28268,38 +28278,20 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/learn/git');
-            itext('Code School\'s Git');
+              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
+            itext('Code School\'s Fundamentals of Design');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-git');
-            itext('Codecademy\'s Learn Git');
+              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
+            itext('Code School\'s The Elements of Web Design');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'http://try.github.com');
-            itext('Github.com\'s Try Git');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://pcottle.github.com/learnGitBranching');
-            itext('Learn Git Branching');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://onlywei.github.io/explain-git-with-d3');
-            itext('Visualizing Git Concepts with D3');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
-            itext('Udacity\'s How to Use Git and GitHub');
+              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
+            itext('Code School\'s Journey Into Mobile');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28307,31 +28299,22 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('article', null, null,
         'id', '3');
       ie_open('h2');
-        itext('Other resources');
+        itext('Advanced Tutorials');
       ie_close('h2');
+      ie_open('p');
+        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
+      ie_close('p');
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
-            itext('Atlassian\'s Git Cheat Sheet');
+              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
+            itext('Codecademy\'s Make an Interactive Website');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://git-scm.com/documentation');
-            itext('Git\'s documentation');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
-            itext('Git\'s user manual');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://github.com');
-            itext('GitHub.com');
+              'href', 'https://www.w3schools.com/howto/howto_website.asp');
+            itext('w3school\'s How To - Build a Web Site');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28345,11 +28328,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param409}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param442}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GrIPy.render';
+  $render.soyTemplateName = 'GBqAS.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28359,19 +28342,14 @@ return exports;
 
 });
 
-class GrIPy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GrIPy, templates);
+class GBqAS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GBqAS, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -28390,7 +28368,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GrIPy, templates);
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28424,7 +28409,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(222);
+var _indexSoy = __webpack_require__(227);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28436,23 +28421,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GrIPy = function (_Component) {
-  _inherits(GrIPy, _Component);
+var GBqAS = function (_Component) {
+  _inherits(GBqAS, _Component);
 
-  function GrIPy() {
-    _classCallCheck(this, GrIPy);
+  function GBqAS() {
+    _classCallCheck(this, GBqAS);
 
-    return _possibleConstructorReturn(this, (GrIPy.__proto__ || Object.getPrototypeOf(GrIPy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GBqAS.__proto__ || Object.getPrototypeOf(GBqAS)).apply(this, arguments));
   }
 
-  return GrIPy;
+  return GBqAS;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GrIPy, _indexSoy2.default);
+_metalSoy2.default.register(GBqAS, _indexSoy2.default);
 
-exports.default = GrIPy;
+exports.default = GBqAS;
 
 /***/ })
-],[246]);
+],[253]);
