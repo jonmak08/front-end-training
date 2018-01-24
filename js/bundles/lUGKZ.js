@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([21,26,27,28],[
+webpackJsonppageComponent([6,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28181,12 +28181,27 @@ exports.default = parseFromAnchor;
 /* 219 */,
 /* 220 */,
 /* 221 */,
-/* 222 */
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Yavku", function() { return Yavku; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lUGKZ", function() { return lUGKZ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28198,15 +28213,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from step-seven.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Yavku.
+ * @fileoverview Templates in namespace lUGKZ.
  * @public
  */
 
-goog.module('Yavku.incrementaldom');
+goog.module('lUGKZ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28227,7 +28242,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -28238,104 +28255,258 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param409 = function() {
-    ie_open('h6');
-      var dyn21 = opt_data.page.description;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is Git?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
-        ie_close('li');
-        ie_open('li');
-          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
+  var param615 = function() {
+    ie_open('h2');
+      var dyn31 = opt_data.page.title;
+      if (typeof dyn31 == 'function') dyn31(); else if (dyn31 != null) itext(dyn31);
+    ie_close('h2');
+    ie_open('p');
+      itext('We are going to get Liferay\'s ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code from GitHub.com on to your machine.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Forking a repository');
+    ie_close('h3');
+    ie_open('p');
+      itext('In order to begin making changes to ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code and have it reviewed, tested, and approved, you will need to make a copy of this code locally.');
+    ie_close('p');
+    ie_open('p');
+      itext('A ');
+      ie_open('em');
+        itext('fork');
+      ie_close('em');
+      itext(' is copying a repository on GitHub.com from it\'s original owner to your personal GitHub.com account.  Forking a repository allows you to freely experiment with changes without affecting the original project.');
+    ie_close('p');
+    ie_open('p');
+      itext('Most commonly, forks are used to either propose changes to someone else\'s project or to use someone else\'s project as a starting point for your own ideas.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Forking Liferay Portal');
+    ie_close('h4');
+    ie_open('p');
+      itext('Forking a repository is a simple two-step process.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('On GitHub.com, navigate to the ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal');
+          itext('liferay/liferay-portal');
+        ie_close('a');
+        itext(' repository.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the top-right corner of the page, click ');
+        ie_open('strong');
+          itext('Fork');
+        ie_close('strong');
+        itext('.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You have now have a fork of the original ');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('liferay/liferay-portal');
+      ie_close('a');
+      itext(' repository in your GitHub.com account.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Cloning Liferay Portal');
+    ie_close('h4');
+    ie_open('p');
+      itext('Because forking the repository only makes a copy of the code in GitHub.com, we now need to get this code locally to begin.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Setup Git if you have not done so already in the previous steps.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Go to ');
+          ie_open('em');
+            itext('your');
+          ie_close('em');
+          itext(' fork of the liferay-portal repository on GitHub.com.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Click the ');
+          ie_open('strong');
+            itext('Clone or download');
+          ie_close('strong');
+          itext(' button. When connecting to a GitHub.com repository from Git, you will need to authenticate using either ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(' (');
+          ie_open('em');
+            itext('recommended');
+          ie_close('em');
+          itext(') or ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(', please review the following ');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/learn/git');
-            itext('Code School\'s Git');
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended');
+            itext('instructions');
           ie_close('a');
-        ie_close('li');
-        ie_open('li');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext(', please review the following ');
           ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-git');
-            itext('Codecademy\'s Learn Git');
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls');
+            itext('instructions');
           ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://try.github.com');
-            itext('Github.com\'s Try Git');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://pcottle.github.com/learnGitBranching');
-            itext('Learn Git Branching');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://onlywei.github.io/explain-git-with-d3');
-            itext('Visualizing Git Concepts with D3');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
-            itext('Udacity\'s How to Use Git and GitHub');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
-            itext('Atlassian\'s Git Cheat Sheet');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://git-scm.com/documentation');
-            itext('Git\'s documentation');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
-            itext('Git\'s user manual');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://github.com');
-            itext('GitHub.com');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('In the dialog that appears after clicking the ');
+          ie_open('strong');
+            itext('Clone or download');
+          ie_close('strong');
+          itext(' button, copy the URL that you want to use for your repository.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal');
+          ie_close('em');
+          itext('/');
+          ie_open('em');
+            itext('Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Browse to the location where you would like to download this repository.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('We will download the repository from GitHub.com to our local machine by cloning it. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: '# Pasted URL should look something like:\n# SSH URL: git@github.com:brianchandotcom/liferay-portal.git\n# HTTPS: https://github.com/brianchandotcom/liferay-portal.git\ngit clone PASTE URL HERE', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('Upon completion, you should see something like the output below.');
+        ie_close('p');
+        $templateAlias2({code: 'Cloning into `liferay-portal`...remote: Counting objects: 10, done.\n...\nremote: Compressing objects: 100% (8/8), done.\nremove: Total 10 (delta 1), reused 10 (delta 1)\nUnpacking objects: 100% (10/10), done.', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You now have a local copy of your fork of the liferay-portal repository!');
+    ie_close('p');
+    ie_open('h4');
+      itext('Configuring your remote repository URLs');
+    ie_close('h4');
+    ie_open('p');
+      itext('Now that we have have everything locally, we need to add a remote url. A remote URL is Git\'s fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub.com, or another user\'s fork, or even on a completely different server.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Go to your newly cloned repository in ');
+          ie_open('em');
+            itext('Terminal');
+          ie_close('em');
+          itext('/');
+          ie_open('em');
+            itext('Git Bash');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Check what your currently remote repositories are by running the following command below.');
+        ie_close('p');
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you do not have any remote URL\'s listed, you will have to add a remote URL for the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' and ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repositories.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add the upstream remote, if it is not already added, to point to the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: '# Copy the upstream repository URL\ngit remote add upstream https://github.com/liferay/liferay-portal.git', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you need to add the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' remote, follow the same steps but use the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repository URL instead of the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Verify that your remote URL\'s are correctly pointing to the desired locations by running the following command below.');
+        ie_close('p');
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)\nupstream    https://github.com/liferay/liferay-portal.git (fetch)\nupstream    https://github.com/liferay/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('You can add as many remote URL\'s as you would like.  Just make sure to have each one named uniquely.');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('For more information about remotes, please read ');
+      ie_open('a', null, null,
+          'href', 'https://help.github.com/articles/about-remote-repositories/');
+        itext('About remote repositories');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28345,11 +28516,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param409}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param615}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Yavku.render';
+  $render.soyTemplateName = 'lUGKZ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28359,29 +28530,14 @@ return exports;
 
 });
 
-class Yavku extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Yavku, templates);
+class lUGKZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lUGKZ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -28391,7 +28547,22 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Yavku, templates);
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28425,9 +28596,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(222);
+var _stepSevenSoy = __webpack_require__(237);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stepSevenSoy2 = _interopRequireDefault(_stepSevenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28437,23 +28608,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Yavku = function (_Component) {
-  _inherits(Yavku, _Component);
+var lUGKZ = function (_Component) {
+  _inherits(lUGKZ, _Component);
 
-  function Yavku() {
-    _classCallCheck(this, Yavku);
+  function lUGKZ() {
+    _classCallCheck(this, lUGKZ);
 
-    return _possibleConstructorReturn(this, (Yavku.__proto__ || Object.getPrototypeOf(Yavku)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lUGKZ.__proto__ || Object.getPrototypeOf(lUGKZ)).apply(this, arguments));
   }
 
-  return Yavku;
+  return lUGKZ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Yavku, _indexSoy2.default);
+_metalSoy2.default.register(lUGKZ, _stepSevenSoy2.default);
 
-exports.default = Yavku;
+exports.default = lUGKZ;
 
 /***/ })
-],[247]);
+],[262]);

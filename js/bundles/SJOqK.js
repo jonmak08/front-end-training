@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,26,27,28],[
+webpackJsonppageComponent([11,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28193,14 +28193,12 @@ exports.default = parseFromAnchor;
 /* 231 */,
 /* 232 */,
 /* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gVSCF", function() { return gVSCF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SJOqK", function() { return SJOqK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28212,15 +28210,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-one.soy.
+// This file was automatically generated from step-four.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gVSCF.
+ * @fileoverview Templates in namespace SJOqK.
  * @public
  */
 
-goog.module('gVSCF.incrementaldom');
+goog.module('SJOqK.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28252,201 +28250,84 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param604 = function() {
+  var param532 = function() {
     ie_open('h2');
-      var dyn30 = opt_data.page.title;
-      if (typeof dyn30 == 'function') dyn30(); else if (dyn30 != null) itext(dyn30);
+      var dyn28 = opt_data.page.title;
+      if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
     ie_close('h2');
     ie_open('p');
-      itext('Download and install the following software. ');
-      ie_open('em');
-        itext('There are options listed for each category, so feel free to pick whichever you prefer.');
-      ie_close('em');
+      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
     ie_close('p');
     ie_open('h3');
-      itext('7zip');
+      itext('Source code');
     ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://sourceforge.net/projects/sevenzip');
-          itext('7zip');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+    ie_open('p');
+      itext('Source code refers to the ');
+      ie_open('em');
+        itext('uncompiled');
+      ie_close('em');
+      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('See Liferay\'s source code.');
+      ie_close('a');
+    ie_close('p');
     ie_open('h3');
-      itext('Apache Ant');
+      itext('Compiled code');
     ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://ant.apache.org');
-          itext('Apache Ant');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+    ie_open('p');
+      itext('Compiled code is derived from the ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
+    ie_close('p');
     ie_open('h3');
-      itext('Chat/IM Client');
+      itext('Liferay Bundle');
     ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://hangouts.google.com/webchat/start');
-          itext('Google Hangouts');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.skype.com/en/new');
-          itext('Skype');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://slack.com');
-          itext('Slack');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+    ie_open('p');
+      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://www.liferay.com/downloads');
+        itext('See Liferay\'s bundles.');
+      ie_close('a');
+    ie_close('p');
+    ie_open('p');
+      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
+    ie_close('p');
     ie_open('h3');
-      itext('Java JDK');
+      itext('How do you get source code?');
     ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
-          itext('Java JDK 8');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+    ie_open('p');
+      itext('Since Liferay is an open source software, all source code is available on ');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('GitHub');
+      ie_close('a');
+      itext(' for download and use.');
+    ie_close('p');
+    ie_open('p');
+      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
+    ie_close('p');
     ie_open('h3');
-      itext('Git');
+      itext('Why do I need the source code?');
     ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com');
-          itext('Git');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Text Editor');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://atom.io');
-          itext('Atom');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://brackets.io');
-          itext('Brackets');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://notepad-plus-plus.org');
-          itext('Notepad++');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.sublimetext.com');
-          itext('Sublime Text');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.vim.org');
-          itext('Vim');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://code.visualstudio.com');
-          itext('Visual Studio Code');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Version Control GUI');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://desktop.github.com');
-          itext('GitHub Desktop');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.collab.net/products/giteye');
-          itext('GitEye');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://wiki.gnome.org/Apps/Gitg');
-          itext('Gitg');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.syntevo.com/smartgit');
-          itext('SmartGit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.sourcetreeapp.com');
-          itext('SourceTree');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://tortoisegit.org');
-          itext('TortoiseGit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://github.com/FredrikNoren/ungit');
-          itext('ungit');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com/downloads/guis');
-          itext('And many more...');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Web Browsers');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.google.com/chrome');
-          itext('Chrome');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.mozilla.org/en-US/firefox/new');
-          itext('Firefox');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads');
-          itext('Internet Explorer');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
+    ie_open('p');
+      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
+    ie_close('p');
+    ie_open('p');
+      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('strong');
+        itext('Ex.');
+      ie_close('strong');
+      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28456,11 +28337,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param604}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param532}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gVSCF.render';
+  $render.soyTemplateName = 'SJOqK.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28470,14 +28351,16 @@ return exports;
 
 });
 
-class gVSCF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gVSCF, templates);
+class SJOqK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SJOqK, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 235 */,
+/* 236 */,
 /* 237 */,
 /* 238 */,
 /* 239 */,
@@ -28498,14 +28381,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gVSCF, templates);
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28539,9 +28415,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepOneSoy = __webpack_require__(236);
+var _stepFourSoy = __webpack_require__(234);
 
-var _stepOneSoy2 = _interopRequireDefault(_stepOneSoy);
+var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28551,23 +28427,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gVSCF = function (_Component) {
-  _inherits(gVSCF, _Component);
+var SJOqK = function (_Component) {
+  _inherits(SJOqK, _Component);
 
-  function gVSCF() {
-    _classCallCheck(this, gVSCF);
+  function SJOqK() {
+    _classCallCheck(this, SJOqK);
 
-    return _possibleConstructorReturn(this, (gVSCF.__proto__ || Object.getPrototypeOf(gVSCF)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SJOqK.__proto__ || Object.getPrototypeOf(SJOqK)).apply(this, arguments));
   }
 
-  return gVSCF;
+  return SJOqK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gVSCF, _stepOneSoy2.default);
+_metalSoy2.default.register(SJOqK, _stepFourSoy2.default);
 
-exports.default = gVSCF;
+exports.default = SJOqK;
 
 /***/ })
-],[264]);
+],[257]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([22,26,27,28],[
+webpackJsonppageComponent([15,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28179,12 +28179,19 @@ exports.default = parseFromAnchor;
 /* 217 */,
 /* 218 */,
 /* 219 */,
-/* 220 */
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LunxW", function() { return LunxW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xIJif", function() { return xIJif; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28196,15 +28203,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from commands.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace LunxW.
+ * @fileoverview Templates in namespace xIJif.
  * @public
  */
 
-goog.module('LunxW.incrementaldom');
+goog.module('xIJif.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28225,8 +28232,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -28238,325 +28243,81 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param282 = function() {
+  var param442 = function() {
     ie_open('h6');
-      var dyn19 = opt_data.page.description;
-      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
+      var dyn24 = opt_data.page.description;
+      if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('Stage changes');
+        itext('What is web design?');
       ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git add', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.');
-      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h2');
+        itext('What is a website?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('article', null, null,
         'id', '2');
       ie_open('h2');
-        itext('Manage branches');
+        itext('Online tutorials');
       ie_close('h2');
       ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
       ie_close('p');
-      $templateAlias2({code: 'git branch', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('This command is your general-purpose branch administration tool. It lets you create isolated development environments within a single repository.');
-      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
+            itext('Code School\'s Fundamentals of Design');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
+            itext('Code School\'s The Elements of Web Design');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
+            itext('Code School\'s Journey Into Mobile');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('article', null, null,
         'id', '3');
       ie_open('h2');
-        itext('Checkout changes');
+        itext('Advanced Tutorials');
       ie_close('h2');
       ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
+        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
       ie_close('p');
-      $templateAlias2({code: 'git checkout', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('In addition to checking out old commits and old file revisions, git checkout is also the means to navigate existing branches. Combined with the basic Git commands, it\u2019s a way to work on a particular line of development.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('Remove untracked changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git clean', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Removes untracked files from the working directory. This is the logical counterpart to git reset, which (typically) only operates on tracked files.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('Copy repository');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git clone', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Creates a copy of an existing Git repository. Cloning is the most common way for developers to obtain a working copy of a central repository.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '6');
-      ie_open('h2');
-        itext('Commit changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git commit', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Takes the staged snapshot and commits it to the project history. Combined with git add, this defines the basic workflow for all Git users.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '7');
-      ie_open('h2');
-        itext('Update message');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git commit --amend', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Passing the --amend flag to git commit lets you amend the most recent commit. This is very useful when you forget to stage a file or omit important information from the commit message.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '8');
-      ie_open('h2');
-        itext('Manage configuration');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git config', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('A convenient way to set configuration options for your Git installation. You\u2019ll typically only need to use this immediately after installing Git on a new development machine.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '9');
-      ie_open('h2');
-        itext('Download changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git fetch', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Fetching downloads a branch from another repository, along with all of its associated commits and files. But, it doesn\'t try to integrate anything into your local repository. This gives you a chance to inspect changes before merging them with your project.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '10');
-      ie_open('h2');
-        itext('Initialize a repository');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git init', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Initializes a new Git repository. If you want to place a project under revision control, this is the first command you need to learn.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '11');
-      ie_open('h2');
-        itext('View changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git log', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Lets you explore the previous revisions of a project. It provides several formatting options for displaying committed snapshots.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '12');
-      ie_open('h2');
-        itext('Integrate changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git merge', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('A powerful way to integrate changes from divergent branches. After forking the project history with git branch, git merge lets you put it back together again.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '13');
-      ie_open('h2');
-        itext('Download and integrate changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git pull', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Pulling is the automated version of git fetch. It downloads a branch from a remote repository, then immediately merges it into the current branch. This is the Git equivalent of svn update.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '14');
-      ie_open('h2');
-        itext('Send changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git push', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Pushing is the opposite of fetching (with a few caveats). It lets you move a local branch to another repository, which serves as a convenient way to publish contributions. This is like svn commit, but it sends a series of commits instead of a single changeset.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '15');
-      ie_open('h2');
-        itext('Move changes around');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Rebasing lets you move branches around, which helps you avoid unnecessary merge commits. The resulting linear history is often much easier to understand and explore.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '16');
-      ie_open('h2');
-        itext('Move changes around advanced');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase -i', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('The -i flag is used to begin an interactive rebasing session. This provides all the benefits of a normal rebase, but gives you the opportunity to add, edit, or delete commits along the way.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '17');
-      ie_open('h2');
-        itext('View Git history');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git reflog', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Git keeps track of updates to the tip of branches using a mechanism called reflog. This allows you to go back to changesets even though they are not referenced by any branch or tag.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '18');
-      ie_open('h2');
-        itext('Manage remote connections');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git remote', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('A convenient tool for administering remote connections. Instead of passing the full URL to the fetch, pull, and push commands, it lets you use a more meaningful shortcut.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '19');
-      ie_open('h2');
-        itext('Undo changes');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git reset', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Undoes changes to files in the working directory. Resetting lets you clean up or completely remove changes that have not been pushed to a public repository.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '20');
-      ie_open('h2');
-        itext('Undo commit');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git revert', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Undoes a committed snapshot. When you discover a faulty commit, reverting is a safe and easy way to completely remove it from the code base.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '21');
-      ie_open('h2');
-        itext('View current state');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Usage');
-        ie_close('strong');
-      ie_close('p');
-      $templateAlias2({code: 'git status', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Displays the state of the working directory and the staged snapshot. You\u2019ll want to run this in conjunction with git add and git commit to see exactly what\u2019s being included in the next snapshot.');
-      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
+            itext('Codecademy\'s Make an Interactive Website');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.w3schools.com/howto/howto_website.asp');
+            itext('w3school\'s How To - Build a Web Site');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28567,11 +28328,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param282}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param442}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'LunxW.render';
+  $render.soyTemplateName = 'xIJif.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28581,21 +28342,14 @@ return exports;
 
 });
 
-class LunxW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(LunxW, templates);
+class xIJif extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xIJif, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -28614,7 +28368,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(LunxW, templates);
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28648,9 +28409,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _commandsSoy = __webpack_require__(220);
+var _indexSoy = __webpack_require__(227);
 
-var _commandsSoy2 = _interopRequireDefault(_commandsSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28660,23 +28421,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LunxW = function (_Component) {
-  _inherits(LunxW, _Component);
+var xIJif = function (_Component) {
+  _inherits(xIJif, _Component);
 
-  function LunxW() {
-    _classCallCheck(this, LunxW);
+  function xIJif() {
+    _classCallCheck(this, xIJif);
 
-    return _possibleConstructorReturn(this, (LunxW.__proto__ || Object.getPrototypeOf(LunxW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xIJif.__proto__ || Object.getPrototypeOf(xIJif)).apply(this, arguments));
   }
 
-  return LunxW;
+  return xIJif;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(LunxW, _commandsSoy2.default);
+_metalSoy2.default.register(xIJif, _indexSoy2.default);
 
-exports.default = LunxW;
+exports.default = xIJif;
 
 /***/ })
-],[246]);
+],[253]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,26,27,28],[
+webpackJsonppageComponent([20,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28181,23 +28181,12 @@ exports.default = parseFromAnchor;
 /* 219 */,
 /* 220 */,
 /* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QsJlZ", function() { return QsJlZ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jAdxk", function() { return jAdxk; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28209,15 +28198,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-five.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace QsJlZ.
+ * @fileoverview Templates in namespace jAdxk.
  * @public
  */
 
-goog.module('QsJlZ.incrementaldom');
+goog.module('jAdxk.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28238,9 +28227,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28251,335 +28238,104 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param496 = function() {
-    ie_open('h2');
-      var dyn27 = opt_data.page.title;
-      if (typeof dyn27 == 'function') dyn27(); else if (dyn27 != null) itext(dyn27);
-    ie_close('h2');
-    ie_open('p');
-      itext('We are going to learn how Liferay uses Git for it\'s ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code. Since we already know how to use Git, we will focus on its usage within Liferay.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Branches vs Trunk');
-    ie_close('h3');
-    ie_open('figure');
-      ie_open('img', null, null,
-          'src', '/images/tree.png',
-          'alt', 'Git Tree');
-      ie_close('img');
-    ie_close('figure');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('p');
-          ie_open('em');
-            itext('Trunk');
-          ie_close('em');
-          itext(' is the latest source code that is currently available. There are many branches of Liferay, so when you start working, you need to be aware of which branch you are working on and what branch you fix should be put in (6.1.x, 6.2.x, 7.0.x, master, etc).');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          ie_open('em');
-            itext('Branches');
-          ie_close('em');
-          itext(' are like the limbs of trunk \u2013 each branch includes some improvement over the previous branch(es), but once branched, there will not be any new improvements or functionality added. (New changes would remain in trunk until the next branch spawns). When a new branch is created, it will be similar to code in ');
-          ie_open('em');
-            itext('trunk');
-          ie_close('em');
-          itext(', until trunk has new improvements and updates added to it.');
-        ie_close('p');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Git\'s repositories');
-    ie_close('h3');
-    ie_open('p');
-      itext('With Git, you have to understand three repositories:');
-    ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('local repository');
-      ie_close('strong');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        itext('The local repository is the source code that is stored on your computer. This is where you will be making all your commits to the source code before sending them to others to review.');
-      ie_close('li');
-      ie_open('li');
-        itext('When you have made a commit that you want to submit for review, you will push it from your local repository to your remote ');
-        ie_open('em');
-          itext('origin');
-        ie_close('em');
-        itext(' repository.');
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure to keep your local repository up to date with the remote ');
-        ie_open('em');
-          itext('upstream');
-        ie_close('em');
-        itext(' repository ');
-        ie_open('em');
-          itext('before');
-        ie_close('em');
-        itext(' making any changes.');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('p');
-      ie_open('strong');
-        itext('remote origin repository');
-      ie_close('strong');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        itext('The remote origin repository is the copy of the source code stored in your personal GitHub account. This repository should be identical to your local repository when you are sending code for review.');
-      ie_close('li');
-      ie_open('li');
-        itext('Any code you submit for review will be sent from your ');
-        ie_open('em');
-          itext('local');
-        ie_close('em');
-        itext(' repository into your remote ');
-        ie_open('em');
-          itext('origin');
-        ie_close('em');
-        itext(' repository.');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('p');
-      ie_open('strong');
-        itext('remote upstream repository');
-      ie_close('strong');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        itext('The remote upstream repository is the copy of the source code where all final changes and updates are stored.  This is typically in Liferay\'s GitHub account/cloud.');
-      ie_close('li');
-      ie_open('li');
-        itext('This only contains source code that has been reviewed, approved, and tested for everyone to begin using.');
-      ie_close('li');
-      ie_open('li');
-        itext('Only certain people with approved access are allowed to push files into the remote upstream repository. Even though you will be working with source code, you will never actually be pushing directly to this repository; your code will go through rigorous code reviews before finally making it here.');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Git\'s workflow');
-    ie_close('h3');
-    ie_open('p');
-      itext('When working with Git, it is important to use best practices to avoid merge conflicts and rebase issues in your pull requests and code causing them to be rejected and uncommitted.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Keeping master in sync');
-    ie_close('h4');
-    ie_open('figure');
-      ie_open('img', null, null,
-          'src', '/images/git_master_workflow.png',
-          'alt', 'Git Workflow');
-      ie_close('img');
-    ie_close('figure');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://github.com/brianchandotcom');
-          itext('Brian Chan');
-        ie_close('a');
-        itext(' and/or other approved committers ');
-        ie_open('strong');
-          itext('push');
-        ie_close('strong');
-        itext(' reviewed, tested, and approved content to the remote ');
-        ie_open('strong');
-          itext('upstream');
-        ie_close('strong');
-        itext(' repository.  The branch most commonly used to push to is the ');
-        ie_open('strong');
-          itext('master');
-        ie_close('strong');
-        itext(' branch.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Fetch');
-        ie_close('strong');
-        itext(' changes from the remote ');
-        ie_open('strong');
-          itext('upstream/master');
-        ie_close('strong');
-        itext(' branch into your ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch to make sure everything is up to date with the latest changes. Run the following command to complete this action.');
-        $templateAlias2({code: '# Fetch from upstream remote\ngit fetch upstream', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Merge the changes from the remote ');
-        ie_open('strong');
-          itext('upstream/master');
-        ie_close('strong');
-        itext(' branch into your ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch to make sure both branches are in sync with one another. Run the following commands to complete this action.');
-        $templateAlias2({code: '# Checkout your master branch\ngit checkout master\n\n# Merge changes from upstream into your local master branch\ngit merge upstream/master', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('We then ');
-        ie_open('strong');
-          itext('push');
-        ie_close('strong');
-        itext(' your ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch to our remote ');
-        ie_open('strong');
-          itext('origin/master');
-        ie_close('strong');
-        itext(' branch to make sure everything is now identical.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('If you notice, your ');
-      ie_open('strong');
-        itext('local/master');
-      ie_close('strong');
-      itext(' branch, remote ');
-      ie_open('strong');
-        itext('origin/master');
-      ie_close('strong');
-      itext(' branch, and remote ');
-      ie_open('strong');
-        itext('upstream/master');
-      ie_close('strong');
-      itext(' branch are all identical. You should ');
-      ie_open('em');
-        itext('never');
-      ie_close('em');
-      itext(' make changes to the ');
-      ie_open('strong');
-        itext('master');
-      ie_close('strong');
-      itext(' branch.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Submitting a pull request for review');
-    ie_close('h4');
-    ie_open('p');
-      itext('To make changes and submit code for review, you should always make sure everything is in sync first.');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('strong');
-          itext('Fetch');
-        ie_close('strong');
-        itext(' changes from the remote ');
-        ie_open('strong');
-          itext('upstream/master');
-        ie_close('strong');
-        itext(' branch into your ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch to make sure everything is up to date with the latest changes.');
-      ie_close('li');
-      ie_open('li');
-        itext('Merge the changes from the remote ');
-        ie_open('strong');
-          itext('upstream/master');
-        ie_close('strong');
-        itext(' branch into your ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch to make sure both branches are in sync with one another.');
-      ie_close('li');
-      ie_open('li');
-        itext('Create a new ');
-        ie_open('strong');
-          itext('development');
-        ie_close('strong');
-        itext(' branch based off of the ');
-        ie_open('strong');
-          itext('local/master');
-        ie_close('strong');
-        itext(' branch. Run the following commands to complete this action.');
-        $templateAlias2({code: '# Checkout the local master branch - you want your new branch to come from master\ngit checkout master\n\n# Create a new branch named newfeature (give your branch its own simple informative name)\ngit branch newfeature', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Checkout this new ');
-        ie_open('strong');
-          itext('development');
-        ie_close('strong');
-        itext(' branch as you will begin making your changes on this branch. Run the following command to complete this action.');
-        $templateAlias2({code: '# Switch to your new branch\ngit checkout newfeature', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Make your changes and commit them to this ');
-        ie_open('strong');
-          itext('development');
-        ie_close('strong');
-        itext(' branch.');
-      ie_close('li');
-      ie_open('li');
-        itext('When you are ready to have your code reviewed, make sure to rebase your development branch on top of the remote ');
-        ie_open('strong');
-          itext('upstream/master');
-        ie_close('strong');
-        itext(' branch so merging will be simple and not have any conflicts. Run the following commands to complete this action.');
-        $templateAlias2({code: '# Fetch upstream master and merge with your repo\'s master branch\ngit fetch upstream\ngit checkout master\ngit merge upstream/master\n\n# If there were any new commits, rebase your development branch\ngit checkout newfeature\ngit rebase master', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Push');
-        ie_close('strong');
-        itext(' your ');
-        ie_open('strong');
-          itext('development');
-        ie_close('strong');
-        itext(' branch to your remote ');
-        ie_open('strong');
-          itext('origin');
-        ie_close('strong');
-        itext(' repository. This will allow others to view your branch on your personal GitHub.com fork.');
-      ie_close('li');
-      ie_open('li');
-        itext('Send a pull request to your reviewer using the GitHub.com GUI. Go to your fork on GitHub.com, select your ');
-        ie_open('strong');
-          itext('development');
-        ie_close('strong');
-        itext(' branch and click the ');
-        ie_open('strong');
-          itext('pull request');
-        ie_close('strong');
-        itext(' button.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('For more information about pull requests, please read ');
-      ie_open('a', null, null,
-          'href', 'https://help.github.com/articles/about-pull-requests');
-        itext('About pull requests');
-      ie_close('a');
-      itext(' and ');
-      ie_open('a', null, null,
-          'href', 'https://help.github.com/articles/creating-a-pull-request');
-        itext('Creating a pull request');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('p');
-      itext('An interactive guide about Git\'s workflow, can be found at ');
-      ie_open('a', null, null,
-          'href', 'https://guides.github.com/introduction/flow/');
-        itext('https://guides.github.com/introduction/flow/');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
+  var param398 = function() {
+    ie_open('h6');
+      var dyn20 = opt_data.page.description;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is Git?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
+        ie_close('li');
+        ie_open('li');
+          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/learn/git');
+            itext('Code School\'s Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-git');
+            itext('Codecademy\'s Learn Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://try.github.com');
+            itext('Github.com\'s Try Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://pcottle.github.com/learnGitBranching');
+            itext('Learn Git Branching');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://onlywei.github.io/explain-git-with-d3');
+            itext('Visualizing Git Concepts with D3');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
+            itext('Udacity\'s How to Use Git and GitHub');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Other resources');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
+            itext('Atlassian\'s Git Cheat Sheet');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://git-scm.com/documentation');
+            itext('Git\'s documentation');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
+            itext('Git\'s user manual');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://github.com');
+            itext('GitHub.com');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28589,11 +28345,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param496}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param398}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'QsJlZ.render';
+  $render.soyTemplateName = 'jAdxk.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28603,14 +28359,25 @@ return exports;
 
 });
 
-class QsJlZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QsJlZ, templates);
+class jAdxk extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jAdxk, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
@@ -28625,18 +28392,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QsJlZ, templates);
 /* 245 */,
 /* 246 */,
 /* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28670,9 +28426,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepFiveSoy = __webpack_require__(233);
+var _indexSoy = __webpack_require__(222);
 
-var _stepFiveSoy2 = _interopRequireDefault(_stepFiveSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28682,23 +28438,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QsJlZ = function (_Component) {
-  _inherits(QsJlZ, _Component);
+var jAdxk = function (_Component) {
+  _inherits(jAdxk, _Component);
 
-  function QsJlZ() {
-    _classCallCheck(this, QsJlZ);
+  function jAdxk() {
+    _classCallCheck(this, jAdxk);
 
-    return _possibleConstructorReturn(this, (QsJlZ.__proto__ || Object.getPrototypeOf(QsJlZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jAdxk.__proto__ || Object.getPrototypeOf(jAdxk)).apply(this, arguments));
   }
 
-  return QsJlZ;
+  return jAdxk;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QsJlZ, _stepFiveSoy2.default);
+_metalSoy2.default.register(jAdxk, _indexSoy2.default);
 
-exports.default = QsJlZ;
+exports.default = jAdxk;
 
 /***/ })
-],[259]);
+],[248]);

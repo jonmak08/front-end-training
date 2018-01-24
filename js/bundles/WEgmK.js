@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,26,27,28],[
+webpackJsonppageComponent([10,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28190,12 +28190,19 @@ exports.default = parseFromAnchor;
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TSglk", function() { return TSglk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WEgmK", function() { return WEgmK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28207,15 +28214,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-eight.soy.
+// This file was automatically generated from step-six.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace TSglk.
+ * @fileoverview Templates in namespace WEgmK.
  * @public
  */
 
-goog.module('TSglk.incrementaldom');
+goog.module('WEgmK.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28249,274 +28256,134 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param459 = function() {
+  var param661 = function() {
     ie_open('h2');
-      var dyn25 = opt_data.page.title;
-      if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+      var dyn32 = opt_data.page.title;
+      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
     ie_close('h2');
     ie_open('p');
-      itext('We need to configure settings in Liferay to get it to build and run from the ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code.');
+      itext('We are going to setup our Git account so we can begin development.');
     ie_close('p');
     ie_open('h3');
-      itext('What is a *.properties file?');
+      itext('Create an account on GitHub.com');
     ie_close('h3');
     ie_open('p');
-      itext('The ');
-      ie_open('em');
-        itext('*.properties');
-      ie_close('em');
-      itext(' files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ');
-      ie_open('em');
-        itext('*.properties');
-      ie_close('em');
-      itext(' file.');
-    ie_close('p');
-    ie_open('p');
-      itext('Because we are going to be overriding default properties, the easiest way to accomplish this is through a ');
-      ie_open('em');
-        itext('*.USER_NAME.properties');
-      ie_close('em');
-      itext('. (e.g. ');
-      ie_open('em');
-        itext('app.server.brianchan.properties');
-      ie_close('em');
-      itext(' or ');
-      ie_open('em');
-        itext('build.brianchan.properties');
-      ie_close('em');
-      itext(').');
-    ie_close('p');
-    ie_open('p');
-      itext('Liferay reads the ');
-      ie_open('em');
-        itext('*.properties');
-      ie_close('em');
-      itext(' files in this order of precedence.');
+      itext('Please replace the place holders tokens in the following tutorials with the correct values (ie. FIRSTNAME, LASTNAME, etc).');
     ie_close('p');
     ie_open('ol');
       ie_open('li');
-        itext('*.USER_NAME.properties');
+        itext('Create an account on ');
+        ie_open('a', null, null,
+            'href', 'https://github.com');
+          itext('Github.com');
+        ie_close('a');
+        itext(' using your Liferay email address (');
+        ie_open('em');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
+        ie_close('em');
+        itext(') as your email address. Do not use the word ');
+        ie_open('strong');
+          itext('liferay');
+        ie_close('strong');
+        itext(' in your username.');
       ie_close('li');
       ie_open('li');
-        itext('*.ENV_COMPUTERNAME.properties');
+        itext('Add your Full Name to your GitHub.com public profile.');
       ie_close('li');
       ie_open('li');
-        itext('*.ENV_HOST.properties');
+        itext('Add a picture using ');
+        ie_open('a', null, null,
+            'href', 'https://en.gravatar.com');
+          itext('gravatar');
+        ie_close('a');
+        itext('. Be sure to use your ');
+        ie_open('em');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
+        ie_close('em');
+        itext(' email address when registering with gravatar.');
       ie_close('li');
       ie_open('li');
-        itext('*.ENV_HOSTNAME.properties');
+        itext('Follow ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/brianchandotcom');
+          itext('Brian Chan');
+        ie_close('a');
+        itext(' on GitHub.com.');
       ie_close('li');
       ie_open('li');
-        itext('*.properties');
+        ie_open('strong');
+          itext('Optional');
+        ie_close('strong');
+        itext(': If you need access to any private Liferay repositories, email ');
+        ie_open('a', null, null,
+            'href', 'it-support@liferay.com');
+          itext('it-support@liferay.com');
+        ie_close('a');
+        itext(' with your GitHub.com ');
+        ie_open('strong');
+          itext('username');
+        ie_close('strong');
+        itext(', while CC-ing your manager.');
       ie_close('li');
     ie_close('ol');
-    ie_open('p');
-      itext('Therefore, whatever custom ');
-      ie_open('em');
-        itext('*.properties');
-      ie_close('em');
-      itext(' file you set will supersede what is defined in the default file.');
-    ie_close('p');
-    ie_open('p');
-      itext('To find out what the default property values are and what you can override, open the default.properties file (e.g. ');
-      ie_open('em');
-        itext('app.server.properties');
-      ie_close('em');
-      itext(' or ');
-      ie_open('em');
-        itext('build.properties');
-      ie_close('em');
-      itext(') and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ');
-      ie_open('em');
-        itext('*.USER_NAME.properties');
-      ie_close('em');
-      itext(' file, changing its value.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Creating a custom build.*.properties and app.server.*.properties files');
-    ie_close('h4');
+    ie_open('h3');
+      itext('Configuring .gitconfig');
+    ie_close('h3');
     ie_open('ol');
       ie_open('li');
         ie_open('p');
-          itext('Create a file called ');
-          ie_open('strong');
-            itext('build.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
-          ie_close('strong');
-          itext(' and ');
-          ie_open('strong');
-            itext('app.server.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
-          ie_close('strong');
-          itext(' inside the folder you cloned your Liferay ');
-          ie_open('em');
-            itext('source code');
-          ie_close('em');
-          itext('. The ');
-          ie_open('em');
-            itext('USER_NAME');
-          ie_close('em');
-          itext(' is the user you login with, not your machine name. On Windows machines the default is, ');
-          ie_open('em');
-            itext('liferay');
-          ie_close('em');
-          itext('.');
+          itext('You should have already installed Git from step 1. If you do not already have Git installed, please install it now.');
         ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Edit your ');
-          ie_open('strong');
-            itext('build.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
-          ie_close('strong');
-          itext(' file with the following lines in a text editor:');
+          itext('Add your user name to your global ');
+          ie_open('em');
+            itext('.gitconfig');
+          ie_close('em');
+          itext('. Run the following command to complete this action.');
         ie_close('p');
-        $templateAlias2({code: 'javac.memoryMaximumSize=1024m', mode: 'shell'}, null, opt_ijData);
+        $templateAlias2({code: 'git config --global user.name "FIRSTNAME LASTNAME"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Example');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "Brian Chan"', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Edit your ');
+          itext('Add your Liferay email address (');
+          ie_open('em');
+            itext('FIRSTNAME.LASTNAME@liferay.com');
+          ie_close('em');
+          itext(') to your ');
+          ie_open('em');
+            itext('.gitconfig');
+          ie_close('em');
+          itext('. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.email "FIRSTNAME.LASTNAME@liferay.com"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
           ie_open('strong');
-            itext('app.server.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
+            itext('Example');
           ie_close('strong');
-          itext(' file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.');
         ie_close('p');
-        ie_open('p');
-          itext('The ');
-          ie_open('em');
-            itext('path');
-          ie_close('em');
-          itext(' of your bundle should be outside of your cloned Liferay ');
-          ie_open('em');
-            itext('source code');
-          ie_close('em');
-          itext(' folder.');
-        ie_close('p');
-        ie_open('p');
-          itext('Your ');
-          ie_open('strong');
-            itext('app.server.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
-          ie_close('strong');
-          itext(' file might look something like below when it is complete, if we are using apache tomcat as our application server.');
-        ie_close('p');
-        $templateAlias2({code: 'app.server.type=tomcat\napp.server.parent.dir=${project.dir}/../my-custom-folder/bundles\napp.server.tomcat.dir=${app.server.parent.dir}/tomcat-8.0.32', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Creating a portal-ext.properties file');
-    ie_close('h4');
-    ie_open('p');
-      itext('Values defined in the ');
-      ie_open('em');
-        itext('portal.properties');
-      ie_close('em');
-      itext(' file are configurations used within Liferay. To override these settings, you will need to create a ');
-      ie_open('em');
-        itext('portal-ext.properties');
-      ie_close('em');
-      itext(' file.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('em');
-        itext('You will make changes within this file quite often to customize your Liferay instance.');
-      ie_close('em');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Duplicate the ');
-          ie_open('em');
-            itext('portal-developer.properties');
-          ie_close('em');
-          itext(' file, found within your cloned Liferay ');
-          ie_open('em');
-            itext('source code');
-          ie_close('em');
-          itext('.  (e.g. ');
-          ie_open('em');
-            itext('PATH/liferay-portal/portal-impl/src');
-          ie_close('em');
-          itext(').');
-        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "brian.chan@liferay.com"', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Rename this copied file to ');
+          itext('On a windows machine, you ');
           ie_open('em');
-            itext('portal-ext.properties');
+            itext('might');
           ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Open the ');
-          ie_open('em');
-            itext('portal-ext.properties');
-          ie_close('em');
-          itext(' file in a text editor. It should look something like the code below.');
-        ie_close('p');
-        $templateAlias2({code: 'theme.css.fast.load=false\ntheme.css.fast.load.check.request.parameter=true\ntheme.images.fast.load=false\ntheme.images.fast.load.check.request.parameter=true\n\njavascript.fast.load=true\njavascript.log.enabled=false\n\nlayout.template.cache.enabled=false\n\ncombo.check.timestamp=true\n\nminifier.enabled=false\n\nopenoffice.cache.enabled=false\n\nvelocity.engine.resource.modification.check.interval=0', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Set the ');
-          ie_open('em');
-            itext('javascript.fast.load');
-          ie_close('em');
-          itext(' property to ');
+          itext(' run into an error because Git has a limit of 4096 characters for a file name; windows has a limit of 260 characters. You will need to set longpaths to true only on a ');
           ie_open('strong');
-            itext('false');
+            itext('windows');
           ie_close('strong');
-          itext('. *Set this value to ');
-          ie_open('strong');
-            itext('true');
-          ie_close('strong');
-          itext(', if we are trying to replicate a production environment with minified JavaScript files.');
+          itext(' machine. Run the following command to complete this action.');
         ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('When all custom configurations are complete, move the ');
-          ie_open('em');
-            itext('portal-ext.properties');
-          ie_close('em');
-          itext(' file to one folder level above the application server directory defined in the ');
-          ie_open('strong');
-            itext('app.server.');
-            ie_open('em');
-              itext('USER_NAME');
-            ie_close('em');
-            itext('.properties');
-          ie_close('strong');
-          itext(' file. (i.e. ');
-          ie_open('em');
-            itext('PATH/bundles');
-          ie_close('em');
-          itext(').');
-        ie_close('p');
+        $templateAlias2({code: 'git config --global core.longpaths true', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
     ie_close('ol');
     ie_open('input', null, null,
@@ -28528,11 +28395,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param459}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param661}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'TSglk.render';
+  $render.soyTemplateName = 'WEgmK.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28542,21 +28409,14 @@ return exports;
 
 });
 
-class TSglk extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TSglk, templates);
+class WEgmK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WEgmK, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -28576,9 +28436,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TSglk, templates);
 /* 255 */,
 /* 256 */,
 /* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28612,9 +28470,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepEightSoy = __webpack_require__(231);
+var _stepSixSoy = __webpack_require__(238);
 
-var _stepEightSoy2 = _interopRequireDefault(_stepEightSoy);
+var _stepSixSoy2 = _interopRequireDefault(_stepSixSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28624,23 +28482,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TSglk = function (_Component) {
-  _inherits(TSglk, _Component);
+var WEgmK = function (_Component) {
+  _inherits(WEgmK, _Component);
 
-  function TSglk() {
-    _classCallCheck(this, TSglk);
+  function WEgmK() {
+    _classCallCheck(this, WEgmK);
 
-    return _possibleConstructorReturn(this, (TSglk.__proto__ || Object.getPrototypeOf(TSglk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WEgmK.__proto__ || Object.getPrototypeOf(WEgmK)).apply(this, arguments));
   }
 
-  return TSglk;
+  return WEgmK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(TSglk, _stepEightSoy2.default);
+_metalSoy2.default.register(WEgmK, _stepSixSoy2.default);
 
-exports.default = TSglk;
+exports.default = WEgmK;
 
 /***/ })
-],[260]);
+],[258]);

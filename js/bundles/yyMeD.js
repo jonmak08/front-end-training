@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28191,12 +28191,19 @@ exports.default = parseFromAnchor;
 /* 229 */,
 /* 230 */,
 /* 231 */,
-/* 232 */
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "zVASD", function() { return zVASD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yyMeD", function() { return yyMeD; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28208,15 +28215,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-eleven.soy.
+// This file was automatically generated from step-ten.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace zVASD.
+ * @fileoverview Templates in namespace yyMeD.
  * @public
  */
 
-goog.module('zVASD.incrementaldom');
+goog.module('yyMeD.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28237,6 +28244,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28248,162 +28257,56 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param485 = function() {
+  var param697 = function() {
     ie_open('h2');
-      var dyn26 = opt_data.page.title;
-      if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
+      var dyn33 = opt_data.page.title;
+      if (typeof dyn33 == 'function') dyn33(); else if (dyn33 != null) itext(dyn33);
     ie_close('h2');
     ie_open('p');
-      itext('Congratulations! You have successfully setup Liferay on your machine and are able to start using it.');
+      itext('Now that we have Liferay running, we have to understand how to read the messages output by the console.');
     ie_close('p');
-    ie_open('h3');
-      itext('Take the quiz');
-    ie_close('h3');
-    ie_open('p');
-      itext('Be sure you are able to answer the following questions about Liferay successfully before proceeding.');
-    ie_close('p');
-    ie_open('ol');
+    ie_open('ul');
       ie_open('li');
-        itext('What is the ');
+        itext('Make sure Liferay is loading your ');
         ie_open('em');
-          itext('Command Line');
+          itext('portal-ext.properties');
         ie_close('em');
-        itext('/');
+        itext(' file correctly by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Loading file:/liferay-portal/portal-ext.properties', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Make sure Liferay is loading the correct database as defined in your ');
         ie_open('em');
-          itext('Terminal');
+          itext('portal-ext.properties');
         ie_close('em');
-        itext('?');
+        itext(' file by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO  [localhost-startStop-1][DialectDetector:77] Determine dialect for HSQL Database Engine 2.3\n[localhost-startStop-1][DialectDetector:97] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('What is the difference between ');
+        itext('Make sure the version of Liferay that you are using is correct by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Starting Liferay Community Edition Portal 7.0.4 GA5 (Wilberforce / Build 7004 / October 23, 2017)', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Upon startup, Liferay will automatically create a ');
         ie_open('em');
-          itext('source code');
+          itext('deploy');
         ie_close('em');
-        itext(' and ');
-        ie_open('em');
-          itext('compiled code');
-        ie_close('em');
-        itext('?');
+        itext(' folder in your bundle.  When there are files placed in this folder, Liferay will automatically scan and consume any deployable packages. The location of this folder can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: '[localhost-startStop-1][AutoDeployDir:194] Auto deploy scanner started for /liferay-portal/deploy', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('What is the difference between ');
-        ie_open('em');
-          itext('trunk');
-        ie_close('em');
-        itext(' and the ');
-        ie_open('em');
-          itext('branches');
-        ie_close('em');
-        itext(' in Git?');
+        itext('Make sure Liferay has finished loading and is ready for use by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('Where do I find Liferay\'s ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext('?');
+        itext('Errors in Liferay are usually prefixed with an ');
+        ie_open('strong');
+          itext('ERROR');
+        ie_close('strong');
+        itext(' warning message.  They can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'ERROR [Framework Event Dispatcher: Equinox Container: a029ce5e-e1fc-0017-1e71-df5549d2deba][com_liferay_util_taglib:97] FrameworkEvent ERROR\n    org.osgi.framework.BundleException: Could not resolve module: com.liferay.util.taglib [9]_  Unresolved requirement: Import-Package: javax.el_ [Sanitized]\n    at org.eclipse.osgi.container.Module.start(Module.java:429)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)\n    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)\n    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
-      ie_open('li');
-        itext('How do I update Liferay\'s ');
-        ie_open('em');
-          itext('source code');
-        ie_close('em');
-        itext('?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my ');
-        ie_open('em');
-          itext('local');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my remote ');
-        ie_open('em');
-          itext('origin');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my remote ');
-        ie_open('em');
-          itext('upstream');
-        ie_close('em');
-        itext(' repository?');
-      ie_close('li');
-      ie_open('li');
-        itext('What are git remotes?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I update my git remote URLs?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where can I find my ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext(' file?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I update my ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext(' file?');
-      ie_close('li');
-      ie_open('li');
-        itext('What do I need to run Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is an application server?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is a database?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is my current instance of Liferay using for it\'s application server?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where is my application server located?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is my current instance of Liferay using for it\'s database?');
-      ie_close('li');
-      ie_open('li');
-        itext('What does the portal-ext.properties file do?');
-      ie_close('li');
-      ie_open('li');
-        itext('What customizations do I currently have applied to my current Liferay instance?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where do you run the command ');
-        ie_open('em');
-          itext('ant all');
-        ie_close('em');
-        itext('?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do you start my Apache Tomcat?');
-      ie_close('li');
-      ie_open('li');
-        itext('How can you tell if your Liferay is running succesfully?');
-      ie_close('li');
-      ie_open('li');
-        itext('Where do you see if there are errors being thrown by Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('How do I shut down my current instance of Liferay?');
-      ie_close('li');
-      ie_open('li');
-        itext('Can I setup Liferay succesfully again?');
-      ie_close('li');
-      ie_open('li');
-        itext('What is the normal Git workflow I should use when submitting changes?');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('You are now ready to start developing on Liferay!');
-    ie_close('p');
+    ie_close('ul');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28413,11 +28316,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param485}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param697}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'zVASD.render';
+  $render.soyTemplateName = 'yyMeD.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28427,21 +28330,14 @@ return exports;
 
 });
 
-class zVASD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zVASD, templates);
+class yyMeD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(yyMeD, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -28502,9 +28398,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepElevenSoy = __webpack_require__(232);
+var _stepTenSoy = __webpack_require__(239);
 
-var _stepElevenSoy2 = _interopRequireDefault(_stepElevenSoy);
+var _stepTenSoy2 = _interopRequireDefault(_stepTenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28514,23 +28410,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zVASD = function (_Component) {
-  _inherits(zVASD, _Component);
+var yyMeD = function (_Component) {
+  _inherits(yyMeD, _Component);
 
-  function zVASD() {
-    _classCallCheck(this, zVASD);
+  function yyMeD() {
+    _classCallCheck(this, yyMeD);
 
-    return _possibleConstructorReturn(this, (zVASD.__proto__ || Object.getPrototypeOf(zVASD)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (yyMeD.__proto__ || Object.getPrototypeOf(yyMeD)).apply(this, arguments));
   }
 
-  return zVASD;
+  return yyMeD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zVASD, _stepElevenSoy2.default);
+_metalSoy2.default.register(yyMeD, _stepTenSoy2.default);
 
-exports.default = zVASD;
+exports.default = yyMeD;
 
 /***/ })
 ],[266]);

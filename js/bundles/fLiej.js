@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([24,26,27,28],[
+webpackJsonppageComponent([23,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28177,12 +28177,13 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */
+/* 218 */,
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ahobm", function() { return ahobm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fLiej", function() { return fLiej; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28198,11 +28199,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace ahobm.
+ * @fileoverview Templates in namespace fLiej.
  * @public
  */
 
-goog.module('ahobm.incrementaldom');
+goog.module('fLiej.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28234,33 +28235,19 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param260 = function() {
+  var param409 = function() {
     ie_open('h6');
-      var dyn17 = opt_data.page.description;
-      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+      var dyn21 = opt_data.page.description;
+      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('What is CSS?');
+        itext('What are the browser developer tools?');
       ie_close('h2');
       ie_open('ul');
         ie_open('li');
-          itext('CSS stands for ');
-          ie_open('strong');
-            itext('Cascading Style Sheet');
-          ie_close('strong');
-          itext('.');
-        ie_close('li');
-        ie_open('li');
-          itext('CSS defines the ');
-          ie_open('em');
-            itext('look and feel');
-          ie_close('em');
-          itext(' of HTML elements on a web page.');
-        ie_close('li');
-        ie_open('li');
-          itext('CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.');
+          itext('Developer tools are a powerful suite of tools that range from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load, that are included in every modern browser.');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28275,101 +28262,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'http://www.codecademy.com/tracks/web');
-            itext('Codecademy\'s HTML & CSS');
+              'href', 'https://www.codeschool.com/courses/discover-devtools');
+            itext('Code School\'s Discover DevTools');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/adventures-in-web-animations');
-            itext('Code School\'s Adventures in Web Animations');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/blasting-off-with-bootstrap');
-            itext('Code School\'s Blasting Off with Bootstrap');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/css-cross-country');
-            itext('Code School\'s CSS Cross-Country');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Learn/CSS');
-            itext('MDN\'s Learn to style HTML using CSS');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/css/default.asp');
-            itext('w3school\'s CSS Tutorial');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/articles/glossary-css');
-            itext('Codecademy\'s CSS glossary');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/CSS');
-            itext('MDN\'s CSS reference');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/cssref/default.asp');
-            itext('w3school\'s CSS reference');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('CSS Quiz');
-      ie_close('h2');
-      ie_open('p');
-        itext('After you have finished the tutorials, please take the ');
-        ie_open('a', null, null,
-            'href', 'https://www.w3schools.com/css/css_quiz.asp');
-          itext('HTML Quiz');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('Advanced Tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of CSS, please review these advanced tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/assembling-sass');
-            itext('Code School\'s Assembling Sass');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://sass-lang.com/guide');
-            itext('Sass Basics');
+              'href', 'https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools');
+            itext('MDN\'s What are browser developer tools?');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28383,11 +28283,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param260}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param409}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'ahobm.render';
+  $render.soyTemplateName = 'fLiej.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28397,15 +28297,14 @@ return exports;
 
 });
 
-class ahobm extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ahobm, templates);
+class fLiej extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fLiej, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 219 */,
 /* 220 */,
 /* 221 */,
 /* 222 */,
@@ -28430,7 +28329,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ahobm, templates);
 /* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */
+/* 244 */,
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28464,7 +28364,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(218);
+var _indexSoy = __webpack_require__(219);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28476,23 +28376,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ahobm = function (_Component) {
-  _inherits(ahobm, _Component);
+var fLiej = function (_Component) {
+  _inherits(fLiej, _Component);
 
-  function ahobm() {
-    _classCallCheck(this, ahobm);
+  function fLiej() {
+    _classCallCheck(this, fLiej);
 
-    return _possibleConstructorReturn(this, (ahobm.__proto__ || Object.getPrototypeOf(ahobm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (fLiej.__proto__ || Object.getPrototypeOf(fLiej)).apply(this, arguments));
   }
 
-  return ahobm;
+  return fLiej;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ahobm, _indexSoy2.default);
+_metalSoy2.default.register(fLiej, _indexSoy2.default);
 
-exports.default = ahobm;
+exports.default = fLiej;
 
 /***/ })
-],[244]);
+],[245]);

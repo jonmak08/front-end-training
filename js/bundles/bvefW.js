@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,26,27,28],[
+webpackJsonppageComponent([8,26,27,28],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19707,7 +19707,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s143_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19716,16 +19716,16 @@ function __deltemplate_s123_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s123_d34389eb = __deltemplate_s123_d34389eb;
+exports.__deltemplate_s143_d34389eb = __deltemplate_s143_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s123_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s123_d34389eb';
+  __deltemplate_s143_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s143_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s123_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s143_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"any","site":"any"};
@@ -19914,8 +19914,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn9 = opt_data.time;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.time;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     }
   ie_close('p');
 }
@@ -28186,12 +28186,17 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GBqAS", function() { return GBqAS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bvefW", function() { return bvefW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28203,15 +28208,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from step-eleven.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GBqAS.
+ * @fileoverview Templates in namespace bvefW.
  * @public
  */
 
-goog.module('GBqAS.incrementaldom');
+goog.module('bvefW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28232,7 +28237,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -28243,82 +28248,162 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param442 = function() {
-    ie_open('h6');
-      var dyn24 = opt_data.page.description;
-      if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is web design?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('h2');
-        itext('What is a website?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
-            itext('Code School\'s Fundamentals of Design');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
-            itext('Code School\'s The Elements of Web Design');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
-            itext('Code School\'s Journey Into Mobile');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Advanced Tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
-            itext('Codecademy\'s Make an Interactive Website');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/howto/howto_website.asp');
-            itext('w3school\'s How To - Build a Web Site');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
+  var param485 = function() {
+    ie_open('h2');
+      var dyn26 = opt_data.page.title;
+      if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
+    ie_close('h2');
+    ie_open('p');
+      itext('Congratulations! You have successfully setup Liferay on your machine and are able to start using it.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Take the quiz');
+    ie_close('h3');
+    ie_open('p');
+      itext('Be sure you are able to answer the following questions about Liferay successfully before proceeding.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('What is the ');
+        ie_open('em');
+          itext('Command Line');
+        ie_close('em');
+        itext('/');
+        ie_open('em');
+          itext('Terminal');
+        ie_close('em');
+        itext('?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is the difference between ');
+        ie_open('em');
+          itext('source code');
+        ie_close('em');
+        itext(' and ');
+        ie_open('em');
+          itext('compiled code');
+        ie_close('em');
+        itext('?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is the difference between ');
+        ie_open('em');
+          itext('trunk');
+        ie_close('em');
+        itext(' and the ');
+        ie_open('em');
+          itext('branches');
+        ie_close('em');
+        itext(' in Git?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where do I find Liferay\'s ');
+        ie_open('em');
+          itext('source code');
+        ie_close('em');
+        itext('?');
+      ie_close('li');
+      ie_open('li');
+        itext('How do I update Liferay\'s ');
+        ie_open('em');
+          itext('source code');
+        ie_close('em');
+        itext('?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where is my ');
+        ie_open('em');
+          itext('local');
+        ie_close('em');
+        itext(' repository?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where is my remote ');
+        ie_open('em');
+          itext('origin');
+        ie_close('em');
+        itext(' repository?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where is my remote ');
+        ie_open('em');
+          itext('upstream');
+        ie_close('em');
+        itext(' repository?');
+      ie_close('li');
+      ie_open('li');
+        itext('What are git remotes?');
+      ie_close('li');
+      ie_open('li');
+        itext('How do I update my git remote URLs?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where can I find my ');
+        ie_open('em');
+          itext('.gitconfig');
+        ie_close('em');
+        itext(' file?');
+      ie_close('li');
+      ie_open('li');
+        itext('How do I update my ');
+        ie_open('em');
+          itext('.gitconfig');
+        ie_close('em');
+        itext(' file?');
+      ie_close('li');
+      ie_open('li');
+        itext('What do I need to run Liferay?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is an application server?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is a database?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is my current instance of Liferay using for it\'s application server?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where is my application server located?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is my current instance of Liferay using for it\'s database?');
+      ie_close('li');
+      ie_open('li');
+        itext('What does the portal-ext.properties file do?');
+      ie_close('li');
+      ie_open('li');
+        itext('What customizations do I currently have applied to my current Liferay instance?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where do you run the command ');
+        ie_open('em');
+          itext('ant all');
+        ie_close('em');
+        itext('?');
+      ie_close('li');
+      ie_open('li');
+        itext('How do you start my Apache Tomcat?');
+      ie_close('li');
+      ie_open('li');
+        itext('How can you tell if your Liferay is running succesfully?');
+      ie_close('li');
+      ie_open('li');
+        itext('Where do you see if there are errors being thrown by Liferay?');
+      ie_close('li');
+      ie_open('li');
+        itext('How do I shut down my current instance of Liferay?');
+      ie_close('li');
+      ie_open('li');
+        itext('Can I setup Liferay succesfully again?');
+      ie_close('li');
+      ie_open('li');
+        itext('What is the normal Git workflow I should use when submitting changes?');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('You are now ready to start developing on Liferay!');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28328,11 +28413,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param442}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param485}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GBqAS.render';
+  $render.soyTemplateName = 'bvefW.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28342,19 +28427,14 @@ return exports;
 
 });
 
-class GBqAS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GBqAS, templates);
+class bvefW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bvefW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -28375,7 +28455,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GBqAS, templates);
 /* 250 */,
 /* 251 */,
 /* 252 */,
-/* 253 */
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28409,9 +28496,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(227);
+var _stepElevenSoy = __webpack_require__(232);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stepElevenSoy2 = _interopRequireDefault(_stepElevenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28421,23 +28508,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GBqAS = function (_Component) {
-  _inherits(GBqAS, _Component);
+var bvefW = function (_Component) {
+  _inherits(bvefW, _Component);
 
-  function GBqAS() {
-    _classCallCheck(this, GBqAS);
+  function bvefW() {
+    _classCallCheck(this, bvefW);
 
-    return _possibleConstructorReturn(this, (GBqAS.__proto__ || Object.getPrototypeOf(GBqAS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bvefW.__proto__ || Object.getPrototypeOf(bvefW)).apply(this, arguments));
   }
 
-  return GBqAS;
+  return bvefW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GBqAS, _indexSoy2.default);
+_metalSoy2.default.register(bvefW, _stepElevenSoy2.default);
 
-exports.default = GBqAS;
+exports.default = bvefW;
 
 /***/ })
-],[253]);
+],[260]);
