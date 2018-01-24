@@ -47,7 +47,7 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 
 ## CSS Quiz
 
-After you have finished the tutorials, please take the [HTML Quiz](https://www.w3schools.com/css/css_quiz.asp).
+After you have finished the tutorials, please take the [CSS Quiz](https://www.w3schools.com/css/css_quiz.asp).
 
 </article>
 
