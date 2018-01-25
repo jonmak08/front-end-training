@@ -13,16 +13,16 @@ Congratulations! You have successfully setup Liferay on your machine and are abl
 ### Take the quiz
 Be sure you are able to answer the following questions about Liferay successfully before proceeding.
 
-1. What is the *Command Line*/*Terminal*?
-2. What is the difference between *source code* and *compiled code*?
+1. What is the *Terminal/Git Bash/Command Prompt*?
+2. What is the difference between *source* code and *compiled* code?
 3. What is the difference between *trunk* and the *branches* in Git?
-4. Where do I find Liferay's *source code*?
-5. How do I update Liferay's *source code*?
+4. Where do I find Liferay's *source* code?
+5. How do I update Liferay's *source* code?
 5. Where is my *local* repository?
 6. Where is my remote *origin* repository?
 7. Where is my remote *upstream* repository?
-8. What are git remotes?
-9. How do I update my git remote URLs?
+8. What are Git remotes?
+9. How do I update my Git remote URLs?
 10. Where can I find my *.gitconfig* file?
 11. How do I update my *.gitconfig* file?
 12. What do I need to run Liferay?

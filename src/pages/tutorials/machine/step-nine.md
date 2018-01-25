@@ -15,16 +15,16 @@ Now that we have Liferay setup and configured, we can start compiling the *sourc
 
 If we want to use Liferay's default setup, we need to get Apache Tomcat on our machine.
 
-1. Open a *Terminal*/*Git Bash* window.
-2. Navigate to the cloned Liferay *source code* folder.
+1. Open a *Terminal/Git Bash* window.
+2. Navigate to the cloned Liferay *source* code folder.
 3. Run the command below to download Apache Tomcat.
     ```shell
     ant -f build-dist.xml unzip-tomcat
     ```
-    * This command tells ant to look in the *build-dist.xml* file and execute the *unzip-tomcat* command.
-    * Ant will delete preexisting folder names matching the application server directory defined in the **app.server._USER\_NAME_.properties** file.
-    * Ant will download the version of Apache Tomcat defined in the **app.server._USER\_NAME_.properties** file.
-    * Ant will install Apache Tomcat to the folder specified in the **app.server._USER\_NAME_.properties** file
+    * This command tells ant to look in the ```build-dist.xml``` file and execute the **unzip-tomcat** command.
+    * Ant will delete preexisting folder names matching the application server directory defined in the ```app.server._USER\_NAME_.properties``` file.
+    * Ant will download the version of Apache Tomcat defined in the ```app.server._USER\_NAME_.properties``` file.
+    * Ant will install Apache Tomcat to the folder specified in the ```app.server._USER\_NAME_.properties``` file
 4. If this Ant task is successful, you will see a similar output as below.
     ```shell
     Buildfile: PATH/liferay-portal/build-dist.xml
@@ -35,10 +35,10 @@ If we want to use Liferay's default setup, we need to get Apache Tomcat on our m
 
 ### Compiling the source code
 
-Now that everything is setup, we can compile Liferay's *source code*.
+Now that everything is setup, we can compile Liferay's *source* code.
 
-1. Open a *Terminal*/*Git Bash* window.
-2. Navigate to the cloned Liferay' *source code* folder.
+1. Open a *Terminal/Git Bash* window.
+2. Navigate to the cloned Liferay' *source* code folder.
 3. Run the following command to setup Liferay.
     ```shell
     ant setup-sdk
@@ -50,7 +50,7 @@ Now that everything is setup, we can compile Liferay's *source code*.
     BUILD SUCCESSFUL
     Total time: NNN minutes NNN seconds
     ```
-5. Compile Liferay's *source code* by running the following command.
+5. Compile Liferay's *source* code by running the following command.
     ```shell
     ant all
     ```
@@ -61,9 +61,9 @@ Now that everything is setup, we can compile Liferay's *source code*.
     BUILD SUCCESSFUL
     Total time: NNN minutes NNN seconds
     ```
-7. Navigate to the *bin* folder in the Apache Tomcat application server folder. (e.g. *liferay-portal/tomcat-8.0.32/bin*).
+7. Navigate to the ```bin``` folder in the Apache Tomcat application server folder. (e.g. ```liferay-portal/tomcat-8.0.32/bin```).
 8. Start Apache Tomcat by running the following command.
-    **Mac/Linux**
+    **OS X/Linux**
     ```shell
     ./catalina.sh run
     ```
@@ -85,4 +85,4 @@ Now that everything is setup, we can compile Liferay's *source code*.
     ```shell
     test
     ```
-11. To stop the server, go to the *Terminal*/*Git Bash* window and hit *CTRL + c*.
+11. To stop the server, go to the *Terminal/Git Bash* window and hit ```CTRL + c```.

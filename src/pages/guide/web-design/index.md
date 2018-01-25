@@ -15,6 +15,7 @@ weight: 7
 * Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.
 
 ## What is a website?
+
 * A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.
 
 </article>

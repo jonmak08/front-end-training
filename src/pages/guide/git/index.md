@@ -12,7 +12,6 @@ weight: 1
 
 ## What is Git?
 
-
 * Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.
 * Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.
 

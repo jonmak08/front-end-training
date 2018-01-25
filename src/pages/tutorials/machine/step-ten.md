@@ -11,11 +11,11 @@ weight: 10
 
 Now that we have Liferay running, we have to understand how to read the messages output by the console.
 
-* Make sure Liferay is loading your *portal-ext.properties* file correctly by looking for a line in your console similar to the output below.
+* Make sure Liferay is loading your ```portal-ext.properties``` file correctly by looking for a line in your console similar to the output below.
     ```shell
     Loading file:/liferay-portal/portal-ext.properties
     ```
-* Make sure Liferay is loading the correct database as defined in your *portal-ext.properties* file by looking for a line in your console similar to the output below.
+* Make sure Liferay is loading the correct database as defined in your ```portal-ext.properties``` file by looking for a line in your console similar to the output below.
     ```shell
     INFO  [localhost-startStop-1][DialectDetector:77] Determine dialect for HSQL Database Engine 2.3
     [localhost-startStop-1][DialectDetector:97] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.

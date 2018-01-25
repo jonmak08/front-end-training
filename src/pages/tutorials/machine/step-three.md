@@ -72,9 +72,9 @@ This **does not** use Liferay's *source* code.
 
 1. Install Java. We should have completed this step previous.
 2. Download a Liferay Portal CE bundle at [https://www.liferay.com/downloads](https://www.liferay.com/downloads). Select *Bundled with Tomcat* and click the *Download* button.
-3. Extract the downloaded bundle into a folder. (e.g. *liferay-portal*).
-4. Open a *Terminal*/*Git Bash* window.
-5. Navigate to the *bin* folder within the location of the extracted bundle.
+3. Extract the downloaded bundle into a folder. (e.g. ```liferay-portal```).
+4. Open a *Terminal/Git Bash* window.
+5. Navigate to the ```bin``` folder within the location of the extracted bundle.
     ```shell
     cd /liferay-portal/liferay-ce-portal-7.0-ga1/tomcat-8.0.32/bin
     ```
@@ -85,7 +85,7 @@ This **does not** use Liferay's *source* code.
     startup.bat
     ```
 
-    On Linux/Mac, run the command below.
+    On OS X/Linux, run the command below.
 
     ```shell
     ./startup.sh
@@ -93,7 +93,7 @@ This **does not** use Liferay's *source* code.
 
 On windows, the server console window will open.
 
-On Linux/Mac systems, there is no output in the console window since all logs are stored in **tomcat--8.0.32/logs/catalina.out** file.
+On OS X/Linux systems, there is no output in the console window since all logs are stored in ```tomcat-8.0.32/logs/catalina.out``` file.
 
 7. Keep watching the console until you see the following.
     ```shell

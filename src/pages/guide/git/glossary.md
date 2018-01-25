@@ -59,7 +59,7 @@ A script that runs automatically every time a particular event occurs in a Git r
 
 ## Master
 
-The default development branch. Whenever you create a git repository, a branch named "master" is created, and becomes the active branch.
+The default development branch. Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch.
 
 </article>
 

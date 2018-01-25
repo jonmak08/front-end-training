@@ -36,7 +36,7 @@ Because forking the repository only makes a copy of the code in GitHub.com, we n
 2. Go to *your* fork of the liferay-portal repository on GitHub.com.
 3. Click the **Clone or download** button. When connecting to a GitHub.com repository from Git, you will need to authenticate using either **HTTPS** (*recommended*) or **SSH**. If you clone with **HTTPS**, please review the following [instructions](https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended). If you clone with **SSH**, please review the following [instructions](https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls).
 4. In the dialog that appears after clicking the **Clone or download** button, copy the URL that you want to use for your repository.
-5. Open a *Terminal*/*Git Bash* window.
+5. Open a *Terminal/Git Bash* window.
 6. Browse to the location where you would like to download this repository.
 7. We will download the repository from GitHub.com to our local machine by cloning it. Run the following command to complete this action.
     ```shell
@@ -62,7 +62,7 @@ Congratulations!  You now have a local copy of your fork of the liferay-portal r
 
 Now that we have have everything locally, we need to add a remote url. A remote URL is Git's fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub.com, or another user's fork, or even on a completely different server.
 
-1. Go to your newly cloned repository in *Terminal*/*Git Bash*.
+1. Go to your newly cloned repository in *Terminal/Git Bash*.
 2. Check what your currently remote repositories are by running the following command below.
     ```shell
     git remote -v
