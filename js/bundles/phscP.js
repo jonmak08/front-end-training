@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,37,38,39],[
+webpackJsonppageComponent([27,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28362,28 +28362,12 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uNolw", function() { return uNolw; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phscP", function() { return phscP; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28395,15 +28379,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from debugging-effectively.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace uNolw.
+ * @fileoverview Templates in namespace phscP.
  * @public
  */
 
-goog.module('uNolw.incrementaldom');
+goog.module('phscP.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28424,7 +28408,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28435,109 +28419,197 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param675 = function() {
-    ie_open('h6');
-      var dyn36 = opt_data.page.description;
-      if (typeof dyn36 == 'function') dyn36(); else if (dyn36 != null) itext(dyn36);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is Git?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
-        ie_close('li');
-        ie_open('li');
-          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
+  var param219 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+        var dyn19 = opt_data.page.description;
+        if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
+      ie_open('p');
+        itext('Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Search for surrounding text');
+      ie_close('h3');
+      ie_open('p');
+        itext('Maybe you are looking for something around an error message (e.g. "A user with that OpenID already exists.") that is appearing in a portlet. Use ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext(' to search for the error message string in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code. Your search results should return several ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. These files indicate that this text is being translated from English to other languages.');
+      ie_close('p');
+      ie_open('p');
+        itext('The underlying property name is a ');
+        ie_open('em');
+          itext('language key');
+        ie_close('em');
+        itext(' that matches this value, ');
+        ie_open('em');
+          itext('a-user-with-that-open-id-already-exists');
+        ie_close('em');
+        itext('. Now search for this string within Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code and ignore all the results in the ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. You will see, in a file called ');
+        ie_open('code');
+          itext('open_id.jsp');
+        ie_close('code');
+        itext(', that this message is displayed when a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' occurs.');
+      ie_close('p');
+      ie_open('p');
+        itext('What causes a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' to be thrown?');
+      ie_close('p');
+      ie_open('p');
+        itext('Search for ');
+        ie_open('code');
+          itext('throw new DuplicateOpenIdException');
+        ie_close('code');
+        itext(' and you will find the answer in ');
+        ie_open('code');
+          itext('UserLocalServiceImpl.java');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('A similar technique can be used to locate the file in which a particular view of a portlet is being generated. Just look for a rare string and search for it using ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Along the lines of the last point, if you see a call to a function and think the bug you\'re looking for is occurring in that function, search for the function definition.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you are looking at a function definition and know that the file with the bug in it must be using that function, search for all calls to the function.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Sublime Text has a plugin ');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/learn/git');
-            itext('Code School\'s Git');
+              'href', 'https://packagecontrol.io/packages/WhoCalled%20Function%20Finder');
+            itext('WhoCalled Function Finder');
           ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-git');
-            itext('Codecademy\'s Learn Git');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://try.github.com');
-            itext('Github.com\'s Try Git');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://pcottle.github.com/learnGitBranching');
-            itext('Learn Git Branching');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://onlywei.github.io/explain-git-with-d3');
-            itext('Visualizing Git Concepts with D3');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
-            itext('Udacity\'s How to Use Git and GitHub');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
-            itext('Atlassian\'s Git Cheat Sheet');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://git-scm.com/documentation');
-            itext('Git\'s documentation');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
-            itext('Git\'s user manual');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://github.com');
-            itext('GitHub.com');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://git-scm.com/book/en/v2');
-            itext('Pro Git');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
+          itext(' for this exact use case');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Print output');
+      ie_close('h3');
+      ie_open('p');
+        itext('If you are debugging a JavaScript file and want to know the value of any variable or expression at any point in the code, use ');
+        ie_open('code');
+          itext('console.log()');
+        ie_close('code');
+        itext('. This will print the value of the expression to the browser\'s JavaScript console within the DevTools.');
+      ie_close('p');
+      ie_open('p');
+        itext('In a ');
+        ie_open('code');
+          itext('.java');
+        ie_close('code');
+        itext(' file or a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, a ');
+        ie_open('code');
+          itext('System.out.println()');
+        ie_close('code');
+        itext(' statement will print to the ');
+        ie_open('em');
+          itext('Terminal/Git Bash');
+        ie_close('em');
+        itext(' in which you are running Tomcat.');
+      ie_close('p');
+      ie_open('p');
+        itext('Outside a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, you can print directly to the browser by enclosing the Java expression in a block surrounded by ');
+        ie_open('code');
+          itext('<%=');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('%>');
+        ie_close('code');
+        itext(' tags.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Browser\'s JavaScript console');
+      ie_close('h3');
+      ie_open('p');
+        itext('Use the browser\'s JavaScript console to debug and test code. If you declare a JavaScript variable as a ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variable within the Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code (e.g, ');
+        ie_open('code');
+          itext('window.numColors = 2;');
+        ie_close('code');
+        itext(' instead of ');
+        ie_open('code');
+          itext('var numColors = 2;');
+        ie_close('code');
+        itext('), you can access this variable by typing it in the browser\'s JavaScript console.');
+      ie_close('p');
+      ie_open('p');
+        itext('Just be sure to remove all declarations of ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variables before submitting your code for review. If this variable has a function available to it, say ');
+        ie_open('code');
+          itext('toString()');
+        ie_close('code');
+        itext(', you can get the function definition by typing ');
+        ie_open('code');
+          itext('numColors.toString');
+        ie_close('code');
+        itext(', or you can get the result of a function call by typing ');
+        ie_open('code');
+          itext('numColors.toString()');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('More generally, you can use the console to test your own snippets of JavaScript code before putting them in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code.');
+      ie_close('p');
+      ie_open('p');
+        itext('Again, don\'t be afraid to ask for help when you need to.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28548,11 +28620,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param675}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param219}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'uNolw.render';
+  $render.soyTemplateName = 'phscP.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28562,14 +28634,30 @@ return exports;
 
 });
 
-class uNolw extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(uNolw, templates);
+class phscP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(phscP, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
 /* 235 */,
 /* 236 */,
 /* 237 */,
@@ -28599,14 +28687,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(uNolw, templates);
 /* 261 */,
 /* 262 */,
 /* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28642,9 +28723,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(234);
+var _debuggingEffectivelySoy = __webpack_require__(218);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _debuggingEffectivelySoy2 = _interopRequireDefault(_debuggingEffectivelySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28654,23 +28735,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var uNolw = function (_Component) {
-  _inherits(uNolw, _Component);
+var phscP = function (_Component) {
+  _inherits(phscP, _Component);
 
-  function uNolw() {
-    _classCallCheck(this, uNolw);
+  function phscP() {
+    _classCallCheck(this, phscP);
 
-    return _possibleConstructorReturn(this, (uNolw.__proto__ || Object.getPrototypeOf(uNolw)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (phscP.__proto__ || Object.getPrototypeOf(phscP)).apply(this, arguments));
   }
 
-  return uNolw;
+  return phscP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(uNolw, _indexSoy2.default);
+_metalSoy2.default.register(phscP, _debuggingEffectivelySoy2.default);
 
-exports.default = uNolw;
+exports.default = phscP;
 
 /***/ })
-],[271]);
+],[264]);

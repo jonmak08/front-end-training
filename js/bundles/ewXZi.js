@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,37,38,39],[
+webpackJsonppageComponent([30,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28367,7 +28367,911 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */,
+/* 223 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ewXZi", function() { return ewXZi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from keyboard-shortcuts-sublime.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace ewXZi.
+ * @public
+ */
+
+goog.module('ewXZi.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param332 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn22 = opt_data.page.description;
+        if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+      ie_close('p');
+      ie_open('p');
+        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
+          itext('Tip:');
+        ie_close('strong');
+        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
+        ie_close('em');
+      ie_close('p');
+      ie_open('h2');
+        itext('General Tips');
+      ie_close('h2');
+      ie_open('p');
+        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
+      ie_close('p');
+      ie_open('h3');
+        itext('Sublime Text');
+      ie_close('h3');
+      ie_open('p');
+        itext('Common shortcuts for Sublime Text if you use that as your text editor of choice.');
+      ie_close('p');
+      ie_open('h4');
+        itext('System and Files');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open File');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + O');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + O');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Save File');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + S');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + S');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Close File File');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + W');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + W');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open Recently Closed File');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + T');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + T');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle Sidebar');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K B');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K B');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Switch Project');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Alt + P');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Ctrl + P');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Font Size');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + +/-');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + +/-');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command Pallette');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + P');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + P');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Fullscreen');
+            ie_close('td');
+            ie_open('td');
+              itext('F11');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Ctrl + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Distraction Free Fullscreen');
+            ie_close('td');
+            ie_open('td');
+              itext('Shift + F11');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Ctrl + Shift + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Change Tab');
+            ie_close('td');
+            ie_open('td');
+              itext('Alt + Number');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Number');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Navigate Through Tabs');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + PageUp/Down');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Alt + Left/Right');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Selections / Moving Around');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Jump words / characters');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Left/Right');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Left/Right');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Moving around and selecting');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Left/Right');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Left/Right');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Add next occurrence to selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + D');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + D');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Add scope to selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Space');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + Space');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Add all occurences to selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Alt + F3');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Command + G');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Select contents inside parenthesis');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + M');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + M');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Expand selection to indentation');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + J');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + J');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Expand selection to Tag');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + A');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + A');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Go to closing / opening parenthesis');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + M');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + M');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Back to single selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Scroll to selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K, Ctrl + C');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K, Command + C');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Draw selection with mouse');
+            ie_close('td');
+            ie_open('td');
+              itext('Middle Mouse Button');
+            ie_close('td');
+            ie_open('td');
+              itext('Middle Mouse Button');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Add to mouse selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl');
+            ie_close('td');
+            ie_open('td');
+              itext('Command');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Subtract from mouse selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Alt');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Find');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + F');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find in files');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + F');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find and replace');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + H');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Alt + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Incremental search');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + I');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + I');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Navigate through the search panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Tab');
+            ie_close('td');
+            ie_open('td');
+              itext('Tab');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Close search');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Goto anything');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + P');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + P');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Goto line number');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + G');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + G');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Goto symbol');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + R');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + R');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Go to word');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + P + write #');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + P + write #');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find next');
+            ie_close('td');
+            ie_open('td');
+              itext('Enter (Or F3)');
+            ie_close('td');
+            ie_open('td');
+              itext('Enter');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find previous');
+            ie_close('td');
+            ie_open('td');
+              itext('Shift + Enter (Or F3)');
+            ie_close('td');
+            ie_open('td');
+              itext('Shift + Enter');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Find all');
+            ie_close('td');
+            ie_open('td');
+              itext('Alt + F3');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Command + G');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Editing');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Copy line / selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + C');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + C');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Cut line / selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + X');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + X');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Paste');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + V');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + V');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Paste with indentation');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + V');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + V');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Delete line');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + K');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + K');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Delete from cursor to end of line');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K K');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K K');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Delete from cursor to beginning of line');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K Backspace');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K Backspace');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Duplicate line / selection');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + D');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + D');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Select line');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + L');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + L');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Move line up/down');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Up/Down');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Ctrl + Up/Down');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Insert line after');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Enter');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Enter');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Insert line before');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Enter');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + Return');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Join next line end of the current line');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + J');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + J');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Transpose (swap place of characters/words)');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + T');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + T');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Uppercase');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K, Ctrl + U');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K, Command + U');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Lowercase');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + K, Ctrl + L');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K, Command + L');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Delete word forward');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Del');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Del');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Delete word backwards');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Backspace');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Backspace');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Close tag');
+            ie_close('td');
+            ie_open('td');
+              itext('Alt + .');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Alt + .');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Multiple Cursors');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Split selection into lines');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + L');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + L');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Add new cursor');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Alt + Up/Down');
+            ie_close('td');
+            ie_open('td');
+              itext('Ctrl + Shift + Up/Down');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Single cursor');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('p');
+        itext('This has been adapted from ');
+        ie_open('a', null, null,
+            'href', 'https://www.wdtutorials.com/cheatsheet/sublime-text/sublime-text');
+          itext('https://www.wdtutorials.com/cheatsheet/sublime-text/sublime-text');
+        ie_close('a');
+        itext('. You also have the ability to ');
+        ie_open('a', null, null,
+            'href', 'http://www.sublimetext.com/docs/key-bindings');
+          itext('customize key bindings');
+        ie_close('a');
+        itext(' as well.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param332}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'ewXZi.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class ewXZi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ewXZi, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 224 */,
 /* 225 */,
 /* 226 */,
@@ -28396,430 +29300,7 @@ exports.default = parseFromAnchor;
 /* 249 */,
 /* 250 */,
 /* 251 */,
-/* 252 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LeNzi", function() { return LeNzi; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from step-three.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace LeNzi.
- * @public
- */
-
-goog.module('LeNzi.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1015 = function() {
-    ie_open('h2');
-      var dyn50 = opt_data.page.title;
-      if (typeof dyn50 == 'function') dyn50(); else if (dyn50 != null) itext(dyn50);
-    ie_close('h2');
-    ie_open('p');
-      itext('It is hard to describe, because it does so much, but what we say is that it is a totally awesome content and document managing, user collaborating, socially enabling, application developing, corporate integrating, completely customizable platform for building the Internet. You are probably doubting us right now, but hopefully once you start using it, you see that it is true.');
-    ie_close('p');
-    ie_open('p');
-      itext('Liferay provides a robust ');
-      ie_open('em');
-        itext('platform');
-      ie_close('em');
-      itext(' to build your site quickly and serve it to all clients, be they desktop, mobile, or anything in between; it provides all the standard ');
-      ie_open('em');
-        itext('applications');
-      ie_close('em');
-      itext(' you need to run on your site; and it provides an easy to use development ');
-      ie_open('em');
-        itext('framework');
-      ie_close('em');
-      itext(' for new applications or customization. In addition to this, Liferay Portal is developed using an open source methodology, by people from around the world. The code base is solid and has been proved to be reliable and stable in mission critical deployments in diverse industries.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://dev.liferay.com/discover/portal');
-        itext('Read more about what Liferay is.');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('h2');
-      itext('Liferay versions');
-    ie_close('h2');
-    ie_open('p');
-      itext('There are two versions of Liferay - The Community Edition (CE) and Digital Experience Platform (DXP).');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('strong');
-          itext('Liferay Digital Experience Platform');
-        ie_close('strong');
-        itext(', DXP, is our enterprise product and requires a subscription. It is a suite of products that work together to allow companies to digitize business operations, deliver connect customer experiences, and gather actionable customer insight. The suite includes such products as Liferay Digital Enterprise, Mobile Experience, Liferay Connected Services, Developer Tools, Liferay Sync and much more.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Liferay Digital Enterprise');
-        ie_close('strong');
-        itext(', DE is the primary component of Liferay DXP and the enterprise equivalent of Liferay Portal CE. Enterprise subscribers are often large enterprise companies who are looking for the stability, reliability, security, and performance. Purchasing a subscription gives customers access to enterprise features/products, as well as our Subscription Services team, which provides full support, regular fixpacks/updates, emergency fixes, and security alerts/patches.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Liferay Portal Community Edition');
-        ie_close('strong');
-        itext(', CE, is the free, open source version that is free to anyone to download and use.  Updates to CE are released approximately every quarter and include fixes that had already been released to our enterprise subscribers. CE users also have access to the community versions of many of our other products, but do not have access to the subscription services. Forums and JIRA tickets are the primary ways that the community escalates and discusses issues.');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://www.liferay.com/resources/l?title=digital-experience-platform');
-        itext('Read more about Liferay\'s DXP platform.');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('h2');
-      itext('What is needed for Liferay?');
-    ie_close('h2');
-    ie_open('p');
-      itext('Liferay needs Java, an application server, and a database to run. Our baseline setup is to use ');
-      ie_open('strong');
-        itext('Apache Tomcat');
-      ie_close('strong');
-      itext(' as the application server and ');
-      ie_open('strong');
-        itext('HSQLDB');
-      ie_close('strong');
-      itext(' in a non-production environment, and ');
-      ie_open('strong');
-        itext('MySQL');
-      ie_close('strong');
-      itext(' in a production environment for the database.');
-    ie_close('p');
-    ie_open('h3');
-      itext('What is an application server?');
-    ie_close('h3');
-    ie_open('p');
-      itext('An application server is a component-based software framework that resides in the middle-tier of a server centric architecture and provides the business logic for an application program. At the core, an application server handles communications to the database on one hand and connections to the web application (Liferay) on the other.');
-    ie_close('p');
-    ie_open('p');
-      itext('Liferay supports many of today\'s most popular application servers. Even better, there are already prepared and pre-configured distribution packages bundled with an application server.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('Application servers supported by Liferay:');
-      ie_close('strong');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://geronimo.apache.org');
-          itext('Apache Geronimo');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', 'http://tomcat.apache.org');
-            itext('Apache Tomcat');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://caucho.com');
-          itext('Caucho Resin');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.eclipse.org/jetty');
-          itext('Eclipse Jetty');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.ibm.com/cloud/websphere-application-platform');
-          itext('IBM Websphere');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://jonas.ow2.org/bin/view/Main');
-          itext('JOnAS');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.oracle.com/technetwork/middleware/glassfish/overview/index.html');
-          itext('Oracle Glassfish');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.oracle.com/middleware/weblogic/index.html');
-          itext('Oracle Weblogic');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.redhat.com/en/technologies/jboss-middleware');
-          itext('Red Hat JBoss');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('What is a database?');
-    ie_close('h3');
-    ie_open('p');
-      itext('A database is a collection of information that is organized so that it can be easily accessed, managed and updated.');
-    ie_close('p');
-    ie_open('p');
-      itext('Data is organized into rows, columns and tables, and it is indexed to make it easier to find relevant information. Data gets updated, expanded and deleted as new information is added. Databases process workloads to create and update themselves, querying the data they contain and running applications against it.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('Databases supported by Liferay:');
-      ie_close('strong');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', 'http://hsqldb.org');
-            itext('HSQLDB');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.ibm.com/analytics/us/en/db2');
-          itext('IBM Db2');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.microsoft.com/en-us/sql-server/sql-server-2017');
-          itext('Microsoft SQL Server');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', 'https://www.mysql.com');
-            itext('MySQL');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.oracle.com/database/index.html');
-          itext('Oracle Database');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.postgresql.org');
-          itext('PostgreSQL');
-        ie_close('a');
-      ie_close('li');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.sap.com/products/sybase-ase.html');
-          itext('SAP Sybase');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h2');
-      itext('Liferay\'s quick start guide');
-    ie_close('h2');
-    ie_open('p');
-      itext('If you wanted to get Liferay up and running quickly, you can follow the following steps. This is not necessary for the tutorial, but in case you wanted to see Liferay up and running quickly, you can use the bundle to get started.');
-    ie_close('p');
-    ie_open('p');
-      itext('This ');
-      ie_open('strong');
-        itext('does not');
-      ie_close('strong');
-      itext(' use Liferay\'s ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code.');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Install Java. We should have completed this step previous.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Download a Liferay Portal CE bundle at ');
-          ie_open('a', null, null,
-              'href', 'https://www.liferay.com/downloads');
-            itext('https://www.liferay.com/downloads');
-          ie_close('a');
-          itext('. Select ');
-          ie_open('em');
-            itext('Bundled with Tomcat');
-          ie_close('em');
-          itext(' and click the ');
-          ie_open('em');
-            itext('Download');
-          ie_close('em');
-          itext(' button.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Extract the downloaded bundle into a folder. (e.g. ');
-          ie_open('code');
-            itext('liferay-portal');
-          ie_close('code');
-          itext(').');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' window.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Navigate to the ');
-          ie_open('code');
-            itext('bin');
-          ie_close('code');
-          itext(' folder within the location of the extracted bundle.');
-        ie_close('p');
-        $templateAlias2({code: 'cd /liferay-portal/liferay-ce-portal-7.0-ga1/tomcat-8.0.32/bin', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Start tomcat. On windows run the command below.');
-        ie_close('p');
-        $templateAlias2({code: 'startup.bat', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('On OS X/Linux, run the command below.');
-        ie_close('p');
-        $templateAlias2({code: './startup.sh', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('On windows, the server console window will open.');
-    ie_close('p');
-    ie_open('p');
-      itext('On OS X/Linux systems, there is no output in the console window since all logs are stored in ');
-      ie_open('code');
-        itext('tomcat-8.0.32/logs/catalina.out');
-      ie_close('code');
-      itext(' file.');
-    ie_close('p');
-    ie_open('ol', null, null,
-        'start', '7');
-      ie_open('li');
-        ie_open('p');
-          itext('Keep watching the console until you see the following.');
-        ie_close('p');
-        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('Liferay Portal is now running and ready to be used.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Upon startup, Liferay will automatically open your default browser to ');
-          ie_open('em');
-            itext('http://localhost:8080');
-          ie_close('em');
-          itext('. You can sign in using username: ');
-          ie_open('strong');
-            itext('test@liferay.com');
-          ie_close('strong');
-          itext(' and password: ');
-          ie_open('strong');
-            itext('test');
-          ie_close('strong');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param1015}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'LeNzi.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class LeNzi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(LeNzi, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 252 */,
 /* 253 */,
 /* 254 */,
 /* 255 */,
@@ -28828,28 +29309,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(LeNzi, templates);
 /* 258 */,
 /* 259 */,
 /* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28885,9 +29345,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepThreeSoy = __webpack_require__(252);
+var _keyboardShortcutsSublimeSoy = __webpack_require__(223);
 
-var _stepThreeSoy2 = _interopRequireDefault(_stepThreeSoy);
+var _keyboardShortcutsSublimeSoy2 = _interopRequireDefault(_keyboardShortcutsSublimeSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28897,23 +29357,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LeNzi = function (_Component) {
-  _inherits(LeNzi, _Component);
+var ewXZi = function (_Component) {
+  _inherits(ewXZi, _Component);
 
-  function LeNzi() {
-    _classCallCheck(this, LeNzi);
+  function ewXZi() {
+    _classCallCheck(this, ewXZi);
 
-    return _possibleConstructorReturn(this, (LeNzi.__proto__ || Object.getPrototypeOf(LeNzi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ewXZi.__proto__ || Object.getPrototypeOf(ewXZi)).apply(this, arguments));
   }
 
-  return LeNzi;
+  return ewXZi;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(LeNzi, _stepThreeSoy2.default);
+_metalSoy2.default.register(ewXZi, _keyboardShortcutsSublimeSoy2.default);
 
-exports.default = LeNzi;
+exports.default = ewXZi;
 
 /***/ })
-],[282]);
+],[261]);

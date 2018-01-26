@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([26,37,38,39],[
+webpackJsonppageComponent([9,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28365,691 +28365,7 @@ exports.default = parseFromAnchor;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wtLlN", function() { return wtLlN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from keyboard-shortcuts-devtools.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace wtLlN.
- * @public
- */
-
-goog.module('wtLlN.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param310 = function() {
-    ie_open('article');
-      ie_open('p');
-        var dyn20 = opt_data.page.description;
-        if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
-      ie_close('p');
-      ie_open('p');
-        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          itext('Tip:');
-        ie_close('strong');
-        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('em');
-          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
-        ie_close('em');
-      ie_close('p');
-      ie_open('h2');
-        itext('General Tips');
-      ie_close('h2');
-      ie_open('p');
-        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
-      ie_close('p');
-      ie_open('h3');
-        itext('Chrome DevTools');
-      ie_close('h3');
-      ie_open('p');
-        itext('Common shortcuts for Chrome DevTools. If you find yourself using Chrome to inspect and debug a page, use the following shortcuts to help.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Opening DevTools');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open whatever panel you used last');
-            ie_close('td');
-            ie_open('td');
-              itext('F12 (Or Control + Shift + I)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + I');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Console panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + J');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + J');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Elements panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + C');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Global keyboard shorcuts');
-      ie_close('h4');
-      ie_open('p');
-        itext('The following keyboard shortcuts are available in most, if not all, DevTools panels.');
-      ie_close('p');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Show Settings');
-            ie_close('td');
-            ie_open('td');
-              itext('F1 (Or ?)');
-            ie_close('td');
-            ie_open('td');
-              itext('Function + F1 (Or ?)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the next panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + ]');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + ]');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the previous panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + [');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + [');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Switch back to whatever docking position you last used. If DevTools has been in its default position for the entire session, then this shortcut undocks DevTools into a separate window');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + D');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + D');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Device Mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + M');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + M');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Inspect Element Mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + C');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Command Menu');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + P');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + P');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle the Drawer');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Normal reload');
-            ie_close('td');
-            ie_open('td');
-              itext('F5 (Or Control + R)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + R');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Hard reload');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + F5 (Or Control + Shift + R)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + R');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Search for text within the current panel. Not supported in the Audits, Application, and Security panels');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Opens the Search tab in the Drawer, which lets you search for text across all loaded resources');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open a file in the Sources panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + O (Or Control + P)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + O (Or Command + P)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Zoom in');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + +');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + +');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Zoom out');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + -');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + -');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Restore default zoom level');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + 0');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + 0');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Run snippet');
-            ie_close('td');
-            ie_open('td');
-              itext('Press ');
-              ie_open('code');
-                itext('Control + O');
-              ie_close('code');
-              itext(' to open the Command Menu, type ');
-              ie_open('code');
-                itext('!');
-              ie_close('code');
-              itext(' followed by the name of the script, then press ');
-              ie_open('code');
-                itext('Enter');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('Press ');
-              ie_open('code');
-                itext('Command + O');
-              ie_close('code');
-              itext(' to open the Command Menu, type ');
-              ie_open('code');
-                itext('!');
-              ie_close('code');
-              itext(' followed by the name of the script, then press ');
-              ie_open('code');
-                itext('Enter');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Elements panel');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Undo change');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Z');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Z');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Redo change');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Y');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + Z');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select the element above / below the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow / Down Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow / Down Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand the currently-selected node. If the node is already expanded, this shortcut selects the element below it');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Collapse the currently-selected node. If the node is already collapsed, this shortcut selects the element above it');
-            ie_close('td');
-            ie_open('td');
-              itext('Left Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Left Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand or collapse the currently-selected node and all of its children');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Control + Alt');
-              ie_close('code');
-              itext(' then click the arrow icon next to the element\'s name');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Option');
-              ie_close('code');
-              itext(' then click the arrow icon next to the element\'s name');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Edit Attributes mode on the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select the next / previous attribute after entering Edit Attributes mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab / Shift + Tab');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab / Shift + Tab');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Hide the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('H');
-            ie_close('td');
-            ie_open('td');
-              itext('H');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Edit as HTML mode on the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('F2');
-            ie_close('td');
-            ie_open('td');
-              itext('Function + F2');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Console panel');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Accept autocomplete suggestion');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow (Or Tab)');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow (Or Tab)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Reject autocomplete suggestion');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Get previous statement');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Get next statement');
-            ie_close('td');
-            ie_open('td');
-              itext('Down Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Down Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + `');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + `');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Clear the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + L');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K (Or Option + L)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary');
-            ie_close('td');
-            ie_open('td');
-              itext('Shift + Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Return');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Execute command');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Return');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand all sub-properties of an object that\'s been logged to the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Alt');
-              ie_close('code');
-              itext(' then click ');
-              ie_open('code');
-                itext('Expand');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Alt');
-              ie_close('code');
-              itext(' then click ');
-              ie_open('code');
-                itext('Expand');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('p');
-        itext('This has been adapted from ');
-        ie_open('a', null, null,
-            'href', 'https://developers.google.com/web/tools/chrome-devtools/shortcuts');
-          itext('https://developers.google.com/web/tools/chrome-devtools/shortcuts');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param310}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'wtLlN.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class wtLlN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wtLlN, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 221 */,
 /* 222 */,
 /* 223 */,
 /* 224 */,
@@ -29075,7 +28391,298 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wtLlN, templates);
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */,
+/* 247 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SVTFA", function() { return SVTFA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from step-nine.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace SVTFA.
+ * @public
+ */
+
+goog.module('SVTFA.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param820 = function() {
+    ie_open('h2');
+      var dyn45 = opt_data.page.title;
+      if (typeof dyn45 == 'function') dyn45(); else if (dyn45 != null) itext(dyn45);
+    ie_close('h2');
+    ie_open('p');
+      itext('Now that we have Liferay setup and configured, we can start compiling the ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code to get Liferay running.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Getting an application server');
+    ie_close('h3');
+    ie_open('p');
+      itext('If we want to use Liferay\'s default setup, we need to get Apache Tomcat on our machine.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('Open a ');
+        ie_open('em');
+          itext('Terminal/Git Bash');
+        ie_close('em');
+        itext(' window.');
+      ie_close('li');
+      ie_open('li');
+        itext('Navigate to the cloned Liferay ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code folder.');
+      ie_close('li');
+      ie_open('li');
+        itext('Run the command below to download Apache Tomcat.');
+        $templateAlias2({code: 'ant -f build-dist.xml unzip-tomcat', mode: 'shell'}, null, opt_ijData);
+        ie_open('ul');
+          ie_open('li');
+            itext('This command tells ant to look in the ');
+            ie_open('code');
+              itext('build-dist.xml');
+            ie_close('code');
+            itext(' file and execute the ');
+            ie_open('strong');
+              itext('unzip-tomcat');
+            ie_close('strong');
+            itext(' command.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will delete preexisting folder names matching the application server directory defined in the ');
+            ie_open('code');
+              itext('app.server._USER\\_NAME_.properties');
+            ie_close('code');
+            itext(' file.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will download the version of Apache Tomcat defined in the ');
+            ie_open('code');
+              itext('app.server._USER\\_NAME_.properties');
+            ie_close('code');
+            itext(' file.');
+          ie_close('li');
+          ie_open('li');
+            itext('Ant will install Apache Tomcat to the folder specified in the ');
+            ie_open('code');
+              itext('app.server._USER\\_NAME_.properties');
+            ie_close('code');
+            itext(' file');
+          ie_close('li');
+        ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+        itext('If this Ant task is successful, you will see a similar output as below.');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build-dist.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h3');
+      itext('Compiling the source code');
+    ie_close('h3');
+    ie_open('p');
+      itext('Now that everything is setup, we can compile Liferay\'s ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Navigate to the cloned Liferay\' ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code folder.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Run the following command to setup Liferay.');
+        ie_close('p');
+        $templateAlias2({code: 'ant setup-sdk', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('If this Ant task is successful, you will see a similar output as below.');
+        ie_close('p');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Compile Liferay\'s ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code by running the following command.');
+        ie_close('p');
+        $templateAlias2({code: 'ant all', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('If this Ant task is successful, you will see a similar output as below.');
+        ie_close('p');
+        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Navigate to the ');
+          ie_open('code');
+            itext('bin');
+          ie_close('code');
+          itext(' folder in the Apache Tomcat application server folder. (e.g. ');
+          ie_open('code');
+            itext('liferay-portal/tomcat-8.0.32/bin');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Start Apache Tomcat by running the following command.');
+          ie_open('strong');
+            itext('OS X/Linux');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: './catalina.sh run', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Windows');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'catalina.bat run', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('We use catalina instead of the startup executables so that we can conveniently see the console and any errors that it may throw.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a web browser and go to  ');
+          ie_open('em');
+            itext('http://localhost:8080');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Login to Liferay using the following credentials.');
+          ie_open('strong');
+            itext('Username');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'test@liferay.com', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Password');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'test', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('To stop the server, go to the ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' window and hit ');
+          ie_open('code');
+            itext('CTRL + c');
+          ie_close('code');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param820}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'SVTFA.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class SVTFA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SVTFA, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 248 */,
 /* 249 */,
 /* 250 */,
@@ -29093,7 +28700,24 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wtLlN, templates);
 /* 262 */,
 /* 263 */,
 /* 264 */,
-/* 265 */
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29129,9 +28753,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _keyboardShortcutsDevtoolsSoy = __webpack_require__(221);
+var _stepNineSoy = __webpack_require__(247);
 
-var _keyboardShortcutsDevtoolsSoy2 = _interopRequireDefault(_keyboardShortcutsDevtoolsSoy);
+var _stepNineSoy2 = _interopRequireDefault(_stepNineSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29141,23 +28765,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wtLlN = function (_Component) {
-  _inherits(wtLlN, _Component);
+var SVTFA = function (_Component) {
+  _inherits(SVTFA, _Component);
 
-  function wtLlN() {
-    _classCallCheck(this, wtLlN);
+  function SVTFA() {
+    _classCallCheck(this, SVTFA);
 
-    return _possibleConstructorReturn(this, (wtLlN.__proto__ || Object.getPrototypeOf(wtLlN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SVTFA.__proto__ || Object.getPrototypeOf(SVTFA)).apply(this, arguments));
   }
 
-  return wtLlN;
+  return SVTFA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wtLlN, _keyboardShortcutsDevtoolsSoy2.default);
+_metalSoy2.default.register(SVTFA, _stepNineSoy2.default);
 
-exports.default = wtLlN;
+exports.default = SVTFA;
 
 /***/ })
-],[265]);
+],[282]);

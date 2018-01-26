@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28390,15 +28390,12 @@ exports.default = parseFromAnchor;
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CRUqL", function() { return CRUqL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IiVTx", function() { return IiVTx; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28410,15 +28407,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-seven.soy.
+// This file was automatically generated from step-four.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace CRUqL.
+ * @fileoverview Templates in namespace IiVTx.
  * @public
  */
 
-goog.module('CRUqL.incrementaldom');
+goog.module('IiVTx.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28439,8 +28436,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28452,249 +28447,83 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param892 = function() {
+  var param809 = function() {
     ie_open('h2');
-      var dyn47 = opt_data.page.title;
-      if (typeof dyn47 == 'function') dyn47(); else if (dyn47 != null) itext(dyn47);
+      var dyn44 = opt_data.page.title;
+      if (typeof dyn44 == 'function') dyn44(); else if (dyn44 != null) itext(dyn44);
     ie_close('h2');
     ie_open('p');
-      itext('We are going to get Liferay\'s ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code from GitHub.com on to your machine.');
+      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
     ie_close('p');
     ie_open('h3');
-      itext('Forking a repository');
+      itext('Source code');
     ie_close('h3');
     ie_open('p');
-      itext('In order to begin making changes to ');
+      itext('Source code refers to the ');
+      ie_open('em');
+        itext('uncompiled');
+      ie_close('em');
+      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('See Liferay\'s source code.');
+      ie_close('a');
+    ie_close('p');
+    ie_open('h3');
+      itext('Compiled code');
+    ie_close('h3');
+    ie_open('p');
+      itext('Compiled code is derived from the ');
       ie_open('em');
         itext('source');
       ie_close('em');
-      itext(' code and have it reviewed, tested, and approved, you will need to make a copy of this code locally.');
+      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Liferay Bundle');
+    ie_close('h3');
+    ie_open('p');
+      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
     ie_close('p');
     ie_open('p');
-      itext('A ');
-      ie_open('em');
-        itext('fork');
-      ie_close('em');
-      itext(' is copying a repository on GitHub.com from it\'s original owner to your personal GitHub.com account.  Forking a repository allows you to freely experiment with changes without affecting the original project.');
+      ie_open('a', null, null,
+          'href', 'https://www.liferay.com/downloads');
+        itext('See Liferay\'s bundles.');
+      ie_close('a');
     ie_close('p');
     ie_open('p');
-      itext('Most commonly, forks are used to either propose changes to someone else\'s project or to use someone else\'s project as a starting point for your own ideas.');
+      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
     ie_close('p');
-    ie_open('h4');
-      itext('Forking Liferay Portal');
-    ie_close('h4');
+    ie_open('h3');
+      itext('How do you get source code?');
+    ie_close('h3');
     ie_open('p');
-      itext('Forking a repository is a simple two-step process.');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        itext('On GitHub.com, navigate to the ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/liferay/liferay-portal');
-          itext('liferay/liferay-portal');
-        ie_close('a');
-        itext(' repository.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the top-right corner of the page, click ');
-        ie_open('strong');
-          itext('Fork');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('Congratulations!  You have now have a fork of the original ');
+      itext('Since Liferay is an open source software, all source code is available on ');
       ie_open('a', null, null,
           'href', 'https://github.com/liferay/liferay-portal');
-        itext('liferay/liferay-portal');
+        itext('GitHub');
       ie_close('a');
-      itext(' repository in your GitHub.com account.');
+      itext(' for download and use.');
     ie_close('p');
-    ie_open('h4');
-      itext('Cloning Liferay Portal');
-    ie_close('h4');
     ie_open('p');
-      itext('Because forking the repository only makes a copy of the code in GitHub.com, we now need to get this code locally to begin.');
+      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
     ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Setup Git if you have not done so already in the previous steps.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Go to ');
-          ie_open('em');
-            itext('your');
-          ie_close('em');
-          itext(' fork of the liferay-portal repository on GitHub.com.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Click the ');
-          ie_open('strong');
-            itext('Clone or download');
-          ie_close('strong');
-          itext(' button. When connecting to a GitHub.com repository from Git, you will need to authenticate using either ');
-          ie_open('strong');
-            itext('HTTPS');
-          ie_close('strong');
-          itext(' (');
-          ie_open('em');
-            itext('recommended');
-          ie_close('em');
-          itext(') or ');
-          ie_open('strong');
-            itext('SSH');
-          ie_close('strong');
-          itext('. If you clone with ');
-          ie_open('strong');
-            itext('HTTPS');
-          ie_close('strong');
-          itext(', please review the following ');
-          ie_open('a', null, null,
-              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended');
-            itext('instructions');
-          ie_close('a');
-          itext('. If you clone with ');
-          ie_open('strong');
-            itext('SSH');
-          ie_close('strong');
-          itext(', please review the following ');
-          ie_open('a', null, null,
-              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls');
-            itext('instructions');
-          ie_close('a');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('In the dialog that appears after clicking the ');
-          ie_open('strong');
-            itext('Clone or download');
-          ie_close('strong');
-          itext(' button, copy the URL that you want to use for your repository.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' window.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Browse to the location where you would like to download this repository.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('We will download the repository from GitHub.com to our local machine by cloning it. Run the following command to complete this action.');
-        ie_close('p');
-        $templateAlias2({code: '# Pasted URL should look something like:\n# SSH URL: git@github.com:brianchandotcom/liferay-portal.git\n# HTTPS: https://github.com/brianchandotcom/liferay-portal.git\ngit clone PASTE URL HERE', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('Upon completion, you should see something like the output below.');
-        ie_close('p');
-        $templateAlias2({code: 'Cloning into `liferay-portal`...remote: Counting objects: 10, done.\n...\nremote: Compressing objects: 100% (8/8), done.\nremove: Total 10 (delta 1), reused 10 (delta 1)\nUnpacking objects: 100% (10/10), done.', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
+    ie_open('h3');
+      itext('Why do I need the source code?');
+    ie_close('h3');
     ie_open('p');
-      itext('Congratulations!  You now have a local copy of your fork of the liferay-portal repository!');
+      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
     ie_close('p');
-    ie_open('h4');
-      itext('Configuring your remote repository URLs');
-    ie_close('h4');
     ie_open('p');
-      itext('Now that we have have everything locally, we need to add a remote url. A remote URL is Git\'s fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub.com, or another user\'s fork, or even on a completely different server.');
+      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
     ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Go to your newly cloned repository in ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Check what your currently remote repositories are by running the following command below.');
-        ie_close('p');
-        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('The output should be something similar to below if your cloned your repository.');
-        ie_close('p');
-        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('If you do not have any remote URL\'s listed, you will have to add a remote URL for the ');
-          ie_open('strong');
-            itext('upstream');
-          ie_close('strong');
-          itext(' and ');
-          ie_open('strong');
-            itext('origin');
-          ie_close('strong');
-          itext(' repositories.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Add the upstream remote, if it is not already added, to point to the ');
-          ie_open('strong');
-            itext('upstream');
-          ie_close('strong');
-          itext(' repository URL. Run the following command to complete this action.');
-        ie_close('p');
-        $templateAlias2({code: '# Copy the upstream repository URL\ngit remote add upstream https://github.com/liferay/liferay-portal.git', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('If you need to add the ');
-          ie_open('strong');
-            itext('origin');
-          ie_close('strong');
-          itext(' remote, follow the same steps but use the ');
-          ie_open('strong');
-            itext('origin');
-          ie_close('strong');
-          itext(' repository URL instead of the ');
-          ie_open('strong');
-            itext('upstream');
-          ie_close('strong');
-          itext(' repository URL.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Verify that your remote URL\'s are correctly pointing to the desired locations by running the following command below.');
-        ie_close('p');
-        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('The output should be something similar to below if your cloned your repository.');
-        ie_close('p');
-        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)\nupstream    https://github.com/liferay/liferay-portal.git (fetch)\nupstream    https://github.com/liferay/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('You can add as many remote URL\'s as you would like.  Just make sure to have each one named uniquely.');
-        ie_close('p');
-      ie_close('li');
-    ie_close('ol');
     ie_open('p');
-      itext('For more information about remotes, please read ');
-      ie_open('a', null, null,
-          'href', 'https://help.github.com/articles/about-remote-repositories/');
-        itext('About remote repositories');
-      ie_close('a');
-      itext('.');
+      ie_open('strong');
+        itext('Ex.');
+      ie_close('strong');
+      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
     ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28705,11 +28534,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param892}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param809}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'CRUqL.render';
+  $render.soyTemplateName = 'IiVTx.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28719,14 +28548,17 @@ return exports;
 
 });
 
-class CRUqL extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CRUqL, templates);
+class IiVTx extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IiVTx, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 247 */,
+/* 248 */,
+/* 249 */,
 /* 250 */,
 /* 251 */,
 /* 252 */,
@@ -28791,9 +28623,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepSevenSoy = __webpack_require__(249);
+var _stepFourSoy = __webpack_require__(246);
 
-var _stepSevenSoy2 = _interopRequireDefault(_stepSevenSoy);
+var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28803,23 +28635,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var CRUqL = function (_Component) {
-  _inherits(CRUqL, _Component);
+var IiVTx = function (_Component) {
+  _inherits(IiVTx, _Component);
 
-  function CRUqL() {
-    _classCallCheck(this, CRUqL);
+  function IiVTx() {
+    _classCallCheck(this, IiVTx);
 
-    return _possibleConstructorReturn(this, (CRUqL.__proto__ || Object.getPrototypeOf(CRUqL)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (IiVTx.__proto__ || Object.getPrototypeOf(IiVTx)).apply(this, arguments));
   }
 
-  return CRUqL;
+  return IiVTx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(CRUqL, _stepSevenSoy2.default);
+_metalSoy2.default.register(IiVTx, _stepFourSoy2.default);
 
-exports.default = CRUqL;
+exports.default = IiVTx;
 
 /***/ })
 ],[278]);

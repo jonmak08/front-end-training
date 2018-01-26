@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([32,37,38,39],[
+webpackJsonppageComponent([3,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28371,12 +28371,28 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "aVxLy", function() { return aVxLy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tHKNA", function() { return tHKNA; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28388,15 +28404,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from theme-creation.soy.
+// This file was automatically generated from step-eight.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace aVxLy.
+ * @fileoverview Templates in namespace tHKNA.
  * @public
  */
 
-goog.module('aVxLy.incrementaldom');
+goog.module('tHKNA.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28417,7 +28433,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -28428,133 +28446,260 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param411 = function() {
-    ie_open('article');
-      ie_open('p');
-        var dyn26 = opt_data.page.description;
-        if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('strong');
-            itext('Selecting a theme');
-          ie_close('strong');
-          itext(': Choose a theme that you can get excited about. Take the time to find one that is both challenging, but isn\'t over your head. This will make the whole theme building process more interesting and exciting for you.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Follow the directions');
-          ie_close('strong');
-          itext(': Directions are laid out on the ');
-          ie_open('a', null, null,
-              'href', 'https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/themes-and-layout-templates');
-            itext('Liferay Developer Network');
-          ie_close('a');
-          itext('. If there is an existing Liferay theme that has similar features to the theme you want to create, set that existing theme as the ');
-          ie_open('em');
-            itext('base theme');
-          ie_close('em');
-          itext(' for your the one that you are going to be creating. ');
-          ie_open('em');
-            itext('Note: You will, most likely, not be using Liferay IDE to create your theme, so follow the directions that correspond to using the terminal.');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Formatting Standards');
-          ie_close('strong');
-          itext(': Reference the standards used by the ');
-          ie_open('a', null, null,
-              'href', 'https://github.com/liferay/liferay-frontend-source-formatter');
-            itext('Liferay frontend source formatter');
-          ie_close('a');
-          itext(' as you create your source files. This will save you from making a lot of obvious mistakes.  You will also want to review your code with these standards in mind before submitting it (i.e. sending a pull request) to your reviewer.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('CSS');
-          ie_close('strong');
-          itext(': Liferay uses ');
-          ie_open('a', null, null,
-              'href', 'https://liferay.github.io/clay');
-            itext('Clay');
-          ie_close('a');
-          itext(', ');
-          ie_open('a', null, null,
-              'href', 'http://sass-lang.com/');
-            itext('SASS');
-          ie_close('a');
+  var param736 = function() {
+    ie_open('h2');
+      var dyn41 = opt_data.page.title;
+      if (typeof dyn41 == 'function') dyn41(); else if (dyn41 != null) itext(dyn41);
+    ie_close('h2');
+    ie_open('p');
+      itext('We need to configure settings in Liferay to get it to build and run from the ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What is a *.properties file?');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' file.');
+    ie_close('p');
+    ie_open('p');
+      itext('Because we are going to be overriding default properties, the easiest way to accomplish this is through a ');
+      ie_open('code');
+        itext('\\*.USER_NAME.properties');
+      ie_close('code');
+      itext('. (e.g. ');
+      ie_open('code');
+        itext('app.server.brianchan.properties');
+      ie_close('code');
+      itext(' or ');
+      ie_open('code');
+        itext('build.brianchan.properties');
+      ie_close('code');
+      itext(').');
+    ie_close('p');
+    ie_open('p');
+      itext('Liferay reads the ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' files in this order of precedence.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('*.USER_NAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_COMPUTERNAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_HOST.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_HOSTNAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.properties');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Therefore, whatever custom ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' file you set will supersede what is defined in the default file.');
+    ie_close('p');
+    ie_open('p');
+      itext('To find out what the default property values are and what you can override, open the default.properties file (e.g. ');
+      ie_open('code');
+        itext('app.server.properties');
+      ie_close('code');
+      itext(' or ');
+      ie_open('code');
+        itext('build.properties');
+      ie_close('code');
+      itext(') and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ');
+      ie_open('code');
+        itext('\\*.USER_NAME.properties');
+      ie_close('code');
+      itext(' file, changing its value.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Creating a custom ');
+      ie_open('code');
+        itext('build.\\*.properties');
+      ie_close('code');
+      itext(' and ');
+      ie_open('code');
+        itext('app.server.\\*.properties');
+      ie_close('code');
+      itext(' files');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Create a file called ');
+          ie_open('code');
+            itext('build._USER\\_NAME_.properties');
+          ie_close('code');
           itext(' and ');
-          ie_open('a', null, null,
-              'href', 'https://www.bourbon.io');
-            itext('Bourbon');
-          ie_close('a');
-          itext(' for its CSS. Familiarize yourself with these technologies after you have a general grasp on CSS. When writing your ');
           ie_open('code');
-            itext('custom.css');
+            itext('app.server._USER\\_NAME_.properties');
           ie_close('code');
-          itext(' use the other themes as an example.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('custom.css');
-          ie_close('strong');
-          itext(': Only edit the ');
-          ie_open('code');
-            itext('custom.css');
-          ie_close('code');
-          itext(' file in the ');
-          ie_open('code');
-            itext('_diffs');
-          ie_close('code');
-          itext(' folder for ');
-          ie_open('strong');
-            itext('ALL');
-          ie_close('strong');
-          itext(' of your CSS. When you create your theme, there will be other categorized CSS files that will be autogenerated in the build folder (e.g. ');
-          ie_open('code');
-            itext('layout.css');
-          ie_close('code');
-          itext(', ');
-          ie_open('code');
-            itext('portlet.css');
-          ie_close('code');
-          itext(', etc.).');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Use DevTools');
-          ie_close('strong');
-          itext(': Use Devtools to fiddle with the CSS in your browser. It is much quicker than editing in the source files if you want to test simple changes or additions without waiting for the theme to redeploy.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Restyle portlets');
-          ie_close('strong');
-          itext(': When you create your theme, you will likely need to restyle certain portlets (e.g. the login portlet or the search portlet). Each portlet has an unique ID or CSS class that you can use to specifically apply styles in your ');
-          ie_open('code');
-            itext('custom.css');
-          ie_close('code');
-          itext(' file.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Layout Templates');
-          ie_close('strong');
-          itext(': Do not shy away from creating your own layouts. Don\'t try to simulate your desired layout using the ');
+          itext(' inside the folder you cloned your Liferay ');
           ie_open('em');
-            itext('Nested Portlets');
+            itext('source');
           ie_close('em');
-          itext(' portlet. Creating your own layout is relatively simple, though it may be intimidating at first because you are required to work with an unfamiliar language (i.e. Freemarker). It may be helpful to think of Freemarker as HTML remixed and souped-up.');
-        ie_close('li');
-        ie_open('li');
+          itext(' code. The ');
+          ie_open('em');
+            itext('USER_NAME');
+          ie_close('em');
+          itext(' is the user you login with, not your machine name. On Windows machines the default is, ');
+          ie_open('em');
+            itext('liferay');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Edit your ');
+          ie_open('code');
+            itext('build._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file with the following lines in a text editor:');
+        ie_close('p');
+        $templateAlias2({code: 'javac.memoryMaximumSize=1024m', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Edit your ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.');
+        ie_close('p');
+        ie_open('p');
+          itext('The ');
+          ie_open('em');
+            itext('path');
+          ie_close('em');
+          itext(' of your bundle should be outside of your cloned Liferay ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code folder.');
+        ie_close('p');
+        ie_open('p');
+          itext('Your ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file might look something like below when it is complete, if we are using apache tomcat as our application server.');
+        ie_close('p');
+        $templateAlias2({code: 'app.server.type=tomcat\napp.server.parent.dir=${project.dir}/../my-custom-folder/bundles\napp.server.tomcat.dir=${app.server.parent.dir}/tomcat-8.0.32', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Creating a portal-ext.properties file');
+    ie_close('h4');
+    ie_open('p');
+      itext('Values defined in the ');
+      ie_open('code');
+        itext('portal.properties');
+      ie_close('code');
+      itext(' file are configurations used within Liferay. To override these settings, you will need to create a ');
+      ie_open('code');
+        itext('portal-ext.properties');
+      ie_close('code');
+      itext(' file.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('em');
+        itext('You will make changes within this file quite often to customize your Liferay instance.');
+      ie_close('em');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Duplicate the ');
+          ie_open('code');
+            itext('portal-developer.properties');
+          ie_close('code');
+          itext(' file, found within your cloned Liferay ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code. (e.g. ');
+          ie_open('code');
+            itext('PATH/liferay-portal/portal-impl/src');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Rename this copied file to ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open the ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file in a text editor. It should look something like the code below.');
+        ie_close('p');
+        $templateAlias2({code: 'theme.css.fast.load=false\ntheme.css.fast.load.check.request.parameter=true\ntheme.images.fast.load=false\ntheme.images.fast.load.check.request.parameter=true\n\njavascript.fast.load=true\njavascript.log.enabled=false\n\nlayout.template.cache.enabled=false\n\ncombo.check.timestamp=true\n\nminifier.enabled=false\n\nopenoffice.cache.enabled=false\n\nvelocity.engine.resource.modification.check.interval=0', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Set the ');
+          ie_open('code');
+            itext('javascript.fast.load');
+          ie_close('code');
+          itext(' property to ');
           ie_open('strong');
-            itext('Format your code as you write');
+            itext('false');
           ie_close('strong');
-          itext(': When writing code, it is tempting to just get all the code written down, and then go back and format it later. If you can, avoid doing this. It requires a little more work up-front to keep your code neat as you go along, but it saves a ton of time in the long run.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
+          itext('. *Set this value to ');
+          ie_open('strong');
+            itext('true');
+          ie_close('strong');
+          itext(', if we are trying to replicate a production environment with minified JavaScript files.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('When all custom configurations are complete, move the ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file to one folder level above the application server directory defined in the ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file. (i.e. ');
+          ie_open('code');
+            itext('PATH/bundles');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28564,11 +28709,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param411}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param736}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'aVxLy.render';
+  $render.soyTemplateName = 'tHKNA.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28578,30 +28723,14 @@ return exports;
 
 });
 
-class aVxLy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(aVxLy, templates);
+class tHKNA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tHKNA, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
 /* 244 */,
 /* 245 */,
 /* 246 */,
@@ -28617,7 +28746,36 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(aVxLy, templates);
 /* 256 */,
 /* 257 */,
 /* 258 */,
-/* 259 */
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28653,9 +28811,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _themeCreationSoy = __webpack_require__(227);
+var _stepEightSoy = __webpack_require__(243);
 
-var _themeCreationSoy2 = _interopRequireDefault(_themeCreationSoy);
+var _stepEightSoy2 = _interopRequireDefault(_stepEightSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28665,23 +28823,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var aVxLy = function (_Component) {
-  _inherits(aVxLy, _Component);
+var tHKNA = function (_Component) {
+  _inherits(tHKNA, _Component);
 
-  function aVxLy() {
-    _classCallCheck(this, aVxLy);
+  function tHKNA() {
+    _classCallCheck(this, tHKNA);
 
-    return _possibleConstructorReturn(this, (aVxLy.__proto__ || Object.getPrototypeOf(aVxLy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tHKNA.__proto__ || Object.getPrototypeOf(tHKNA)).apply(this, arguments));
   }
 
-  return aVxLy;
+  return tHKNA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(aVxLy, _themeCreationSoy2.default);
+_metalSoy2.default.register(tHKNA, _stepEightSoy2.default);
 
-exports.default = aVxLy;
+exports.default = tHKNA;
 
 /***/ })
-],[259]);
+],[288]);

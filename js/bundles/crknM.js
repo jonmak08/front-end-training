@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([36,37,38,39],[
+webpackJsonppageComponent([19,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param23 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn2 = opt_data.page.author;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn3 = opt_data.page.date;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn4 = opt_data.page.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList56 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen56 = childIdList56.length;
-      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
-        var childIdData56 = childIdList56[childIdIndex56];
-        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
-        if (opt_data.page.url != childPage__soy44.url) {
+      var childIdList36 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen36 = childIdList36.length;
+      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
+        var childIdData36 = childIdList36[childIdIndex36];
+        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
+        if (opt_data.page.url != childPage__soy24.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy44.url);
+                'href', childPage__soy24.url);
               ie_open('small');
                 itext('By ');
-                var dyn6 = childPage__soy44.author;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn4 = childPage__soy24.author;
+                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn7 = childPage__soy44.date;
-                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+                  var dyn5 = childPage__soy24.date;
+                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn8 = childPage__soy44.title;
-                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+                var dyn6 = childPage__soy24.title;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
+    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy139,
+            'href', nextPageUrl__soy119,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
+exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
+  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28370,12 +28370,21 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nxqwz", function() { return Nxqwz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "crknM", function() { return crknM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28387,15 +28396,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from setup-sublime-text.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Nxqwz.
+ * @fileoverview Templates in namespace crknM.
  * @public
  */
 
-goog.module('Nxqwz.incrementaldom');
+goog.module('crknM.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28416,9 +28425,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28429,148 +28436,138 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param395 = function() {
-    ie_open('article');
+  var param697 = function() {
+    ie_open('h6');
+      var dyn38 = opt_data.page.description;
+      if (typeof dyn38 == 'function') dyn38(); else if (dyn38 != null) itext(dyn38);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is HTML?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('HTML stands for ');
+          ie_open('strong');
+            itext('H');
+          ie_close('strong');
+          itext('yper ');
+          ie_open('strong');
+            itext('T');
+          ie_close('strong');
+          itext('ext ');
+          ie_open('strong');
+            itext('M');
+          ie_close('strong');
+          itext('arkup ');
+          ie_open('strong');
+            itext('L');
+          ie_close('strong');
+          itext('anguage.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is not a programming language, it is a ');
+          ie_open('em');
+            itext('markup language');
+          ie_close('em');
+          itext('. A markup language is a set of ');
+          ie_open('em');
+            itext('markup tags');
+          ie_close('em');
+          itext(' and the purpose of the tags are to describe page content.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
       ie_open('p');
-        var dyn25 = opt_data.page.description;
-        if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
-      ie_close('p');
-      ie_open('p');
-        itext('Sublime Text has a ton of features that are indispensable for development. If you use this as your text editor of choice, here are some settings and plugins that will help you get started.');
-      ie_close('p');
-      ie_open('h3');
-        itext('User settings');
-      ie_close('h3');
-      ie_open('p');
-        itext('Customize your Sublime Text settings for a better development experience.');
-      ie_close('p');
-      ie_open('p');
-        itext('Below is an example ');
-        ie_open('code');
-          itext('Preferences.sublime-settings');
-        ie_close('code');
-        itext(' file.');
-      ie_close('p');
-      $templateAlias2({code: '{\n    "bold_folder_labels": true, // makes the sidebar more readable at a glance\n    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",\n    "default_line_ending": "unix", // set the default line ending to Unix-style (Liferay only allows you to commit files with this type of ending)\n    "draw_white_space": "all", // show a dot every time there is a white-space character\n    "font_face": "Ubuntu Mono", // requires some work, but changes the font to something nicer\n    "font_size": 11,\n    "ignored_packages": [ "Vintage" ],\n    "rulers": [ 80 ], // show a vertical bar at a distance of 80 characters from the left margin\n    "tab_size": 4, // set tabs to be the same width as 4 spaces\n    "translate_tabs_to_spaces": true, // use spaces to indent rather than tab characters\n    "trim_trailing_white_space_on_save": true, // auto-delete trailing white space every time you save\n    "word_wrap": true\n}', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Most of these settings are personal preference, but some of these will be helpful during your development.');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
       ie_close('p');
       ie_open('ul');
         ie_open('li');
-          ie_open('strong');
-            itext('default_line_ending');
-          ie_close('strong');
-          itext(': Set your line endings to be ');
-          ie_open('em');
-            itext('unix');
-          ie_close('em');
+          ie_open('a', null, null,
+              'href', 'http://www.codecademy.com/tracks/web');
+            itext('Codecademy\'s HTML & CSS');
+          ie_close('a');
         ie_close('li');
         ie_open('li');
-          ie_open('strong');
-            itext('draw_white_space');
-          ie_close('strong');
-          itext(': Display all white-space characters throughout a file.');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-html');
+            itext('Codecademy\'s Learn HTML');
+          ie_close('a');
         ie_close('li');
         ie_open('li');
-          ie_open('strong');
-            itext('rulers');
-          ie_close('strong');
-          itext(': Set a vertical bar at 80 characters. When editing Liferay\'s Java files, 80 characters are the maximum number of characters per line.');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-foundations');
+            itext('Code Schools\' Front-end Foundations');
+          ie_close('a');
         ie_close('li');
         ie_open('li');
-          ie_open('strong');
-            itext('tab_size');
-          ie_close('strong');
-          itext(': Set a default tab size to keep code consistent throughout the file. ');
-          ie_open('em');
-            itext('The typical tab size is 4 spaces, although there are occasional exceptions');
-          ie_close('em');
-          itext('.');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-formations');
+            itext('Code Schools\' Front-end Formations');
+          ie_close('a');
         ie_close('li');
         ie_open('li');
-          ie_open('strong');
-            itext('trim_trailing_white_space_on_save');
-          ie_close('strong');
-          itext(': Remove extra line breaks and white-space upon saving of a file.');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/intro-to-html-and-css--ud304');
+            itext('Udacity\'s HTML and CSS Syntax');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://www.w3schools.com/html/default.asp');
+            itext('w3school\'s HTML5 Tutorial');
+          ie_close('a');
         ie_close('li');
       ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Other resources');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/articles/glossary-html');
+            itext('Codecademy\'s HTML glossary');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/HTML');
+            itext('MDN\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.w3schools.com/tags/default.asp');
+            itext('w3school\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('HTML Quiz');
+      ie_close('h2');
       ie_open('p');
-        itext('For a complete list of settings, go to ');
-        ie_open('em');
-          itext('Preferences');
-        ie_close('em');
-        itext(', click on ');
-        ie_open('em');
-          itext('Settings');
-        ie_close('em');
-        itext(', and then click on ');
-        ie_open('em');
-          itext('Default');
-        ie_close('em');
-        itext('. You can override of these settings; just copy it into your user preferences file and change the value.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Package Control');
-      ie_close('h3');
-      ie_open('p');
-        itext('Package Control makes it easy to download and install useful Sublime Text plugins. Exploration here is very valuable because there are a lot of things that you can find to make your life easier or just customize Sublime Text to your liking.');
-      ie_close('p');
-      ie_open('p');
-        itext('More information about ');
+        itext('After you have finished the tutorials, please take the ');
         ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/installation');
-          itext('installing');
-        ie_close('a');
-        itext(' and ');
-        ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/docs/usage');
-          itext('using');
-        ie_close('a');
-        itext(' package control can be found at ');
-        ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/');
-          itext('https://packagecontrol.io/');
+            'href', 'https://www.w3schools.com/html/html_quiz.asp');
+          itext('HTML Quiz');
         ie_close('a');
         itext('.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/Alignment');
-              itext('Alignment');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Easy alignment of multiple selections and multi-line selections.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/BracketHighlighter');
-              itext('BracketHighlighter');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Bracket and tag highlighter for Sublime Text http://facelessuser.github.io/BracketHighlighter/');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/GitHubinator');
-              itext('GitHubinator');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Sublime Text plugin that shows selected text on remote GitHub or Bitbucket repo.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/GitGutter');
-              itext('GitGutter');
-            ie_close('a');
-          ie_close('strong');
-          itext(': A Sublime Text 2/3 plugin to see git diff in gutter');
-        ie_close('li');
-      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28581,11 +28578,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param697}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Nxqwz.render';
+  $render.soyTemplateName = 'crknM.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28595,23 +28592,14 @@ return exports;
 
 });
 
-class Nxqwz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Nxqwz, templates);
+class crknM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(crknM, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28631,7 +28619,24 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Nxqwz, templates);
 /* 252 */,
 /* 253 */,
 /* 254 */,
-/* 255 */
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28667,9 +28672,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _setupSublimeTextSoy = __webpack_require__(226);
+var _indexSoy = __webpack_require__(235);
 
-var _setupSublimeTextSoy2 = _interopRequireDefault(_setupSublimeTextSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28679,23 +28684,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Nxqwz = function (_Component) {
-  _inherits(Nxqwz, _Component);
+var crknM = function (_Component) {
+  _inherits(crknM, _Component);
 
-  function Nxqwz() {
-    _classCallCheck(this, Nxqwz);
+  function crknM() {
+    _classCallCheck(this, crknM);
 
-    return _possibleConstructorReturn(this, (Nxqwz.__proto__ || Object.getPrototypeOf(Nxqwz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (crknM.__proto__ || Object.getPrototypeOf(crknM)).apply(this, arguments));
   }
 
-  return Nxqwz;
+  return crknM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Nxqwz, _setupSublimeTextSoy2.default);
+_metalSoy2.default.register(crknM, _indexSoy2.default);
 
-exports.default = Nxqwz;
+exports.default = crknM;
 
 /***/ })
-],[255]);
+],[272]);
