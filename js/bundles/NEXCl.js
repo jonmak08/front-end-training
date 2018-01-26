@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,37,38,39],[
+webpackJsonppageComponent([35,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28362,7 +28362,286 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
+/* 218 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NEXCl", function() { return NEXCl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from debugging-effectively.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace NEXCl.
+ * @public
+ */
+
+goog.module('NEXCl.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param219 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn19 = opt_data.page.description;
+        if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
+      ie_close('p');
+      ie_open('p');
+        itext('Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Search for surrounding text');
+      ie_close('h3');
+      ie_open('p');
+        itext('Maybe you are looking for something around an error message (e.g. "A user with that OpenID already exists.") that is appearing in a portlet. Use ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext(' to search for the error message string in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code. Your search results should return several ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. These files indicate that this text is being translated from English to other languages.');
+      ie_close('p');
+      ie_open('p');
+        itext('The underlying property name is a ');
+        ie_open('em');
+          itext('language key');
+        ie_close('em');
+        itext(' that matches this value, ');
+        ie_open('em');
+          itext('a-user-with-that-open-id-already-exists');
+        ie_close('em');
+        itext('. Now search for this string within Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code and ignore all the results in the ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. You will see, in a file called ');
+        ie_open('code');
+          itext('open_id.jsp');
+        ie_close('code');
+        itext(', that this message is displayed when a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' occurs.');
+      ie_close('p');
+      ie_open('p');
+        itext('What causes a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' to be thrown?');
+      ie_close('p');
+      ie_open('p');
+        itext('Search for ');
+        ie_open('code');
+          itext('throw new DuplicateOpenIdException');
+        ie_close('code');
+        itext(' and you will find the answer in ');
+        ie_open('code');
+          itext('UserLocalServiceImpl.java');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('A similar technique can be used to locate the file in which a particular view of a portlet is being generated. Just look for a rare string and search for it using ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Along the lines of the last point, if you see a call to a function and think the bug you\'re looking for is occurring in that function, search for the function definition.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you are looking at a function definition and know that the file with the bug in it must be using that function, search for all calls to the function.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Sublime Text has a plugin ');
+          ie_open('a', null, null,
+              'href', 'https://packagecontrol.io/packages/WhoCalled%20Function%20Finder');
+            itext('WhoCalled Function Finder');
+          ie_close('a');
+          itext(' for this exact use case');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Print output');
+      ie_close('h3');
+      ie_open('p');
+        itext('If you are debugging a JavaScript file and want to know the value of any variable or expression at any point in the code, use ');
+        ie_open('code');
+          itext('console.log()');
+        ie_close('code');
+        itext('. This will print the value of the expression to the browser\'s JavaScript console within the DevTools.');
+      ie_close('p');
+      ie_open('p');
+        itext('In a ');
+        ie_open('code');
+          itext('.java');
+        ie_close('code');
+        itext(' file or a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, a ');
+        ie_open('code');
+          itext('System.out.println()');
+        ie_close('code');
+        itext(' statement will print to the ');
+        ie_open('em');
+          itext('Terminal/Git Bash');
+        ie_close('em');
+        itext(' in which you are running Tomcat.');
+      ie_close('p');
+      ie_open('p');
+        itext('Outside a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, you can print directly to the browser by enclosing the Java expression in a block surrounded by ');
+        ie_open('code');
+          itext('<%=');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('%>');
+        ie_close('code');
+        itext(' tags.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Browser\'s JavaScript console');
+      ie_close('h3');
+      ie_open('p');
+        itext('Use the browser\'s JavaScript console to debug and test code. If you declare a JavaScript variable as a ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variable within the Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code (e.g, ');
+        ie_open('code');
+          itext('window.numColors = 2;');
+        ie_close('code');
+        itext(' instead of ');
+        ie_open('code');
+          itext('var numColors = 2;');
+        ie_close('code');
+        itext('), you can access this variable by typing it in the browser\'s JavaScript console.');
+      ie_close('p');
+      ie_open('p');
+        itext('Just be sure to remove all declarations of ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variables before submitting your code for review. If this variable has a function available to it, say ');
+        ie_open('code');
+          itext('toString()');
+        ie_close('code');
+        itext(', you can get the function definition by typing ');
+        ie_open('code');
+          itext('numColors.toString');
+        ie_close('code');
+        itext(', or you can get the result of a function call by typing ');
+        ie_open('code');
+          itext('numColors.toString()');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('More generally, you can use the console to test your own snippets of JavaScript code before putting them in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code.');
+      ie_close('p');
+      ie_open('p');
+        itext('Again, don\'t be afraid to ask for help when you need to.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param219}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'NEXCl.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class NEXCl extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(NEXCl, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 219 */,
 /* 220 */,
 /* 221 */,
@@ -28386,113 +28665,7 @@ exports.default = parseFromAnchor;
 /* 239 */,
 /* 240 */,
 /* 241 */,
-/* 242 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tutorialFirst", function() { return tutorialFirst; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from index.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace tutorialFirst.
- * @public
- */
-
-goog.module('tutorialFirst.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'tutorialFirst.render';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $soyweb(opt_data, opt_ignored, opt_ijData) {
-  ie_open('!DOCTYPE', null, null,
-      'html', '');
-    ie_open('html', null, null,
-        'lang', 'en');
-      ie_open('head');
-        ie_open('meta', null, null,
-            'charset', 'UTF-8');
-        ie_close('meta');
-        ie_open('meta', null, null,
-            'http-equiv', 'refresh',
-            'content', '0; URL=\'' + opt_data.page.url + '\'');
-        ie_close('meta');
-      ie_close('head');
-    ie_close('html');
-  }
-  exports.soyweb = $soyweb;
-  if (goog.DEBUG) {
-    $soyweb.soyTemplateName = 'tutorialFirst.soyweb';
-  }
-
-exports.render.params = [];
-exports.render.types = {};
-exports.soyweb.params = ["page"];
-exports.soyweb.types = {"page":"any"};
-templates = exports;
-return exports;
-
-});
-
-class tutorialFirst extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -28506,39 +28679,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templa
 /* 253 */,
 /* 254 */,
 /* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28574,9 +28715,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(242);
+var _debuggingEffectivelySoy = __webpack_require__(218);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _debuggingEffectivelySoy2 = _interopRequireDefault(_debuggingEffectivelySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28586,23 +28727,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var NEXCl = function (_Component) {
+  _inherits(NEXCl, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function NEXCl() {
+    _classCallCheck(this, NEXCl);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NEXCl.__proto__ || Object.getPrototypeOf(NEXCl)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return NEXCl;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(NEXCl, _debuggingEffectivelySoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = NEXCl;
 
 /***/ })
-],[288]);
+],[256]);

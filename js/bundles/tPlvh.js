@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,37,38,39],[
+webpackJsonppageComponent([21,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28378,20 +28378,12 @@ exports.default = parseFromAnchor;
 /* 231 */,
 /* 232 */,
 /* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tutorialFirst", function() { return tutorialFirst; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tPlvh", function() { return tPlvh; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28407,11 +28399,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tutorialFirst.
+ * @fileoverview Templates in namespace tPlvh.
  * @public
  */
 
-goog.module('tutorialFirst.incrementaldom');
+goog.module('tPlvh.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28432,6 +28424,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+
 
 /**
  * @param {Object<string, *>=} opt_data
@@ -28441,58 +28435,149 @@ var iattr = IncrementalDom.attr;
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
+  var param686 = function() {
+    ie_open('h6');
+      var dyn37 = opt_data.page.description;
+      if (typeof dyn37 == 'function') dyn37(); else if (dyn37 != null) itext(dyn37);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is Git?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
+        ie_close('li');
+        ie_open('li');
+          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/learn/git');
+            itext('Code School\'s Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-git');
+            itext('Codecademy\'s Learn Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://try.github.com');
+            itext('Github.com\'s Try Git');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://pcottle.github.com/learnGitBranching');
+            itext('Learn Git Branching');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://onlywei.github.io/explain-git-with-d3');
+            itext('Visualizing Git Concepts with D3');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
+            itext('Udacity\'s How to Use Git and GitHub');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Other resources');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
+            itext('Atlassian\'s Git Cheat Sheet');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://git-scm.com/documentation');
+            itext('Git\'s documentation');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
+            itext('Git\'s user manual');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://github.com');
+            itext('GitHub.com');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://git-scm.com/book/en/v2');
+            itext('Pro Git');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param686}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tutorialFirst.render';
+  $render.soyTemplateName = 'tPlvh.render';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $soyweb(opt_data, opt_ignored, opt_ijData) {
-  ie_open('!DOCTYPE', null, null,
-      'html', '');
-    ie_open('html', null, null,
-        'lang', 'en');
-      ie_open('head');
-        ie_open('meta', null, null,
-            'charset', 'UTF-8');
-        ie_close('meta');
-        ie_open('meta', null, null,
-            'http-equiv', 'refresh',
-            'content', '0; URL=\'' + opt_data.page.url + '\'');
-        ie_close('meta');
-      ie_close('head');
-    ie_close('html');
-  }
-  exports.soyweb = $soyweb;
-  if (goog.DEBUG) {
-    $soyweb.soyTemplateName = 'tutorialFirst.soyweb';
-  }
-
-exports.render.params = [];
-exports.render.types = {};
-exports.soyweb.params = ["page"];
-exports.soyweb.types = {"page":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class tutorialFirst extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templates);
+class tPlvh extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tPlvh, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -28520,25 +28605,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templa
 /* 267 */,
 /* 268 */,
 /* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28574,7 +28641,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(242);
+var _indexSoy = __webpack_require__(234);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28586,23 +28653,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var tPlvh = function (_Component) {
+  _inherits(tPlvh, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function tPlvh() {
+    _classCallCheck(this, tPlvh);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tPlvh.__proto__ || Object.getPrototypeOf(tPlvh)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return tPlvh;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(tPlvh, _indexSoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = tPlvh;
 
 /***/ })
-],[288]);
+],[270]);

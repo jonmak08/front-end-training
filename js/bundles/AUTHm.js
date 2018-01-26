@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,37,38,39],[
+webpackJsonppageComponent([13,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28386,12 +28386,18 @@ exports.default = parseFromAnchor;
 /* 239 */,
 /* 240 */,
 /* 241 */,
-/* 242 */
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tutorialFirst", function() { return tutorialFirst; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AUTHm", function() { return AUTHm; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28403,15 +28409,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from step-one.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tutorialFirst.
+ * @fileoverview Templates in namespace AUTHm.
  * @public
  */
 
-goog.module('tutorialFirst.incrementaldom');
+goog.module('AUTHm.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28432,6 +28438,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
 
 /**
  * @param {Object<string, *>=} opt_data
@@ -28441,64 +28449,232 @@ var iattr = IncrementalDom.attr;
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
+  var param881 = function() {
+    ie_open('h2');
+      var dyn46 = opt_data.page.title;
+      if (typeof dyn46 == 'function') dyn46(); else if (dyn46 != null) itext(dyn46);
+    ie_close('h2');
+    ie_open('p');
+      itext('Download and install the following software. ');
+      ie_open('em');
+        itext('There are options listed for each category, so feel free to pick whichever you prefer.');
+      ie_close('em');
+    ie_close('p');
+    ie_open('h3');
+      itext('7zip');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://sourceforge.net/projects/sevenzip');
+          itext('7zip');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Apache Ant');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://ant.apache.org');
+          itext('Apache Ant');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Chat/IM Client');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://hangouts.google.com/webchat/start');
+          itext('Google Hangouts');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.skype.com/en/new');
+          itext('Skype');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://slack.com');
+          itext('Slack');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Java JDK');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
+          itext('Java JDK 8');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Git');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://git-scm.com');
+          itext('Git');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Text Editor');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://atom.io');
+          itext('Atom');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://brackets.io');
+          itext('Brackets');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://notepad-plus-plus.org');
+          itext('Notepad++');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.sublimetext.com');
+          itext('Sublime Text');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.vim.org');
+          itext('Vim');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://code.visualstudio.com');
+          itext('Visual Studio Code');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Version Control GUI');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://desktop.github.com');
+          itext('GitHub Desktop');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.collab.net/products/giteye');
+          itext('GitEye');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://wiki.gnome.org/Apps/Gitg');
+          itext('Gitg');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.syntevo.com/smartgit');
+          itext('SmartGit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.sourcetreeapp.com');
+          itext('SourceTree');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://tortoisegit.org');
+          itext('TortoiseGit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://github.com/FredrikNoren/ungit');
+          itext('ungit');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://git-scm.com/downloads/guis');
+          itext('And many more...');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Web Browsers');
+    ie_close('h3');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.google.com/chrome');
+          itext('Chrome');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.mozilla.org/en-US/firefox/new');
+          itext('Firefox');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads');
+          itext('Internet Explorer');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param881}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tutorialFirst.render';
+  $render.soyTemplateName = 'AUTHm.render';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $soyweb(opt_data, opt_ignored, opt_ijData) {
-  ie_open('!DOCTYPE', null, null,
-      'html', '');
-    ie_open('html', null, null,
-        'lang', 'en');
-      ie_open('head');
-        ie_open('meta', null, null,
-            'charset', 'UTF-8');
-        ie_close('meta');
-        ie_open('meta', null, null,
-            'http-equiv', 'refresh',
-            'content', '0; URL=\'' + opt_data.page.url + '\'');
-        ie_close('meta');
-      ie_close('head');
-    ie_close('html');
-  }
-  exports.soyweb = $soyweb;
-  if (goog.DEBUG) {
-    $soyweb.soyTemplateName = 'tutorialFirst.soyweb';
-  }
-
-exports.render.params = [];
-exports.render.types = {};
-exports.soyweb.params = ["page"];
-exports.soyweb.types = {"page":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class tutorialFirst extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templates);
+class AUTHm extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AUTHm, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
 /* 249 */,
 /* 250 */,
 /* 251 */,
@@ -28528,17 +28704,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templa
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28574,9 +28740,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(242);
+var _stepOneSoy = __webpack_require__(248);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stepOneSoy2 = _interopRequireDefault(_stepOneSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28586,23 +28752,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var AUTHm = function (_Component) {
+  _inherits(AUTHm, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function AUTHm() {
+    _classCallCheck(this, AUTHm);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AUTHm.__proto__ || Object.getPrototypeOf(AUTHm)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return AUTHm;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(AUTHm, _stepOneSoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = AUTHm;
 
 /***/ })
-],[288]);
+],[278]);

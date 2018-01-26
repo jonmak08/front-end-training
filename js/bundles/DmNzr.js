@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,37,38,39],[
+webpackJsonppageComponent([36,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28368,30 +28368,12 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tutorialFirst", function() { return tutorialFirst; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmNzr", function() { return DmNzr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28403,15 +28385,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from searching-smartly.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tutorialFirst.
+ * @fileoverview Templates in namespace DmNzr.
  * @public
  */
 
-goog.module('tutorialFirst.incrementaldom');
+goog.module('DmNzr.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28432,6 +28414,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+
 
 /**
  * @param {Object<string, *>=} opt_data
@@ -28441,58 +28425,130 @@ var iattr = IncrementalDom.attr;
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
+  var param343 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn23 = opt_data.page.description;
+        if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+      ie_close('p');
+      ie_open('p');
+        itext('Much of the leg-work of what you\'ll be doing will involve a significant amount of searching - whether you are looking for a CSS class name, or a taglib attribute, or property value. Being able to search well is an invaluable asset for your experience and effectiveness while working at Liferay.');
+      ie_close('p');
+      ie_open('p');
+        itext('When searching for things, don\'t get tunnel vision; it\'s going to happen, but try to fight it. Try to start by looking at the whole picture, and then systematically narrow your search down. If you find you\'ve spent a few days trying to pinpoint a certain class, or a specific JavaScript method, you probably have tunnel vision; this may not always be the case, but it\'s highly likely you are missing something.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you are stuck, ask for help, whether it is Google, your coworker or even your manager. A lot of people have found what you\'re currently looking for so don\'t be afraid to ask for help.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Choose good keywords or phrases');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Searching the entire Liferay ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code with a keyword that is too broad or common will return you hundreds of results. Use keywords that are likely to be unique for the situation you are looking for.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Windows File Explorer');
+      ie_close('h3');
+      ie_open('p');
+        itext('Windows File Explorer is great if you need to track down a file or a folder, but it can be incredibly misleading when trying to find keywords, especially ones that are parts of long strings of text.');
+      ie_close('p');
+      ie_open('p');
+        itext('Use ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext(' for searching for anything that isn\'t obvious like a file or a folder.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Sublime Text');
+      ie_close('h3');
+      ie_open('p');
+        ie_open('code');
+          itext('Ctrl + Shift + F');
+        ie_close('code');
+        itext(' is your friend when it comes to searching. This has been mentioned before, but seriously, you will find yourself using it a lot. If you know the type of files you are looking for, you can refine your search to just ');
+        ie_open('code');
+          itext('*.css');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.js');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.java');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.jsp');
+        ie_close('code');
+        itext(' files.');
+      ie_close('p');
+      ie_open('p');
+        itext('It may also be helpful to learn how to write regular expressions. Sublime Text uses the Perl Compatible Regular Expressions (PCRE) engine from the Boost library to power regular expressions in search panels. ');
+        ie_open('a', null, null,
+            'href', 'http://docs.sublimetext.info/en/latest/search_and_replace/search_and_replace_overview.html');
+          itext('Read more about regarding Sublime Text\'s regular expression');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param343}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tutorialFirst.render';
+  $render.soyTemplateName = 'DmNzr.render';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $soyweb(opt_data, opt_ignored, opt_ijData) {
-  ie_open('!DOCTYPE', null, null,
-      'html', '');
-    ie_open('html', null, null,
-        'lang', 'en');
-      ie_open('head');
-        ie_open('meta', null, null,
-            'charset', 'UTF-8');
-        ie_close('meta');
-        ie_open('meta', null, null,
-            'http-equiv', 'refresh',
-            'content', '0; URL=\'' + opt_data.page.url + '\'');
-        ie_close('meta');
-      ie_close('head');
-    ie_close('html');
-  }
-  exports.soyweb = $soyweb;
-  if (goog.DEBUG) {
-    $soyweb.soyTemplateName = 'tutorialFirst.soyweb';
-  }
-
-exports.render.params = [];
-exports.render.types = {};
-exports.soyweb.params = ["page"];
-exports.soyweb.types = {"page":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class tutorialFirst extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templates);
+class DmNzr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DmNzr, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -28505,40 +28561,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorialFirst, templa
 /* 252 */,
 /* 253 */,
 /* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28574,9 +28597,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(242);
+var _searchingSmartlySoy = __webpack_require__(224);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _searchingSmartlySoy2 = _interopRequireDefault(_searchingSmartlySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28586,23 +28609,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var DmNzr = function (_Component) {
+  _inherits(DmNzr, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function DmNzr() {
+    _classCallCheck(this, DmNzr);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DmNzr.__proto__ || Object.getPrototypeOf(DmNzr)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return DmNzr;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(DmNzr, _searchingSmartlySoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = DmNzr;
 
 /***/ })
-],[288]);
+],[255]);
