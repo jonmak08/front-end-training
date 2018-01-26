@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,37,38,39],[
+webpackJsonppageComponent([13,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param23 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn2 = opt_data.page.author;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn3 = opt_data.page.date;
+          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn4 = opt_data.page.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList36 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen36 = childIdList36.length;
-      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
-        var childIdData36 = childIdList36[childIdIndex36];
-        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
-        if (opt_data.page.url != childPage__soy24.url) {
+      var childIdList56 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen56 = childIdList56.length;
+      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
+        var childIdData56 = childIdList56[childIdIndex56];
+        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
+        if (opt_data.page.url != childPage__soy44.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy24.url);
+                'href', childPage__soy44.url);
               ie_open('small');
                 itext('By ');
-                var dyn4 = childPage__soy24.author;
-                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                var dyn6 = childPage__soy44.author;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn5 = childPage__soy24.date;
-                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                  var dyn7 = childPage__soy44.date;
+                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn6 = childPage__soy24.title;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn8 = childPage__soy44.title;
+                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn7 = opt_data.page.title;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn8 = opt_data.content;
-            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn11 = opt_data.content;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy139,
             'class', 'btn btn-accent btn-sm');
-          var dyn12 = opt_data.page.buttonTitle;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn13 = opt_data.page.weight;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn14 = opt_data.page.title;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28393,16 +28393,12 @@ exports.default = parseFromAnchor;
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "oYTdf", function() { return oYTdf; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CRUqL", function() { return CRUqL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28414,15 +28410,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-two.soy.
+// This file was automatically generated from step-seven.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace oYTdf.
+ * @fileoverview Templates in namespace CRUqL.
  * @public
  */
 
-goog.module('oYTdf.incrementaldom');
+goog.module('CRUqL.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28456,621 +28452,250 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1046 = function() {
+  var param892 = function() {
     ie_open('h2');
-      var dyn51 = opt_data.page.title;
-      if (typeof dyn51 == 'function') dyn51(); else if (dyn51 != null) itext(dyn51);
+      var dyn47 = opt_data.page.title;
+      if (typeof dyn47 == 'function') dyn47(); else if (dyn47 != null) itext(dyn47);
     ie_close('h2');
+    ie_open('p');
+      itext('We are going to get Liferay\'s ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code from GitHub.com on to your machine.');
+    ie_close('p');
     ie_open('h3');
-      itext('Change your computer name');
+      itext('Forking a repository');
     ie_close('h3');
     ie_open('p');
-      itext('Change your computer name to something more user friendly because we will be using this later on when configuring Liferay.');
+      itext('In order to begin making changes to ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code and have it reviewed, tested, and approved, you will need to make a copy of this code locally.');
     ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Launch ');
-        ie_open('em');
-          itext('System Preferences');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('Sharing');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('On the ');
-        ie_open('em');
-          itext('Computer Name, domain, and workgroup settings');
-        ie_close('em');
-        itext(' section, click the ');
-        ie_open('em');
-          itext('Change Settings...');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Change...');
-        ie_close('em');
-        itext(' button under the ');
-        ie_open('em');
-          itext('Computer Name');
-        ie_close('em');
-        itext(' tab.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Change your folder options');
-    ie_close('h3');
     ie_open('p');
-      itext('Show ');
+      itext('A ');
       ie_open('em');
-        itext('hidden');
+        itext('fork');
       ie_close('em');
-      itext(' files in the ');
-      ie_open('em');
-        itext('Finder/File Explorer');
-      ie_close('em');
-      itext(' because Liferay contains hidden files that we need to edit.');
+      itext(' is copying a repository on GitHub.com from it\'s original owner to your personal GitHub.com account.  Forking a repository allows you to freely experiment with changes without affecting the original project.');
+    ie_close('p');
+    ie_open('p');
+      itext('Most commonly, forks are used to either propose changes to someone else\'s project or to use someone else\'s project as a starting point for your own ideas.');
     ie_close('p');
     ie_open('h4');
-      itext('OS X');
+      itext('Forking Liferay Portal');
     ie_close('h4');
+    ie_open('p');
+      itext('Forking a repository is a simple two-step process.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('On GitHub.com, navigate to the ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal');
+          itext('liferay/liferay-portal');
+        ie_close('a');
+        itext(' repository.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the top-right corner of the page, click ');
+        ie_open('strong');
+          itext('Fork');
+        ie_close('strong');
+        itext('.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You have now have a fork of the original ');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('liferay/liferay-portal');
+      ie_close('a');
+      itext(' repository in your GitHub.com account.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Cloning Liferay Portal');
+    ie_close('h4');
+    ie_open('p');
+      itext('Because forking the repository only makes a copy of the code in GitHub.com, we now need to get this code locally to begin.');
+    ie_close('p');
     ie_open('ol');
       ie_open('li');
         ie_open('p');
-          itext('Launch the ');
+          itext('Setup Git if you have not done so already in the previous steps.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Go to ');
           ie_open('em');
-            itext('Terminal');
+            itext('your');
+          ie_close('em');
+          itext(' fork of the liferay-portal repository on GitHub.com.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Click the ');
+          ie_open('strong');
+            itext('Clone or download');
+          ie_close('strong');
+          itext(' button. When connecting to a GitHub.com repository from Git, you will need to authenticate using either ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(' (');
+          ie_open('em');
+            itext('recommended');
+          ie_close('em');
+          itext(') or ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(', please review the following ');
+          ie_open('a', null, null,
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended');
+            itext('instructions');
+          ie_close('a');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext(', please review the following ');
+          ie_open('a', null, null,
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls');
+            itext('instructions');
+          ie_close('a');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('In the dialog that appears after clicking the ');
+          ie_open('strong');
+            itext('Clone or download');
+          ie_close('strong');
+          itext(' button, copy the URL that you want to use for your repository.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Browse to the location where you would like to download this repository.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('We will download the repository from GitHub.com to our local machine by cloning it. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: '# Pasted URL should look something like:\n# SSH URL: git@github.com:brianchandotcom/liferay-portal.git\n# HTTPS: https://github.com/brianchandotcom/liferay-portal.git\ngit clone PASTE URL HERE', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('Upon completion, you should see something like the output below.');
+        ie_close('p');
+        $templateAlias2({code: 'Cloning into `liferay-portal`...remote: Counting objects: 10, done.\n...\nremote: Compressing objects: 100% (8/8), done.\nremove: Total 10 (delta 1), reused 10 (delta 1)\nUnpacking objects: 100% (10/10), done.', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You now have a local copy of your fork of the liferay-portal repository!');
+    ie_close('p');
+    ie_open('h4');
+      itext('Configuring your remote repository URLs');
+    ie_close('h4');
+    ie_open('p');
+      itext('Now that we have have everything locally, we need to add a remote url. A remote URL is Git\'s fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub.com, or another user\'s fork, or even on a completely different server.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Go to your newly cloned repository in ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
           ie_close('em');
           itext('.');
         ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Enter the command below.');
+          itext('Check what your currently remote repositories are by running the following command below.');
         ie_close('p');
-        $templateAlias2({code: 'defaults write com.apple.Finder AppleShowAllFiles TRUE', mode: 'shell'}, null, opt_ijData);
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you do not have any remote URL\'s listed, you will have to add a remote URL for the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' and ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repositories.');
+        ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Relaunch the Finder to make the changes take effect.');
+          itext('Add the upstream remote, if it is not already added, to point to the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL. Run the following command to complete this action.');
         ie_close('p');
-        $templateAlias2({code: 'killall Finder', mode: 'shell'}, null, opt_ijData);
+        $templateAlias2({code: '# Copy the upstream repository URL\ngit remote add upstream https://github.com/liferay/liferay-portal.git', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you need to add the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' remote, follow the same steps but use the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repository URL instead of the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Verify that your remote URL\'s are correctly pointing to the desired locations by running the following command below.');
+        ie_close('p');
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)\nupstream    https://github.com/liferay/liferay-portal.git (fetch)\nupstream    https://github.com/liferay/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('You can add as many remote URL\'s as you would like.  Just make sure to have each one named uniquely.');
+        ie_close('p');
       ie_close('li');
     ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Start Menu');
-        ie_close('em');
-        itext(' and search for ');
-        ie_open('em');
-          itext('Folder Explorer Options');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('View');
-        ie_close('em');
-        itext(' tab .');
-      ie_close('li');
-      ie_open('li');
-        itext('Under the ');
-        ie_open('em');
-          itext('Advanced settings:');
-        ie_close('em');
-        itext(' section, make sure ');
-        ie_open('em');
-          itext('Show hidden files, folders and drives');
-        ie_close('em');
-        itext(' is selected.');
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure ');
-        ie_open('em');
-          itext('Hide extensions for known file types');
-        ie_close('em');
-        itext(' is unchecked.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Set ANT_OPTS environment variable');
-    ie_close('h3');
     ie_open('p');
-      ie_open('em');
-        itext('ANT_OPTS');
-      ie_close('em');
-      itext(' is an environment variable that provides a list of arguments that you want to pass to the Java Virtual Machine that will run Ant.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Create a ');
-        ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext(' if one does not already exist.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the contents below into the ');
-        ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext('.');
-        $templateAlias2({code: 'export ANT_OPTS="-Xms2048m -Xmx4096m"', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Relaunch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('User variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('ANT_OPTS');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('code');
-          itext('ANT_OPTS');
-        ie_close('code');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('-Xms2048m -Xmx4096m');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Apache Ant');
-    ie_close('h3');
-    ie_open('p');
-      itext('Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the ');
+      itext('For more information about remotes, please read ');
       ie_open('a', null, null,
-          'href', 'http://ant.apache.org/');
-        itext('Apache Ant');
+          'href', 'https://help.github.com/articles/about-remote-repositories/');
+        itext('About remote repositories');
       ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
+      itext('.');
     ie_close('p');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Unzip the downloaded file from the previous step into your C:\\ drive.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Ant directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('strong');
-          itext('ANT_HOME');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Apache Ant path you coped in step 2');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' variable to the ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable.');
-        $templateAlias2({code: '%ANT_HOME%/bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Ant is installed correctly. A message ');
-        ie_open('em');
-          itext('Buildfile: build.xml does not exist! Build failed');
-        ie_close('em');
-        itext('.');
-        $templateAlias2({code: 'ant', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Java JDK');
-    ie_close('h3');
-    ie_open('p');
-      itext('Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the ');
-      ie_open('a', null, null,
-          'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
-        itext('Java JDK');
-      ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step. (The installer should be in ');
-        ie_open('code');
-          itext('.dmg');
-        ie_close('code');
-        itext(' format).');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('To check if Java is installed, launch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step.');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Java JDK directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Java JDK path you coped in step 3');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' variable to the ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable.');
-        $templateAlias2({code: '%JAVA_HOME%\\bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to check if your ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable is set correctly. It should list the directory of your JAVA JDK.');
-        $templateAlias2({code: 'path', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -29080,11 +28705,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param892}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'oYTdf.render';
+  $render.soyTemplateName = 'CRUqL.render';
 }
 
 exports.render.params = ["page","site"];
@@ -29094,14 +28719,18 @@ return exports;
 
 });
 
-class oYTdf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(oYTdf, templates);
+class CRUqL extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CRUqL, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
 /* 254 */,
 /* 255 */,
 /* 256 */,
@@ -29126,16 +28755,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(oYTdf, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29171,9 +28791,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepTwoSoy = __webpack_require__(253);
+var _stepSevenSoy = __webpack_require__(249);
 
-var _stepTwoSoy2 = _interopRequireDefault(_stepTwoSoy);
+var _stepSevenSoy2 = _interopRequireDefault(_stepSevenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29183,23 +28803,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var oYTdf = function (_Component) {
-  _inherits(oYTdf, _Component);
+var CRUqL = function (_Component) {
+  _inherits(CRUqL, _Component);
 
-  function oYTdf() {
-    _classCallCheck(this, oYTdf);
+  function CRUqL() {
+    _classCallCheck(this, CRUqL);
 
-    return _possibleConstructorReturn(this, (oYTdf.__proto__ || Object.getPrototypeOf(oYTdf)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CRUqL.__proto__ || Object.getPrototypeOf(CRUqL)).apply(this, arguments));
   }
 
-  return oYTdf;
+  return CRUqL;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(oYTdf, _stepTwoSoy2.default);
+_metalSoy2.default.register(CRUqL, _stepSevenSoy2.default);
 
-exports.default = oYTdf;
+exports.default = CRUqL;
 
 /***/ })
-],[287]);
+],[278]);

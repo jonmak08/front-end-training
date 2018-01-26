@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param23 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn2 = opt_data.page.author;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn3 = opt_data.page.date;
+          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn4 = opt_data.page.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList36 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen36 = childIdList36.length;
-      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
-        var childIdData36 = childIdList36[childIdIndex36];
-        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
-        if (opt_data.page.url != childPage__soy24.url) {
+      var childIdList56 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen56 = childIdList56.length;
+      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
+        var childIdData56 = childIdList56[childIdIndex56];
+        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
+        if (opt_data.page.url != childPage__soy44.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy24.url);
+                'href', childPage__soy44.url);
               ie_open('small');
                 itext('By ');
-                var dyn4 = childPage__soy24.author;
-                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                var dyn6 = childPage__soy44.author;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn5 = childPage__soy24.date;
-                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                  var dyn7 = childPage__soy44.date;
+                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn6 = childPage__soy24.title;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn8 = childPage__soy44.title;
+                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn7 = opt_data.page.title;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn8 = opt_data.content;
-            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn11 = opt_data.content;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy139,
             'class', 'btn btn-accent btn-sm');
-          var dyn12 = opt_data.page.buttonTitle;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn13 = opt_data.page.weight;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn14 = opt_data.page.title;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28362,13 +28362,12 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
-/* 219 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hFffk", function() { return hFffk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "iQGQf", function() { return iQGQf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28380,15 +28379,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from git-for-dummies.soy.
+// This file was automatically generated from debugging-effectively.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace hFffk.
+ * @fileoverview Templates in namespace iQGQf.
  * @public
  */
 
-goog.module('hFffk.incrementaldom');
+goog.module('iQGQf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28409,8 +28408,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
@@ -28422,720 +28419,197 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param230 = function() {
+  var param219 = function() {
     ie_open('article');
       ie_open('p');
-        itext('Git can be ');
-        ie_open('em');
-          itext('incredibly');
-        ie_close('em');
-        itext(' confusing when you start using it. The ');
-        ie_open('a', null, null,
-            'href', '/guide/git/');
-          itext('Git guide');
-        ie_close('a');
-        itext(' has some great tips, but don\'t rely solely on it; feel free to look for Git tutorials on Google or YouTube; there are a lot of great beginner tips out there, and the faster you understand Git, the faster you can get up to speed with the rest of Liferay. It may take time, but it\'ll make sense eventually.');
+        var dyn19 = opt_data.page.description;
+        if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
       ie_close('p');
       ie_open('p');
-        ie_open('a', null, null,
-            'href', 'http://www-cs-students.stanford.edu/~blynn/gitmagic');
-          itext('Git Magic');
-        ie_close('a');
-        itext(' provides an introduction about Git; a basic understanding of what Git is and what it is useful for.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com/book/en/v2');
-          itext('Pro Git');
-        ie_close('a');
-        itext(' contains extensive documentation on how to use Git.');
-      ie_close('p');
-      ie_open('p');
-        itext('First off, you\'re going to have to use the command line. There are other means of going about using Git, using ');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com/downloads/guis');
-          itext('GUI clients');
-        ie_close('a');
-        itext(' such as ');
-        ie_open('a', null, null,
-            'href', 'http://www.syntevo.com/smartgit');
-          itext('SmartGit');
-        ie_close('a');
-        itext(', but the command line is usually (but not always) the most effective way to use Git. A lot of Git is just learning to understand what you\'re seeing on the command line.');
+        itext('Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.');
       ie_close('p');
       ie_open('h3');
-        itext('Some things to know');
+        itext('Search for surrounding text');
       ie_close('h3');
       ie_open('p');
-        itext('Git is best described as a "decentralized source control management system". That means that instead of having one ');
+        itext('Maybe you are looking for something around an error message (e.g. "A user with that OpenID already exists.") that is appearing in a portlet. Use ');
         ie_open('em');
-          itext('master');
+          itext('Sublime Text');
         ie_close('em');
-        itext(' source that everyone has to work with (it can be destroyed, shut down, corrupted, etc.) every user is given an independent copy of the ');
+        itext(' to search for the error message string in Liferay\'s ');
         ie_open('em');
-          itext('master source code');
+          itext('source');
+        ie_close('em');
+        itext(' code. Your search results should return several ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. These files indicate that this text is being translated from English to other languages.');
+      ie_close('p');
+      ie_open('p');
+        itext('The underlying property name is a ');
+        ie_open('em');
+          itext('language key');
+        ie_close('em');
+        itext(' that matches this value, ');
+        ie_open('em');
+          itext('a-user-with-that-open-id-already-exists');
+        ie_close('em');
+        itext('. Now search for this string within Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code and ignore all the results in the ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. You will see, in a file called ');
+        ie_open('code');
+          itext('open_id.jsp');
+        ie_close('code');
+        itext(', that this message is displayed when a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' occurs.');
+      ie_close('p');
+      ie_open('p');
+        itext('What causes a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' to be thrown?');
+      ie_close('p');
+      ie_open('p');
+        itext('Search for ');
+        ie_open('code');
+          itext('throw new DuplicateOpenIdException');
+        ie_close('code');
+        itext(' and you will find the answer in ');
+        ie_open('code');
+          itext('UserLocalServiceImpl.java');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('A similar technique can be used to locate the file in which a particular view of a portlet is being generated. Just look for a rare string and search for it using ');
+        ie_open('em');
+          itext('Sublime Text');
         ie_close('em');
         itext('.');
       ie_close('p');
       ie_open('p');
-        itext('They can make changes and then merge those changes back into the source repository (');
-        ie_open('em');
-          itext('upstream');
-        ie_close('em');
-        itext(').');
+        itext('Along the lines of the last point, if you see a call to a function and think the bug you\'re looking for is occurring in that function, search for the function definition.');
       ie_close('p');
       ie_open('p');
-        itext('This main repository is called ');
+        itext('If you are looking at a function definition and know that the file with the bug in it must be using that function, search for all calls to the function.');
+      ie_close('p');
+      ie_open('p');
         ie_open('em');
-          itext('trunk');
+          itext('Sublime Text has a plugin ');
+          ie_open('a', null, null,
+              'href', 'https://packagecontrol.io/packages/WhoCalled%20Function%20Finder');
+            itext('WhoCalled Function Finder');
+          ie_close('a');
+          itext(' for this exact use case');
         ie_close('em');
         itext('.');
       ie_close('p');
-      ie_open('p');
-        itext('What makes Git unique is that it only records the changes (');
-        ie_open('em');
-          itext('commits');
-        ie_close('em');
-        itext(') made by individual users. So when a change is made, instead of having to upload thousands of files, whatever changes have been made are applied to the main repository, and the rest of the files are left untouched. It\'s like a painter adding onto a painting when he wants to make a change, as opposed to starting from scratch and making the change.');
-      ie_close('p');
-      ie_open('p');
-        itext('For further reference, a great beginner video series is the ');
-        ie_open('a', null, null,
-            'href', 'https://www.youtube.com/watch?v=sUQALbfDdAI&feature=c4-overview-vl&list=PL08C8894B4C602654');
-          itext('AVA series on YouTube');
-        ie_close('a');
-        itext('. It is incredibly simple, and made for absolute Git beginners, which most interns typically are. In addition, most of the Git commands you will need to use at Liferay can be found ');
-        ie_open('a', null, null,
-            'href', '/guide/git/commands.html');
-          itext('here');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Overview of the Git workflow');
-      ie_close('h4');
-      ie_open('ol');
-        ie_open('li');
-          itext('Initialize and setup a Git repository');
-        ie_close('li');
-        ie_open('li');
-          itext('Create a local branch to work on and make changes to');
-        ie_close('li');
-        ie_open('li');
-          itext('Add any new/modified changes that you want to include in the commit');
-        ie_close('li');
-        ie_open('li');
-          itext('Commit often so it is easier to keep track of all your work');
-        ie_close('li');
-        ie_open('li');
-          itext('Push local commits to the remote repository');
-        ie_close('li');
-        ie_open('li');
-          itext('Submit a pull request');
-        ie_close('li');
-      ie_close('ol');
-      ie_open('h4');
-        itext('Updating branches and repositories');
-      ie_close('h4');
-      ie_open('p');
-        itext('There are two ways to update your local branches to reflect upstream changes.');
-      ie_close('p');
-      ie_open('p');
-        itext('The first is by using ');
-        ie_open('code');
-          itext('git pull --rebase upstream BRANCH');
-        ie_close('code');
-        itext(', which performs the entire process in a single step. The second, faster, way, is to use ');
-        ie_open('code');
-          itext('git fetch upstream');
-        ie_close('code');
-        itext(', which pulls changes from all upstream branches but does not merge them. Since using ');
-        ie_open('em');
-          itext('fetch');
-        ie_close('em');
-        itext(' shows you all the branches that have changed, you can choose to update only those branches. The next step is to use ');
-        ie_open('code');
-          itext('git branch -f BRANCH upstream/BRANCH');
-        ie_close('code');
-        itext(', which forces your local copy of ');
-        ie_open('em');
-          itext('BRANCH');
-        ie_close('em');
-        itext(' to be identical to its corresponding upstream branch. This operation executes instantaneously, unlike ');
-        ie_open('em');
-          itext('pull --rebase');
-        ie_close('em');
-        itext(', which takes a little bit of time.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('em');
-          itext('Just make sure you always create local branches when you need to make changes and never make changes to your local copies of upstream branches, or else using branch -f will make your changes disappear.');
-        ie_close('em');
-      ie_close('p');
-      ie_open('p');
-        itext('The biggest thing to remember, if you are just starting out with Git is just to be careful and patient. Always make a new branch (');
-        ie_open('code');
-          itext('git checkout -b <branchname>');
-        ie_close('code');
-        itext(') for the work that you are doing - if you always work in a separate branch there may be a little bit more overhead time, but if you screw up then you can easily fix it.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you send code off to be approved, don\'t touch it - if you need to work on it again, you\'ll get it back, or receive an okay to work on it again, don\'t risk conflicting with changes that a supervisor might make and then send to you by changing stuff in your specific copy that could conflict with someone else\'s. Don\'t ever try to ');
-        ie_open('em');
-          itext('recreate');
-        ie_close('em');
-        itext(' changes someone else made that you don\'t have access to, ask them for a pull request or get your hands on it the right way. Git can have a high degree of complexity as a whole, but you can make your little slice of things pretty simple, so don\'t make it harder on yourself.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Resolving a bug in Liferay');
-      ie_close('h4');
-      ie_open('p');
-        itext('This is a conceptual walk-through about how to use Git to resolve a bug found in Liferay Portal.');
-      ie_close('p');
-      ie_open('p');
-        itext('It won\'t cover every specific command, but it will detail a process that should help you better understand what is going on in Git and how to use Git for a simple bug fix.');
-      ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          itext('Update our local copy of Liferay Portal to match Liferay Portal trunk (');
-          ie_open('em');
-            itext('upstream');
-          ie_close('em');
-          itext(' on GitHub). This would ensure that all the changes that have recently been added to the trunk are reflected in your local copy (because you most likely won\'t want to be working off of an outdated version of portal). We would do this using a git pull. This would pull all the changes from Liferay\'s ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code onto our personal machine.');
-        ie_close('li');
-        ie_open('li');
-          itext('Make a new branch. This helps to preserve both the integrity of the ');
-          ie_open('em');
-            itext('master');
-          ie_close('em');
-          itext(' branch and the changes you\'ve made to accomplish a specific task (just in case you need to refer to those changes in the future). For this example, we\'ll create a branch called ');
-          ie_open('em');
-            itext('BugFix9');
-          ie_close('em');
-          itext('. All the changes we make will be made on this branch, but if all goes well, they will be merged into the master branch. ');
-          ie_open('em');
-            itext('Note: A good convention to follow is to include the ticket number in the branch name. For example, LPS-12345-bugFix');
-          ie_close('em');
-          itext('.');
-        ie_close('li');
-        ie_open('li');
-          itext('Checkout our new branch and make our changes ');
-          ie_open('em');
-            itext('Note: You\'ll likely make your changes in your bundle before making the changes to your branch in portal');
-          ie_close('em');
-          itext('. Once our changes have been made, we would add them to our working tree, using ');
-          ie_open('code');
-            itext('git add');
-          ie_close('code');
-          itext('. This merely means that Git is now waiting to commit those specific changes we\'ve added.');
-        ie_close('li');
-        ie_open('li');
-          itext('Rebuild our changes with the bugfix to see if the fix really works (run ');
-          ie_open('code');
-            itext('ant all');
-          ie_close('code');
-          itext(' on your liferay-portal repository will ensure your changes are deployed). This will help ensure that your bugfix isn\'t another bug in itself. ');
-          ie_open('em');
-            itext('Tip: Doing ant all on liferay-portal usually takes a while, so to from rebuilding all the source code in the portal, if you only make changes to a sub-directory (for example, the bookmarks portlet), you can navigate to the sub-directory in your Terminal/Git Bash and run ');
-            ie_open('code');
-              itext('gradle clean deploy');
-            ie_close('code');
-            itext(' instead of ant all.');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          itext('Now that we\'ve fixed our bug and tested everything. All our changes have been added (another word for this is staged), and we\'re ready to commit them. This means that we\'re going to add them to the ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code of our current branch. We run ');
-          ie_open('code');
-            itext('git commit');
-          ie_close('code');
-          itext(', and now the fixes we made are part of the branch ');
-          ie_open('em');
-            itext('BugFix9');
-          ie_close('em');
-          itext('. ');
-          ie_open('em');
-            itext('Note: For bug fixes, we usually include the ticket number in front of the commit message. For example, LPS-12345 Your commit message.');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          itext('Before we push our work to our origin, we need to update our local branch with ');
-          ie_open('em');
-            itext('upstream/master');
-          ie_close('em');
-          itext(' to make sure that all changes are compatible with the most recent changes on ');
-          ie_open('em');
-            itext('upstream/master');
-          ie_close('em');
-          itext('.Occasionally, this update and merging process does not go smoothly. If we changed the same part of the same file differently in the two branches that we are merging together, Git won\'t be able to merge them.');
-        ie_close('li');
-        ie_open('li');
-          itext('However, our changes will likely go through a reviewer (or two or three), so we\'ll push our branch to our our ');
-          ie_open('em');
-            itext('origin');
-          ie_close('em');
-          itext(' and then send a pull request to a reviewer. We would do this by sending our local branch to our remote ');
-          ie_open('em');
-            itext('origin');
-          ie_close('em');
-          itext(' repository using ');
-          ie_open('code');
-            itext('git push');
-          ie_close('code');
-          itext(' (e.g. ');
-          ie_open('code');
-            itext('git push origin BugFix9');
-          ie_close('code');
-          itext(').');
-        ie_close('li');
-        ie_open('li');
-          itext('Finally, we submit a pull request to our reviewer. If our code looks good, it will get pushed into the remote ');
-          ie_open('em');
-            itext('upstream');
-          ie_close('em');
-          itext(' repository and become a part of the trunk. ');
-          ie_open('em');
-            itext('Note: When sending pull requests for bug fixes, another good convention to follow is to include the link to the JIRA ticket in the body section of the pull request.');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          itext('Congratulations! You have successful fixed a bug in Liferay\'s ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code.');
-        ie_close('li');
-      ie_close('ol');
       ie_open('h3');
-        itext('Git shortcuts and tips');
+        itext('Print output');
       ie_close('h3');
       ie_open('p');
-        itext('Below are some helpful shortcuts for Git. If you haven\'t wrapped your mind around the basics of Git yet, you may want to study and use Git more before trying some of these shortcuts.');
-      ie_close('p');
-      ie_open('h4');
-        itext('.gitconfig');
-      ie_close('h4');
-      ie_open('p');
-        itext('In your ');
-        ie_open('em');
-          itext('~');
-        ie_close('em');
-        itext(' directory, you\'ll also find a file called ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext('. Editing this file allows you to set more advanced options for Git.');
-      ie_close('p');
-      ie_open('p');
-        itext('Here is a snippet of code from a sample ');
-        ie_open('em');
-          itext('.gitconfig');
-        ie_close('em');
-        itext(' file.');
-      ie_close('p');
-      $templateAlias2({code: '[user]\n    name = Your Name\n    email = your.name@liferay.com\n[core]\n    filemode = false\n    # Make Sublime Text the default editor rather than Vim for operations such as interactive rebase\n    editor = \'C:/program files/sublime text 2/sublime_text.exe\' -w\n[push]\n    # When you run git push origin, all local branches are automatically pushed to their corresponding remote branches\n    default = matching', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Liferay provides a list of commonly used ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/liferay/git-tools/blob/master/gitconfig');
-          itext('Git commands and alias');
-        ie_close('a');
-        itext(' in ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/liferay/git-tools/blob/master/gitconfig');
-          itext('Liferay\'s Git Tool repository');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Using the * operator');
-      ie_close('h4');
-      ie_open('p');
-        itext('When there are several files that you have changed and you only want to stage some of them for a commit, you can use ');
+        itext('If you are debugging a JavaScript file and want to know the value of any variable or expression at any point in the code, use ');
         ie_open('code');
-          itext('git add');
+          itext('console.log()');
         ie_close('code');
-        itext(' with the ');
-        ie_open('em');
-          itext('*');
-        ie_close('em');
-        itext(' operator to select multiple files with similar file paths.');
+        itext('. This will print the value of the expression to the browser\'s JavaScript console within the DevTools.');
       ie_close('p');
       ie_open('p');
-        itext('Let\'s say that you run ');
+        itext('In a ');
         ie_open('code');
-          itext('git status');
+          itext('.java');
         ie_close('code');
-        itext(' and get the following result:');
-      ie_close('p');
-      $templateAlias2({code: '# Changes not staged for commit:#\n#    modified:   portal-web/docroot/html/portlet/bookmarks/css/main.css\n#    modified:   portal-web/docroot/html/portlet/document_library_display/search.jsp\n#    modified:   portal-web/docroot/html/themes/classic/_diffs/css/color_schemes/dark.css\n#    modified:   portal-web/docroot/layouttpl/custom/1_2_1_columns.tpl#', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you only want to commit the changes to the ');
+        itext(' file or a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, a ');
+        ie_open('code');
+          itext('System.out.println()');
+        ie_close('code');
+        itext(' statement will print to the ');
         ie_open('em');
-          itext('Bookmarks');
+          itext('Terminal/Git Bash');
         ie_close('em');
+        itext(' in which you are running Tomcat.');
+      ie_close('p');
+      ie_open('p');
+        itext('Outside a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, you can print directly to the browser by enclosing the Java expression in a block surrounded by ');
+        ie_open('code');
+          itext('<%=');
+        ie_close('code');
         itext(' and ');
-        ie_open('em');
-          itext('Document Library Display');
-        ie_close('em');
-        itext(' portlets, you can simply run ````git add portal-web/docroot/html/p *```, which will only add the two files in the ');
-        ie_open('em');
-          itext('portal-web/docroot/html/portlet');
-        ie_close('em');
-        itext(' folder.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Creating aliases');
-      ie_close('h4');
-      ie_open('p');
-        itext('One of the things we recommend you do to improve your Git workflow is creating a ');
         ie_open('code');
-          itext('.bash_profile');
+          itext('%>');
         ie_close('code');
-        itext(' with aliases. Aliases allow you to type custom, shorter commands in place of longer ones.');
+        itext(' tags.');
       ie_close('p');
+      ie_open('h3');
+        itext('Browser\'s JavaScript console');
+      ie_close('h3');
       ie_open('p');
-        itext('To get started, create a file called ');
-        ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext(' in your ');
-        ie_open('strong');
-          itext('~');
-        ie_close('strong');
-        itext(' directory (Note: the tilde symbol, ');
-        ie_open('strong');
-          itext('~');
-        ie_close('strong');
-        itext(', is equivalent to the file path of your home directory - e.g. ');
-        ie_open('code');
-          itext('C:\\Users\\liferay');
-        ie_close('code');
-        itext(').');
-      ie_close('p');
-      ie_open('p');
-        itext('Let\'s say that you wanted to use the shorter string ');
+        itext('Use the browser\'s JavaScript console to debug and test code. If you declare a JavaScript variable as a ');
         ie_open('em');
-          itext('cm');
+          itext('window');
         ie_close('em');
-        itext(' in place of ');
+        itext(' variable within the Liferay\'s ');
         ie_open('em');
-          itext('commit');
+          itext('source');
         ie_close('em');
-        itext('. Add the following line in your ');
+        itext(' code (e.g, ');
         ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'alias cm="commit"', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now, you can use ');
-        ie_open('code');
-          itext('git cm');
+          itext('window.numColors = 2;');
         ie_close('code');
         itext(' instead of ');
         ie_open('code');
-          itext('git commit');
+          itext('var numColors = 2;');
         ie_close('code');
-        itext('.');
+        itext('), you can access this variable by typing it in the browser\'s JavaScript console.');
       ie_close('p');
       ie_open('p');
-        itext('Another example of useful aliases is chaining successive commands together.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you wanted to checkout the ');
+        itext('Just be sure to remove all declarations of ');
         ie_open('em');
-          itext('master');
+          itext('window');
         ie_close('em');
-        itext(' branch, update it with the remote ');
-        ie_open('em');
-          itext('upstream');
-        ie_close('em');
-        itext(' repository, and push these changes to your remote ');
-        ie_open('em');
-          itext('origin');
-        ie_close('em');
-        itext(' repository, you could create an alias in your ');
+        itext(' variables before submitting your code for review. If this variable has a function available to it, say ');
         ie_open('code');
-          itext('.bash_profile');
+          itext('toString()');
         ie_close('code');
-        itext(' with the following line.');
-      ie_close('p');
-      $templateAlias2({code: 'alias updateMaster="git checkout master; git pull upstream master; git push origin master"', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('(You must close and re-open your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext(' for the changes to take effect).');
-      ie_close('p');
-      ie_open('p');
-        itext('You can also use aliases to represent non-Git commands as well. If you wanted to navigate to a folder location without typing everything out, you could create an alias in your ');
+        itext(', you can get the function definition by typing ');
         ie_open('code');
-          itext('.bash_profile');
+          itext('numColors.toString');
         ie_close('code');
-        itext(' with the following line.');
-      ie_close('p');
-      $templateAlias2({code: 'alias portal="cd ~/Desktop/Liferay/liferay-portal"', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now you can type ');
-        ie_open('em');
-          itext('portal');
-        ie_close('em');
-        itext(' in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext(' instead of having to type out the entire path every time.');
-      ie_close('p');
-      ie_open('p');
-        itext('For an example of many of the things you can do with a ');
+        itext(', or you can get the result of a function call by typing ');
         ie_open('code');
-          itext('.bash_profile');
+          itext('numColors.toString()');
         ie_close('code');
-        itext(', check out ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/jonmak08/configFiles');
-          itext('Jon\'s configFiles');
-        ie_close('a');
         itext('.');
       ie_close('p');
       ie_open('p');
-        itext('In fact, it may even be more beneficial to navigate the long way for a while before you start setting up super shortcuts. However, you\'ll eventually want to start using them, because they significantly improve your workflow, allowing you to spend less time on busy work (i.e. typing in unreasonably long commands) and more time creating and fixing things!');
-      ie_close('p');
-      ie_open('h4');
-        itext('Gitk');
-      ie_close('h4');
-      ie_open('p');
-        itext('If you would like to see the commit history for a particular branch or see exactly what lines or what files have been changed, run ');
-        ie_open('code');
-          itext('gitk');
-        ie_close('code');
-        itext(' in your ');
+        itext('More generally, you can use the console to test your own snippets of JavaScript code before putting them in Liferay\'s ');
         ie_open('em');
-          itext('Terminal/Git Bash');
+          itext('source');
         ie_close('em');
-        itext('.');
+        itext(' code.');
       ie_close('p');
       ie_open('p');
-        itext('This brings up a Git GUI that will help you visualize where your branches are, what changes you have staged, and much more.');
+        itext('Again, don\'t be afraid to ask for help when you need to.');
       ie_close('p');
-      ie_open('p');
-        ie_open('a', null, null,
-            'href', 'http://www.syntevo.com/smartgit');
-          itext('SmartGit');
-        ie_close('a');
-        itext(' is an even more robust tool and it is particularly good for solving merge conflicts.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Rebase interactively');
-      ie_close('h4');
-      ie_open('p');
-        itext('Interactive rebase is a very helpful feature of Git that gives you the opportunity to easily alter a series of commits by rearranging the order, editing the messages, or squashing commits together into a single commit.');
-      ie_close('p');
-      ie_open('p');
-        itext('Run the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase -i', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('This will launch the text editor with a file listing the commits that will be rebased.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you wanted to only pick the last few commits in the current branch rather than the entire branch, use ');
-        ie_open('code');
-          itext('git rebase -i HEAD~n');
-        ie_close('code');
-        itext(', where ');
-        ie_open('em');
-          itext('n');
-        ie_close('em');
-        itext(' is the number of commits.');
-      ie_close('p');
-      ie_open('p');
-        itext('For example, to rebase the last two commits, run the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase -i HEAD~2', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('The file, ');
-        ie_open('em');
-          itext('git-rebase-to');
-        ie_close('em');
-        itext(', will open up in the text editor and looks like the following:');
-      ie_close('p');
-      $templateAlias2({code: 'pick 4a66600 Commit 1\npick 2566fcf Commit 2\n\n# Rebase 617640f..2566fcf onto 617640f\n#\n# Commands:\n#  p, pick = use commit\n#  r, reword = use commit, but edit the commit message\n#  e, edit = use commit, but stop for amending\n#  s, squash = use commit, but meld into previous commit\n#  f, fixup = like "squash", but discard this commit\'s log message\n#  x, exec = run command (the rest of the line) using shell\n#\n# These lines can be re-ordered; they are executed from top to bottom.\n#\n# If you remove a line here THAT COMMIT WILL BE LOST.\n#\n# However, if you remove everything, the rebase will be aborted.\n#\n# Note that empty commits are commented out', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Select what you want to do and proceed by saving and closing the file.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Resolving merge conflicts with SmartGit');
-      ie_close('h4');
-      ie_open('p');
-        itext('A merging conflict occurs when we try to do a merge, rebase or cherry-pick operation while there are conflicting changes between two or more commits. If that happens, Git will pause the merging process for us to fix the problem. In order to resolve the conflicts, we need to go through all conflicted files one by one and modify them as needed.');
-      ie_close('p');
-      ie_open('p');
-        itext('Below is a brief walk-through on how to use SmartGit\'s Conflict Solver Tool to resolve the conflicts.');
-      ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          itext('Open SmartGit');
-        ie_close('li');
-        ie_open('li');
-          itext('Open the file with conflicts (');
-          ie_open('em');
-            itext('Usually indicated as a file with an exclamation mark');
-          ie_close('em');
-          itext(').  This will open up a three-panel editor, Smart Git\'s Conflict Solver.');
-          ie_open('ul');
-            ie_open('li');
-              itext('The left panel shows what is new on the ');
-              ie_open('em');
-                itext('master');
-              ie_close('em');
-              itext(' branch. Usually these are the changes that we want to keep.');
-            ie_close('li');
-            ie_open('li');
-              itext('The center panel is the current ');
-              ie_open('em');
-                itext('working');
-              ie_close('em');
-              itext(' branch. This is where we select the changes that we want and make any further modifications if needed.');
-            ie_close('li');
-            ie_open('li');
-              itext('The right panel shows the changes we have made, the conflicted branch.');
-            ie_close('li');
-          ie_close('ul');
-        ie_close('li');
-        ie_open('li');
-          itext('Fix the conflicts and stage the changes. Staging the file marks it as resolved in Git.');
-        ie_close('li');
-        ie_open('li');
-          itext('Continue the process for all the conflicted file until there are no more conflicts.');
-        ie_close('li');
-        ie_open('li');
-          itext('Run ');
-          ie_open('code');
-            itext('git rebase --continue');
-          ie_close('code');
-          itext(' in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' to continue the merging process when all the conflicts are resolved.');
-        ie_close('li');
-      ie_close('ol');
-      ie_open('h5');
-        itext('Squashing/Merging Commits');
-      ie_close('h5');
-      ie_open('p');
-        itext('Find the commits you want to squash/merge by running the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase -i HEAD~n', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('To merge the newer commits into the previous commit, change the pick command before each commit to ');
-        ie_open('em');
-          itext('squash');
-        ie_close('em');
-        itext(' or ');
-        ie_open('em');
-          itext('s');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'pick 4a66600 Commit 1\nsquash 2566fcf Commit 2\n# Rebase 617640f..2566fcf onto 617640f\n#\n# Commands:\n#  p, pick = use commit\n#  r, reword = use commit, but edit the commit message\n#  e, edit = use commit, but stop for amending\n#  s, squash = use commit, but meld into previous commit\n#  f, fixup = like "squash", but discard this commit\'s log message\n#  x, exec = run command (the rest of the line) using shell\n#\n# These lines can be re-ordered; they are executed from top to bottom.\n#\n# If you remove a line here THAT COMMIT WILL BE LOST.\n#\n# However, if you remove everything, the rebase will be aborted.\n#\n# Note that empty commits are commented out', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Save and close the editor to begin Git\'s rebase.');
-      ie_close('p');
-      ie_open('p');
-        itext('Git will pause the rebase again after the merge is done and open the editor with the commit messages from all the commits. Edit the message if needed, save and close the editor to resume the rebase.');
-      ie_close('p');
-      ie_open('h5');
-        itext('Splitting commits');
-      ie_close('h5');
-      ie_open('p');
-        itext('Find the commits you want to split by running the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase -i HEAD~n', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Unstage the files by running the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git reset HEAD^', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Add the files you want to stage for the commits and make commits.');
-      ie_close('p');
-      ie_open('p');
-        itext('After you have made all the changes that you want, resume rebase by running the following command in your ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'git rebase --continue', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('To learn more about interactive rebase, visit ');
-        ie_open('a', null, null,
-            'href', 'https://help.github.com/articles/about-git-rebase');
-          itext('https://help.github.com/articles/about-git-rebase');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('h4');
-        itext('pull-request script');
-      ie_close('h4');
-      ie_open('p');
-        itext('If you would like to be able to send pull requests from the command line rather than on GitHub.com, there are command line tools created by Liferay to do so.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('p');
-            ie_open('strong');
-              ie_open('a', null, null,
-                  'href', 'https://github.com/liferay/git-tools');
-                itext('git-tools');
-              ie_close('a');
-            ie_close('strong');
-            itext(': A Python script to send and receive pull requests based on Liferay usernames.');
-          ie_close('p');
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            ie_open('strong');
-              ie_open('a', null, null,
-                  'href', 'http://nodegh.io');
-                itext('node-gh');
-              ie_close('a');
-            ie_close('strong');
-            itext(': A node script to send and receive pull requests, comment in JIRA, and create Gists.');
-          ie_close('p');
-        ie_close('li');
-      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -29146,11 +28620,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param230}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param219}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'hFffk.render';
+  $render.soyTemplateName = 'iQGQf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -29160,14 +28634,15 @@ return exports;
 
 });
 
-class hFffk extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hFffk, templates);
+class iQGQf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(iQGQf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 219 */,
 /* 220 */,
 /* 221 */,
 /* 222 */,
@@ -29245,9 +28720,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _gitForDummiesSoy = __webpack_require__(219);
+var _debuggingEffectivelySoy = __webpack_require__(218);
 
-var _gitForDummiesSoy2 = _interopRequireDefault(_gitForDummiesSoy);
+var _debuggingEffectivelySoy2 = _interopRequireDefault(_debuggingEffectivelySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29257,23 +28732,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hFffk = function (_Component) {
-  _inherits(hFffk, _Component);
+var iQGQf = function (_Component) {
+  _inherits(iQGQf, _Component);
 
-  function hFffk() {
-    _classCallCheck(this, hFffk);
+  function iQGQf() {
+    _classCallCheck(this, iQGQf);
 
-    return _possibleConstructorReturn(this, (hFffk.__proto__ || Object.getPrototypeOf(hFffk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iQGQf.__proto__ || Object.getPrototypeOf(iQGQf)).apply(this, arguments));
   }
 
-  return hFffk;
+  return iQGQf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hFffk, _gitForDummiesSoy2.default);
+_metalSoy2.default.register(iQGQf, _debuggingEffectivelySoy2.default);
 
-exports.default = hFffk;
+exports.default = iQGQf;
 
 /***/ })
 ],[261]);

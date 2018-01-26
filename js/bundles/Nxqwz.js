@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([33,37,38,39],[
+webpackJsonppageComponent([36,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param23 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn2 = opt_data.page.author;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn3 = opt_data.page.date;
+          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn4 = opt_data.page.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList36 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen36 = childIdList36.length;
-      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
-        var childIdData36 = childIdList36[childIdIndex36];
-        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
-        if (opt_data.page.url != childPage__soy24.url) {
+      var childIdList56 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen56 = childIdList56.length;
+      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
+        var childIdData56 = childIdList56[childIdIndex56];
+        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
+        if (opt_data.page.url != childPage__soy44.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy24.url);
+                'href', childPage__soy44.url);
               ie_open('small');
                 itext('By ');
-                var dyn4 = childPage__soy24.author;
-                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                var dyn6 = childPage__soy44.author;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn5 = childPage__soy24.date;
-                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                  var dyn7 = childPage__soy44.date;
+                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn6 = childPage__soy24.title;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn8 = childPage__soy44.title;
+                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn7 = opt_data.page.title;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn8 = opt_data.content;
-            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn11 = opt_data.content;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy139,
             'class', 'btn btn-accent btn-sm');
-          var dyn12 = opt_data.page.buttonTitle;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn13 = opt_data.page.weight;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn14 = opt_data.page.title;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28367,12 +28367,15 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QZGMK", function() { return QZGMK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nxqwz", function() { return Nxqwz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28384,15 +28387,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from keyboard-shortcuts-sublime.soy.
+// This file was automatically generated from setup-sublime-text.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace QZGMK.
+ * @fileoverview Templates in namespace Nxqwz.
  * @public
  */
 
-goog.module('QZGMK.incrementaldom');
+goog.module('Nxqwz.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28413,6 +28416,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
@@ -28424,822 +28429,148 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param332 = function() {
+  var param395 = function() {
     ie_open('article');
       ie_open('p');
-        var dyn22 = opt_data.page.description;
-        if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+        var dyn25 = opt_data.page.description;
+        if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
       ie_close('p');
       ie_open('p');
-        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          itext('Tip:');
-        ie_close('strong');
-        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('em');
-          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
-        ie_close('em');
-      ie_close('p');
-      ie_open('h2');
-        itext('General Tips');
-      ie_close('h2');
-      ie_open('p');
-        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
+        itext('Sublime Text has a ton of features that are indispensable for development. If you use this as your text editor of choice, here are some settings and plugins that will help you get started.');
       ie_close('p');
       ie_open('h3');
-        itext('Sublime Text');
+        itext('User settings');
       ie_close('h3');
       ie_open('p');
-        itext('Common shortcuts for Sublime Text if you use that as your text editor of choice.');
+        itext('Customize your Sublime Text settings for a better development experience.');
       ie_close('p');
-      ie_open('h4');
-        itext('System and Files');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open File');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + O');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + O');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Save File');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + S');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + S');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Close File File');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + W');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + W');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open Recently Closed File');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + T');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + T');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Sidebar');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K B');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K B');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Switch Project');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Alt + P');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Ctrl + P');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Font Size');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + +/-');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + +/-');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Command Pallette');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + P');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + P');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Fullscreen');
-            ie_close('td');
-            ie_open('td');
-              itext('F11');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Ctrl + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Distraction Free Fullscreen');
-            ie_close('td');
-            ie_open('td');
-              itext('Shift + F11');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Ctrl + Shift + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Change Tab');
-            ie_close('td');
-            ie_open('td');
-              itext('Alt + Number');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Number');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Navigate Through Tabs');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + PageUp/Down');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Alt + Left/Right');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Selections / Moving Around');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Jump words / characters');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Left/Right');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Left/Right');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Moving around and selecting');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Left/Right');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Left/Right');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Add next occurrence to selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + D');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + D');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Add scope to selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Space');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + Space');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Add all occurences to selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Alt + F3');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Command + G');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select contents inside parenthesis');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + M');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + M');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand selection to indentation');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + J');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + J');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand selection to Tag');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + A');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + A');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Go to closing / opening parenthesis');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + M');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + M');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Back to single selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Scroll to selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K, Ctrl + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K, Command + C');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Draw selection with mouse');
-            ie_close('td');
-            ie_open('td');
-              itext('Middle Mouse Button');
-            ie_close('td');
-            ie_open('td');
-              itext('Middle Mouse Button');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Add to mouse selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl');
-            ie_close('td');
-            ie_open('td');
-              itext('Command');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Subtract from mouse selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Alt');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Find');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find in files');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find and replace');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + H');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Alt + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Incremental search');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + I');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + I');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Navigate through the search panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Close search');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Goto anything');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + P');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + P');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Goto line number');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + G');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + G');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Goto symbol');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + R');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + R');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Go to word');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + P + write #');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + P + write #');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find next');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter (Or F3)');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find previous');
-            ie_close('td');
-            ie_open('td');
-              itext('Shift + Enter (Or F3)');
-            ie_close('td');
-            ie_open('td');
-              itext('Shift + Enter');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Find all');
-            ie_close('td');
-            ie_open('td');
-              itext('Alt + F3');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Command + G');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Editing');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Copy line / selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + C');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Cut line / selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + X');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + X');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Paste');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + V');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + V');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Paste with indentation');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + V');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + V');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Delete line');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + K');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + K');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Delete from cursor to end of line');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K K');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K K');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Delete from cursor to beginning of line');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K Backspace');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K Backspace');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Duplicate line / selection');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + D');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + D');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select line');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + L');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + L');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Move line up/down');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Up/Down');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Ctrl + Up/Down');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Insert line after');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Enter');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Insert line before');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + Return');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Join next line end of the current line');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + J');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + J');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Transpose (swap place of characters/words)');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + T');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + T');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Uppercase');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K, Ctrl + U');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K, Command + U');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Lowercase');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + K, Ctrl + L');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K, Command + L');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Delete word forward');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Del');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Del');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Delete word backwards');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Backspace');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Backspace');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Close tag');
-            ie_close('td');
-            ie_open('td');
-              itext('Alt + .');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Alt + .');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Multiple Cursors');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Split selection into lines');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + L');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + L');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Add new cursor');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Alt + Up/Down');
-            ie_close('td');
-            ie_open('td');
-              itext('Ctrl + Shift + Up/Down');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Single cursor');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
       ie_open('p');
-        itext('This has been adapted from ');
-        ie_open('a', null, null,
-            'href', 'https://www.wdtutorials.com/cheatsheet/sublime-text/sublime-text');
-          itext('https://www.wdtutorials.com/cheatsheet/sublime-text/sublime-text');
-        ie_close('a');
-        itext('. You also have the ability to ');
-        ie_open('a', null, null,
-            'href', 'http://www.sublimetext.com/docs/key-bindings');
-          itext('customize key bindings');
-        ie_close('a');
-        itext(' as well.');
+        itext('Below is an example ');
+        ie_open('code');
+          itext('Preferences.sublime-settings');
+        ie_close('code');
+        itext(' file.');
       ie_close('p');
+      $templateAlias2({code: '{\n    "bold_folder_labels": true, // makes the sidebar more readable at a glance\n    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",\n    "default_line_ending": "unix", // set the default line ending to Unix-style (Liferay only allows you to commit files with this type of ending)\n    "draw_white_space": "all", // show a dot every time there is a white-space character\n    "font_face": "Ubuntu Mono", // requires some work, but changes the font to something nicer\n    "font_size": 11,\n    "ignored_packages": [ "Vintage" ],\n    "rulers": [ 80 ], // show a vertical bar at a distance of 80 characters from the left margin\n    "tab_size": 4, // set tabs to be the same width as 4 spaces\n    "translate_tabs_to_spaces": true, // use spaces to indent rather than tab characters\n    "trim_trailing_white_space_on_save": true, // auto-delete trailing white space every time you save\n    "word_wrap": true\n}', mode: 'shell'}, null, opt_ijData);
+      ie_open('p');
+        itext('Most of these settings are personal preference, but some of these will be helpful during your development.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('default_line_ending');
+          ie_close('strong');
+          itext(': Set your line endings to be ');
+          ie_open('em');
+            itext('unix');
+          ie_close('em');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('draw_white_space');
+          ie_close('strong');
+          itext(': Display all white-space characters throughout a file.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('rulers');
+          ie_close('strong');
+          itext(': Set a vertical bar at 80 characters. When editing Liferay\'s Java files, 80 characters are the maximum number of characters per line.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('tab_size');
+          ie_close('strong');
+          itext(': Set a default tab size to keep code consistent throughout the file. ');
+          ie_open('em');
+            itext('The typical tab size is 4 spaces, although there are occasional exceptions');
+          ie_close('em');
+          itext('.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('trim_trailing_white_space_on_save');
+          ie_close('strong');
+          itext(': Remove extra line breaks and white-space upon saving of a file.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('For a complete list of settings, go to ');
+        ie_open('em');
+          itext('Preferences');
+        ie_close('em');
+        itext(', click on ');
+        ie_open('em');
+          itext('Settings');
+        ie_close('em');
+        itext(', and then click on ');
+        ie_open('em');
+          itext('Default');
+        ie_close('em');
+        itext('. You can override of these settings; just copy it into your user preferences file and change the value.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Package Control');
+      ie_close('h3');
+      ie_open('p');
+        itext('Package Control makes it easy to download and install useful Sublime Text plugins. Exploration here is very valuable because there are a lot of things that you can find to make your life easier or just customize Sublime Text to your liking.');
+      ie_close('p');
+      ie_open('p');
+        itext('More information about ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/installation');
+          itext('installing');
+        ie_close('a');
+        itext(' and ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/docs/usage');
+          itext('using');
+        ie_close('a');
+        itext(' package control can be found at ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/');
+          itext('https://packagecontrol.io/');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/Alignment');
+              itext('Alignment');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Easy alignment of multiple selections and multi-line selections.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/BracketHighlighter');
+              itext('BracketHighlighter');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Bracket and tag highlighter for Sublime Text http://facelessuser.github.io/BracketHighlighter/');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/GitHubinator');
+              itext('GitHubinator');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Sublime Text plugin that shows selected text on remote GitHub or Bitbucket repo.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/GitGutter');
+              itext('GitGutter');
+            ie_close('a');
+          ie_close('strong');
+          itext(': A Sublime Text 2/3 plugin to see git diff in gutter');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -29250,11 +28581,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param332}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'QZGMK.render';
+  $render.soyTemplateName = 'Nxqwz.render';
 }
 
 exports.render.params = ["page","site"];
@@ -29264,17 +28595,14 @@ return exports;
 
 });
 
-class QZGMK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QZGMK, templates);
+class Nxqwz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Nxqwz, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 224 */,
-/* 225 */,
-/* 226 */,
 /* 227 */,
 /* 228 */,
 /* 229 */,
@@ -29303,10 +28631,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QZGMK, templates);
 /* 252 */,
 /* 253 */,
 /* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29342,9 +28667,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _keyboardShortcutsSublimeSoy = __webpack_require__(223);
+var _setupSublimeTextSoy = __webpack_require__(226);
 
-var _keyboardShortcutsSublimeSoy2 = _interopRequireDefault(_keyboardShortcutsSublimeSoy);
+var _setupSublimeTextSoy2 = _interopRequireDefault(_setupSublimeTextSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29354,23 +28679,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QZGMK = function (_Component) {
-  _inherits(QZGMK, _Component);
+var Nxqwz = function (_Component) {
+  _inherits(Nxqwz, _Component);
 
-  function QZGMK() {
-    _classCallCheck(this, QZGMK);
+  function Nxqwz() {
+    _classCallCheck(this, Nxqwz);
 
-    return _possibleConstructorReturn(this, (QZGMK.__proto__ || Object.getPrototypeOf(QZGMK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Nxqwz.__proto__ || Object.getPrototypeOf(Nxqwz)).apply(this, arguments));
   }
 
-  return QZGMK;
+  return Nxqwz;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QZGMK, _keyboardShortcutsSublimeSoy2.default);
+_metalSoy2.default.register(Nxqwz, _setupSublimeTextSoy2.default);
 
-exports.default = QZGMK;
+exports.default = Nxqwz;
 
 /***/ })
-],[258]);
+],[255]);

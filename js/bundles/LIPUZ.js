@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([36,37,38,39],[
+webpackJsonppageComponent([10,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18983,14 +18983,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param23 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param23}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -19011,24 +19011,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn2 = opt_data.page.author;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn3 = opt_data.page.date;
+          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn4 = opt_data.page.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -19051,32 +19051,32 @@ function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList36 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen36 = childIdList36.length;
-      for (var childIdIndex36 = 0; childIdIndex36 < childIdListLen36; childIdIndex36++) {
-        var childIdData36 = childIdList36[childIdIndex36];
-        var childPage__soy24 = opt_data.site.index.children['blog'].children[childIdData36];
-        if (opt_data.page.url != childPage__soy24.url) {
+      var childIdList56 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen56 = childIdList56.length;
+      for (var childIdIndex56 = 0; childIdIndex56 < childIdListLen56; childIdIndex56++) {
+        var childIdData56 = childIdList56[childIdIndex56];
+        var childPage__soy44 = opt_data.site.index.children['blog'].children[childIdData56];
+        if (opt_data.page.url != childPage__soy44.url) {
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', childPage__soy24.url);
+                'href', childPage__soy44.url);
               ie_open('small');
                 itext('By ');
-                var dyn4 = childPage__soy24.author;
-                if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                var dyn6 = childPage__soy44.author;
+                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn5 = childPage__soy24.date;
-                  if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                  var dyn7 = childPage__soy44.date;
+                  if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn6 = childPage__soy24.title;
-                if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                var dyn8 = childPage__soy44.title;
+                if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -19205,8 +19205,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn7 = opt_data.page.title;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' Tutorial');
         ie_close('h1');
       ie_close('div');
@@ -19219,8 +19219,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn8 = opt_data.content;
-            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -19360,8 +19360,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-bookmark'}}, null, opt_ijData);
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -19483,14 +19483,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn11 = opt_data.content;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -19512,15 +19512,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy134 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy134.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy139 = tutorialObject__soy134.children[tutorialObject__soy134.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy139,
             'class', 'btn btn-accent btn-sm');
-          var dyn12 = opt_data.page.buttonTitle;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -19561,7 +19561,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s154_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19570,23 +19570,23 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn13 = opt_data.page.weight;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn14 = opt_data.page.title;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s154_88c0813b = __deltemplate_s154_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s154_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s154_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s154_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -28368,169 +28368,7 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmNzr", function() { return DmNzr; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from searching-smartly.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace DmNzr.
- * @public
- */
-
-goog.module('DmNzr.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param343 = function() {
-    ie_open('article');
-      ie_open('p');
-        var dyn23 = opt_data.page.description;
-        if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
-      ie_close('p');
-      ie_open('p');
-        itext('Much of the leg-work of what you\'ll be doing will involve a significant amount of searching - whether you are looking for a CSS class name, or a taglib attribute, or property value. Being able to search well is an invaluable asset for your experience and effectiveness while working at Liferay.');
-      ie_close('p');
-      ie_open('p');
-        itext('When searching for things, don\'t get tunnel vision; it\'s going to happen, but try to fight it. Try to start by looking at the whole picture, and then systematically narrow your search down. If you find you\'ve spent a few days trying to pinpoint a certain class, or a specific JavaScript method, you probably have tunnel vision; this may not always be the case, but it\'s highly likely you are missing something.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you are stuck, ask for help, whether it is Google, your coworker or even your manager. A lot of people have found what you\'re currently looking for so don\'t be afraid to ask for help.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('em');
-          itext('Choose good keywords or phrases');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Searching the entire Liferay ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code with a keyword that is too broad or common will return you hundreds of results. Use keywords that are likely to be unique for the situation you are looking for.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Windows File Explorer');
-      ie_close('h3');
-      ie_open('p');
-        itext('Windows File Explorer is great if you need to track down a file or a folder, but it can be incredibly misleading when trying to find keywords, especially ones that are parts of long strings of text.');
-      ie_close('p');
-      ie_open('p');
-        itext('Use ');
-        ie_open('em');
-          itext('Sublime Text');
-        ie_close('em');
-        itext(' for searching for anything that isn\'t obvious like a file or a folder.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Sublime Text');
-      ie_close('h3');
-      ie_open('p');
-        ie_open('code');
-          itext('Ctrl + Shift + F');
-        ie_close('code');
-        itext(' is your friend when it comes to searching. This has been mentioned before, but seriously, you will find yourself using it a lot. If you know the type of files you are looking for, you can refine your search to just ');
-        ie_open('code');
-          itext('*.css');
-        ie_close('code');
-        itext(', or ');
-        ie_open('code');
-          itext('*.js');
-        ie_close('code');
-        itext(', or ');
-        ie_open('code');
-          itext('*.java');
-        ie_close('code');
-        itext(', or ');
-        ie_open('code');
-          itext('*.jsp');
-        ie_close('code');
-        itext(' files.');
-      ie_close('p');
-      ie_open('p');
-        itext('It may also be helpful to learn how to write regular expressions. Sublime Text uses the Perl Compatible Regular Expressions (PCRE) engine from the Boost library to power regular expressions in search panels. ');
-        ie_open('a', null, null,
-            'href', 'http://docs.sublimetext.info/en/latest/search_and_replace/search_and_replace_overview.html');
-          itext('Read more about regarding Sublime Text\'s regular expression');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param343}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'DmNzr.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class DmNzr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DmNzr, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 224 */,
 /* 225 */,
 /* 226 */,
 /* 227 */,
@@ -28551,7 +28389,425 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DmNzr, templates);
 /* 242 */,
 /* 243 */,
 /* 244 */,
-/* 245 */,
+/* 245 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LIPUZ", function() { return LIPUZ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from step-five.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace LIPUZ.
+ * @public
+ */
+
+goog.module('LIPUZ.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param773 = function() {
+    ie_open('h2');
+      var dyn43 = opt_data.page.title;
+      if (typeof dyn43 == 'function') dyn43(); else if (dyn43 != null) itext(dyn43);
+    ie_close('h2');
+    ie_open('p');
+      itext('We are going to learn how Liferay uses Git for it\'s ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code. Since we already know how to use Git, we will focus on its usage within Liferay.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Branches vs Trunk');
+    ie_close('h3');
+    ie_open('figure');
+      ie_open('img', null, null,
+          'src', '/images/tree.png',
+          'alt', 'Git Tree');
+      ie_close('img');
+    ie_close('figure');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('p');
+          ie_open('em');
+            itext('Trunk');
+          ie_close('em');
+          itext(' is the latest source code that is currently available. There are many branches of Liferay, so when you start working, you need to be aware of which branch you are working on and what branch you fix should be put in (6.1.x, 6.2.x, 7.0.x, master, etc).');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          ie_open('em');
+            itext('Branches');
+          ie_close('em');
+          itext(' are like the limbs of trunk \u2013 each branch includes some improvement over the previous branch(es), but once branched, there will not be any new improvements or functionality added. (New changes would remain in trunk until the next branch spawns). When a new branch is created, it will be similar to code in ');
+          ie_open('em');
+            itext('trunk');
+          ie_close('em');
+          itext(', until trunk has new improvements and updates added to it.');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Git\'s repositories');
+    ie_close('h3');
+    ie_open('p');
+      itext('With Git, you have to understand three repositories:');
+    ie_close('p');
+    ie_open('p');
+      ie_open('strong');
+        itext('local repository');
+      ie_close('strong');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        itext('The local repository is the source code that is stored on your computer. This is where you will be making all your commits to the source code before sending them to others to review.');
+      ie_close('li');
+      ie_open('li');
+        itext('When you have made a commit that you want to submit for review, you will push it from your local repository to your remote ');
+        ie_open('em');
+          itext('origin');
+        ie_close('em');
+        itext(' repository.');
+      ie_close('li');
+      ie_open('li');
+        itext('Make sure to keep your local repository up to date with the remote ');
+        ie_open('em');
+          itext('upstream');
+        ie_close('em');
+        itext(' repository ');
+        ie_open('em');
+          itext('before');
+        ie_close('em');
+        itext(' making any changes.');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('p');
+      ie_open('strong');
+        itext('remote origin repository');
+      ie_close('strong');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        itext('The remote origin repository is the copy of the source code stored in your personal GitHub account. This repository should be identical to your local repository when you are sending code for review.');
+      ie_close('li');
+      ie_open('li');
+        itext('Any code you submit for review will be sent from your ');
+        ie_open('em');
+          itext('local');
+        ie_close('em');
+        itext(' repository into your remote ');
+        ie_open('em');
+          itext('origin');
+        ie_close('em');
+        itext(' repository.');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('p');
+      ie_open('strong');
+        itext('remote upstream repository');
+      ie_close('strong');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        itext('The remote upstream repository is the copy of the source code where all final changes and updates are stored.  This is typically in Liferay\'s GitHub account/cloud.');
+      ie_close('li');
+      ie_open('li');
+        itext('This only contains source code that has been reviewed, approved, and tested for everyone to begin using.');
+      ie_close('li');
+      ie_open('li');
+        itext('Only certain people with approved access are allowed to push files into the remote upstream repository. Even though you will be working with source code, you will never actually be pushing directly to this repository; your code will go through rigorous code reviews before finally making it here.');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('Git\'s workflow');
+    ie_close('h3');
+    ie_open('p');
+      itext('When working with Git, it is important to use best practices to avoid merge conflicts and rebase issues in your pull requests and code causing them to be rejected and uncommitted.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Keeping master in sync');
+    ie_close('h4');
+    ie_open('figure');
+      ie_open('img', null, null,
+          'src', '/images/git_master_workflow.png',
+          'alt', 'Git Workflow');
+      ie_close('img');
+    ie_close('figure');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://github.com/brianchandotcom');
+          itext('Brian Chan');
+        ie_close('a');
+        itext(' and/or other approved committers ');
+        ie_open('strong');
+          itext('push');
+        ie_close('strong');
+        itext(' reviewed, tested, and approved content to the remote ');
+        ie_open('strong');
+          itext('upstream');
+        ie_close('strong');
+        itext(' repository.  The branch most commonly used to push to is the ');
+        ie_open('strong');
+          itext('master');
+        ie_close('strong');
+        itext(' branch.');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Fetch');
+        ie_close('strong');
+        itext(' changes from the remote ');
+        ie_open('strong');
+          itext('upstream/master');
+        ie_close('strong');
+        itext(' branch into your ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch to make sure everything is up to date with the latest changes. Run the following command to complete this action.');
+        $templateAlias2({code: '# Fetch from upstream remote\ngit fetch upstream', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Merge the changes from the remote ');
+        ie_open('strong');
+          itext('upstream/master');
+        ie_close('strong');
+        itext(' branch into your ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch to make sure both branches are in sync with one another. Run the following commands to complete this action.');
+        $templateAlias2({code: '# Checkout your master branch\ngit checkout master\n\n# Merge changes from upstream into your local master branch\ngit merge upstream/master', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('We then ');
+        ie_open('strong');
+          itext('push');
+        ie_close('strong');
+        itext(' your ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch to our remote ');
+        ie_open('strong');
+          itext('origin/master');
+        ie_close('strong');
+        itext(' branch to make sure everything is now identical.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('If you notice, your ');
+      ie_open('strong');
+        itext('local/master');
+      ie_close('strong');
+      itext(' branch, remote ');
+      ie_open('strong');
+        itext('origin/master');
+      ie_close('strong');
+      itext(' branch, and remote ');
+      ie_open('strong');
+        itext('upstream/master');
+      ie_close('strong');
+      itext(' branch are all identical. You should ');
+      ie_open('em');
+        itext('never');
+      ie_close('em');
+      itext(' make changes to the ');
+      ie_open('strong');
+        itext('master');
+      ie_close('strong');
+      itext(' branch.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Submitting a pull request for review');
+    ie_close('h4');
+    ie_open('p');
+      itext('To make changes and submit code for review, you should always make sure everything is in sync first.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('strong');
+          itext('Fetch');
+        ie_close('strong');
+        itext(' changes from the remote ');
+        ie_open('strong');
+          itext('upstream/master');
+        ie_close('strong');
+        itext(' branch into your ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch to make sure everything is up to date with the latest changes.');
+      ie_close('li');
+      ie_open('li');
+        itext('Merge the changes from the remote ');
+        ie_open('strong');
+          itext('upstream/master');
+        ie_close('strong');
+        itext(' branch into your ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch to make sure both branches are in sync with one another.');
+      ie_close('li');
+      ie_open('li');
+        itext('Create a new ');
+        ie_open('strong');
+          itext('development');
+        ie_close('strong');
+        itext(' branch based off of the ');
+        ie_open('strong');
+          itext('local/master');
+        ie_close('strong');
+        itext(' branch. Run the following commands to complete this action.');
+        $templateAlias2({code: '# Checkout the local master branch - you want your new branch to come from master\ngit checkout master\n\n# Create a new branch named newfeature (give your branch its own simple informative name)\ngit branch newfeature', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Checkout this new ');
+        ie_open('strong');
+          itext('development');
+        ie_close('strong');
+        itext(' branch as you will begin making your changes on this branch. Run the following command to complete this action.');
+        $templateAlias2({code: '# Switch to your new branch\ngit checkout newfeature', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Make your changes and commit them to this ');
+        ie_open('strong');
+          itext('development');
+        ie_close('strong');
+        itext(' branch.');
+      ie_close('li');
+      ie_open('li');
+        itext('When you are ready to have your code reviewed, make sure to rebase your development branch on top of the remote ');
+        ie_open('strong');
+          itext('upstream/master');
+        ie_close('strong');
+        itext(' branch so merging will be simple and not have any conflicts. Run the following commands to complete this action.');
+        $templateAlias2({code: '# Fetch upstream master and merge with your repo\'s master branch\ngit fetch upstream\ngit checkout master\ngit merge upstream/master\n\n# If there were any new commits, rebase your development branch\ngit checkout newfeature\ngit rebase master', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Push');
+        ie_close('strong');
+        itext(' your ');
+        ie_open('strong');
+          itext('development');
+        ie_close('strong');
+        itext(' branch to your remote ');
+        ie_open('strong');
+          itext('origin');
+        ie_close('strong');
+        itext(' repository. This will allow others to view your branch on your personal GitHub.com fork.');
+      ie_close('li');
+      ie_open('li');
+        itext('Send a pull request to your reviewer using the GitHub.com GUI. Go to your fork on GitHub.com, select your ');
+        ie_open('strong');
+          itext('development');
+        ie_close('strong');
+        itext(' branch and click the ');
+        ie_open('strong');
+          itext('pull request');
+        ie_close('strong');
+        itext(' button.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('For more information about pull requests, please read ');
+      ie_open('a', null, null,
+          'href', 'https://help.github.com/articles/about-pull-requests');
+        itext('About pull requests');
+      ie_close('a');
+      itext(' and ');
+      ie_open('a', null, null,
+          'href', 'https://help.github.com/articles/creating-a-pull-request');
+        itext('Creating a pull request');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('p');
+      itext('An interactive guide about Git\'s workflow, can be found at ');
+      ie_open('a', null, null,
+          'href', 'https://guides.github.com/introduction/flow/');
+        itext('https://guides.github.com/introduction/flow/');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param773}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'LIPUZ.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class LIPUZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(LIPUZ, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 246 */,
 /* 247 */,
 /* 248 */,
@@ -28561,7 +28817,33 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DmNzr, templates);
 /* 252 */,
 /* 253 */,
 /* 254 */,
-/* 255 */
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28597,9 +28879,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _searchingSmartlySoy = __webpack_require__(224);
+var _stepFiveSoy = __webpack_require__(245);
 
-var _searchingSmartlySoy2 = _interopRequireDefault(_searchingSmartlySoy);
+var _stepFiveSoy2 = _interopRequireDefault(_stepFiveSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28609,23 +28891,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DmNzr = function (_Component) {
-  _inherits(DmNzr, _Component);
+var LIPUZ = function (_Component) {
+  _inherits(LIPUZ, _Component);
 
-  function DmNzr() {
-    _classCallCheck(this, DmNzr);
+  function LIPUZ() {
+    _classCallCheck(this, LIPUZ);
 
-    return _possibleConstructorReturn(this, (DmNzr.__proto__ || Object.getPrototypeOf(DmNzr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LIPUZ.__proto__ || Object.getPrototypeOf(LIPUZ)).apply(this, arguments));
   }
 
-  return DmNzr;
+  return LIPUZ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(DmNzr, _searchingSmartlySoy2.default);
+_metalSoy2.default.register(LIPUZ, _stepFiveSoy2.default);
 
-exports.default = DmNzr;
+exports.default = LIPUZ;
 
 /***/ })
-],[255]);
+],[281]);
