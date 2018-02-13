@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([34,37,38,39],[
+webpackJsonppageComponent([30,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28365,16 +28365,12 @@ exports.default = parseFromAnchor;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrDTi", function() { return FrDTi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "aTGLd", function() { return aTGLd; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28386,15 +28382,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from setup-mysql.soy.
+// This file was automatically generated from keyboard-shortcuts-devtools.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace FrDTi.
+ * @fileoverview Templates in namespace aTGLd.
  * @public
  */
 
-goog.module('FrDTi.incrementaldom');
+goog.module('aTGLd.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28415,8 +28411,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
@@ -28428,139 +28422,602 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param354 = function() {
+  var param310 = function() {
     ie_open('article');
       ie_open('p');
-        var dyn24 = opt_data.page.description;
-        if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
+        var dyn20 = opt_data.page.description;
+        if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
       ie_close('p');
       ie_open('p');
-        itext('When you work on bug fixes, you will sometimes see an environment specification (');
-        ie_open('em');
-          itext('Tomcat 7.0.25 + MYSQL5.0. 6.1.x GIT ID: 6d6b8814da7c7295ed4cab8420e070793361f856');
-        ie_close('em');
-        itext(') in the details section of a JIRA ticket. The second parameter tells what database is in use when the bug was discovered.');
+        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
       ie_close('p');
       ie_open('p');
-        itext('When you initially setup Liferay you were using a non-production database called ');
-        ie_open('em');
-          itext('HSQL');
-        ie_close('em');
-        itext('. ');
-        ie_open('em');
-          itext('HSQL');
-        ie_close('em');
-        itext(' will be sufficient for most of the tasks you do, but in case you need to interact with the database, you will need to use MySQL. This section shows you how to set up MySQL.');
+        ie_open('strong');
+          itext('Tip:');
+        ie_close('strong');
+        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
       ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          itext('Download and install MySQL at ');
-          ie_open('a', null, null,
-              'href', 'http://dev.mysql.com/downloads');
-            itext('http://dev.mysql.com/downloads');
-          ie_close('a');
-          itext('.');
-          ie_open('em');
-            itext('You can set the root password as empty by leaving the root password field blank while setting up.');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          itext('Add the path to the MySQL ');
-          ie_open('em');
-            itext('bin');
-          ie_close('em');
-          itext(' folder to your environment ');
-          ie_open('em');
-            itext('PATH');
-          ie_close('em');
-          itext(' variable');
-        ie_close('li');
-        ie_open('li');
-          itext('Open up our ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' and type the following command.');
-          $templateAlias2({code: 'mysql -u root -p', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Enter the root password that you setup when configuring MySQL.');
-        ie_close('li');
-        ie_open('li');
-          itext('If everything is set up correctly, you should see the following output in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'C:\\Windows\\system32>mysql -u root -p\nEnter password:\nWelcome to the MySQL monitor.  Commands end with ; or \\g.\nYour MySQL connection id is 1\nServer version: 5.6.14 MySQL Community Server (GPL)\n\nCopyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.\n\nOracle is a registered trademark of Oracle Corporation and/or its\naffiliates. Other names may be trademarks of their respective owners.\n\nType \'help;\' or \'\\h\' for help. Type \'\\c\' to clear the current input statement.\n\nmysql>', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Create a database called ');
-          ie_open('strong');
-            itext('lportal');
-          ie_close('strong');
-          itext('  by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'mysql> create database lportal;', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Check to see if you successfully created the database  by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'mysql> show databases;\n\n+--------------------+\n| Database           |\n+--------------------+\n| information_schema |\n| lportal            |\n| mysql              |\n| performance_schema |\n| sakila             |\n| test               |\n| world              |\n+--------------------+\n7 rows in set (0.01 sec)', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Configure MySQL in your ');
-          ie_open('code');
-            itext('portal-ext.properties');
-          ie_close('code');
-          itext(' file by adding the following lines to your file.');
-          $templateAlias2({code: 'jdbc.default.driverClassName=com.mysql.jdbc.Driver\njdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false\njdbc.default.username=\njdbc.default.password=', mode: 'shell'}, null, opt_ijData);
-          ie_open('ul');
-            ie_open('li');
-              itext('You need to update the database name if you used a different name than ');
-              ie_open('em');
-                itext('lportal');
-              ie_close('em');
-              itext(' when you created your database.');
-            ie_close('li');
-            ie_open('li');
-              itext('If you didn\'t specify a username when configuring MySQL, the username is "root" by default. Append the username after ');
-              ie_open('em');
-                itext('jdbc.default.username=');
-              ie_close('em');
-              itext('.');
-            ie_close('li');
-            ie_open('li');
-              itext('If you didn\'t specify a password when configuring MySQL, keep it blank, but if you did, then append the password after ');
-              ie_open('em');
-                itext('jdbc.default.password=');
-              ie_close('em');
-              itext('.');
-            ie_close('li');
-          ie_close('ul');
-        ie_close('li');
-        ie_open('li');
-          itext('Save the ');
-          ie_open('code');
-            itext('portal-ext.properties');
-          ie_close('code');
-          itext(' file and start Tomcat. Look for the following messages in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'INFO: Initializing Spring root WebApplicationContext\nINFO  [localhost-startStop-1][DialectDetector:117] Determine dialect for MySQL 5\nINFO  [localhost-startStop-1][DialectDetector:117] Found dialect org.hibernate.dialect.MySQLDialect', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Liferay portal is now running with a MySQL database!');
-        ie_close('li');
-      ie_close('ol');
+      ie_open('p');
+        ie_open('em');
+          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
+        ie_close('em');
+      ie_close('p');
+      ie_open('h2');
+        itext('General Tips');
+      ie_close('h2');
+      ie_open('p');
+        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
+      ie_close('p');
+      ie_open('h3');
+        itext('Chrome DevTools');
+      ie_close('h3');
+      ie_open('p');
+        itext('Common shortcuts for Chrome DevTools. If you find yourself using Chrome to inspect and debug a page, use the following shortcuts to help.');
+      ie_close('p');
+      ie_open('h4');
+        itext('Opening DevTools');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open whatever panel you used last');
+            ie_close('td');
+            ie_open('td');
+              itext('F12 (Or Control + Shift + I)');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Option + I');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open the Console panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + J');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Option + J');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open the Elements panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + C');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Option + C');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Global keyboard shorcuts');
+      ie_close('h4');
+      ie_open('p');
+        itext('The following keyboard shortcuts are available in most, if not all, DevTools panels.');
+      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Show Settings');
+            ie_close('td');
+            ie_open('td');
+              itext('F1 (Or ?)');
+            ie_close('td');
+            ie_open('td');
+              itext('Function + F1 (Or ?)');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Focus the next panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + ]');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + ]');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Focus the previous panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + [');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + [');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Switch back to whatever docking position you last used. If DevTools has been in its default position for the entire session, then this shortcut undocks DevTools into a separate window');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + D');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + D');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle Device Mode');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + M');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + M');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle Inspect Element Mode');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + C');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + C');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open the Command Menu');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + P');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + P');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle the Drawer');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Normal reload');
+            ie_close('td');
+            ie_open('td');
+              itext('F5 (Or Control + R)');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + R');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Hard reload');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + F5 (Or Control + Shift + R)');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + R');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Search for text within the current panel. Not supported in the Audits, Application, and Security panels');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + F');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Opens the Search tab in the Drawer, which lets you search for text across all loaded resources');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + F');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Option + F');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Open a file in the Sources panel');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + O (Or Control + P)');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + O (Or Command + P)');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Zoom in');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Shift + +');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + +');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Zoom out');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + -');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + -');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Restore default zoom level');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + 0');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + 0');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Run snippet');
+            ie_close('td');
+            ie_open('td');
+              itext('Press ');
+              ie_open('code');
+                itext('Control + O');
+              ie_close('code');
+              itext(' to open the Command Menu, type ');
+              ie_open('code');
+                itext('!');
+              ie_close('code');
+              itext(' followed by the name of the script, then press ');
+              ie_open('code');
+                itext('Enter');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('Press ');
+              ie_open('code');
+                itext('Command + O');
+              ie_close('code');
+              itext(' to open the Command Menu, type ');
+              ie_open('code');
+                itext('!');
+              ie_close('code');
+              itext(' followed by the name of the script, then press ');
+              ie_open('code');
+                itext('Enter');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Elements panel');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Undo change');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Z');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Z');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Redo change');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + Y');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Shift + Z');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Select the element above / below the currently-selected element');
+            ie_close('td');
+            ie_open('td');
+              itext('Up Arrow / Down Arrow');
+            ie_close('td');
+            ie_open('td');
+              itext('Up Arrow / Down Arrow');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Expand the currently-selected node. If the node is already expanded, this shortcut selects the element below it');
+            ie_close('td');
+            ie_open('td');
+              itext('Right Arrow');
+            ie_close('td');
+            ie_open('td');
+              itext('Right Arrow');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Collapse the currently-selected node. If the node is already collapsed, this shortcut selects the element above it');
+            ie_close('td');
+            ie_open('td');
+              itext('Left Arrow');
+            ie_close('td');
+            ie_open('td');
+              itext('Left Arrow');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Expand or collapse the currently-selected node and all of its children');
+            ie_close('td');
+            ie_open('td');
+              itext('Hold ');
+              ie_open('code');
+                itext('Control + Alt');
+              ie_close('code');
+              itext(' then click the arrow icon next to the element\'s name');
+            ie_close('td');
+            ie_open('td');
+              itext('Hold ');
+              ie_open('code');
+                itext('Option');
+              ie_close('code');
+              itext(' then click the arrow icon next to the element\'s name');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle Edit Attributes mode on the currently-selected element');
+            ie_close('td');
+            ie_open('td');
+              itext('Enter');
+            ie_close('td');
+            ie_open('td');
+              itext('Enter');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Select the next / previous attribute after entering Edit Attributes mode');
+            ie_close('td');
+            ie_open('td');
+              itext('Tab / Shift + Tab');
+            ie_close('td');
+            ie_open('td');
+              itext('Tab / Shift + Tab');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Hide the currently-selected element');
+            ie_close('td');
+            ie_open('td');
+              itext('H');
+            ie_close('td');
+            ie_open('td');
+              itext('H');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Toggle Edit as HTML mode on the currently-selected element');
+            ie_close('td');
+            ie_open('td');
+              itext('F2');
+            ie_close('td');
+            ie_open('td');
+              itext('Function + F2');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h4');
+        itext('Console panel');
+      ie_close('h4');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+            ie_open('th');
+              itext('Windows');
+            ie_close('th');
+            ie_open('th');
+              itext('OS X');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Accept autocomplete suggestion');
+            ie_close('td');
+            ie_open('td');
+              itext('Right Arrow (Or Tab)');
+            ie_close('td');
+            ie_open('td');
+              itext('Right Arrow (Or Tab)');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Reject autocomplete suggestion');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+            ie_open('td');
+              itext('Escape');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Get previous statement');
+            ie_close('td');
+            ie_open('td');
+              itext('Up Arrow');
+            ie_close('td');
+            ie_open('td');
+              itext('Up Arrow');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Get next statement');
+            ie_close('td');
+            ie_open('td');
+              itext('Down Arrow');
+            ie_close('td');
+            ie_open('td');
+              itext('Down Arrow');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Focus the Console');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + `');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + `');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Clear the Console');
+            ie_close('td');
+            ie_open('td');
+              itext('Control + L');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + K (Or Option + L)');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary');
+            ie_close('td');
+            ie_open('td');
+              itext('Shift + Enter');
+            ie_close('td');
+            ie_open('td');
+              itext('Command + Return');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Execute command');
+            ie_close('td');
+            ie_open('td');
+              itext('Enter');
+            ie_close('td');
+            ie_open('td');
+              itext('Return');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Expand all sub-properties of an object that\'s been logged to the Console');
+            ie_close('td');
+            ie_open('td');
+              itext('Hold ');
+              ie_open('code');
+                itext('Alt');
+              ie_close('code');
+              itext(' then click ');
+              ie_open('code');
+                itext('Expand');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('Hold ');
+              ie_open('code');
+                itext('Alt');
+              ie_close('code');
+              itext(' then click ');
+              ie_open('code');
+                itext('Expand');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('p');
+        itext('This has been adapted from ');
+        ie_open('a', null, null,
+            'href', 'https://developers.google.com/web/tools/chrome-devtools/shortcuts');
+          itext('https://developers.google.com/web/tools/chrome-devtools/shortcuts');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28571,11 +29028,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param354}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param310}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'FrDTi.render';
+  $render.soyTemplateName = 'aTGLd.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28585,14 +29042,18 @@ return exports;
 
 });
 
-class FrDTi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FrDTi, templates);
+class aTGLd extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(aTGLd, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
 /* 226 */,
 /* 227 */,
 /* 228 */,
@@ -28624,7 +29085,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FrDTi, templates);
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28660,9 +29125,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _setupMysqlSoy = __webpack_require__(225);
+var _keyboardShortcutsDevtoolsSoy = __webpack_require__(221);
 
-var _setupMysqlSoy2 = _interopRequireDefault(_setupMysqlSoy);
+var _keyboardShortcutsDevtoolsSoy2 = _interopRequireDefault(_keyboardShortcutsDevtoolsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28672,23 +29137,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var FrDTi = function (_Component) {
-  _inherits(FrDTi, _Component);
+var aTGLd = function (_Component) {
+  _inherits(aTGLd, _Component);
 
-  function FrDTi() {
-    _classCallCheck(this, FrDTi);
+  function aTGLd() {
+    _classCallCheck(this, aTGLd);
 
-    return _possibleConstructorReturn(this, (FrDTi.__proto__ || Object.getPrototypeOf(FrDTi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (aTGLd.__proto__ || Object.getPrototypeOf(aTGLd)).apply(this, arguments));
   }
 
-  return FrDTi;
+  return aTGLd;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(FrDTi, _setupMysqlSoy2.default);
+_metalSoy2.default.register(aTGLd, _keyboardShortcutsDevtoolsSoy2.default);
 
-exports.default = FrDTi;
+exports.default = aTGLd;
 
 /***/ })
-],[257]);
+],[261]);

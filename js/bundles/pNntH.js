@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([21,37,38,39],[
+webpackJsonppageComponent([19,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28377,12 +28377,14 @@ exports.default = parseFromAnchor;
 /* 230 */,
 /* 231 */,
 /* 232 */,
-/* 233 */
+/* 233 */,
+/* 234 */,
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hdkjW", function() { return hdkjW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pNntH", function() { return pNntH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28394,15 +28396,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from glossary.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace hdkjW.
+ * @fileoverview Templates in namespace pNntH.
  * @public
  */
 
-goog.module('hdkjW.incrementaldom');
+goog.module('pNntH.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28434,117 +28436,137 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param675 = function() {
+  var param697 = function() {
     ie_open('h6');
-      var dyn36 = opt_data.page.description;
-      if (typeof dyn36 == 'function') dyn36(); else if (dyn36 != null) itext(dyn36);
+      var dyn38 = opt_data.page.description;
+      if (typeof dyn38 == 'function') dyn38(); else if (dyn38 != null) itext(dyn38);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('Branch');
+        itext('What is HTML?');
       ie_close('h2');
-      ie_open('p');
-        itext('A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.');
-      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('HTML stands for ');
+          ie_open('strong');
+            itext('H');
+          ie_close('strong');
+          itext('yper ');
+          ie_open('strong');
+            itext('T');
+          ie_close('strong');
+          itext('ext ');
+          ie_open('strong');
+            itext('M');
+          ie_close('strong');
+          itext('arkup ');
+          ie_open('strong');
+            itext('L');
+          ie_close('strong');
+          itext('anguage.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is not a programming language, it is a ');
+          ie_open('em');
+            itext('markup language');
+          ie_close('em');
+          itext('. A markup language is a set of ');
+          ie_open('em');
+            itext('markup tags');
+          ie_close('em');
+          itext(' and the purpose of the tags are to describe page content.');
+        ie_close('li');
+        ie_open('li');
+          itext('HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('article', null, null,
         'id', '2');
       ie_open('h2');
-        itext('Centralized Workflow');
+        itext('Online tutorials');
       ie_close('h2');
       ie_open('p');
-        itext('If your developers are already comfortable with Subversion, the Centralized Workflow lets you experience the benefits of Git without having to adapt to an entirely new process. It also serves as a friendly transition into more Git-oriented workflows.');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
       ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://www.codecademy.com/tracks/web');
+            itext('Codecademy\'s HTML & CSS');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/learn/learn-html');
+            itext('Codecademy\'s Learn HTML');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-foundations');
+            itext('Code Schools\' Front-end Foundations');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/front-end-formations');
+            itext('Code Schools\' Front-end Formations');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.udacity.com/course/intro-to-html-and-css--ud304');
+            itext('Udacity\'s HTML and CSS Syntax');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://www.w3schools.com/html/default.asp');
+            itext('w3school\'s HTML5 Tutorial');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('article', null, null,
         'id', '3');
       ie_open('h2');
-        itext('Feature Branch Workflow');
+        itext('Other resources');
       ie_close('h2');
-      ie_open('p');
-        itext('The Feature Branch Workflow builds on the Centralized Workflow by encapsulating new features into dedicated branches. This enables the use of pull requests as a means to discuss changes before they\u2019re integrated into the official project.');
-      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/articles/glossary-html');
+            itext('Codecademy\'s HTML glossary');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/HTML');
+            itext('MDN\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.w3schools.com/tags/default.asp');
+            itext('w3school\'s HTML reference');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('article', null, null,
         'id', '4');
       ie_open('h2');
-        itext('Forking');
+        itext('HTML Quiz');
       ie_close('h2');
       ie_open('p');
-        itext('Instead of using a single server-side repository to act as the \u201Ccentral\u201D codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('HEAD');
-      ie_close('h2');
-      ie_open('p');
-        itext('Git\u2019s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a \u201Cdetached HEAD\u201D state.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '6');
-      ie_open('h2');
-        itext('Hook');
-      ie_close('h2');
-      ie_open('p');
-        itext('A script that runs automatically every time a particular event occurs in a Git repository. Hooks let you customize Git\u2019s internal behavior and trigger customizable actions at key points in the development life cycle.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '7');
-      ie_open('h2');
-        itext('Master');
-      ie_close('h2');
-      ie_open('p');
-        itext('The default development branch. Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '8');
-      ie_open('h2');
-        itext('Pull Request');
-      ie_close('h2');
-      ie_open('p');
-        itext('Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '9');
-      ie_open('h2');
-        itext('Repository');
-      ie_close('h2');
-      ie_open('p');
-        itext('A collection of commits, and branches and tags to identify commits.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '10');
-      ie_open('h2');
-        itext('Tag');
-      ie_close('h2');
-      ie_open('p');
-        itext('A reference typically used to mark a particular point in the commit chain. In contrast to a head, a tag is not updated by the commit command.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '11');
-      ie_open('h2');
-        itext('Version Control');
-      ie_close('h2');
-      ie_open('p');
-        itext('A system that records changes to a file or set of files over time so that you can recall specific versions later.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '12');
-      ie_open('h2');
-        itext('Working Tree');
-      ie_close('h2');
-      ie_open('p');
-        itext('The tree of actual checked out files, normally containing the contents of the HEAD commit\'s tree and any local changes you\'ve made but haven\'t yet committed.');
+        itext('After you have finished the tutorials, please take the ');
+        ie_open('a', null, null,
+            'href', 'https://www.w3schools.com/html/html_quiz.asp');
+          itext('HTML Quiz');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28556,11 +28578,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param675}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param697}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'hdkjW.render';
+  $render.soyTemplateName = 'pNntH.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28570,16 +28592,14 @@ return exports;
 
 });
 
-class hdkjW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hdkjW, templates);
+class pNntH extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pNntH, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 234 */,
-/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28614,7 +28634,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hdkjW, templates);
 /* 267 */,
 /* 268 */,
 /* 269 */,
-/* 270 */
+/* 270 */,
+/* 271 */,
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28650,9 +28672,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _glossarySoy = __webpack_require__(233);
+var _indexSoy = __webpack_require__(235);
 
-var _glossarySoy2 = _interopRequireDefault(_glossarySoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28662,23 +28684,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hdkjW = function (_Component) {
-  _inherits(hdkjW, _Component);
+var pNntH = function (_Component) {
+  _inherits(pNntH, _Component);
 
-  function hdkjW() {
-    _classCallCheck(this, hdkjW);
+  function pNntH() {
+    _classCallCheck(this, pNntH);
 
-    return _possibleConstructorReturn(this, (hdkjW.__proto__ || Object.getPrototypeOf(hdkjW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pNntH.__proto__ || Object.getPrototypeOf(pNntH)).apply(this, arguments));
   }
 
-  return hdkjW;
+  return pNntH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hdkjW, _glossarySoy2.default);
+_metalSoy2.default.register(pNntH, _indexSoy2.default);
 
-exports.default = hdkjW;
+exports.default = pNntH;
 
 /***/ })
-],[270]);
+],[272]);

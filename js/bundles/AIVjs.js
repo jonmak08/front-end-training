@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,37,38,39],[
+webpackJsonppageComponent([13,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28391,12 +28391,16 @@ exports.default = parseFromAnchor;
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SVTFA", function() { return SVTFA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AIVjs", function() { return AIVjs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28408,15 +28412,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-nine.soy.
+// This file was automatically generated from step-ten.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace SVTFA.
+ * @fileoverview Templates in namespace AIVjs.
  * @public
  */
 
-goog.module('SVTFA.incrementaldom');
+goog.module('AIVjs.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28450,208 +28454,56 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param820 = function() {
+  var param974 = function() {
     ie_open('h2');
-      var dyn45 = opt_data.page.title;
-      if (typeof dyn45 == 'function') dyn45(); else if (dyn45 != null) itext(dyn45);
+      var dyn49 = opt_data.page.title;
+      if (typeof dyn49 == 'function') dyn49(); else if (dyn49 != null) itext(dyn49);
     ie_close('h2');
     ie_open('p');
-      itext('Now that we have Liferay setup and configured, we can start compiling the ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code to get Liferay running.');
+      itext('Now that we have Liferay running, we have to understand how to read the messages output by the console.');
     ie_close('p');
-    ie_open('h3');
-      itext('Getting an application server');
-    ie_close('h3');
-    ie_open('p');
-      itext('If we want to use Liferay\'s default setup, we need to get Apache Tomcat on our machine.');
-    ie_close('p');
-    ie_open('ol');
+    ie_open('ul');
       ie_open('li');
-        itext('Open a ');
+        itext('Make sure Liferay is loading your ');
+        ie_open('code');
+          itext('portal-ext.properties');
+        ie_close('code');
+        itext(' file correctly by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Loading file:/liferay-portal/portal-ext.properties', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Make sure Liferay is loading the correct database as defined in your ');
+        ie_open('code');
+          itext('portal-ext.properties');
+        ie_close('code');
+        itext(' file by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO  [localhost-startStop-1][DialectDetector:77] Determine dialect for HSQL Database Engine 2.3\n[localhost-startStop-1][DialectDetector:97] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Make sure the version of Liferay that you are using is correct by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'Starting Liferay Community Edition Portal 7.0.4 GA5 (Wilberforce / Build 7004 / October 23, 2017)', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Upon startup, Liferay will automatically create a ');
         ie_open('em');
-          itext('Terminal/Git Bash');
+          itext('deploy');
         ie_close('em');
-        itext(' window.');
+        itext(' folder in your bundle.  When there are files placed in this folder, Liferay will automatically scan and consume any deployable packages. The location of this folder can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: '[localhost-startStop-1][AutoDeployDir:194] Auto deploy scanner started for /liferay-portal/deploy', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('Navigate to the cloned Liferay ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code folder.');
+        itext('Make sure Liferay has finished loading and is ready for use by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
       ie_open('li');
-        itext('Run the command below to download Apache Tomcat.');
-        $templateAlias2({code: 'ant -f build-dist.xml unzip-tomcat', mode: 'shell'}, null, opt_ijData);
-        ie_open('ul');
-          ie_open('li');
-            itext('This command tells ant to look in the ');
-            ie_open('code');
-              itext('build-dist.xml');
-            ie_close('code');
-            itext(' file and execute the ');
-            ie_open('strong');
-              itext('unzip-tomcat');
-            ie_close('strong');
-            itext(' command.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will delete preexisting folder names matching the application server directory defined in the ');
-            ie_open('code');
-              itext('app.server._USER\\_NAME_.properties');
-            ie_close('code');
-            itext(' file.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will download the version of Apache Tomcat defined in the ');
-            ie_open('code');
-              itext('app.server._USER\\_NAME_.properties');
-            ie_close('code');
-            itext(' file.');
-          ie_close('li');
-          ie_open('li');
-            itext('Ant will install Apache Tomcat to the folder specified in the ');
-            ie_open('code');
-              itext('app.server._USER\\_NAME_.properties');
-            ie_close('code');
-            itext(' file');
-          ie_close('li');
-        ie_close('ul');
+        itext('Errors in Liferay are usually prefixed with an ');
+        ie_open('strong');
+          itext('ERROR');
+        ie_close('strong');
+        itext(' warning message.  They can be found by looking for a line in your console similar to the output below.');
+        $templateAlias2({code: 'ERROR [Framework Event Dispatcher: Equinox Container: a029ce5e-e1fc-0017-1e71-df5549d2deba][com_liferay_util_taglib:97] FrameworkEvent ERROR\n    org.osgi.framework.BundleException: Could not resolve module: com.liferay.util.taglib [9]_  Unresolved requirement: Import-Package: javax.el_ [Sanitized]\n    at org.eclipse.osgi.container.Module.start(Module.java:429)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)\n    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)\n    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
-      ie_open('li');
-        itext('If this Ant task is successful, you will see a similar output as below.');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build-dist.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Compiling the source code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Now that everything is setup, we can compile Liferay\'s ');
-      ie_open('em');
-        itext('source');
-      ie_close('em');
-      itext(' code.');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' window.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Navigate to the cloned Liferay\' ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code folder.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Run the following command to setup Liferay.');
-        ie_close('p');
-        $templateAlias2({code: 'ant setup-sdk', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('If this Ant task is successful, you will see a similar output as below.');
-        ie_close('p');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Compile Liferay\'s ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code by running the following command.');
-        ie_close('p');
-        $templateAlias2({code: 'ant all', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('If this Ant task is successful, you will see a similar output as below.');
-        ie_close('p');
-        $templateAlias2({code: 'Buildfile: PATH/liferay-portal/build.xml\n...\nBUILD SUCCESSFUL\nTotal time: NNN minutes NNN seconds', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Navigate to the ');
-          ie_open('code');
-            itext('bin');
-          ie_close('code');
-          itext(' folder in the Apache Tomcat application server folder. (e.g. ');
-          ie_open('code');
-            itext('liferay-portal/tomcat-8.0.32/bin');
-          ie_close('code');
-          itext(').');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Start Apache Tomcat by running the following command.');
-          ie_open('strong');
-            itext('OS X/Linux');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: './catalina.sh run', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          ie_open('strong');
-            itext('Windows');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'catalina.bat run', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          itext('We use catalina instead of the startup executables so that we can conveniently see the console and any errors that it may throw.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Open a web browser and go to  ');
-          ie_open('em');
-            itext('http://localhost:8080');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Login to Liferay using the following credentials.');
-          ie_open('strong');
-            itext('Username');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'test@liferay.com', mode: 'shell'}, null, opt_ijData);
-        ie_open('p');
-          ie_open('strong');
-            itext('Password');
-          ie_close('strong');
-        ie_close('p');
-        $templateAlias2({code: 'test', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('To stop the server, go to the ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext(' window and hit ');
-          ie_open('code');
-            itext('CTRL + c');
-          ie_close('code');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-    ie_close('ol');
+    ie_close('ul');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28661,11 +28513,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param820}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param974}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'SVTFA.render';
+  $render.soyTemplateName = 'AIVjs.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28675,18 +28527,14 @@ return exports;
 
 });
 
-class SVTFA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SVTFA, templates);
+class AIVjs extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AIVjs, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
 /* 252 */,
 /* 253 */,
 /* 254 */,
@@ -28713,11 +28561,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SVTFA, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28753,9 +28597,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepNineSoy = __webpack_require__(247);
+var _stepTenSoy = __webpack_require__(251);
 
-var _stepNineSoy2 = _interopRequireDefault(_stepNineSoy);
+var _stepTenSoy2 = _interopRequireDefault(_stepTenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28765,23 +28609,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SVTFA = function (_Component) {
-  _inherits(SVTFA, _Component);
+var AIVjs = function (_Component) {
+  _inherits(AIVjs, _Component);
 
-  function SVTFA() {
-    _classCallCheck(this, SVTFA);
+  function AIVjs() {
+    _classCallCheck(this, AIVjs);
 
-    return _possibleConstructorReturn(this, (SVTFA.__proto__ || Object.getPrototypeOf(SVTFA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AIVjs.__proto__ || Object.getPrototypeOf(AIVjs)).apply(this, arguments));
   }
 
-  return SVTFA;
+  return AIVjs;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(SVTFA, _stepNineSoy2.default);
+_metalSoy2.default.register(AIVjs, _stepTenSoy2.default);
 
-exports.default = SVTFA;
+exports.default = AIVjs;
 
 /***/ })
-],[282]);
+],[278]);

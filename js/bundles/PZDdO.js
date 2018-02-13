@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([19,37,38,39],[
+webpackJsonppageComponent([34,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28362,29 +28362,12 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "crknM", function() { return crknM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PZDdO", function() { return PZDdO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28396,15 +28379,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from debugging-effectively.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace crknM.
+ * @fileoverview Templates in namespace PZDdO.
  * @public
  */
 
-goog.module('crknM.incrementaldom');
+goog.module('PZDdO.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28425,7 +28408,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28436,137 +28419,196 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param697 = function() {
-    ie_open('h6');
-      var dyn38 = opt_data.page.description;
-      if (typeof dyn38 == 'function') dyn38(); else if (dyn38 != null) itext(dyn38);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is HTML?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('HTML stands for ');
-          ie_open('strong');
-            itext('H');
-          ie_close('strong');
-          itext('yper ');
-          ie_open('strong');
-            itext('T');
-          ie_close('strong');
-          itext('ext ');
-          ie_open('strong');
-            itext('M');
-          ie_close('strong');
-          itext('arkup ');
-          ie_open('strong');
-            itext('L');
-          ie_close('strong');
-          itext('anguage.');
-        ie_close('li');
-        ie_open('li');
-          itext('HTML is not a programming language, it is a ');
-          ie_open('em');
-            itext('markup language');
-          ie_close('em');
-          itext('. A markup language is a set of ');
-          ie_open('em');
-            itext('markup tags');
-          ie_close('em');
-          itext(' and the purpose of the tags are to describe page content.');
-        ie_close('li');
-        ie_open('li');
-          itext('HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
+  var param219 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+        var dyn19 = opt_data.page.description;
+        if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://www.codecademy.com/tracks/web');
-            itext('Codecademy\'s HTML & CSS');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-html');
-            itext('Codecademy\'s Learn HTML');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/front-end-foundations');
-            itext('Code Schools\' Front-end Foundations');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/front-end-formations');
-            itext('Code Schools\' Front-end Formations');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/intro-to-html-and-css--ud304');
-            itext('Udacity\'s HTML and CSS Syntax');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://www.w3schools.com/html/default.asp');
-            itext('w3school\'s HTML5 Tutorial');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/articles/glossary-html');
-            itext('Codecademy\'s HTML glossary');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/HTML');
-            itext('MDN\'s HTML reference');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/tags/default.asp');
-            itext('w3school\'s HTML reference');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('HTML Quiz');
-      ie_close('h2');
       ie_open('p');
-        itext('After you have finished the tutorials, please take the ');
-        ie_open('a', null, null,
-            'href', 'https://www.w3schools.com/html/html_quiz.asp');
-          itext('HTML Quiz');
-        ie_close('a');
+        itext('Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Search for surrounding text');
+      ie_close('h3');
+      ie_open('p');
+        itext('Maybe you are looking for something around an error message (e.g. "A user with that OpenID already exists.") that is appearing in a portlet. Use ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext(' to search for the error message string in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code. Your search results should return several ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. These files indicate that this text is being translated from English to other languages.');
+      ie_close('p');
+      ie_open('p');
+        itext('The underlying property name is a ');
+        ie_open('em');
+          itext('language key');
+        ie_close('em');
+        itext(' that matches this value, ');
+        ie_open('em');
+          itext('a-user-with-that-open-id-already-exists');
+        ie_close('em');
+        itext('. Now search for this string within Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code and ignore all the results in the ');
+        ie_open('code');
+          itext('Language_*.properties');
+        ie_close('code');
+        itext(' files. You will see, in a file called ');
+        ie_open('code');
+          itext('open_id.jsp');
+        ie_close('code');
+        itext(', that this message is displayed when a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' occurs.');
+      ie_close('p');
+      ie_open('p');
+        itext('What causes a ');
+        ie_open('em');
+          itext('DuplicateOpenIdException');
+        ie_close('em');
+        itext(' to be thrown?');
+      ie_close('p');
+      ie_open('p');
+        itext('Search for ');
+        ie_open('code');
+          itext('throw new DuplicateOpenIdException');
+        ie_close('code');
+        itext(' and you will find the answer in ');
+        ie_open('code');
+          itext('UserLocalServiceImpl.java');
+        ie_close('code');
         itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('A similar technique can be used to locate the file in which a particular view of a portlet is being generated. Just look for a rare string and search for it using ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Along the lines of the last point, if you see a call to a function and think the bug you\'re looking for is occurring in that function, search for the function definition.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you are looking at a function definition and know that the file with the bug in it must be using that function, search for all calls to the function.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Sublime Text has a plugin ');
+          ie_open('a', null, null,
+              'href', 'https://packagecontrol.io/packages/WhoCalled%20Function%20Finder');
+            itext('WhoCalled Function Finder');
+          ie_close('a');
+          itext(' for this exact use case');
+        ie_close('em');
+        itext('.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Print output');
+      ie_close('h3');
+      ie_open('p');
+        itext('If you are debugging a JavaScript file and want to know the value of any variable or expression at any point in the code, use ');
+        ie_open('code');
+          itext('console.log()');
+        ie_close('code');
+        itext('. This will print the value of the expression to the browser\'s JavaScript console within the DevTools.');
+      ie_close('p');
+      ie_open('p');
+        itext('In a ');
+        ie_open('code');
+          itext('.java');
+        ie_close('code');
+        itext(' file or a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, a ');
+        ie_open('code');
+          itext('System.out.println()');
+        ie_close('code');
+        itext(' statement will print to the ');
+        ie_open('em');
+          itext('Terminal/Git Bash');
+        ie_close('em');
+        itext(' in which you are running Tomcat.');
+      ie_close('p');
+      ie_open('p');
+        itext('Outside a Java scriptlet in a ');
+        ie_open('code');
+          itext('.jsp');
+        ie_close('code');
+        itext(' file, you can print directly to the browser by enclosing the Java expression in a block surrounded by ');
+        ie_open('code');
+          itext('<%=');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('%>');
+        ie_close('code');
+        itext(' tags.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Browser\'s JavaScript console');
+      ie_close('h3');
+      ie_open('p');
+        itext('Use the browser\'s JavaScript console to debug and test code. If you declare a JavaScript variable as a ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variable within the Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code (e.g, ');
+        ie_open('code');
+          itext('window.numColors = 2;');
+        ie_close('code');
+        itext(' instead of ');
+        ie_open('code');
+          itext('var numColors = 2;');
+        ie_close('code');
+        itext('), you can access this variable by typing it in the browser\'s JavaScript console.');
+      ie_close('p');
+      ie_open('p');
+        itext('Just be sure to remove all declarations of ');
+        ie_open('em');
+          itext('window');
+        ie_close('em');
+        itext(' variables before submitting your code for review. If this variable has a function available to it, say ');
+        ie_open('code');
+          itext('toString()');
+        ie_close('code');
+        itext(', you can get the function definition by typing ');
+        ie_open('code');
+          itext('numColors.toString');
+        ie_close('code');
+        itext(', or you can get the result of a function call by typing ');
+        ie_open('code');
+          itext('numColors.toString()');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('More generally, you can use the console to test your own snippets of JavaScript code before putting them in Liferay\'s ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code.');
+      ie_close('p');
+      ie_open('p');
+        itext('Again, don\'t be afraid to ask for help when you need to.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28578,11 +28620,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param697}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param219}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'crknM.render';
+  $render.soyTemplateName = 'PZDdO.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28592,14 +28634,31 @@ return exports;
 
 });
 
-class crknM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(crknM, templates);
+class PZDdO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PZDdO, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28621,22 +28680,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(crknM, templates);
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28672,9 +28716,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(235);
+var _debuggingEffectivelySoy = __webpack_require__(218);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _debuggingEffectivelySoy2 = _interopRequireDefault(_debuggingEffectivelySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28684,23 +28728,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var crknM = function (_Component) {
-  _inherits(crknM, _Component);
+var PZDdO = function (_Component) {
+  _inherits(PZDdO, _Component);
 
-  function crknM() {
-    _classCallCheck(this, crknM);
+  function PZDdO() {
+    _classCallCheck(this, PZDdO);
 
-    return _possibleConstructorReturn(this, (crknM.__proto__ || Object.getPrototypeOf(crknM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PZDdO.__proto__ || Object.getPrototypeOf(PZDdO)).apply(this, arguments));
   }
 
-  return crknM;
+  return PZDdO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(crknM, _indexSoy2.default);
+_metalSoy2.default.register(PZDdO, _debuggingEffectivelySoy2.default);
 
-exports.default = crknM;
+exports.default = PZDdO;
 
 /***/ })
-],[272]);
+],[257]);

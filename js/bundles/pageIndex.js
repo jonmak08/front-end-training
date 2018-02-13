@@ -28485,7 +28485,7 @@ function $header(opt_data, opt_ignored, opt_ijData) {
           itext('Learn front-end development');
         ie_close('a');
         ie_open('a', null, null,
-            'href', '/tutorials',
+            'href', '/tutorials/machine/step-one.html/',
             'class', 'btn btn-default');
           itext('Get started with Liferay');
         ie_close('a');

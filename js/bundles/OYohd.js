@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,37,38,39],[
+webpackJsonppageComponent([10,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28387,15 +28387,12 @@ exports.default = parseFromAnchor;
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IiVTx", function() { return IiVTx; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OYohd", function() { return OYohd; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28407,15 +28404,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-four.soy.
+// This file was automatically generated from step-eight.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace IiVTx.
+ * @fileoverview Templates in namespace OYohd.
  * @public
  */
 
-goog.module('IiVTx.incrementaldom');
+goog.module('OYohd.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28436,6 +28433,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28447,84 +28446,260 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param809 = function() {
+  var param736 = function() {
     ie_open('h2');
-      var dyn44 = opt_data.page.title;
-      if (typeof dyn44 == 'function') dyn44(); else if (dyn44 != null) itext(dyn44);
+      var dyn41 = opt_data.page.title;
+      if (typeof dyn41 == 'function') dyn41(); else if (dyn41 != null) itext(dyn41);
     ie_close('h2');
     ie_open('p');
-      itext('We are going to define what the difference is between all the versions of Liferay\'s code.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Source code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Source code refers to the ');
-      ie_open('em');
-        itext('uncompiled');
-      ie_close('em');
-      itext(' code \u2013 if you want to use it, you have to use commands to compile it. This version of the code is constantly being updated. This is the code that anyone could download and modify. The source branches/versions are named like: 6.0.x, 6.1.x, 6.2.x, 7.0x, etc.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('See Liferay\'s source code.');
-      ie_close('a');
-    ie_close('p');
-    ie_open('h3');
-      itext('Compiled code');
-    ie_close('h3');
-    ie_open('p');
-      itext('Compiled code is derived from the ');
+      itext('We need to configure settings in Liferay to get it to build and run from the ');
       ie_open('em');
         itext('source');
       ie_close('em');
-      itext(' code. Basically, someone had to take the source code and compile it for people to use. This code cannot be modified directly, you would need to modify the source which would have to be recompiled for use.  This is the code that is delivered to users in our downloadable bundles.');
+      itext(' code.');
     ie_close('p');
     ie_open('h3');
-      itext('Liferay Bundle');
+      itext('What is a *.properties file?');
     ie_close('h3');
     ie_open('p');
-      itext('A Liferay bundle contains the compiled code and an application server. The bundle is what customers download and use in production environments. The bundles are named after their source versions, like: 6.0.6, 6.0.12, 6.1.0, 6.1.10, 7.0.1, etc.');
+      itext('The ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' file.');
     ie_close('p');
     ie_open('p');
-      ie_open('a', null, null,
-          'href', 'https://www.liferay.com/downloads');
-        itext('See Liferay\'s bundles.');
-      ie_close('a');
+      itext('Because we are going to be overriding default properties, the easiest way to accomplish this is through a ');
+      ie_open('code');
+        itext('\\*.USER_NAME.properties');
+      ie_close('code');
+      itext('. (e.g. ');
+      ie_open('code');
+        itext('app.server.brianchan.properties');
+      ie_close('code');
+      itext(' or ');
+      ie_open('code');
+        itext('build.brianchan.properties');
+      ie_close('code');
+      itext(').');
     ie_close('p');
     ie_open('p');
-      itext('An example of all of this is like baking a cake. The source code would be the recipe for the cake. Modifying any source code would be like modifying the cake ingredients. The compiled code is the mixed, unbaked, cake batter. The bundle is the finished cake, ready to be eaten.');
+      itext('Liferay reads the ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' files in this order of precedence.');
     ie_close('p');
-    ie_open('h3');
-      itext('How do you get source code?');
-    ie_close('h3');
+    ie_open('ol');
+      ie_open('li');
+        itext('*.USER_NAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_COMPUTERNAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_HOST.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.ENV_HOSTNAME.properties');
+      ie_close('li');
+      ie_open('li');
+        itext('*.properties');
+      ie_close('li');
+    ie_close('ol');
     ie_open('p');
-      itext('Since Liferay is an open source software, all source code is available on ');
-      ie_open('a', null, null,
-          'href', 'https://github.com/liferay/liferay-portal');
-        itext('GitHub');
-      ie_close('a');
-      itext(' for download and use.');
+      itext('Therefore, whatever custom ');
+      ie_open('code');
+        itext('\\*.properties');
+      ie_close('code');
+      itext(' file you set will supersede what is defined in the default file.');
     ie_close('p');
     ie_open('p');
-      itext('For every CE version, including master, which contains the latest features, the source code is available for anyone to check out.  However, for every DE version, source code is only available to Liferay\'s developers.');
+      itext('To find out what the default property values are and what you can override, open the default.properties file (e.g. ');
+      ie_open('code');
+        itext('app.server.properties');
+      ie_close('code');
+      itext(' or ');
+      ie_open('code');
+        itext('build.properties');
+      ie_close('code');
+      itext(') and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ');
+      ie_open('code');
+        itext('\\*.USER_NAME.properties');
+      ie_close('code');
+      itext(' file, changing its value.');
     ie_close('p');
-    ie_open('h3');
-      itext('Why do I need the source code?');
-    ie_close('h3');
+    ie_open('h4');
+      itext('Creating a custom ');
+      ie_open('code');
+        itext('build.\\*.properties');
+      ie_close('code');
+      itext(' and ');
+      ie_open('code');
+        itext('app.server.\\*.properties');
+      ie_close('code');
+      itext(' files');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Create a file called ');
+          ie_open('code');
+            itext('build._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' and ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' inside the folder you cloned your Liferay ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code. The ');
+          ie_open('em');
+            itext('USER_NAME');
+          ie_close('em');
+          itext(' is the user you login with, not your machine name. On Windows machines the default is, ');
+          ie_open('em');
+            itext('liferay');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Edit your ');
+          ie_open('code');
+            itext('build._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file with the following lines in a text editor:');
+        ie_close('p');
+        $templateAlias2({code: 'javac.memoryMaximumSize=1024m', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Edit your ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.');
+        ie_close('p');
+        ie_open('p');
+          itext('The ');
+          ie_open('em');
+            itext('path');
+          ie_close('em');
+          itext(' of your bundle should be outside of your cloned Liferay ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code folder.');
+        ie_close('p');
+        ie_open('p');
+          itext('Your ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file might look something like below when it is complete, if we are using apache tomcat as our application server.');
+        ie_close('p');
+        $templateAlias2({code: 'app.server.type=tomcat\napp.server.parent.dir=${project.dir}/../my-custom-folder/bundles\napp.server.tomcat.dir=${app.server.parent.dir}/tomcat-8.0.32', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Creating a portal-ext.properties file');
+    ie_close('h4');
     ie_open('p');
-      itext('If you find a bug in Liferay, it is good practice to find out if it is also in the latest bundle version. If it exists in the latest version of that bundle version, a fix should be applied to all versions of that bundle.');
+      itext('Values defined in the ');
+      ie_open('code');
+        itext('portal.properties');
+      ie_close('code');
+      itext(' file are configurations used within Liferay. To override these settings, you will need to create a ');
+      ie_open('code');
+        itext('portal-ext.properties');
+      ie_close('code');
+      itext(' file.');
     ie_close('p');
     ie_open('p');
-      itext('In order to submit any fix, you would need to get the latest source code for your respective branch and submit a fix in the source code. Once your fix gets merged into its respective branch, QA will build a bundle and test your fix.');
+      ie_open('em');
+        itext('You will make changes within this file quite often to customize your Liferay instance.');
+      ie_close('em');
     ie_close('p');
-    ie_open('p');
-      ie_open('strong');
-        itext('Ex.');
-      ie_close('strong');
-      itext(' If you found a bug in 7.0.1 GA2, you should check to see if the same bug exists in 7.0.x. If it does, then you should submit your fix against 7.0.x. Once it is committed and tested by QA, it will be backported to all the older versions of 7.0.x.');
-    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Duplicate the ');
+          ie_open('code');
+            itext('portal-developer.properties');
+          ie_close('code');
+          itext(' file, found within your cloned Liferay ');
+          ie_open('em');
+            itext('source');
+          ie_close('em');
+          itext(' code. (e.g. ');
+          ie_open('code');
+            itext('PATH/liferay-portal/portal-impl/src');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Rename this copied file to ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open the ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file in a text editor. It should look something like the code below.');
+        ie_close('p');
+        $templateAlias2({code: 'theme.css.fast.load=false\ntheme.css.fast.load.check.request.parameter=true\ntheme.images.fast.load=false\ntheme.images.fast.load.check.request.parameter=true\n\njavascript.fast.load=true\njavascript.log.enabled=false\n\nlayout.template.cache.enabled=false\n\ncombo.check.timestamp=true\n\nminifier.enabled=false\n\nopenoffice.cache.enabled=false\n\nvelocity.engine.resource.modification.check.interval=0', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Set the ');
+          ie_open('code');
+            itext('javascript.fast.load');
+          ie_close('code');
+          itext(' property to ');
+          ie_open('strong');
+            itext('false');
+          ie_close('strong');
+          itext('. *Set this value to ');
+          ie_open('strong');
+            itext('true');
+          ie_close('strong');
+          itext(', if we are trying to replicate a production environment with minified JavaScript files.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('When all custom configurations are complete, move the ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file to one folder level above the application server directory defined in the ');
+          ie_open('code');
+            itext('app.server._USER\\_NAME_.properties');
+          ie_close('code');
+          itext(' file. (i.e. ');
+          ie_open('code');
+            itext('PATH/bundles');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28534,11 +28709,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param809}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param736}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'IiVTx.render';
+  $render.soyTemplateName = 'OYohd.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28548,14 +28723,17 @@ return exports;
 
 });
 
-class IiVTx extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IiVTx, templates);
+class OYohd extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(OYohd, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 244 */,
+/* 245 */,
+/* 246 */,
 /* 247 */,
 /* 248 */,
 /* 249 */,
@@ -28587,7 +28765,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IiVTx, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28623,9 +28804,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepFourSoy = __webpack_require__(246);
+var _stepEightSoy = __webpack_require__(243);
 
-var _stepFourSoy2 = _interopRequireDefault(_stepFourSoy);
+var _stepEightSoy2 = _interopRequireDefault(_stepEightSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28635,23 +28816,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IiVTx = function (_Component) {
-  _inherits(IiVTx, _Component);
+var OYohd = function (_Component) {
+  _inherits(OYohd, _Component);
 
-  function IiVTx() {
-    _classCallCheck(this, IiVTx);
+  function OYohd() {
+    _classCallCheck(this, OYohd);
 
-    return _possibleConstructorReturn(this, (IiVTx.__proto__ || Object.getPrototypeOf(IiVTx)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OYohd.__proto__ || Object.getPrototypeOf(OYohd)).apply(this, arguments));
   }
 
-  return IiVTx;
+  return OYohd;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(IiVTx, _stepFourSoy2.default);
+_metalSoy2.default.register(OYohd, _stepEightSoy2.default);
 
-exports.default = IiVTx;
+exports.default = OYohd;
 
 /***/ })
-],[278]);
+],[281]);

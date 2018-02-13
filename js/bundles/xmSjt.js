@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([23,37,38,39],[
+webpackJsonppageComponent([27,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28370,17 +28370,12 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xzXwr", function() { return xzXwr; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xmSjt", function() { return xmSjt; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28392,15 +28387,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from setup-sublime-text.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace xzXwr.
+ * @fileoverview Templates in namespace xmSjt.
  * @public
  */
 
-goog.module('xzXwr.incrementaldom');
+goog.module('xmSjt.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28421,7 +28416,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28432,42 +28429,146 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param548 = function() {
-    ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34(); else if (dyn34 != null) itext(dyn34);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What are the browser developer tools?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('Developer tools are a powerful suite of tools that range from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load, that are included in every modern browser.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
+  var param395 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+        var dyn25 = opt_data.page.description;
+        if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+      ie_close('p');
+      ie_open('p');
+        itext('Sublime Text has a ton of features that are indispensable for development. If you use this as your text editor of choice, here are some settings and plugins that will help you get started.');
+      ie_close('p');
+      ie_open('h3');
+        itext('User settings');
+      ie_close('h3');
+      ie_open('p');
+        itext('Customize your Sublime Text settings for a better development experience.');
+      ie_close('p');
+      ie_open('p');
+        itext('Below is an example ');
+        ie_open('code');
+          itext('Preferences.sublime-settings');
+        ie_close('code');
+        itext(' file.');
+      ie_close('p');
+      $templateAlias2({code: '{\n    "bold_folder_labels": true, // makes the sidebar more readable at a glance\n    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",\n    "default_line_ending": "unix", // set the default line ending to Unix-style (Liferay only allows you to commit files with this type of ending)\n    "draw_white_space": "all", // show a dot every time there is a white-space character\n    "font_face": "Ubuntu Mono", // requires some work, but changes the font to something nicer\n    "font_size": 11,\n    "ignored_packages": [ "Vintage" ],\n    "rulers": [ 80 ], // show a vertical bar at a distance of 80 characters from the left margin\n    "tab_size": 4, // set tabs to be the same width as 4 spaces\n    "translate_tabs_to_spaces": true, // use spaces to indent rather than tab characters\n    "trim_trailing_white_space_on_save": true, // auto-delete trailing white space every time you save\n    "word_wrap": true\n}', mode: 'shell'}, null, opt_ijData);
+      ie_open('p');
+        itext('Most of these settings are personal preference, but some of these will be helpful during your development.');
       ie_close('p');
       ie_open('ul');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/discover-devtools');
-            itext('Code School\'s Discover DevTools');
-          ie_close('a');
+          ie_open('strong');
+            itext('default_line_ending');
+          ie_close('strong');
+          itext(': Set your line endings to be ');
+          ie_open('em');
+            itext('unix');
+          ie_close('em');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools');
-            itext('MDN\'s What are browser developer tools?');
-          ie_close('a');
+          ie_open('strong');
+            itext('draw_white_space');
+          ie_close('strong');
+          itext(': Display all white-space characters throughout a file.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('rulers');
+          ie_close('strong');
+          itext(': Set a vertical bar at 80 characters. When editing Liferay\'s Java files, 80 characters are the maximum number of characters per line.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('tab_size');
+          ie_close('strong');
+          itext(': Set a default tab size to keep code consistent throughout the file. ');
+          ie_open('em');
+            itext('The typical tab size is 4 spaces, although there are occasional exceptions');
+          ie_close('em');
+          itext('.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('trim_trailing_white_space_on_save');
+          ie_close('strong');
+          itext(': Remove extra line breaks and white-space upon saving of a file.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('For a complete list of settings, go to ');
+        ie_open('em');
+          itext('Preferences');
+        ie_close('em');
+        itext(', click on ');
+        ie_open('em');
+          itext('Settings');
+        ie_close('em');
+        itext(', and then click on ');
+        ie_open('em');
+          itext('Default');
+        ie_close('em');
+        itext('. You can override of these settings; just copy it into your user preferences file and change the value.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Package Control');
+      ie_close('h3');
+      ie_open('p');
+        itext('Package Control makes it easy to download and install useful Sublime Text plugins. Exploration here is very valuable because there are a lot of things that you can find to make your life easier or just customize Sublime Text to your liking.');
+      ie_close('p');
+      ie_open('p');
+        itext('More information about ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/installation');
+          itext('installing');
+        ie_close('a');
+        itext(' and ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/docs/usage');
+          itext('using');
+        ie_close('a');
+        itext(' package control can be found at ');
+        ie_open('a', null, null,
+            'href', 'https://packagecontrol.io/');
+          itext('https://packagecontrol.io/');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/Alignment');
+              itext('Alignment');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Easy alignment of multiple selections and multi-line selections.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/BracketHighlighter');
+              itext('BracketHighlighter');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Bracket and tag highlighter for Sublime Text http://facelessuser.github.io/BracketHighlighter/');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/GitHubinator');
+              itext('GitHubinator');
+            ie_close('a');
+          ie_close('strong');
+          itext(': Sublime Text plugin that shows selected text on remote GitHub or Bitbucket repo.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            ie_open('a', null, null,
+                'href', 'https://packagecontrol.io/packages/GitGutter');
+              itext('GitGutter');
+            ie_close('a');
+          ie_close('strong');
+          itext(': A Sublime Text 2/3 plugin to see git diff in gutter');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28480,11 +28581,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param548}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'xzXwr.render';
+  $render.soyTemplateName = 'xmSjt.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28494,14 +28595,19 @@ return exports;
 
 });
 
-class xzXwr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xzXwr, templates);
+class xmSjt extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xmSjt, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -28534,11 +28640,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xzXwr, templates);
 /* 261 */,
 /* 262 */,
 /* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28574,9 +28676,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(231);
+var _setupSublimeTextSoy = __webpack_require__(226);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _setupSublimeTextSoy2 = _interopRequireDefault(_setupSublimeTextSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28586,23 +28688,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var xzXwr = function (_Component) {
-  _inherits(xzXwr, _Component);
+var xmSjt = function (_Component) {
+  _inherits(xmSjt, _Component);
 
-  function xzXwr() {
-    _classCallCheck(this, xzXwr);
+  function xmSjt() {
+    _classCallCheck(this, xmSjt);
 
-    return _possibleConstructorReturn(this, (xzXwr.__proto__ || Object.getPrototypeOf(xzXwr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xmSjt.__proto__ || Object.getPrototypeOf(xmSjt)).apply(this, arguments));
   }
 
-  return xzXwr;
+  return xmSjt;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(xzXwr, _indexSoy2.default);
+_metalSoy2.default.register(xmSjt, _setupSublimeTextSoy2.default);
 
-exports.default = xzXwr;
+exports.default = xmSjt;
 
 /***/ })
-],[268]);
+],[264]);

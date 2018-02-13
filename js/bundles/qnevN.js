@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,37,38,39],[
+webpackJsonppageComponent([3,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28392,12 +28392,17 @@ exports.default = parseFromAnchor;
 /* 245 */,
 /* 246 */,
 /* 247 */,
-/* 248 */
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cXXfB", function() { return cXXfB; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qnevN", function() { return qnevN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28409,15 +28414,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-one.soy.
+// This file was automatically generated from step-two.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace cXXfB.
+ * @fileoverview Templates in namespace qnevN.
  * @public
  */
 
-goog.module('cXXfB.incrementaldom');
+goog.module('qnevN.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28438,6 +28443,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28449,201 +28456,621 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param881 = function() {
+  var param1046 = function() {
     ie_open('h2');
-      var dyn46 = opt_data.page.title;
-      if (typeof dyn46 == 'function') dyn46(); else if (dyn46 != null) itext(dyn46);
+      var dyn51 = opt_data.page.title;
+      if (typeof dyn51 == 'function') dyn51(); else if (dyn51 != null) itext(dyn51);
     ie_close('h2');
+    ie_open('h3');
+      itext('Change your computer name');
+    ie_close('h3');
     ie_open('p');
-      itext('Download and install the following software. ');
-      ie_open('em');
-        itext('There are options listed for each category, so feel free to pick whichever you prefer.');
-      ie_close('em');
+      itext('Change your computer name to something more user friendly because we will be using this later on when configuring Liferay.');
     ie_close('p');
+    ie_open('h4');
+      itext('OS X');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        itext('Launch ');
+        ie_open('em');
+          itext('System Preferences');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on ');
+        ie_open('em');
+          itext('Sharing');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the ');
+        ie_open('em');
+          itext('Computer Name:');
+        ie_close('em');
+        itext(' field, enter what you want your computer name to be.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Windows');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        itext('Right click on ');
+        ie_open('em');
+          itext('My Computer');
+        ie_close('em');
+        itext(' and choose ');
+        ie_open('em');
+          itext('Properties');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('On the ');
+        ie_open('em');
+          itext('Computer Name, domain, and workgroup settings');
+        ie_close('em');
+        itext(' section, click the ');
+        ie_open('em');
+          itext('Change Settings...');
+        ie_close('em');
+        itext(' link.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click the ');
+        ie_open('em');
+          itext('Change...');
+        ie_close('em');
+        itext(' button under the ');
+        ie_open('em');
+          itext('Computer Name');
+        ie_close('em');
+        itext(' tab.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the ');
+        ie_open('em');
+          itext('Computer Name:');
+        ie_close('em');
+        itext(' field, enter what you want your computer name to be.');
+      ie_close('li');
+    ie_close('ol');
     ie_open('h3');
-      itext('7zip');
+      itext('Change your folder options');
     ie_close('h3');
-    ie_open('ul');
+    ie_open('p');
+      itext('Show ');
+      ie_open('em');
+        itext('hidden');
+      ie_close('em');
+      itext(' files in the ');
+      ie_open('em');
+        itext('Finder/File Explorer');
+      ie_close('em');
+      itext(' because Liferay contains hidden files that we need to edit.');
+    ie_close('p');
+    ie_open('h4');
+      itext('OS X');
+    ie_close('h4');
+    ie_open('ol');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://sourceforge.net/projects/sevenzip');
-          itext('7zip');
-        ie_close('a');
+        ie_open('p');
+          itext('Launch the ');
+          ie_open('em');
+            itext('Terminal');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
       ie_close('li');
-    ie_close('ul');
+      ie_open('li');
+        ie_open('p');
+          itext('Enter the command below.');
+        ie_close('p');
+        $templateAlias2({code: 'defaults write com.apple.Finder AppleShowAllFiles TRUE', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Relaunch the Finder to make the changes take effect.');
+        ie_close('p');
+        $templateAlias2({code: 'killall Finder', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Windows');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        itext('Click the ');
+        ie_open('em');
+          itext('Start Menu');
+        ie_close('em');
+        itext(' and search for ');
+        ie_open('em');
+          itext('Folder Explorer Options');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on the ');
+        ie_open('em');
+          itext('View');
+        ie_close('em');
+        itext(' tab .');
+      ie_close('li');
+      ie_open('li');
+        itext('Under the ');
+        ie_open('em');
+          itext('Advanced settings:');
+        ie_close('em');
+        itext(' section, make sure ');
+        ie_open('em');
+          itext('Show hidden files, folders and drives');
+        ie_close('em');
+        itext(' is selected.');
+      ie_close('li');
+      ie_open('li');
+        itext('Make sure ');
+        ie_open('em');
+          itext('Hide extensions for known file types');
+        ie_close('em');
+        itext(' is unchecked.');
+      ie_close('li');
+    ie_close('ol');
     ie_open('h3');
-      itext('Apache Ant');
+      itext('Set ANT_OPTS environment variable');
     ie_close('h3');
-    ie_open('ul');
+    ie_open('p');
+      ie_open('em');
+        itext('ANT_OPTS');
+      ie_close('em');
+      itext(' is an environment variable that provides a list of arguments that you want to pass to the Java Virtual Machine that will run Ant.');
+    ie_close('p');
+    ie_open('h4');
+      itext('OS X');
+    ie_close('h4');
+    ie_open('ol');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://ant.apache.org');
-          itext('Apache Ant');
-        ie_close('a');
+        itext('Create a ');
+        ie_open('code');
+          itext('.bash_profile');
+        ie_close('code');
+        itext(' if one does not already exist.');
       ie_close('li');
-    ie_close('ul');
+      ie_open('li');
+        itext('Enter the contents below into the ');
+        ie_open('code');
+          itext('.bash_profile');
+        ie_close('code');
+        itext('.');
+        $templateAlias2({code: 'export ANT_OPTS="-Xms2048m -Xmx4096m"', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Relaunch the ');
+        ie_open('em');
+          itext('Terminal');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Windows');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        itext('Right click on ');
+        ie_open('em');
+          itext('My Computer');
+        ie_close('em');
+        itext(' and choose ');
+        ie_open('em');
+          itext('Properties');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Advanced system settings');
+        ie_close('em');
+        itext(' link.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Environment Variables...');
+        ie_close('em');
+        itext(' button.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on ');
+        ie_open('em');
+          itext('New...');
+        ie_close('em');
+        itext(' under the ');
+        ie_open('em');
+          itext('User variables');
+        ie_close('em');
+        itext(' section. We will be setting the ');
+        ie_open('code');
+          itext('ANT_OPTS');
+        ie_close('code');
+        itext(' environment variable.');
+      ie_close('li');
+      ie_open('li');
+        itext('Fill out the field values with ');
+        ie_open('em');
+          itext('Variable name:');
+        ie_close('em');
+        itext(' being ');
+        ie_open('code');
+          itext('ANT_OPTS');
+        ie_close('code');
+        itext(' and ');
+        ie_open('em');
+          itext('Variable value:');
+        ie_close('em');
+        itext(' being the ');
+        ie_open('strong');
+          itext('-Xms2048m -Xmx4096m');
+        ie_close('strong');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click ');
+        ie_open('em');
+          itext('OK');
+        ie_close('em');
+        itext(' to save this environment variable.');
+      ie_close('li');
+    ie_close('ol');
     ie_open('h3');
-      itext('Chat/IM Client');
+      itext('Setup Apache Ant');
     ie_close('h3');
-    ie_open('ul');
+    ie_open('p');
+      itext('Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the ');
+      ie_open('a', null, null,
+          'href', 'http://ant.apache.org/');
+        itext('Apache Ant');
+      ie_close('a');
+      itext(' in the previous step.  This will help you install and set it up.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Windows');
+    ie_close('h4');
+    ie_open('ol');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://hangouts.google.com/webchat/start');
-          itext('Google Hangouts');
-        ie_close('a');
+        itext('Unzip the downloaded file from the previous step into your C:\\ drive.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.skype.com/en/new');
-          itext('Skype');
-        ie_close('a');
+        itext('Go to your Ant directory in the ');
+        ie_open('em');
+          itext('File Explorer');
+        ie_close('em');
+        itext(' and copy the path from the address bar.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://slack.com');
-          itext('Slack');
-        ie_close('a');
+        itext('Right click on ');
+        ie_open('em');
+          itext('My Computer');
+        ie_close('em');
+        itext(' and choose ');
+        ie_open('em');
+          itext('Properties');
+        ie_close('em');
+        itext('.');
       ie_close('li');
-    ie_close('ul');
+      ie_open('li');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Advanced system settings');
+        ie_close('em');
+        itext(' link.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Environment Variables...');
+        ie_close('em');
+        itext(' button.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click on ');
+        ie_open('em');
+          itext('New...');
+        ie_close('em');
+        itext(' under the ');
+        ie_open('em');
+          itext('System variables');
+        ie_close('em');
+        itext(' section. We will be setting the ');
+        ie_open('code');
+          itext('ANT_HOME');
+        ie_close('code');
+        itext(' environment variable.');
+      ie_close('li');
+      ie_open('li');
+        itext('Fill out the field values with ');
+        ie_open('em');
+          itext('Variable name:');
+        ie_close('em');
+        itext(' being ');
+        ie_open('strong');
+          itext('ANT_HOME');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('em');
+          itext('Variable value:');
+        ie_close('em');
+        itext(' being the ');
+        ie_open('strong');
+          itext('Apache Ant path you coped in step 2');
+        ie_close('strong');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Click ');
+        ie_open('em');
+          itext('OK');
+        ie_close('em');
+        itext(' to save this environment variable.');
+      ie_close('li');
+      ie_open('li');
+        itext('Verify that the ');
+        ie_open('code');
+          itext('ANT_HOME');
+        ie_close('code');
+        itext(' variable is correct.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the ');
+        ie_open('em');
+          itext('Environment Variables');
+        ie_close('em');
+        itext(' window, go to the ');
+        ie_open('em');
+          itext('System variables');
+        ie_close('em');
+        itext(' section and look for a variable called ');
+        ie_open('code');
+          itext('PATH');
+        ie_close('code');
+        itext(' and click ');
+        ie_open('em');
+          itext('Edit...');
+        ie_close('em');
+        itext('.  This variable should already exist and have values in it.');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Do not delete this variable');
+        ie_close('strong');
+        itext('. At the beginning of this variable, enter the code below. We are adding our ');
+        ie_open('code');
+          itext('ANT_HOME');
+        ie_close('code');
+        itext(' variable to the ');
+        ie_open('code');
+          itext('PATH');
+        ie_close('code');
+        itext(' variable.');
+        $templateAlias2({code: '%ANT_HOME%/bin;', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Open a new ');
+        ie_open('em');
+          itext('Command Prompt');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Enter the command below in the ');
+        ie_open('em');
+          itext('Command Prompt');
+        ie_close('em');
+        itext(' to make sure Ant is installed correctly. A message ');
+        ie_open('em');
+          itext('Buildfile: build.xml does not exist! Build failed');
+        ie_close('em');
+        itext('.');
+        $templateAlias2({code: 'ant', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
     ie_open('h3');
-      itext('Java JDK');
+      itext('Setup Java JDK');
     ie_close('h3');
-    ie_open('ul');
+    ie_open('p');
+      itext('Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the ');
+      ie_open('a', null, null,
+          'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
+        itext('Java JDK');
+      ie_close('a');
+      itext(' in the previous step.  This will help you install and set it up.');
+    ie_close('p');
+    ie_open('h4');
+      itext('OS X');
+    ie_close('h4');
+    ie_open('ol');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
-          itext('Java JDK 8');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Git');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com');
-          itext('Git');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Text Editor');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://atom.io');
-          itext('Atom');
-        ie_close('a');
+        itext('Double-click the downloaded installer from the previous step. (The installer should be in ');
+        ie_open('code');
+          itext('.dmg');
+        ie_close('code');
+        itext(' format).');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://brackets.io');
-          itext('Brackets');
-        ie_close('a');
+        itext('Follow the prompts to install the Java JDK.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://notepad-plus-plus.org');
-          itext('Notepad++');
-        ie_close('a');
+        itext('To check if Java is installed, launch the ');
+        ie_open('em');
+          itext('Terminal');
+        ie_close('em');
+        itext('.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.sublimetext.com');
-          itext('Sublime Text');
-        ie_close('a');
+        itext('Enter the command below in the ');
+        ie_open('em');
+          itext('Terminal');
+        ie_close('em');
+        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
+        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h4');
+      itext('Windows');
+    ie_close('h4');
+    ie_open('ol');
+      ie_open('li');
+        itext('Double-click the downloaded installer from the previous step.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.vim.org');
-          itext('Vim');
-        ie_close('a');
+        itext('Follow the prompts to install the Java JDK.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://code.visualstudio.com');
-          itext('Visual Studio Code');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Version Control GUI');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://desktop.github.com');
-          itext('GitHub Desktop');
-        ie_close('a');
+        itext('Go to your Java JDK directory in the ');
+        ie_open('em');
+          itext('File Explorer');
+        ie_close('em');
+        itext(' and copy the path from the address bar.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.collab.net/products/giteye');
-          itext('GitEye');
-        ie_close('a');
+        itext('Right click on ');
+        ie_open('em');
+          itext('My Computer');
+        ie_close('em');
+        itext(' and choose ');
+        ie_open('em');
+          itext('Properties');
+        ie_close('em');
+        itext('.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://wiki.gnome.org/Apps/Gitg');
-          itext('Gitg');
-        ie_close('a');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Advanced system settings');
+        ie_close('em');
+        itext(' link.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'http://www.syntevo.com/smartgit');
-          itext('SmartGit');
-        ie_close('a');
+        itext('Click on the ');
+        ie_open('em');
+          itext('Environment Variables...');
+        ie_close('em');
+        itext(' button.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.sourcetreeapp.com');
-          itext('SourceTree');
-        ie_close('a');
+        itext('Click on ');
+        ie_open('em');
+          itext('New...');
+        ie_close('em');
+        itext(' under the ');
+        ie_open('em');
+          itext('System variables');
+        ie_close('em');
+        itext(' section. We will be setting the ');
+        ie_open('code');
+          itext('JAVA_HOME');
+        ie_close('code');
+        itext(' environment variable.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://tortoisegit.org');
-          itext('TortoiseGit');
-        ie_close('a');
+        itext('Fill out the field values with ');
+        ie_open('em');
+          itext('Variable name:');
+        ie_close('em');
+        itext(' being ');
+        ie_open('code');
+          itext('JAVA_HOME');
+        ie_close('code');
+        itext(' and ');
+        ie_open('em');
+          itext('Variable value:');
+        ie_close('em');
+        itext(' being the ');
+        ie_open('strong');
+          itext('Java JDK path you coped in step 3');
+        ie_close('strong');
+        itext('.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://github.com/FredrikNoren/ungit');
-          itext('ungit');
-        ie_close('a');
+        itext('Click ');
+        ie_open('em');
+          itext('OK');
+        ie_close('em');
+        itext(' to save this environment variable.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://git-scm.com/downloads/guis');
-          itext('And many more...');
-        ie_close('a');
-      ie_close('li');
-    ie_close('ul');
-    ie_open('h3');
-      itext('Web Browsers');
-    ie_close('h3');
-    ie_open('ul');
-      ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.google.com/chrome');
-          itext('Chrome');
-        ie_close('a');
+        itext('Verify that the ');
+        ie_open('code');
+          itext('JAVA_HOME');
+        ie_close('code');
+        itext(' variable is correct.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://www.mozilla.org/en-US/firefox/new');
-          itext('Firefox');
-        ie_close('a');
+        itext('In the ');
+        ie_open('em');
+          itext('Environment Variables');
+        ie_close('em');
+        itext(' window, go to the ');
+        ie_open('em');
+          itext('System variables');
+        ie_close('em');
+        itext(' section and look for a variable called ');
+        ie_open('code');
+          itext('PATH');
+        ie_close('code');
+        itext(' and click ');
+        ie_open('em');
+          itext('Edit...');
+        ie_close('em');
+        itext('.  This variable should already exist and have values in it.');
       ie_close('li');
       ie_open('li');
-        ie_open('a', null, null,
-            'href', 'https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads');
-          itext('Internet Explorer');
-        ie_close('a');
+        ie_open('strong');
+          itext('Do not delete this variable');
+        ie_close('strong');
+        itext('. At the beginning of this variable, enter the code below. We are adding our ');
+        ie_open('code');
+          itext('JAVA_HOME');
+        ie_close('code');
+        itext(' variable to the ');
+        ie_open('code');
+          itext('PATH');
+        ie_close('code');
+        itext(' variable.');
+        $templateAlias2({code: '%JAVA_HOME%\\bin;', mode: 'shell'}, null, opt_ijData);
       ie_close('li');
-    ie_close('ul');
+      ie_open('li');
+        itext('Open a new ');
+        ie_open('em');
+          itext('Command Prompt');
+        ie_close('em');
+        itext('.');
+      ie_close('li');
+      ie_open('li');
+        itext('Enter the command below in the ');
+        ie_open('em');
+          itext('Command Prompt');
+        ie_close('em');
+        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
+        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        itext('Enter the command below in the ');
+        ie_open('em');
+          itext('Command Prompt');
+        ie_close('em');
+        itext(' to check if your ');
+        ie_open('code');
+          itext('PATH');
+        ie_close('code');
+        itext(' variable is set correctly. It should list the directory of your JAVA JDK.');
+        $templateAlias2({code: 'path', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28653,11 +29080,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param881}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'cXXfB.render';
+  $render.soyTemplateName = 'qnevN.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28667,19 +29094,14 @@ return exports;
 
 });
 
-class cXXfB extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cXXfB, templates);
+class qnevN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qnevN, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
 /* 254 */,
 /* 255 */,
 /* 256 */,
@@ -28710,7 +29132,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cXXfB, templates);
 /* 281 */,
 /* 282 */,
 /* 283 */,
-/* 284 */
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28746,9 +29172,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepOneSoy = __webpack_require__(248);
+var _stepTwoSoy = __webpack_require__(253);
 
-var _stepOneSoy2 = _interopRequireDefault(_stepOneSoy);
+var _stepTwoSoy2 = _interopRequireDefault(_stepTwoSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28758,23 +29184,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var cXXfB = function (_Component) {
-  _inherits(cXXfB, _Component);
+var qnevN = function (_Component) {
+  _inherits(qnevN, _Component);
 
-  function cXXfB() {
-    _classCallCheck(this, cXXfB);
+  function qnevN() {
+    _classCallCheck(this, qnevN);
 
-    return _possibleConstructorReturn(this, (cXXfB.__proto__ || Object.getPrototypeOf(cXXfB)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (qnevN.__proto__ || Object.getPrototypeOf(qnevN)).apply(this, arguments));
   }
 
-  return cXXfB;
+  return qnevN;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(cXXfB, _stepOneSoy2.default);
+_metalSoy2.default.register(qnevN, _stepTwoSoy2.default);
 
-exports.default = cXXfB;
+exports.default = qnevN;
 
 /***/ })
-],[284]);
+],[288]);

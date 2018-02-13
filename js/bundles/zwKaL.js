@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([24,37,38,39],[
+webpackJsonppageComponent([26,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28369,17 +28369,12 @@ exports.default = parseFromAnchor;
 /* 222 */,
 /* 223 */,
 /* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sZPKc", function() { return sZPKc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "zwKaL", function() { return zwKaL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28391,15 +28386,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from setup-mysql.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace sZPKc.
+ * @fileoverview Templates in namespace zwKaL.
  * @public
  */
 
-goog.module('sZPKc.incrementaldom');
+goog.module('zwKaL.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28420,7 +28415,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28431,145 +28428,139 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param537 = function() {
-    ie_open('h6');
-      var dyn33 = opt_data.page.description;
-      if (typeof dyn33 == 'function') dyn33(); else if (dyn33 != null) itext(dyn33);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is CSS?');
-      ie_close('h2');
-      ie_open('ul');
+  var param354 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn24 = opt_data.page.description;
+        if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
+      ie_close('p');
+      ie_open('p');
+        itext('When you work on bug fixes, you will sometimes see an environment specification (');
+        ie_open('em');
+          itext('Tomcat 7.0.25 + MYSQL5.0. 6.1.x GIT ID: 6d6b8814da7c7295ed4cab8420e070793361f856');
+        ie_close('em');
+        itext(') in the details section of a JIRA ticket. The second parameter tells what database is in use when the bug was discovered.');
+      ie_close('p');
+      ie_open('p');
+        itext('When you initially setup Liferay you were using a non-production database called ');
+        ie_open('em');
+          itext('HSQL');
+        ie_close('em');
+        itext('. ');
+        ie_open('em');
+          itext('HSQL');
+        ie_close('em');
+        itext(' will be sufficient for most of the tasks you do, but in case you need to interact with the database, you will need to use MySQL. This section shows you how to set up MySQL.');
+      ie_close('p');
+      ie_open('ol');
         ie_open('li');
-          itext('CSS stands for ');
-          ie_open('strong');
-            itext('Cascading Style Sheet');
-          ie_close('strong');
+          itext('Download and install MySQL at ');
+          ie_open('a', null, null,
+              'href', 'http://dev.mysql.com/downloads');
+            itext('http://dev.mysql.com/downloads');
+          ie_close('a');
           itext('.');
-        ie_close('li');
-        ie_open('li');
-          itext('CSS defines the ');
           ie_open('em');
-            itext('look and feel');
+            itext('You can set the root password as empty by leaving the root password field blank while setting up.');
           ie_close('em');
-          itext(' of HTML elements on a web page.');
         ie_close('li');
         ie_open('li');
-          itext('CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://www.codecademy.com/tracks/web');
-            itext('Codecademy\'s HTML & CSS');
-          ie_close('a');
+          itext('Add the path to the MySQL ');
+          ie_open('em');
+            itext('bin');
+          ie_close('em');
+          itext(' folder to your environment ');
+          ie_open('em');
+            itext('PATH');
+          ie_close('em');
+          itext(' variable');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/adventures-in-web-animations');
-            itext('Code School\'s Adventures in Web Animations');
-          ie_close('a');
+          itext('Open up our ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' and type the following command.');
+          $templateAlias2({code: 'mysql -u root -p', mode: 'shell'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/blasting-off-with-bootstrap');
-            itext('Code School\'s Blasting Off with Bootstrap');
-          ie_close('a');
+          itext('Enter the root password that you setup when configuring MySQL.');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/css-cross-country');
-            itext('Code School\'s CSS Cross-Country');
-          ie_close('a');
+          itext('If everything is set up correctly, you should see the following output in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'C:\\Windows\\system32>mysql -u root -p\nEnter password:\nWelcome to the MySQL monitor.  Commands end with ; or \\g.\nYour MySQL connection id is 1\nServer version: 5.6.14 MySQL Community Server (GPL)\n\nCopyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.\n\nOracle is a registered trademark of Oracle Corporation and/or its\naffiliates. Other names may be trademarks of their respective owners.\n\nType \'help;\' or \'\\h\' for help. Type \'\\c\' to clear the current input statement.\n\nmysql>', mode: 'shell'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Learn/CSS');
-            itext('MDN\'s Learn to style HTML using CSS');
-          ie_close('a');
+          itext('Create a database called ');
+          ie_open('strong');
+            itext('lportal');
+          ie_close('strong');
+          itext('  by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'mysql> create database lportal;', mode: 'shell'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/css/default.asp');
-            itext('w3school\'s CSS Tutorial');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/articles/glossary-css');
-            itext('Codecademy\'s CSS glossary');
-          ie_close('a');
+          itext('Check to see if you successfully created the database  by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'mysql> show databases;\n\n+--------------------+\n| Database           |\n+--------------------+\n| information_schema |\n| lportal            |\n| mysql              |\n| performance_schema |\n| sakila             |\n| test               |\n| world              |\n+--------------------+\n7 rows in set (0.01 sec)', mode: 'shell'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/CSS');
-            itext('MDN\'s CSS reference');
-          ie_close('a');
+          itext('Configure MySQL in your ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file by adding the following lines to your file.');
+          $templateAlias2({code: 'jdbc.default.driverClassName=com.mysql.jdbc.Driver\njdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false\njdbc.default.username=\njdbc.default.password=', mode: 'shell'}, null, opt_ijData);
+          ie_open('ul');
+            ie_open('li');
+              itext('You need to update the database name if you used a different name than ');
+              ie_open('em');
+                itext('lportal');
+              ie_close('em');
+              itext(' when you created your database.');
+            ie_close('li');
+            ie_open('li');
+              itext('If you didn\'t specify a username when configuring MySQL, the username is "root" by default. Append the username after ');
+              ie_open('em');
+                itext('jdbc.default.username=');
+              ie_close('em');
+              itext('.');
+            ie_close('li');
+            ie_open('li');
+              itext('If you didn\'t specify a password when configuring MySQL, keep it blank, but if you did, then append the password after ');
+              ie_open('em');
+                itext('jdbc.default.password=');
+              ie_close('em');
+              itext('.');
+            ie_close('li');
+          ie_close('ul');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/cssref/default.asp');
-            itext('w3school\'s CSS reference');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('CSS Quiz');
-      ie_close('h2');
-      ie_open('p');
-        itext('After you have finished the tutorials, please take the ');
-        ie_open('a', null, null,
-            'href', 'https://www.w3schools.com/css/css_quiz.asp');
-          itext('CSS Quiz');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('Advanced Tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of CSS, please review these advanced tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/assembling-sass');
-            itext('Code School\'s Assembling Sass');
-          ie_close('a');
+          itext('Save the ');
+          ie_open('code');
+            itext('portal-ext.properties');
+          ie_close('code');
+          itext(' file and start Tomcat. Look for the following messages in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'INFO: Initializing Spring root WebApplicationContext\nINFO  [localhost-startStop-1][DialectDetector:117] Determine dialect for MySQL 5\nINFO  [localhost-startStop-1][DialectDetector:117] Found dialect org.hibernate.dialect.MySQLDialect', mode: 'shell'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://sass-lang.com/guide');
-            itext('Sass Basics');
-          ie_close('a');
+          itext('Liferay portal is now running with a MySQL database!');
         ie_close('li');
-      ie_close('ul');
+      ie_close('ol');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28580,11 +28571,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param537}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param354}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'sZPKc.render';
+  $render.soyTemplateName = 'zwKaL.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28594,14 +28585,19 @@ return exports;
 
 });
 
-class sZPKc extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(sZPKc, templates);
+class zwKaL extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zwKaL, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
 /* 231 */,
 /* 232 */,
 /* 233 */,
@@ -28636,9 +28632,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(sZPKc, templates);
 /* 262 */,
 /* 263 */,
 /* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28674,9 +28668,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(230);
+var _setupMysqlSoy = __webpack_require__(225);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _setupMysqlSoy2 = _interopRequireDefault(_setupMysqlSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28686,23 +28680,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var sZPKc = function (_Component) {
-  _inherits(sZPKc, _Component);
+var zwKaL = function (_Component) {
+  _inherits(zwKaL, _Component);
 
-  function sZPKc() {
-    _classCallCheck(this, sZPKc);
+  function zwKaL() {
+    _classCallCheck(this, zwKaL);
 
-    return _possibleConstructorReturn(this, (sZPKc.__proto__ || Object.getPrototypeOf(sZPKc)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zwKaL.__proto__ || Object.getPrototypeOf(zwKaL)).apply(this, arguments));
   }
 
-  return sZPKc;
+  return zwKaL;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(sZPKc, _indexSoy2.default);
+_metalSoy2.default.register(zwKaL, _setupMysqlSoy2.default);
 
-exports.default = sZPKc;
+exports.default = zwKaL;
 
 /***/ })
-],[267]);
+],[265]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([29,37,38,39],[
+webpackJsonppageComponent([22,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28370,12 +28370,18 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kobRp", function() { return kobRp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UTnYS", function() { return UTnYS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28387,15 +28393,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from setup-sublime-text.soy.
+// This file was automatically generated from commands.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace kobRp.
+ * @fileoverview Templates in namespace UTnYS.
  * @public
  */
 
-goog.module('kobRp.incrementaldom');
+goog.module('UTnYS.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28418,7 +28424,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28429,148 +28435,325 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param395 = function() {
-    ie_open('article');
+  var param548 = function() {
+    ie_open('h6');
+      var dyn34 = opt_data.page.description;
+      if (typeof dyn34 == 'function') dyn34(); else if (dyn34 != null) itext(dyn34);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('Stage changes');
+      ie_close('h2');
       ie_open('p');
-        var dyn25 = opt_data.page.description;
-        if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
       ie_close('p');
+      $templateAlias2({code: 'git add', mode: 'bash'}, null, opt_ijData);
       ie_open('p');
-        itext('Sublime Text has a ton of features that are indispensable for development. If you use this as your text editor of choice, here are some settings and plugins that will help you get started.');
+        itext('Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.');
       ie_close('p');
-      ie_open('h3');
-        itext('User settings');
-      ie_close('h3');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Manage branches');
+      ie_close('h2');
       ie_open('p');
-        itext('Customize your Sublime Text settings for a better development experience.');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
       ie_close('p');
+      $templateAlias2({code: 'git branch', mode: 'bash'}, null, opt_ijData);
       ie_open('p');
-        itext('Below is an example ');
-        ie_open('code');
-          itext('Preferences.sublime-settings');
-        ie_close('code');
-        itext(' file.');
+        itext('This command is your general-purpose branch administration tool. It lets you create isolated development environments within a single repository.');
       ie_close('p');
-      $templateAlias2({code: '{\n    "bold_folder_labels": true, // makes the sidebar more readable at a glance\n    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",\n    "default_line_ending": "unix", // set the default line ending to Unix-style (Liferay only allows you to commit files with this type of ending)\n    "draw_white_space": "all", // show a dot every time there is a white-space character\n    "font_face": "Ubuntu Mono", // requires some work, but changes the font to something nicer\n    "font_size": 11,\n    "ignored_packages": [ "Vintage" ],\n    "rulers": [ 80 ], // show a vertical bar at a distance of 80 characters from the left margin\n    "tab_size": 4, // set tabs to be the same width as 4 spaces\n    "translate_tabs_to_spaces": true, // use spaces to indent rather than tab characters\n    "trim_trailing_white_space_on_save": true, // auto-delete trailing white space every time you save\n    "word_wrap": true\n}', mode: 'shell'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Checkout changes');
+      ie_close('h2');
       ie_open('p');
-        itext('Most of these settings are personal preference, but some of these will be helpful during your development.');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('strong');
-            itext('default_line_ending');
-          ie_close('strong');
-          itext(': Set your line endings to be ');
-          ie_open('em');
-            itext('unix');
-          ie_close('em');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('draw_white_space');
-          ie_close('strong');
-          itext(': Display all white-space characters throughout a file.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('rulers');
-          ie_close('strong');
-          itext(': Set a vertical bar at 80 characters. When editing Liferay\'s Java files, 80 characters are the maximum number of characters per line.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('tab_size');
-          ie_close('strong');
-          itext(': Set a default tab size to keep code consistent throughout the file. ');
-          ie_open('em');
-            itext('The typical tab size is 4 spaces, although there are occasional exceptions');
-          ie_close('em');
-          itext('.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('trim_trailing_white_space_on_save');
-          ie_close('strong');
-          itext(': Remove extra line breaks and white-space upon saving of a file.');
-        ie_close('li');
-      ie_close('ul');
+      $templateAlias2({code: 'git checkout', mode: 'bash'}, null, opt_ijData);
       ie_open('p');
-        itext('For a complete list of settings, go to ');
-        ie_open('em');
-          itext('Preferences');
-        ie_close('em');
-        itext(', click on ');
-        ie_open('em');
-          itext('Settings');
-        ie_close('em');
-        itext(', and then click on ');
-        ie_open('em');
-          itext('Default');
-        ie_close('em');
-        itext('. You can override of these settings; just copy it into your user preferences file and change the value.');
+        itext('In addition to checking out old commits and old file revisions, git checkout is also the means to navigate existing branches. Combined with the basic Git commands, it\u2019s a way to work on a particular line of development.');
       ie_close('p');
-      ie_open('h3');
-        itext('Package Control');
-      ie_close('h3');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('Remove untracked changes');
+      ie_close('h2');
       ie_open('p');
-        itext('Package Control makes it easy to download and install useful Sublime Text plugins. Exploration here is very valuable because there are a lot of things that you can find to make your life easier or just customize Sublime Text to your liking.');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
       ie_close('p');
+      $templateAlias2({code: 'git clean', mode: 'bash'}, null, opt_ijData);
       ie_open('p');
-        itext('More information about ');
-        ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/installation');
-          itext('installing');
-        ie_close('a');
-        itext(' and ');
-        ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/docs/usage');
-          itext('using');
-        ie_close('a');
-        itext(' package control can be found at ');
-        ie_open('a', null, null,
-            'href', 'https://packagecontrol.io/');
-          itext('https://packagecontrol.io/');
-        ie_close('a');
-        itext('.');
+        itext('Removes untracked files from the working directory. This is the logical counterpart to git reset, which (typically) only operates on tracked files.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/Alignment');
-              itext('Alignment');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Easy alignment of multiple selections and multi-line selections.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/BracketHighlighter');
-              itext('BracketHighlighter');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Bracket and tag highlighter for Sublime Text http://facelessuser.github.io/BracketHighlighter/');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/GitHubinator');
-              itext('GitHubinator');
-            ie_close('a');
-          ie_close('strong');
-          itext(': Sublime Text plugin that shows selected text on remote GitHub or Bitbucket repo.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            ie_open('a', null, null,
-                'href', 'https://packagecontrol.io/packages/GitGutter');
-              itext('GitGutter');
-            ie_close('a');
-          ie_close('strong');
-          itext(': A Sublime Text 2/3 plugin to see git diff in gutter');
-        ie_close('li');
-      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '5');
+      ie_open('h2');
+        itext('Copy repository');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git clone', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Creates a copy of an existing Git repository. Cloning is the most common way for developers to obtain a working copy of a central repository.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '6');
+      ie_open('h2');
+        itext('Commit changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git commit', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Takes the staged snapshot and commits it to the project history. Combined with git add, this defines the basic workflow for all Git users.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '7');
+      ie_open('h2');
+        itext('Update message');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git commit --amend', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Passing the --amend flag to git commit lets you amend the most recent commit. This is very useful when you forget to stage a file or omit important information from the commit message.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '8');
+      ie_open('h2');
+        itext('Manage configuration');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git config', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('A convenient way to set configuration options for your Git installation. You\u2019ll typically only need to use this immediately after installing Git on a new development machine.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '9');
+      ie_open('h2');
+        itext('Download changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git fetch', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Fetching downloads a branch from another repository, along with all of its associated commits and files. But, it doesn\'t try to integrate anything into your local repository. This gives you a chance to inspect changes before merging them with your project.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '10');
+      ie_open('h2');
+        itext('Initialize a repository');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git init', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Initializes a new Git repository. If you want to place a project under revision control, this is the first command you need to learn.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '11');
+      ie_open('h2');
+        itext('View changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git log', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Lets you explore the previous revisions of a project. It provides several formatting options for displaying committed snapshots.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '12');
+      ie_open('h2');
+        itext('Integrate changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git merge', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('A powerful way to integrate changes from divergent branches. After forking the project history with git branch, git merge lets you put it back together again.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '13');
+      ie_open('h2');
+        itext('Download and integrate changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git pull', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Pulling is the automated version of git fetch. It downloads a branch from a remote repository, then immediately merges it into the current branch. This is the Git equivalent of svn update.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '14');
+      ie_open('h2');
+        itext('Send changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git push', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Pushing is the opposite of fetching (with a few caveats). It lets you move a local branch to another repository, which serves as a convenient way to publish contributions. This is like svn commit, but it sends a series of commits instead of a single changeset.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '15');
+      ie_open('h2');
+        itext('Move changes around');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git rebase', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Rebasing lets you move branches around, which helps you avoid unnecessary merge commits. The resulting linear history is often much easier to understand and explore.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '16');
+      ie_open('h2');
+        itext('Move changes around advanced');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git rebase -i', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('The -i flag is used to begin an interactive rebasing session. This provides all the benefits of a normal rebase, but gives you the opportunity to add, edit, or delete commits along the way.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '17');
+      ie_open('h2');
+        itext('View Git history');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git reflog', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Git keeps track of updates to the tip of branches using a mechanism called reflog. This allows you to go back to changesets even though they are not referenced by any branch or tag.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '18');
+      ie_open('h2');
+        itext('Manage remote connections');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git remote', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('A convenient tool for administering remote connections. Instead of passing the full URL to the fetch, pull, and push commands, it lets you use a more meaningful shortcut.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '19');
+      ie_open('h2');
+        itext('Undo changes');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git reset', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Undoes changes to files in the working directory. Resetting lets you clean up or completely remove changes that have not been pushed to a public repository.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '20');
+      ie_open('h2');
+        itext('Undo commit');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git revert', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Undoes a committed snapshot. When you discover a faulty commit, reverting is a safe and easy way to completely remove it from the code base.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '21');
+      ie_open('h2');
+        itext('View current state');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Usage');
+        ie_close('strong');
+      ie_close('p');
+      $templateAlias2({code: 'git status', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Displays the state of the working directory and the staged snapshot. You\u2019ll want to run this in conjunction with git add and git commit to see exactly what\u2019s being included in the next snapshot.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28581,11 +28764,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param548}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'kobRp.render';
+  $render.soyTemplateName = 'UTnYS.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28595,20 +28778,14 @@ return exports;
 
 });
 
-class kobRp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kobRp, templates);
+class UTnYS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UTnYS, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -28638,7 +28815,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kobRp, templates);
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28674,9 +28858,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _setupSublimeTextSoy = __webpack_require__(226);
+var _commandsSoy = __webpack_require__(232);
 
-var _setupSublimeTextSoy2 = _interopRequireDefault(_setupSublimeTextSoy);
+var _commandsSoy2 = _interopRequireDefault(_commandsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28686,23 +28870,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kobRp = function (_Component) {
-  _inherits(kobRp, _Component);
+var UTnYS = function (_Component) {
+  _inherits(UTnYS, _Component);
 
-  function kobRp() {
-    _classCallCheck(this, kobRp);
+  function UTnYS() {
+    _classCallCheck(this, UTnYS);
 
-    return _possibleConstructorReturn(this, (kobRp.__proto__ || Object.getPrototypeOf(kobRp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (UTnYS.__proto__ || Object.getPrototypeOf(UTnYS)).apply(this, arguments));
   }
 
-  return kobRp;
+  return UTnYS;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kobRp, _setupSublimeTextSoy2.default);
+_metalSoy2.default.register(UTnYS, _commandsSoy2.default);
 
-exports.default = kobRp;
+exports.default = UTnYS;
 
 /***/ })
-],[262]);
+],[269]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,37,38,39],[
+webpackJsonppageComponent([12,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28387,12 +28387,18 @@ exports.default = parseFromAnchor;
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tHKNA", function() { return tHKNA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CpGbe", function() { return CpGbe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28404,15 +28410,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-eight.soy.
+// This file was automatically generated from step-seven.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tHKNA.
+ * @fileoverview Templates in namespace CpGbe.
  * @public
  */
 
-goog.module('tHKNA.incrementaldom');
+goog.module('CpGbe.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28446,260 +28452,250 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param736 = function() {
+  var param892 = function() {
     ie_open('h2');
-      var dyn41 = opt_data.page.title;
-      if (typeof dyn41 == 'function') dyn41(); else if (dyn41 != null) itext(dyn41);
+      var dyn47 = opt_data.page.title;
+      if (typeof dyn47 == 'function') dyn47(); else if (dyn47 != null) itext(dyn47);
     ie_close('h2');
     ie_open('p');
-      itext('We need to configure settings in Liferay to get it to build and run from the ');
+      itext('We are going to get Liferay\'s ');
       ie_open('em');
         itext('source');
       ie_close('em');
-      itext(' code.');
+      itext(' code from GitHub.com on to your machine.');
     ie_close('p');
     ie_open('h3');
-      itext('What is a *.properties file?');
+      itext('Forking a repository');
     ie_close('h3');
     ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('\\*.properties');
-      ie_close('code');
-      itext(' files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ');
-      ie_open('code');
-        itext('\\*.properties');
-      ie_close('code');
-      itext(' file.');
-    ie_close('p');
-    ie_open('p');
-      itext('Because we are going to be overriding default properties, the easiest way to accomplish this is through a ');
-      ie_open('code');
-        itext('\\*.USER_NAME.properties');
-      ie_close('code');
-      itext('. (e.g. ');
-      ie_open('code');
-        itext('app.server.brianchan.properties');
-      ie_close('code');
-      itext(' or ');
-      ie_open('code');
-        itext('build.brianchan.properties');
-      ie_close('code');
-      itext(').');
-    ie_close('p');
-    ie_open('p');
-      itext('Liferay reads the ');
-      ie_open('code');
-        itext('\\*.properties');
-      ie_close('code');
-      itext(' files in this order of precedence.');
-    ie_close('p');
-    ie_open('ol');
-      ie_open('li');
-        itext('*.USER_NAME.properties');
-      ie_close('li');
-      ie_open('li');
-        itext('*.ENV_COMPUTERNAME.properties');
-      ie_close('li');
-      ie_open('li');
-        itext('*.ENV_HOST.properties');
-      ie_close('li');
-      ie_open('li');
-        itext('*.ENV_HOSTNAME.properties');
-      ie_close('li');
-      ie_open('li');
-        itext('*.properties');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('p');
-      itext('Therefore, whatever custom ');
-      ie_open('code');
-        itext('\\*.properties');
-      ie_close('code');
-      itext(' file you set will supersede what is defined in the default file.');
-    ie_close('p');
-    ie_open('p');
-      itext('To find out what the default property values are and what you can override, open the default.properties file (e.g. ');
-      ie_open('code');
-        itext('app.server.properties');
-      ie_close('code');
-      itext(' or ');
-      ie_open('code');
-        itext('build.properties');
-      ie_close('code');
-      itext(') and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ');
-      ie_open('code');
-        itext('\\*.USER_NAME.properties');
-      ie_close('code');
-      itext(' file, changing its value.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Creating a custom ');
-      ie_open('code');
-        itext('build.\\*.properties');
-      ie_close('code');
-      itext(' and ');
-      ie_open('code');
-        itext('app.server.\\*.properties');
-      ie_close('code');
-      itext(' files');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Create a file called ');
-          ie_open('code');
-            itext('build._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' and ');
-          ie_open('code');
-            itext('app.server._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' inside the folder you cloned your Liferay ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code. The ');
-          ie_open('em');
-            itext('USER_NAME');
-          ie_close('em');
-          itext(' is the user you login with, not your machine name. On Windows machines the default is, ');
-          ie_open('em');
-            itext('liferay');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Edit your ');
-          ie_open('code');
-            itext('build._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' file with the following lines in a text editor:');
-        ie_close('p');
-        $templateAlias2({code: 'javac.memoryMaximumSize=1024m', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Edit your ');
-          ie_open('code');
-            itext('app.server._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.');
-        ie_close('p');
-        ie_open('p');
-          itext('The ');
-          ie_open('em');
-            itext('path');
-          ie_close('em');
-          itext(' of your bundle should be outside of your cloned Liferay ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code folder.');
-        ie_close('p');
-        ie_open('p');
-          itext('Your ');
-          ie_open('code');
-            itext('app.server._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' file might look something like below when it is complete, if we are using apache tomcat as our application server.');
-        ie_close('p');
-        $templateAlias2({code: 'app.server.type=tomcat\napp.server.parent.dir=${project.dir}/../my-custom-folder/bundles\napp.server.tomcat.dir=${app.server.parent.dir}/tomcat-8.0.32', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Creating a portal-ext.properties file');
-    ie_close('h4');
-    ie_open('p');
-      itext('Values defined in the ');
-      ie_open('code');
-        itext('portal.properties');
-      ie_close('code');
-      itext(' file are configurations used within Liferay. To override these settings, you will need to create a ');
-      ie_open('code');
-        itext('portal-ext.properties');
-      ie_close('code');
-      itext(' file.');
-    ie_close('p');
-    ie_open('p');
+      itext('In order to begin making changes to ');
       ie_open('em');
-        itext('You will make changes within this file quite often to customize your Liferay instance.');
+        itext('source');
       ie_close('em');
+      itext(' code and have it reviewed, tested, and approved, you will need to make a copy of this code locally.');
+    ie_close('p');
+    ie_open('p');
+      itext('A ');
+      ie_open('em');
+        itext('fork');
+      ie_close('em');
+      itext(' is copying a repository on GitHub.com from it\'s original owner to your personal GitHub.com account.  Forking a repository allows you to freely experiment with changes without affecting the original project.');
+    ie_close('p');
+    ie_open('p');
+      itext('Most commonly, forks are used to either propose changes to someone else\'s project or to use someone else\'s project as a starting point for your own ideas.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Forking Liferay Portal');
+    ie_close('h4');
+    ie_open('p');
+      itext('Forking a repository is a simple two-step process.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('On GitHub.com, navigate to the ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal');
+          itext('liferay/liferay-portal');
+        ie_close('a');
+        itext(' repository.');
+      ie_close('li');
+      ie_open('li');
+        itext('In the top-right corner of the page, click ');
+        ie_open('strong');
+          itext('Fork');
+        ie_close('strong');
+        itext('.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You have now have a fork of the original ');
+      ie_open('a', null, null,
+          'href', 'https://github.com/liferay/liferay-portal');
+        itext('liferay/liferay-portal');
+      ie_close('a');
+      itext(' repository in your GitHub.com account.');
+    ie_close('p');
+    ie_open('h4');
+      itext('Cloning Liferay Portal');
+    ie_close('h4');
+    ie_open('p');
+      itext('Because forking the repository only makes a copy of the code in GitHub.com, we now need to get this code locally to begin.');
     ie_close('p');
     ie_open('ol');
       ie_open('li');
         ie_open('p');
-          itext('Duplicate the ');
-          ie_open('code');
-            itext('portal-developer.properties');
-          ie_close('code');
-          itext(' file, found within your cloned Liferay ');
-          ie_open('em');
-            itext('source');
-          ie_close('em');
-          itext(' code. (e.g. ');
-          ie_open('code');
-            itext('PATH/liferay-portal/portal-impl/src');
-          ie_close('code');
-          itext(').');
+          itext('Setup Git if you have not done so already in the previous steps.');
         ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Rename this copied file to ');
-          ie_open('code');
-            itext('portal-ext.properties');
-          ie_close('code');
+          itext('Go to ');
+          ie_open('em');
+            itext('your');
+          ie_close('em');
+          itext(' fork of the liferay-portal repository on GitHub.com.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Click the ');
+          ie_open('strong');
+            itext('Clone or download');
+          ie_close('strong');
+          itext(' button. When connecting to a GitHub.com repository from Git, you will need to authenticate using either ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(' (');
+          ie_open('em');
+            itext('recommended');
+          ie_close('em');
+          itext(') or ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('HTTPS');
+          ie_close('strong');
+          itext(', please review the following ');
+          ie_open('a', null, null,
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended');
+            itext('instructions');
+          ie_close('a');
+          itext('. If you clone with ');
+          ie_open('strong');
+            itext('SSH');
+          ie_close('strong');
+          itext(', please review the following ');
+          ie_open('a', null, null,
+              'href', 'https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls');
+            itext('instructions');
+          ie_close('a');
           itext('.');
         ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('Open the ');
-          ie_open('code');
-            itext('portal-ext.properties');
-          ie_close('code');
-          itext(' file in a text editor. It should look something like the code below.');
-        ie_close('p');
-        $templateAlias2({code: 'theme.css.fast.load=false\ntheme.css.fast.load.check.request.parameter=true\ntheme.images.fast.load=false\ntheme.images.fast.load.check.request.parameter=true\n\njavascript.fast.load=true\njavascript.log.enabled=false\n\nlayout.template.cache.enabled=false\n\ncombo.check.timestamp=true\n\nminifier.enabled=false\n\nopenoffice.cache.enabled=false\n\nvelocity.engine.resource.modification.check.interval=0', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Set the ');
-          ie_open('code');
-            itext('javascript.fast.load');
-          ie_close('code');
-          itext(' property to ');
+          itext('In the dialog that appears after clicking the ');
           ie_open('strong');
-            itext('false');
+            itext('Clone or download');
           ie_close('strong');
-          itext('. *Set this value to ');
-          ie_open('strong');
-            itext('true');
-          ie_close('strong');
-          itext(', if we are trying to replicate a production environment with minified JavaScript files.');
+          itext(' button, copy the URL that you want to use for your repository.');
         ie_close('p');
       ie_close('li');
       ie_open('li');
         ie_open('p');
-          itext('When all custom configurations are complete, move the ');
-          ie_open('code');
-            itext('portal-ext.properties');
-          ie_close('code');
-          itext(' file to one folder level above the application server directory defined in the ');
-          ie_open('code');
-            itext('app.server._USER\\_NAME_.properties');
-          ie_close('code');
-          itext(' file. (i.e. ');
-          ie_open('code');
-            itext('PATH/bundles');
-          ie_close('code');
-          itext(').');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Browse to the location where you would like to download this repository.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('We will download the repository from GitHub.com to our local machine by cloning it. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: '# Pasted URL should look something like:\n# SSH URL: git@github.com:brianchandotcom/liferay-portal.git\n# HTTPS: https://github.com/brianchandotcom/liferay-portal.git\ngit clone PASTE URL HERE', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('Upon completion, you should see something like the output below.');
+        ie_close('p');
+        $templateAlias2({code: 'Cloning into `liferay-portal`...remote: Counting objects: 10, done.\n...\nremote: Compressing objects: 100% (8/8), done.\nremove: Total 10 (delta 1), reused 10 (delta 1)\nUnpacking objects: 100% (10/10), done.', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('Congratulations!  You now have a local copy of your fork of the liferay-portal repository!');
+    ie_close('p');
+    ie_open('h4');
+      itext('Configuring your remote repository URLs');
+    ie_close('h4');
+    ie_open('p');
+      itext('Now that we have have everything locally, we need to add a remote url. A remote URL is Git\'s fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub.com, or another user\'s fork, or even on a completely different server.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Go to your newly cloned repository in ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Check what your currently remote repositories are by running the following command below.');
+        ie_close('p');
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you do not have any remote URL\'s listed, you will have to add a remote URL for the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' and ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repositories.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add the upstream remote, if it is not already added, to point to the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: '# Copy the upstream repository URL\ngit remote add upstream https://github.com/liferay/liferay-portal.git', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('If you need to add the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' remote, follow the same steps but use the ');
+          ie_open('strong');
+            itext('origin');
+          ie_close('strong');
+          itext(' repository URL instead of the ');
+          ie_open('strong');
+            itext('upstream');
+          ie_close('strong');
+          itext(' repository URL.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Verify that your remote URL\'s are correctly pointing to the desired locations by running the following command below.');
+        ie_close('p');
+        $templateAlias2({code: 'git remote -v', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('The output should be something similar to below if your cloned your repository.');
+        ie_close('p');
+        $templateAlias2({code: 'origin    https://github.com/brianchandotcom/liferay-portal.git (fetch)\norigin    https://github.com/brianchandotcom/liferay-portal.git (push)\nupstream    https://github.com/liferay/liferay-portal.git (fetch)\nupstream    https://github.com/liferay/liferay-portal.git (push)', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('You can add as many remote URL\'s as you would like.  Just make sure to have each one named uniquely.');
         ie_close('p');
       ie_close('li');
     ie_close('ol');
+    ie_open('p');
+      itext('For more information about remotes, please read ');
+      ie_open('a', null, null,
+          'href', 'https://help.github.com/articles/about-remote-repositories/');
+        itext('About remote repositories');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28709,11 +28705,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param736}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param892}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tHKNA.render';
+  $render.soyTemplateName = 'CpGbe.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28723,20 +28719,14 @@ return exports;
 
 });
 
-class tHKNA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tHKNA, templates);
+class CpGbe extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CpGbe, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
 /* 250 */,
 /* 251 */,
 /* 252 */,
@@ -28766,16 +28756,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tHKNA, templates);
 /* 276 */,
 /* 277 */,
 /* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28811,9 +28792,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepEightSoy = __webpack_require__(243);
+var _stepSevenSoy = __webpack_require__(249);
 
-var _stepEightSoy2 = _interopRequireDefault(_stepEightSoy);
+var _stepSevenSoy2 = _interopRequireDefault(_stepSevenSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28823,23 +28804,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tHKNA = function (_Component) {
-  _inherits(tHKNA, _Component);
+var CpGbe = function (_Component) {
+  _inherits(CpGbe, _Component);
 
-  function tHKNA() {
-    _classCallCheck(this, tHKNA);
+  function CpGbe() {
+    _classCallCheck(this, CpGbe);
 
-    return _possibleConstructorReturn(this, (tHKNA.__proto__ || Object.getPrototypeOf(tHKNA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CpGbe.__proto__ || Object.getPrototypeOf(CpGbe)).apply(this, arguments));
   }
 
-  return tHKNA;
+  return CpGbe;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tHKNA, _stepEightSoy2.default);
+_metalSoy2.default.register(CpGbe, _stepSevenSoy2.default);
 
-exports.default = tHKNA;
+exports.default = CpGbe;
 
 /***/ })
-],[288]);
+],[279]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([25,37,38,39],[
+webpackJsonppageComponent([5,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28373,139 +28373,7 @@ exports.default = parseFromAnchor;
 /* 226 */,
 /* 227 */,
 /* 228 */,
-/* 229 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MycQD", function() { return MycQD; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from index.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace MycQD.
- * @public
- */
-
-goog.module('MycQD.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param526 = function() {
-    ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is the command line?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('A command-line interface or command language interpreter (CLI), also known as command-line user interface, console user interface, and character user interface (CUI), is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-the-command-line');
-            itext('Codecademy\'s Learn the Command Line');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://ryanstutorials.net/linuxtutorial');
-            itext('Ryans Tutorials Linux Tutorial');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/linux-command-line-basics--ud595');
-            itext('Udacity\'s Linux Command Line Basics');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param526}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'MycQD.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class MycQD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MycQD, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 229 */,
 /* 230 */,
 /* 231 */,
 /* 232 */,
@@ -28526,7 +28394,226 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MycQD, templates);
 /* 247 */,
 /* 248 */,
 /* 249 */,
-/* 250 */,
+/* 250 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gwPvk", function() { return gwPvk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from step-six.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace gwPvk.
+ * @public
+ */
+
+goog.module('gwPvk.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param938 = function() {
+    ie_open('h2');
+      var dyn48 = opt_data.page.title;
+      if (typeof dyn48 == 'function') dyn48(); else if (dyn48 != null) itext(dyn48);
+    ie_close('h2');
+    ie_open('p');
+      itext('We are going to setup our Git account so we can begin development.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Create an account on GitHub.com');
+    ie_close('h3');
+    ie_open('p');
+      itext('Please replace the place holders tokens in the following tutorials with the correct values (ie. FIRSTNAME, LASTNAME, etc).');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        itext('Create an account on ');
+        ie_open('a', null, null,
+            'href', 'https://github.com');
+          itext('Github.com');
+        ie_close('a');
+        itext(' using your Liferay email address (');
+        ie_open('code');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
+        ie_close('code');
+        itext(') as your email address. Do not use the word ');
+        ie_open('strong');
+          itext('liferay');
+        ie_close('strong');
+        itext(' in your username.');
+      ie_close('li');
+      ie_open('li');
+        itext('Add your Full Name to your GitHub.com public profile.');
+      ie_close('li');
+      ie_open('li');
+        itext('Add a picture using ');
+        ie_open('a', null, null,
+            'href', 'https://en.gravatar.com');
+          itext('gravatar');
+        ie_close('a');
+        itext('. Be sure to use your ');
+        ie_open('code');
+          itext('FIRSTNAME.LASTNAME@liferay.com');
+        ie_close('code');
+        itext(' email address when registering with gravatar.');
+      ie_close('li');
+      ie_open('li');
+        itext('Follow ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/brianchandotcom');
+          itext('Brian Chan');
+        ie_close('a');
+        itext(' on GitHub.com.');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Optional');
+        ie_close('strong');
+        itext(': If you need access to any private Liferay repositories, email ');
+        ie_open('a', null, null,
+            'href', 'it-support@liferay.com');
+          itext('it-support@liferay.com');
+        ie_close('a');
+        itext(' with your GitHub.com ');
+        ie_open('strong');
+          itext('username');
+        ie_close('strong');
+        itext(', while CC-ing your manager.');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('h3');
+      itext('Configuring .gitconfig');
+    ie_close('h3');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('You should have already installed Git from step 1. If you do not already have Git installed, please install it now.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add your user name to your global ');
+          ie_open('code');
+            itext('.gitconfig');
+          ie_close('code');
+          itext('. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "FIRSTNAME LASTNAME"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Example');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "Brian Chan"', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Add your Liferay email address (');
+          ie_open('code');
+            itext('FIRSTNAME.LASTNAME@liferay.com');
+          ie_close('code');
+          itext(') to your ');
+          ie_open('code');
+            itext('.gitconfig');
+          ie_close('code');
+          itext('. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.email "FIRSTNAME.LASTNAME@liferay.com"', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          ie_open('strong');
+            itext('Example');
+          ie_close('strong');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global user.name "brian.chan@liferay.com"', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('On a windows machine, you ');
+          ie_open('em');
+            itext('might');
+          ie_close('em');
+          itext(' run into an error because Git has a limit of 4096 characters for a file name; windows has a limit of 260 characters. You will need to set longpaths to true only on a ');
+          ie_open('strong');
+            itext('windows');
+          ie_close('strong');
+          itext(' machine. Run the following command to complete this action.');
+        ie_close('p');
+        $templateAlias2({code: 'git config --global core.longpaths true', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param938}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'gwPvk.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class gwPvk extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gwPvk, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 251 */,
 /* 252 */,
 /* 253 */,
@@ -28542,7 +28629,27 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MycQD, templates);
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28578,9 +28685,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(229);
+var _stepSixSoy = __webpack_require__(250);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stepSixSoy2 = _interopRequireDefault(_stepSixSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28590,23 +28697,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MycQD = function (_Component) {
-  _inherits(MycQD, _Component);
+var gwPvk = function (_Component) {
+  _inherits(gwPvk, _Component);
 
-  function MycQD() {
-    _classCallCheck(this, MycQD);
+  function gwPvk() {
+    _classCallCheck(this, gwPvk);
 
-    return _possibleConstructorReturn(this, (MycQD.__proto__ || Object.getPrototypeOf(MycQD)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gwPvk.__proto__ || Object.getPrototypeOf(gwPvk)).apply(this, arguments));
   }
 
-  return MycQD;
+  return gwPvk;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MycQD, _indexSoy2.default);
+_metalSoy2.default.register(gwPvk, _stepSixSoy2.default);
 
-exports.default = MycQD;
+exports.default = gwPvk;
 
 /***/ })
-],[266]);
+],[286]);

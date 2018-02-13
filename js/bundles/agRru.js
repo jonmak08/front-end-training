@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,37,38,39],[
+webpackJsonppageComponent([29,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28371,19 +28371,12 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qUeTi", function() { return qUeTi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "agRru", function() { return agRru; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28395,15 +28388,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from theme-creation.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace qUeTi.
+ * @fileoverview Templates in namespace agRru.
  * @public
  */
 
-goog.module('qUeTi.incrementaldom');
+goog.module('agRru.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28424,7 +28417,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28435,107 +28428,132 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param686 = function() {
-    ie_open('h6');
-      var dyn37 = opt_data.page.description;
-      if (typeof dyn37 == 'function') dyn37(); else if (dyn37 != null) itext(dyn37);
-    ie_close('h6');
-    ie_open('article', null, null,
-        'id', '1');
-      ie_open('h2');
-        itext('What is Git?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('Git is a distributed version control system. It allows groups of people to work on the same documents at the same time, and without interfering with someone else.');
-        ie_close('li');
-        ie_open('li');
-          itext('Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server like once-popular version control system, CVS of SVN.');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '2');
-      ie_open('h2');
-        itext('Online tutorials');
-      ie_close('h2');
+  var param411 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+        var dyn26 = opt_data.page.description;
+        if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
       ie_close('p');
       ie_open('ul');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/learn/git');
-            itext('Code School\'s Git');
-          ie_close('a');
+          ie_open('strong');
+            itext('Selecting a theme');
+          ie_close('strong');
+          itext(': Choose a theme that you can get excited about. Take the time to find one that is both challenging, but isn\'t over your head. This will make the whole theme building process more interesting and exciting for you.');
         ie_close('li');
         ie_open('li');
+          ie_open('strong');
+            itext('Follow the directions');
+          ie_close('strong');
+          itext(': Directions are laid out on the ');
           ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/learn/learn-git');
-            itext('Codecademy\'s Learn Git');
+              'href', 'https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/themes-and-layout-templates');
+            itext('Liferay Developer Network');
           ie_close('a');
+          itext('. If there is an existing Liferay theme that has similar features to the theme you want to create, set that existing theme as the ');
+          ie_open('em');
+            itext('base theme');
+          ie_close('em');
+          itext(' for your the one that you are going to be creating. ');
+          ie_open('em');
+            itext('Note: You will, most likely, not be using Liferay IDE to create your theme, so follow the directions that correspond to using the terminal.');
+          ie_close('em');
         ie_close('li');
         ie_open('li');
+          ie_open('strong');
+            itext('Formatting Standards');
+          ie_close('strong');
+          itext(': Reference the standards used by the ');
           ie_open('a', null, null,
-              'href', 'http://try.github.com');
-            itext('Github.com\'s Try Git');
+              'href', 'https://github.com/liferay/liferay-frontend-source-formatter');
+            itext('Liferay frontend source formatter');
           ie_close('a');
+          itext(' as you create your source files. This will save you from making a lot of obvious mistakes.  You will also want to review your code with these standards in mind before submitting it (i.e. sending a pull request) to your reviewer.');
         ie_close('li');
         ie_open('li');
+          ie_open('strong');
+            itext('CSS');
+          ie_close('strong');
+          itext(': Liferay uses ');
           ie_open('a', null, null,
-              'href', 'http://pcottle.github.com/learnGitBranching');
-            itext('Learn Git Branching');
+              'href', 'https://liferay.github.io/clay');
+            itext('Clay');
           ie_close('a');
+          itext(', ');
+          ie_open('a', null, null,
+              'href', 'http://sass-lang.com/');
+            itext('SASS');
+          ie_close('a');
+          itext(' and ');
+          ie_open('a', null, null,
+              'href', 'https://www.bourbon.io');
+            itext('Bourbon');
+          ie_close('a');
+          itext(' for its CSS. Familiarize yourself with these technologies after you have a general grasp on CSS. When writing your ');
+          ie_open('code');
+            itext('_custom.scss');
+          ie_close('code');
+          itext(' use the other themes as an example.');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://onlywei.github.io/explain-git-with-d3');
-            itext('Visualizing Git Concepts with D3');
-          ie_close('a');
+          ie_open('strong');
+            ie_open('code');
+              itext('_custom.scss');
+            ie_close('code');
+          ie_close('strong');
+          itext(': Only edit the ');
+          ie_open('code');
+            itext('_custom.scss');
+          ie_close('code');
+          itext(' file in the ');
+          ie_open('code');
+            itext('src');
+          ie_close('code');
+          itext(' folder for ');
+          ie_open('strong');
+            itext('ALL');
+          ie_close('strong');
+          itext(' of your CSS. When you create your theme, there will be other categorized CSS files that will be autogenerated in the build folder (e.g. ');
+          ie_open('code');
+            itext('layout.css');
+          ie_close('code');
+          itext(', ');
+          ie_open('code');
+            itext('portlet.css');
+          ie_close('code');
+          itext(', etc.).');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.udacity.com/course/how-to-use-git-and-github--ud775');
-            itext('Udacity\'s How to Use Git and GitHub');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Other resources');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet');
-            itext('Atlassian\'s Git Cheat Sheet');
-          ie_close('a');
+          ie_open('strong');
+            itext('Use DevTools');
+          ie_close('strong');
+          itext(': Use Devtools to fiddle with the CSS in your browser. It is much quicker than editing in the source files if you want to test simple changes or additions without waiting for the theme to redeploy.');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://git-scm.com/documentation');
-            itext('Git\'s documentation');
-          ie_close('a');
+          ie_open('strong');
+            itext('Restyle portlets');
+          ie_close('strong');
+          itext(': When you create your theme, you will likely need to restyle certain portlets (e.g. the login portlet or the search portlet). Each portlet has an unique ID or CSS class that you can use to specifically apply styles in your ');
+          ie_open('code');
+            itext('custom.css');
+          ie_close('code');
+          itext(' file.');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.kernel.org/pub/software/scm/git/docs/user-manual.html');
-            itext('Git\'s user manual');
-          ie_close('a');
+          ie_open('strong');
+            itext('Layout Templates');
+          ie_close('strong');
+          itext(': Do not shy away from creating your own layouts. Don\'t try to simulate your desired layout using the ');
+          ie_open('em');
+            itext('Nested Portlets');
+          ie_close('em');
+          itext(' portlet. Creating your own layout is relatively simple, though it may be intimidating at first because you are required to work with an unfamiliar language (i.e. Freemarker). It may be helpful to think of Freemarker as HTML remixed and souped-up.');
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://github.com');
-            itext('GitHub.com');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://git-scm.com/book/en/v2');
-            itext('Pro Git');
-          ie_close('a');
+          ie_open('strong');
+            itext('Format your code as you write');
+          ie_close('strong');
+          itext(': When writing code, it is tempting to just get all the code written down, and then go back and format it later. If you can, avoid doing this. It requires a little more work up-front to keep your code neat as you go along, but it saves a ton of time in the long run.');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28548,11 +28566,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param686}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param411}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'qUeTi.render';
+  $render.soyTemplateName = 'agRru.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28562,14 +28580,21 @@ return exports;
 
 });
 
-class qUeTi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qUeTi, templates);
+class agRru extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(agRru, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
 /* 235 */,
 /* 236 */,
 /* 237 */,
@@ -28597,16 +28622,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qUeTi, templates);
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28642,9 +28658,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(234);
+var _themeCreationSoy = __webpack_require__(227);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _themeCreationSoy2 = _interopRequireDefault(_themeCreationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28654,23 +28670,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var qUeTi = function (_Component) {
-  _inherits(qUeTi, _Component);
+var agRru = function (_Component) {
+  _inherits(agRru, _Component);
 
-  function qUeTi() {
-    _classCallCheck(this, qUeTi);
+  function agRru() {
+    _classCallCheck(this, agRru);
 
-    return _possibleConstructorReturn(this, (qUeTi.__proto__ || Object.getPrototypeOf(qUeTi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (agRru.__proto__ || Object.getPrototypeOf(agRru)).apply(this, arguments));
   }
 
-  return qUeTi;
+  return agRru;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(qUeTi, _indexSoy2.default);
+_metalSoy2.default.register(agRru, _themeCreationSoy2.default);
 
-exports.default = qUeTi;
+exports.default = agRru;
 
 /***/ })
-],[271]);
+],[262]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([31,37,38,39],[
+webpackJsonppageComponent([36,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28368,16 +28368,12 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "drJwU", function() { return drJwU; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Fafag", function() { return Fafag; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28389,15 +28385,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from using-git-bisect.soy.
+// This file was automatically generated from searching-smartly.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace drJwU.
+ * @fileoverview Templates in namespace Fafag.
  * @public
  */
 
-goog.module('drJwU.incrementaldom');
+goog.module('Fafag.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28418,8 +28414,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
@@ -28431,112 +28425,80 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param422 = function() {
+  var param343 = function() {
     ie_open('article');
       ie_open('p');
-        var dyn27 = opt_data.page.description;
-        if (typeof dyn27 == 'function') dyn27(); else if (dyn27 != null) itext(dyn27);
+        var dyn23 = opt_data.page.description;
+        if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
       ie_close('p');
       ie_open('p');
-        ie_open('code');
-          itext('git bisect');
-        ie_close('code');
-        itext(' is used to find the problem commit for regression bugs; bugs that were once fixed but have been re-broken.');
+        itext('Much of the leg-work of what you\'ll be doing will involve a significant amount of searching - whether you are looking for a CSS class name, or a taglib attribute, or property value. Being able to search well is an invaluable asset for your experience and effectiveness while working at Liferay.');
       ie_close('p');
       ie_open('p');
-        itext('When a problem is discovered, it is not always clear what modification caused the regression. Sometimes it is easy to figure out, but in some cases, the only way to find out is by going back and testing each commit in the history of the file(s) to find out when the problem was introduced.');
+        itext('When searching for things, don\'t get tunnel vision; it\'s going to happen, but try to fight it. Try to start by looking at the whole picture, and then systematically narrow your search down. If you find you\'ve spent a few days trying to pinpoint a certain class, or a specific JavaScript method, you probably have tunnel vision; this may not always be the case, but it\'s highly likely you are missing something.');
       ie_close('p');
       ie_open('p');
-        itext('Checking each commit individually can take a significant amount of time, that is why we use ');
-        ie_open('code');
-          itext('git bisect');
-        ie_close('code');
-        itext(' which will help automate the process to find the problem commit.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('code');
-          itext('git bisect');
-        ie_close('code');
-        itext(' uses binary search to look at all of the commits between good and bad commits, picks the middle one, and switches the current ');
-        ie_open('em');
-          itext('HEAD');
-        ie_close('em');
-        itext(' to that commit. It repeats the process until the problem commit is found.');
-      ie_close('p');
-      ie_open('p');
-        itext('To start ');
-        ie_open('code');
-          itext('git bisect');
-        ie_close('code');
-        itext(', you need to specify at least one good and bad commits. So we begin by finding a commit where things were working and another commit where things are broken.');
+        itext('If you are stuck, ask for help, whether it is Google, your coworker or even your manager. A lot of people have found what you\'re currently looking for so don\'t be afraid to ask for help.');
       ie_close('p');
       ie_open('p');
         ie_open('em');
-          itext('You can test whether a commit works or not by switching to that commit with ');
-          ie_open('code');
-            itext('git checkout <commit hash>');
-          ie_close('code');
-          itext(' and rebuilding the source code');
+          itext('Choose good keywords or phrases');
         ie_close('em');
         itext('.');
       ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          itext('Start ');
-          ie_open('code');
-            itext('git bisect');
-          ie_close('code');
-          itext(' by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'git bisect start', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Specify good working commit by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'git bisect good <commit hash>', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Specify bad commit by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'git bisect bad <commit hash>', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Git bisect switches the current ');
-          ie_open('em');
-            itext('HEAD');
-          ie_close('em');
-          itext(' to the middle commit between the specified good and bad commits. You then mark the current commit as either good or bad by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'git bisect good # good commit\ngit bisect bad # bad commit', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          itext('Continues the process until you reach the final commit.');
-        ie_close('li');
-        ie_open('li');
-          itext('End your ');
-          ie_open('code');
-            itext('git bisect');
-          ie_close('code');
-          itext(' session by running the following command in your ');
-          ie_open('em');
-            itext('Terminal/Git Bash');
-          ie_close('em');
-          itext('.');
-          $templateAlias2({code: 'git bisect reset', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-      ie_close('ol');
+      ie_open('p');
+        itext('Searching the entire Liferay ');
+        ie_open('em');
+          itext('source');
+        ie_close('em');
+        itext(' code with a keyword that is too broad or common will return you hundreds of results. Use keywords that are likely to be unique for the situation you are looking for.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Windows File Explorer');
+      ie_close('h3');
+      ie_open('p');
+        itext('Windows File Explorer is great if you need to track down a file or a folder, but it can be incredibly misleading when trying to find keywords, especially ones that are parts of long strings of text.');
+      ie_close('p');
+      ie_open('p');
+        itext('Use ');
+        ie_open('em');
+          itext('Sublime Text');
+        ie_close('em');
+        itext(' for searching for anything that isn\'t obvious like a file or a folder.');
+      ie_close('p');
+      ie_open('h3');
+        itext('Sublime Text');
+      ie_close('h3');
+      ie_open('p');
+        ie_open('code');
+          itext('Ctrl + Shift + F');
+        ie_close('code');
+        itext(' is your friend when it comes to searching. This has been mentioned before, but seriously, you will find yourself using it a lot. If you know the type of files you are looking for, you can refine your search to just ');
+        ie_open('code');
+          itext('*.css');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.js');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.java');
+        ie_close('code');
+        itext(', or ');
+        ie_open('code');
+          itext('*.jsp');
+        ie_close('code');
+        itext(' files.');
+      ie_close('p');
+      ie_open('p');
+        itext('It may also be helpful to learn how to write regular expressions. Sublime Text uses the Perl Compatible Regular Expressions (PCRE) engine from the Boost library to power regular expressions in search panels. ');
+        ie_open('a', null, null,
+            'href', 'http://docs.sublimetext.info/en/latest/search_and_replace/search_and_replace_overview.html');
+          itext('Read more about regarding Sublime Text\'s regular expression');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28547,11 +28509,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param422}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param343}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'drJwU.render';
+  $render.soyTemplateName = 'Fafag.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28561,14 +28523,18 @@ return exports;
 
 });
 
-class drJwU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(drJwU, templates);
+class Fafag extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Fafag, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
 /* 229 */,
 /* 230 */,
 /* 231 */,
@@ -28595,12 +28561,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(drJwU, templates);
 /* 252 */,
 /* 253 */,
 /* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28636,9 +28597,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _usingGitBisectSoy = __webpack_require__(228);
+var _searchingSmartlySoy = __webpack_require__(224);
 
-var _usingGitBisectSoy2 = _interopRequireDefault(_usingGitBisectSoy);
+var _searchingSmartlySoy2 = _interopRequireDefault(_searchingSmartlySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28648,23 +28609,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var drJwU = function (_Component) {
-  _inherits(drJwU, _Component);
+var Fafag = function (_Component) {
+  _inherits(Fafag, _Component);
 
-  function drJwU() {
-    _classCallCheck(this, drJwU);
+  function Fafag() {
+    _classCallCheck(this, Fafag);
 
-    return _possibleConstructorReturn(this, (drJwU.__proto__ || Object.getPrototypeOf(drJwU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Fafag.__proto__ || Object.getPrototypeOf(Fafag)).apply(this, arguments));
   }
 
-  return drJwU;
+  return Fafag;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(drJwU, _usingGitBisectSoy2.default);
+_metalSoy2.default.register(Fafag, _searchingSmartlySoy2.default);
 
-exports.default = drJwU;
+exports.default = Fafag;
 
 /***/ })
-],[260]);
+],[255]);

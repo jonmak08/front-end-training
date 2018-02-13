@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,37,38,39],[
+webpackJsonppageComponent([15,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28383,24 +28383,12 @@ exports.default = parseFromAnchor;
 /* 236 */,
 /* 237 */,
 /* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OUzii", function() { return OUzii; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kkbZX", function() { return kkbZX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28412,15 +28400,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from step-ten.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace OUzii.
+ * @fileoverview Templates in namespace kkbZX.
  * @public
  */
 
-goog.module('OUzii.incrementaldom');
+goog.module('kkbZX.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28441,9 +28429,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28454,56 +28440,82 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param974 = function() {
-    ie_open('h2');
-      var dyn49 = opt_data.page.title;
-      if (typeof dyn49 == 'function') dyn49(); else if (dyn49 != null) itext(dyn49);
-    ie_close('h2');
-    ie_open('p');
-      itext('Now that we have Liferay running, we have to understand how to read the messages output by the console.');
-    ie_close('p');
-    ie_open('ul');
-      ie_open('li');
-        itext('Make sure Liferay is loading your ');
-        ie_open('code');
-          itext('portal-ext.properties');
-        ie_close('code');
-        itext(' file correctly by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: 'Loading file:/liferay-portal/portal-ext.properties', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure Liferay is loading the correct database as defined in your ');
-        ie_open('code');
-          itext('portal-ext.properties');
-        ie_close('code');
-        itext(' file by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: 'INFO  [localhost-startStop-1][DialectDetector:77] Determine dialect for HSQL Database Engine 2.3\n[localhost-startStop-1][DialectDetector:97] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure the version of Liferay that you are using is correct by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: 'Starting Liferay Community Edition Portal 7.0.4 GA5 (Wilberforce / Build 7004 / October 23, 2017)', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Upon startup, Liferay will automatically create a ');
-        ie_open('em');
-          itext('deploy');
-        ie_close('em');
-        itext(' folder in your bundle.  When there are files placed in this folder, Liferay will automatically scan and consume any deployable packages. The location of this folder can be found by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: '[localhost-startStop-1][AutoDeployDir:194] Auto deploy scanner started for /liferay-portal/deploy', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure Liferay has finished loading and is ready for use by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Errors in Liferay are usually prefixed with an ');
-        ie_open('strong');
-          itext('ERROR');
-        ie_close('strong');
-        itext(' warning message.  They can be found by looking for a line in your console similar to the output below.');
-        $templateAlias2({code: 'ERROR [Framework Event Dispatcher: Equinox Container: a029ce5e-e1fc-0017-1e71-df5549d2deba][com_liferay_util_taglib:97] FrameworkEvent ERROR\n    org.osgi.framework.BundleException: Could not resolve module: com.liferay.util.taglib [9]_  Unresolved requirement: Import-Package: javax.el_ [Sanitized]\n    at org.eclipse.osgi.container.Module.start(Module.java:429)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)\n    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)\n    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)\n    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ul');
+  var param719 = function() {
+    ie_open('h6');
+      var dyn40 = opt_data.page.description;
+      if (typeof dyn40 == 'function') dyn40(); else if (dyn40 != null) itext(dyn40);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('What is web design?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h2');
+        itext('What is a website?');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Online tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure to carefully read and follow the instructions in the tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
+            itext('Code School\'s Fundamentals of Design');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
+            itext('Code School\'s The Elements of Web Design');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
+            itext('Code School\'s Journey Into Mobile');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Advanced Tutorials');
+      ie_close('h2');
+      ie_open('p');
+        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
+            itext('Codecademy\'s Make an Interactive Website');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'https://www.w3schools.com/howto/howto_website.asp');
+            itext('w3school\'s How To - Build a Web Site');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28513,11 +28525,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param974}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param719}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'OUzii.render';
+  $render.soyTemplateName = 'kkbZX.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28527,14 +28539,26 @@ return exports;
 
 });
 
-class OUzii extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(OUzii, templates);
+class kkbZX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kkbZX, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
 /* 252 */,
 /* 253 */,
 /* 254 */,
@@ -28559,11 +28583,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(OUzii, templates);
 /* 273 */,
 /* 274 */,
 /* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28599,9 +28619,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepTenSoy = __webpack_require__(251);
+var _indexSoy = __webpack_require__(239);
 
-var _stepTenSoy2 = _interopRequireDefault(_stepTenSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28611,23 +28631,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OUzii = function (_Component) {
-  _inherits(OUzii, _Component);
+var kkbZX = function (_Component) {
+  _inherits(kkbZX, _Component);
 
-  function OUzii() {
-    _classCallCheck(this, OUzii);
+  function kkbZX() {
+    _classCallCheck(this, kkbZX);
 
-    return _possibleConstructorReturn(this, (OUzii.__proto__ || Object.getPrototypeOf(OUzii)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kkbZX.__proto__ || Object.getPrototypeOf(kkbZX)).apply(this, arguments));
   }
 
-  return OUzii;
+  return kkbZX;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(OUzii, _stepTenSoy2.default);
+_metalSoy2.default.register(kkbZX, _indexSoy2.default);
 
-exports.default = OUzii;
+exports.default = kkbZX;
 
 /***/ })
-],[280]);
+],[276]);

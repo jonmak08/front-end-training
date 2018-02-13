@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,37,38,39],[
+webpackJsonppageComponent([33,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28366,7 +28366,783 @@ exports.default = parseFromAnchor;
 /* 219 */,
 /* 220 */,
 /* 221 */,
-/* 222 */,
+/* 222 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VjpBB", function() { return VjpBB; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from keyboard-shortcuts-os.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace VjpBB.
+ * @public
+ */
+
+goog.module('VjpBB.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param321 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn21 = opt_data.page.description;
+        if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+      ie_close('p');
+      ie_open('p');
+        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
+          itext('Tip:');
+        ie_close('strong');
+        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('em');
+          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
+        ie_close('em');
+      ie_close('p');
+      ie_open('h2');
+        itext('General Tips');
+      ie_close('h2');
+      ie_open('p');
+        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
+      ie_close('p');
+      ie_open('h3');
+        itext('Windows');
+      ie_close('h3');
+      ie_open('p');
+        itext('If you are an intern like myself, you are most likely using a Windows 10 machine.');
+      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Shortcut');
+            ie_close('th');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + X');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Cut');
+              ie_close('strong');
+              itext(' the selected item');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + C (or Ctrl + Insert)');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Copy');
+              ie_close('strong');
+              itext(' the selected item');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + V (or Shift + Insert)');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Paste');
+              ie_close('strong');
+              itext(' the selected item');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Z');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Undo');
+              ie_close('strong');
+              itext(' an action');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Tab');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Switch');
+              ie_close('strong');
+              itext(' between open apps');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + F4');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Close');
+              ie_close('strong');
+              itext(' the active item, or exit the active app');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Windows logo key + L');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Lock');
+              ie_close('strong');
+              itext(' your Computer');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Windows logo key + D');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Display');
+              ie_close('strong');
+              itext(' and hide the desktop');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('F2');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Rename');
+              ie_close('strong');
+              itext(' the selected item');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('F3');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Search');
+              ie_close('strong');
+              itext(' for a file or folder in File Explorer');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Esc');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Cycle');
+              ie_close('strong');
+              itext(' through items in the order in which they were opened');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Left arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Go back');
+              ie_close('strong');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Right arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Go forward');
+              ie_close('strong');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Page Up');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move up');
+              ie_close('strong');
+              itext(' one screen');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Alt + Page Down');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move down');
+              ie_close('strong');
+              itext(' one screen');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + F4');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Close');
+              ie_close('strong');
+              itext(' the active document (in apps that are full-screen and let you have multiple documents open at the same time)');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + A');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Select all');
+              ie_close('strong');
+              itext(' items in a document or window');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + D (or Delete)');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Delete');
+              ie_close('strong');
+              itext(' the selected item and move it to the Recycle Bin');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + R (or F5)');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Refresh');
+              ie_close('strong');
+              itext(' the active window');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Y');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Redo');
+              ie_close('strong');
+              itext(' an action');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Right arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move the cursor');
+              ie_close('strong');
+              itext(' to the beginning of the next word');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Left arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move the cursor');
+              ie_close('strong');
+              itext(' to the beginning of the previous word');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Down arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move the cursor');
+              ie_close('strong');
+              itext(' to the beginning of the next paragraph');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Up arrow');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Move the cursor');
+              ie_close('strong');
+              itext(' to the beginning of the previous paragraph');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Alt + Tab');
+            ie_close('td');
+            ie_open('td');
+              itext('Use the arrow keys to switch between all open apps');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + arrow key (to move to an item) + Spacebar');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Select multiple');
+              ie_close('strong');
+              itext(' individual items in a window or on the desktop');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Shift with an arrow key');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Select');
+              ie_close('strong');
+              itext(' a block of text');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Esc');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Open Start');
+              ie_close('strong');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Ctrl + Shift + Esc');
+            ie_close('td');
+            ie_open('td');
+              itext('Open Task Manager');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Shift + Delete');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Delete');
+              ie_close('strong');
+              itext(' the selected item without moving it to the Recycle Bin first');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Esc');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Stop');
+              ie_close('strong');
+              itext(' or leave the current task');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('p');
+        itext('You can find more shortcuts for Windows at ');
+        ie_open('a', null, null,
+            'href', 'https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts');
+          itext('https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('h3');
+        itext('OS X');
+      ie_close('h3');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('Shortcut');
+            ie_close('th');
+            ie_open('th');
+              itext('Description');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + X');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Cut');
+              ie_close('strong');
+              itext(' the selected item and copy it to the Clipboard.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + C');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Copy');
+              ie_close('strong');
+              itext(' the selected item to the Clipboard. This also works for files in the Finder.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + V');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Paste');
+              ie_close('strong');
+              itext(' the contents of the Clipboard into the current document or app. This also works for files in the Finder.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + Z');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Undo');
+              ie_close('strong');
+              itext(' the previous command.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + Shift + Z');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Redo');
+              ie_close('strong');
+              itext(' the previous command.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + A');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Select All');
+              ie_close('strong');
+              itext(' items.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + F');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Find');
+              ie_close('strong');
+              itext(' items in a document or open a Find window.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + G');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Find Again');
+              ie_close('strong');
+              itext(': Find the next occurrence of the item previously found. To find the previous occurrence, press ');
+              ie_open('code');
+                itext('Command + Shift + G');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + H');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Hide');
+              ie_close('strong');
+              itext(' the windows of the front app. To view the front app but hide all other apps, press ');
+              ie_open('code');
+                itext('Command + Option + H');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + M');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Minimize');
+              ie_close('strong');
+              itext(' the front window to the Dock. To minimize all windows of the front app, press ');
+              ie_open('code');
+                itext('Command + Option + M');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + N');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('New');
+              ie_close('strong');
+              itext(': Open a new document or window.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + O');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Open');
+              ie_close('strong');
+              itext(' the selected item, or open a dialog to select a file to open.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + P');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Print');
+              ie_close('strong');
+              itext(' the current document.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + S');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Save');
+              ie_close('strong');
+              itext(' the current document.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + W');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Close');
+              ie_close('strong');
+              itext(' the front window. To close all windows of the app, press ');
+              ie_open('code');
+                itext('Command + Option + W');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + Q');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Quit');
+              ie_close('strong');
+              itext(' the app.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Option + Command + Esc');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Force Quit');
+              ie_close('strong');
+              itext(': Choose an app to force quit. Or press ');
+              ie_open('code');
+                itext('Command + Shift + Option + Esc');
+              ie_close('code');
+              itext(' and hold for 3 seconds to force just the front app to quit.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command\u2013Space bar');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Spotlight');
+              ie_close('strong');
+              itext(': Show or hide the Spotlight search field. To perform a Spotlight search from a Finder window, press ');
+              ie_open('code');
+                itext('Command + Option + Space bar');
+              ie_close('code');
+              itext('. If you use multiple input sources to type in different languages, these shortcuts change input sources instead of showing Spotlight.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Space bar');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Quick Look');
+              ie_close('strong');
+              itext(': Use Quick Look to preview the selected item.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + Tab');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Switch apps');
+              ie_close('strong');
+              itext(': Switch to the next most recently used app among your open apps.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Shift + Command + Tilde');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Switch windows');
+              ie_close('strong');
+              itext(': Switch to the next most recently used window of the front app.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Shift + Command + 3');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Screenshot');
+              ie_close('strong');
+              itext(': Take a screenshot of the entire screen. Learn more screenshot shortcuts.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('Command + Comma');
+            ie_close('td');
+            ie_open('td');
+              ie_open('strong');
+                itext('Preferences');
+              ie_close('strong');
+              itext(': Open preferences for the front app.');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('p');
+        itext('You can find more shortcuts for OS X at ');
+        ie_open('a', null, null,
+            'href', 'https://support.apple.com/en-us/HT201236');
+          itext('https://support.apple.com/en-us/HT201236');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param321}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'VjpBB.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class VjpBB extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(VjpBB, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 223 */,
 /* 224 */,
 /* 225 */,
@@ -28397,745 +29173,12 @@ exports.default = parseFromAnchor;
 /* 250 */,
 /* 251 */,
 /* 252 */,
-/* 253 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lTlzz", function() { return lTlzz; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from step-two.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace lTlzz.
- * @public
- */
-
-goog.module('lTlzz.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1046 = function() {
-    ie_open('h2');
-      var dyn51 = opt_data.page.title;
-      if (typeof dyn51 == 'function') dyn51(); else if (dyn51 != null) itext(dyn51);
-    ie_close('h2');
-    ie_open('h3');
-      itext('Change your computer name');
-    ie_close('h3');
-    ie_open('p');
-      itext('Change your computer name to something more user friendly because we will be using this later on when configuring Liferay.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Launch ');
-        ie_open('em');
-          itext('System Preferences');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('Sharing');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('On the ');
-        ie_open('em');
-          itext('Computer Name, domain, and workgroup settings');
-        ie_close('em');
-        itext(' section, click the ');
-        ie_open('em');
-          itext('Change Settings...');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Change...');
-        ie_close('em');
-        itext(' button under the ');
-        ie_open('em');
-          itext('Computer Name');
-        ie_close('em');
-        itext(' tab.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Computer Name:');
-        ie_close('em');
-        itext(' field, enter what you want your computer name to be.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Change your folder options');
-    ie_close('h3');
-    ie_open('p');
-      itext('Show ');
-      ie_open('em');
-        itext('hidden');
-      ie_close('em');
-      itext(' files in the ');
-      ie_open('em');
-        itext('Finder/File Explorer');
-      ie_close('em');
-      itext(' because Liferay contains hidden files that we need to edit.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        ie_open('p');
-          itext('Launch the ');
-          ie_open('em');
-            itext('Terminal');
-          ie_close('em');
-          itext('.');
-        ie_close('p');
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Enter the command below.');
-        ie_close('p');
-        $templateAlias2({code: 'defaults write com.apple.Finder AppleShowAllFiles TRUE', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        ie_open('p');
-          itext('Relaunch the Finder to make the changes take effect.');
-        ie_close('p');
-        $templateAlias2({code: 'killall Finder', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Click the ');
-        ie_open('em');
-          itext('Start Menu');
-        ie_close('em');
-        itext(' and search for ');
-        ie_open('em');
-          itext('Folder Explorer Options');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('View');
-        ie_close('em');
-        itext(' tab .');
-      ie_close('li');
-      ie_open('li');
-        itext('Under the ');
-        ie_open('em');
-          itext('Advanced settings:');
-        ie_close('em');
-        itext(' section, make sure ');
-        ie_open('em');
-          itext('Show hidden files, folders and drives');
-        ie_close('em');
-        itext(' is selected.');
-      ie_close('li');
-      ie_open('li');
-        itext('Make sure ');
-        ie_open('em');
-          itext('Hide extensions for known file types');
-        ie_close('em');
-        itext(' is unchecked.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Set ANT_OPTS environment variable');
-    ie_close('h3');
-    ie_open('p');
-      ie_open('em');
-        itext('ANT_OPTS');
-      ie_close('em');
-      itext(' is an environment variable that provides a list of arguments that you want to pass to the Java Virtual Machine that will run Ant.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Create a ');
-        ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext(' if one does not already exist.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the contents below into the ');
-        ie_open('code');
-          itext('.bash_profile');
-        ie_close('code');
-        itext('.');
-        $templateAlias2({code: 'export ANT_OPTS="-Xms2048m -Xmx4096m"', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Relaunch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('User variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('ANT_OPTS');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('code');
-          itext('ANT_OPTS');
-        ie_close('code');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('-Xms2048m -Xmx4096m');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Apache Ant');
-    ie_close('h3');
-    ie_open('p');
-      itext('Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the ');
-      ie_open('a', null, null,
-          'href', 'http://ant.apache.org/');
-        itext('Apache Ant');
-      ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
-    ie_close('p');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Unzip the downloaded file from the previous step into your C:\\ drive.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Ant directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('strong');
-          itext('ANT_HOME');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Apache Ant path you coped in step 2');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('code');
-          itext('ANT_HOME');
-        ie_close('code');
-        itext(' variable to the ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable.');
-        $templateAlias2({code: '%ANT_HOME%/bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Ant is installed correctly. A message ');
-        ie_open('em');
-          itext('Buildfile: build.xml does not exist! Build failed');
-        ie_close('em');
-        itext('.');
-        $templateAlias2({code: 'ant', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h3');
-      itext('Setup Java JDK');
-    ie_close('h3');
-    ie_open('p');
-      itext('Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the ');
-      ie_open('a', null, null,
-          'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR');
-        itext('Java JDK');
-      ie_close('a');
-      itext(' in the previous step.  This will help you install and set it up.');
-    ie_close('p');
-    ie_open('h4');
-      itext('OS X');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step. (The installer should be in ');
-        ie_open('code');
-          itext('.dmg');
-        ie_close('code');
-        itext(' format).');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('To check if Java is installed, launch the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Terminal');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('h4');
-      itext('Windows');
-    ie_close('h4');
-    ie_open('ol');
-      ie_open('li');
-        itext('Double-click the downloaded installer from the previous step.');
-      ie_close('li');
-      ie_open('li');
-        itext('Follow the prompts to install the Java JDK.');
-      ie_close('li');
-      ie_open('li');
-        itext('Go to your Java JDK directory in the ');
-        ie_open('em');
-          itext('File Explorer');
-        ie_close('em');
-        itext(' and copy the path from the address bar.');
-      ie_close('li');
-      ie_open('li');
-        itext('Right click on ');
-        ie_open('em');
-          itext('My Computer');
-        ie_close('em');
-        itext(' and choose ');
-        ie_open('em');
-          itext('Properties');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Advanced system settings');
-        ie_close('em');
-        itext(' link.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on the ');
-        ie_open('em');
-          itext('Environment Variables...');
-        ie_close('em');
-        itext(' button.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click on ');
-        ie_open('em');
-          itext('New...');
-        ie_close('em');
-        itext(' under the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section. We will be setting the ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Fill out the field values with ');
-        ie_open('em');
-          itext('Variable name:');
-        ie_close('em');
-        itext(' being ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' and ');
-        ie_open('em');
-          itext('Variable value:');
-        ie_close('em');
-        itext(' being the ');
-        ie_open('strong');
-          itext('Java JDK path you coped in step 3');
-        ie_close('strong');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Click ');
-        ie_open('em');
-          itext('OK');
-        ie_close('em');
-        itext(' to save this environment variable.');
-      ie_close('li');
-      ie_open('li');
-        itext('Verify that the ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' variable is correct.');
-      ie_close('li');
-      ie_open('li');
-        itext('In the ');
-        ie_open('em');
-          itext('Environment Variables');
-        ie_close('em');
-        itext(' window, go to the ');
-        ie_open('em');
-          itext('System variables');
-        ie_close('em');
-        itext(' section and look for a variable called ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' and click ');
-        ie_open('em');
-          itext('Edit...');
-        ie_close('em');
-        itext('.  This variable should already exist and have values in it.');
-      ie_close('li');
-      ie_open('li');
-        ie_open('strong');
-          itext('Do not delete this variable');
-        ie_close('strong');
-        itext('. At the beginning of this variable, enter the code below. We are adding our ');
-        ie_open('code');
-          itext('JAVA_HOME');
-        ie_close('code');
-        itext(' variable to the ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable.');
-        $templateAlias2({code: '%JAVA_HOME%\\bin;', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Open a new ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext('.');
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.');
-        $templateAlias2({code: 'java -version', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-      ie_open('li');
-        itext('Enter the command below in the ');
-        ie_open('em');
-          itext('Command Prompt');
-        ie_close('em');
-        itext(' to check if your ');
-        ie_open('code');
-          itext('PATH');
-        ie_close('code');
-        itext(' variable is set correctly. It should list the directory of your JAVA JDK.');
-        $templateAlias2({code: 'path', mode: 'shell'}, null, opt_ijData);
-      ie_close('li');
-    ie_close('ol');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'lTlzz.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class lTlzz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lTlzz, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 253 */,
 /* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29171,9 +29214,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _stepTwoSoy = __webpack_require__(253);
+var _keyboardShortcutsOsSoy = __webpack_require__(222);
 
-var _stepTwoSoy2 = _interopRequireDefault(_stepTwoSoy);
+var _keyboardShortcutsOsSoy2 = _interopRequireDefault(_keyboardShortcutsOsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29183,23 +29226,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lTlzz = function (_Component) {
-  _inherits(lTlzz, _Component);
+var VjpBB = function (_Component) {
+  _inherits(VjpBB, _Component);
 
-  function lTlzz() {
-    _classCallCheck(this, lTlzz);
+  function VjpBB() {
+    _classCallCheck(this, VjpBB);
 
-    return _possibleConstructorReturn(this, (lTlzz.__proto__ || Object.getPrototypeOf(lTlzz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VjpBB.__proto__ || Object.getPrototypeOf(VjpBB)).apply(this, arguments));
   }
 
-  return lTlzz;
+  return VjpBB;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lTlzz, _stepTwoSoy2.default);
+_metalSoy2.default.register(VjpBB, _keyboardShortcutsOsSoy2.default);
 
-exports.default = lTlzz;
+exports.default = VjpBB;
 
 /***/ })
-],[287]);
+],[258]);

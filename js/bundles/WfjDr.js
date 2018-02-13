@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([33,37,38,39],[
+webpackJsonppageComponent([32,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28365,12 +28365,19 @@ exports.default = parseFromAnchor;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IQxRh", function() { return IQxRh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WfjDr", function() { return WfjDr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28382,15 +28389,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from keyboard-shortcuts-devtools.soy.
+// This file was automatically generated from using-git-bisect.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace IQxRh.
+ * @fileoverview Templates in namespace WfjDr.
  * @public
  */
 
-goog.module('IQxRh.incrementaldom');
+goog.module('WfjDr.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28411,6 +28418,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
@@ -28422,602 +28431,112 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param310 = function() {
+  var param422 = function() {
     ie_open('article');
       ie_open('p');
-        var dyn20 = opt_data.page.description;
-        if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+        var dyn27 = opt_data.page.description;
+        if (typeof dyn27 == 'function') dyn27(); else if (dyn27 != null) itext(dyn27);
       ie_close('p');
       ie_open('p');
-        itext('The best way to learn keyboard shortcuts is to use them. There are plenty of lists and cheat sheets available online to help you learn them; therefore, the shortcuts listed here are merely some of the ones we found to be the most useful and/or obscure.');
+        ie_open('code');
+          itext('git bisect');
+        ie_close('code');
+        itext(' is used to find the problem commit for regression bugs; bugs that were once fixed but have been re-broken.');
       ie_close('p');
       ie_open('p');
-        ie_open('strong');
-          itext('Tip:');
-        ie_close('strong');
-        itext(' Force yourself to use keyboard shortcuts. The faster you become at navigating around your computer, the more thought you will be able to devote to creating and fixing things.');
+        itext('When a problem is discovered, it is not always clear what modification caused the regression. Sometimes it is easy to figure out, but in some cases, the only way to find out is by going back and testing each commit in the history of the file(s) to find out when the problem was introduced.');
+      ie_close('p');
+      ie_open('p');
+        itext('Checking each commit individually can take a significant amount of time, that is why we use ');
+        ie_open('code');
+          itext('git bisect');
+        ie_close('code');
+        itext(' which will help automate the process to find the problem commit.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('code');
+          itext('git bisect');
+        ie_close('code');
+        itext(' uses binary search to look at all of the commits between good and bad commits, picks the middle one, and switches the current ');
+        ie_open('em');
+          itext('HEAD');
+        ie_close('em');
+        itext(' to that commit. It repeats the process until the problem commit is found.');
+      ie_close('p');
+      ie_open('p');
+        itext('To start ');
+        ie_open('code');
+          itext('git bisect');
+        ie_close('code');
+        itext(', you need to specify at least one good and bad commits. So we begin by finding a commit where things were working and another commit where things are broken.');
       ie_close('p');
       ie_open('p');
         ie_open('em');
-          itext('Programmers love to use keyboard shortcuts, so if you ever catch yourself thinking "I wish there was a faster way to do this...", there probably is.');
+          itext('You can test whether a commit works or not by switching to that commit with ');
+          ie_open('code');
+            itext('git checkout <commit hash>');
+          ie_close('code');
+          itext(' and rebuilding the source code');
         ie_close('em');
-      ie_close('p');
-      ie_open('h2');
-        itext('General Tips');
-      ie_close('h2');
-      ie_open('p');
-        itext('Liberate yourself from the right click when it comes to accomplishing simple tasks; tasks like cutting, copying, pasting, and many other things. Do not waste your time using the right click if you do not need to!');
-      ie_close('p');
-      ie_open('h3');
-        itext('Chrome DevTools');
-      ie_close('h3');
-      ie_open('p');
-        itext('Common shortcuts for Chrome DevTools. If you find yourself using Chrome to inspect and debug a page, use the following shortcuts to help.');
-      ie_close('p');
-      ie_open('h4');
-        itext('Opening DevTools');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open whatever panel you used last');
-            ie_close('td');
-            ie_open('td');
-              itext('F12 (Or Control + Shift + I)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + I');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Console panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + J');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + J');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Elements panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + C');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Global keyboard shorcuts');
-      ie_close('h4');
-      ie_open('p');
-        itext('The following keyboard shortcuts are available in most, if not all, DevTools panels.');
-      ie_close('p');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Show Settings');
-            ie_close('td');
-            ie_open('td');
-              itext('F1 (Or ?)');
-            ie_close('td');
-            ie_open('td');
-              itext('Function + F1 (Or ?)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the next panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + ]');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + ]');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the previous panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + [');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + [');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Switch back to whatever docking position you last used. If DevTools has been in its default position for the entire session, then this shortcut undocks DevTools into a separate window');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + D');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + D');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Device Mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + M');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + M');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Inspect Element Mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + C');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + C');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open the Command Menu');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + P');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + P');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle the Drawer');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Normal reload');
-            ie_close('td');
-            ie_open('td');
-              itext('F5 (Or Control + R)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + R');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Hard reload');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + F5 (Or Control + Shift + R)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + R');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Search for text within the current panel. Not supported in the Audits, Application, and Security panels');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Opens the Search tab in the Drawer, which lets you search for text across all loaded resources');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + F');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Option + F');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Open a file in the Sources panel');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + O (Or Control + P)');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + O (Or Command + P)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Zoom in');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Shift + +');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + +');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Zoom out');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + -');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + -');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Restore default zoom level');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + 0');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + 0');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Run snippet');
-            ie_close('td');
-            ie_open('td');
-              itext('Press ');
-              ie_open('code');
-                itext('Control + O');
-              ie_close('code');
-              itext(' to open the Command Menu, type ');
-              ie_open('code');
-                itext('!');
-              ie_close('code');
-              itext(' followed by the name of the script, then press ');
-              ie_open('code');
-                itext('Enter');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('Press ');
-              ie_open('code');
-                itext('Command + O');
-              ie_close('code');
-              itext(' to open the Command Menu, type ');
-              ie_open('code');
-                itext('!');
-              ie_close('code');
-              itext(' followed by the name of the script, then press ');
-              ie_open('code');
-                itext('Enter');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Elements panel');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Undo change');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Z');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Z');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Redo change');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + Y');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Shift + Z');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select the element above / below the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow / Down Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow / Down Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand the currently-selected node. If the node is already expanded, this shortcut selects the element below it');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Collapse the currently-selected node. If the node is already collapsed, this shortcut selects the element above it');
-            ie_close('td');
-            ie_open('td');
-              itext('Left Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Left Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand or collapse the currently-selected node and all of its children');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Control + Alt');
-              ie_close('code');
-              itext(' then click the arrow icon next to the element\'s name');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Option');
-              ie_close('code');
-              itext(' then click the arrow icon next to the element\'s name');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Edit Attributes mode on the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Select the next / previous attribute after entering Edit Attributes mode');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab / Shift + Tab');
-            ie_close('td');
-            ie_open('td');
-              itext('Tab / Shift + Tab');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Hide the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('H');
-            ie_close('td');
-            ie_open('td');
-              itext('H');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Toggle Edit as HTML mode on the currently-selected element');
-            ie_close('td');
-            ie_open('td');
-              itext('F2');
-            ie_close('td');
-            ie_open('td');
-              itext('Function + F2');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h4');
-        itext('Console panel');
-      ie_close('h4');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Description');
-            ie_close('th');
-            ie_open('th');
-              itext('Windows');
-            ie_close('th');
-            ie_open('th');
-              itext('OS X');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('Accept autocomplete suggestion');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow (Or Tab)');
-            ie_close('td');
-            ie_open('td');
-              itext('Right Arrow (Or Tab)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Reject autocomplete suggestion');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-            ie_open('td');
-              itext('Escape');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Get previous statement');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Up Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Get next statement');
-            ie_close('td');
-            ie_open('td');
-              itext('Down Arrow');
-            ie_close('td');
-            ie_open('td');
-              itext('Down Arrow');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Focus the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + `');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + `');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Clear the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Control + L');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + K (Or Option + L)');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary');
-            ie_close('td');
-            ie_open('td');
-              itext('Shift + Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Command + Return');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Execute command');
-            ie_close('td');
-            ie_open('td');
-              itext('Enter');
-            ie_close('td');
-            ie_open('td');
-              itext('Return');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('Expand all sub-properties of an object that\'s been logged to the Console');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Alt');
-              ie_close('code');
-              itext(' then click ');
-              ie_open('code');
-                itext('Expand');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('Hold ');
-              ie_open('code');
-                itext('Alt');
-              ie_close('code');
-              itext(' then click ');
-              ie_open('code');
-                itext('Expand');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('p');
-        itext('This has been adapted from ');
-        ie_open('a', null, null,
-            'href', 'https://developers.google.com/web/tools/chrome-devtools/shortcuts');
-          itext('https://developers.google.com/web/tools/chrome-devtools/shortcuts');
-        ie_close('a');
         itext('.');
       ie_close('p');
+      ie_open('ol');
+        ie_open('li');
+          itext('Start ');
+          ie_open('code');
+            itext('git bisect');
+          ie_close('code');
+          itext(' by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'git bisect start', mode: 'shell'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          itext('Specify good working commit by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'git bisect good <commit hash>', mode: 'shell'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          itext('Specify bad commit by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'git bisect bad <commit hash>', mode: 'shell'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          itext('Git bisect switches the current ');
+          ie_open('em');
+            itext('HEAD');
+          ie_close('em');
+          itext(' to the middle commit between the specified good and bad commits. You then mark the current commit as either good or bad by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'git bisect good # good commit\ngit bisect bad # bad commit', mode: 'shell'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          itext('Continues the process until you reach the final commit.');
+        ie_close('li');
+        ie_open('li');
+          itext('End your ');
+          ie_open('code');
+            itext('git bisect');
+          ie_close('code');
+          itext(' session by running the following command in your ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext('.');
+          $templateAlias2({code: 'git bisect reset', mode: 'shell'}, null, opt_ijData);
+        ie_close('li');
+      ie_close('ol');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -29028,11 +28547,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param310}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param422}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'IQxRh.render';
+  $render.soyTemplateName = 'WfjDr.render';
 }
 
 exports.render.params = ["page","site"];
@@ -29042,21 +28561,14 @@ return exports;
 
 });
 
-class IQxRh extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IQxRh, templates);
+class WfjDr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WfjDr, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
 /* 229 */,
 /* 230 */,
 /* 231 */,
@@ -29086,7 +28598,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IQxRh, templates);
 /* 255 */,
 /* 256 */,
 /* 257 */,
-/* 258 */
+/* 258 */,
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29122,9 +28635,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _keyboardShortcutsDevtoolsSoy = __webpack_require__(221);
+var _usingGitBisectSoy = __webpack_require__(228);
 
-var _keyboardShortcutsDevtoolsSoy2 = _interopRequireDefault(_keyboardShortcutsDevtoolsSoy);
+var _usingGitBisectSoy2 = _interopRequireDefault(_usingGitBisectSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29134,23 +28647,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IQxRh = function (_Component) {
-  _inherits(IQxRh, _Component);
+var WfjDr = function (_Component) {
+  _inherits(WfjDr, _Component);
 
-  function IQxRh() {
-    _classCallCheck(this, IQxRh);
+  function WfjDr() {
+    _classCallCheck(this, WfjDr);
 
-    return _possibleConstructorReturn(this, (IQxRh.__proto__ || Object.getPrototypeOf(IQxRh)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WfjDr.__proto__ || Object.getPrototypeOf(WfjDr)).apply(this, arguments));
   }
 
-  return IQxRh;
+  return WfjDr;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(IQxRh, _keyboardShortcutsDevtoolsSoy2.default);
+_metalSoy2.default.register(WfjDr, _usingGitBisectSoy2.default);
 
-exports.default = IQxRh;
+exports.default = WfjDr;
 
 /***/ })
-],[258]);
+],[259]);

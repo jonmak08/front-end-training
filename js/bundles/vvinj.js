@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,37,38,39],[
+webpackJsonppageComponent([23,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28375,20 +28375,12 @@ exports.default = parseFromAnchor;
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jtFfr", function() { return jtFfr; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vvinj", function() { return vvinj; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28404,11 +28396,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace jtFfr.
+ * @fileoverview Templates in namespace vvinj.
  * @public
  */
 
-goog.module('jtFfr.incrementaldom');
+goog.module('vvinj.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28440,27 +28432,19 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param719 = function() {
+  var param686 = function() {
     ie_open('h6');
-      var dyn40 = opt_data.page.description;
-      if (typeof dyn40 == 'function') dyn40(); else if (dyn40 != null) itext(dyn40);
+      var dyn37 = opt_data.page.description;
+      if (typeof dyn37 == 'function') dyn37(); else if (dyn37 != null) itext(dyn37);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('What is web design?');
+        itext('What are the browser developer tools?');
       ie_close('h2');
       ie_open('ul');
         ie_open('li');
-          itext('Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('h2');
-        itext('What is a website?');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          itext('A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on a web server.');
+          itext('Developer tools are a powerful suite of tools that range from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load, that are included in every modern browser.');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -28475,43 +28459,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/fundamentals-of-design');
-            itext('Code School\'s Fundamentals of Design');
+              'href', 'https://www.codeschool.com/courses/discover-devtools');
+            itext('Code School\'s Discover DevTools');
           ie_close('a');
         ie_close('li');
         ie_open('li');
           ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/the-elements-of-web-design');
-            itext('Code School\'s The Elements of Web Design');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codeschool.com/courses/journey-into-mobile');
-            itext('Code School\'s Journey Into Mobile');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Advanced Tutorials');
-      ie_close('h2');
-      ie_open('p');
-        itext('Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.codecademy.com/skills/make-an-interactive-website');
-            itext('Codecademy\'s Make an Interactive Website');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', 'https://www.w3schools.com/howto/howto_website.asp');
-            itext('w3school\'s How To - Build a Web Site');
+              'href', 'https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools');
+            itext('MDN\'s What are browser developer tools?');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
@@ -28525,11 +28480,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param719}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param686}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'jtFfr.render';
+  $render.soyTemplateName = 'vvinj.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28539,14 +28494,22 @@ return exports;
 
 });
 
-class jtFfr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jtFfr, templates);
+class vvinj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(vvinj, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -28575,15 +28538,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jtFfr, templates);
 /* 265 */,
 /* 266 */,
 /* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28619,7 +28574,7 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _indexSoy = __webpack_require__(239);
+var _indexSoy = __webpack_require__(231);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28631,23 +28586,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var jtFfr = function (_Component) {
-  _inherits(jtFfr, _Component);
+var vvinj = function (_Component) {
+  _inherits(vvinj, _Component);
 
-  function jtFfr() {
-    _classCallCheck(this, jtFfr);
+  function vvinj() {
+    _classCallCheck(this, vvinj);
 
-    return _possibleConstructorReturn(this, (jtFfr.__proto__ || Object.getPrototypeOf(jtFfr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vvinj.__proto__ || Object.getPrototypeOf(vvinj)).apply(this, arguments));
   }
 
-  return jtFfr;
+  return vvinj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(jtFfr, _indexSoy2.default);
+_metalSoy2.default.register(vvinj, _indexSoy2.default);
 
-exports.default = jtFfr;
+exports.default = vvinj;
 
 /***/ })
-],[276]);
+],[268]);

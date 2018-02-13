@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([27,37,38,39],[
+webpackJsonppageComponent([9,37,38,39],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28362,286 +28362,7 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phscP", function() { return phscP; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from debugging-effectively.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace phscP.
- * @public
- */
-
-goog.module('phscP.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param219 = function() {
-    ie_open('article');
-      ie_open('p');
-        var dyn19 = opt_data.page.description;
-        if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
-      ie_close('p');
-      ie_open('p');
-        itext('Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Search for surrounding text');
-      ie_close('h3');
-      ie_open('p');
-        itext('Maybe you are looking for something around an error message (e.g. "A user with that OpenID already exists.") that is appearing in a portlet. Use ');
-        ie_open('em');
-          itext('Sublime Text');
-        ie_close('em');
-        itext(' to search for the error message string in Liferay\'s ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code. Your search results should return several ');
-        ie_open('code');
-          itext('Language_*.properties');
-        ie_close('code');
-        itext(' files. These files indicate that this text is being translated from English to other languages.');
-      ie_close('p');
-      ie_open('p');
-        itext('The underlying property name is a ');
-        ie_open('em');
-          itext('language key');
-        ie_close('em');
-        itext(' that matches this value, ');
-        ie_open('em');
-          itext('a-user-with-that-open-id-already-exists');
-        ie_close('em');
-        itext('. Now search for this string within Liferay\'s ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code and ignore all the results in the ');
-        ie_open('code');
-          itext('Language_*.properties');
-        ie_close('code');
-        itext(' files. You will see, in a file called ');
-        ie_open('code');
-          itext('open_id.jsp');
-        ie_close('code');
-        itext(', that this message is displayed when a ');
-        ie_open('em');
-          itext('DuplicateOpenIdException');
-        ie_close('em');
-        itext(' occurs.');
-      ie_close('p');
-      ie_open('p');
-        itext('What causes a ');
-        ie_open('em');
-          itext('DuplicateOpenIdException');
-        ie_close('em');
-        itext(' to be thrown?');
-      ie_close('p');
-      ie_open('p');
-        itext('Search for ');
-        ie_open('code');
-          itext('throw new DuplicateOpenIdException');
-        ie_close('code');
-        itext(' and you will find the answer in ');
-        ie_open('code');
-          itext('UserLocalServiceImpl.java');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('A similar technique can be used to locate the file in which a particular view of a portlet is being generated. Just look for a rare string and search for it using ');
-        ie_open('em');
-          itext('Sublime Text');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Along the lines of the last point, if you see a call to a function and think the bug you\'re looking for is occurring in that function, search for the function definition.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you are looking at a function definition and know that the file with the bug in it must be using that function, search for all calls to the function.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('em');
-          itext('Sublime Text has a plugin ');
-          ie_open('a', null, null,
-              'href', 'https://packagecontrol.io/packages/WhoCalled%20Function%20Finder');
-            itext('WhoCalled Function Finder');
-          ie_close('a');
-          itext(' for this exact use case');
-        ie_close('em');
-        itext('.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Print output');
-      ie_close('h3');
-      ie_open('p');
-        itext('If you are debugging a JavaScript file and want to know the value of any variable or expression at any point in the code, use ');
-        ie_open('code');
-          itext('console.log()');
-        ie_close('code');
-        itext('. This will print the value of the expression to the browser\'s JavaScript console within the DevTools.');
-      ie_close('p');
-      ie_open('p');
-        itext('In a ');
-        ie_open('code');
-          itext('.java');
-        ie_close('code');
-        itext(' file or a Java scriptlet in a ');
-        ie_open('code');
-          itext('.jsp');
-        ie_close('code');
-        itext(' file, a ');
-        ie_open('code');
-          itext('System.out.println()');
-        ie_close('code');
-        itext(' statement will print to the ');
-        ie_open('em');
-          itext('Terminal/Git Bash');
-        ie_close('em');
-        itext(' in which you are running Tomcat.');
-      ie_close('p');
-      ie_open('p');
-        itext('Outside a Java scriptlet in a ');
-        ie_open('code');
-          itext('.jsp');
-        ie_close('code');
-        itext(' file, you can print directly to the browser by enclosing the Java expression in a block surrounded by ');
-        ie_open('code');
-          itext('<%=');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('%>');
-        ie_close('code');
-        itext(' tags.');
-      ie_close('p');
-      ie_open('h3');
-        itext('Browser\'s JavaScript console');
-      ie_close('h3');
-      ie_open('p');
-        itext('Use the browser\'s JavaScript console to debug and test code. If you declare a JavaScript variable as a ');
-        ie_open('em');
-          itext('window');
-        ie_close('em');
-        itext(' variable within the Liferay\'s ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code (e.g, ');
-        ie_open('code');
-          itext('window.numColors = 2;');
-        ie_close('code');
-        itext(' instead of ');
-        ie_open('code');
-          itext('var numColors = 2;');
-        ie_close('code');
-        itext('), you can access this variable by typing it in the browser\'s JavaScript console.');
-      ie_close('p');
-      ie_open('p');
-        itext('Just be sure to remove all declarations of ');
-        ie_open('em');
-          itext('window');
-        ie_close('em');
-        itext(' variables before submitting your code for review. If this variable has a function available to it, say ');
-        ie_open('code');
-          itext('toString()');
-        ie_close('code');
-        itext(', you can get the function definition by typing ');
-        ie_open('code');
-          itext('numColors.toString');
-        ie_close('code');
-        itext(', or you can get the result of a function call by typing ');
-        ie_open('code');
-          itext('numColors.toString()');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('More generally, you can use the console to test your own snippets of JavaScript code before putting them in Liferay\'s ');
-        ie_open('em');
-          itext('source');
-        ie_close('em');
-        itext(' code.');
-      ie_close('p');
-      ie_open('p');
-        itext('Again, don\'t be afraid to ask for help when you need to.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param219}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'phscP.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class phscP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(phscP, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 218 */,
 /* 219 */,
 /* 220 */,
 /* 221 */,
@@ -28675,7 +28396,430 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(phscP, templates);
 /* 249 */,
 /* 250 */,
 /* 251 */,
-/* 252 */,
+/* 252 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XKikN", function() { return XKikN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from step-three.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace XKikN.
+ * @public
+ */
+
+goog.module('XKikN.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param1015 = function() {
+    ie_open('h2');
+      var dyn50 = opt_data.page.title;
+      if (typeof dyn50 == 'function') dyn50(); else if (dyn50 != null) itext(dyn50);
+    ie_close('h2');
+    ie_open('p');
+      itext('It is hard to describe, because it does so much, but what we say is that it is a totally awesome content and document managing, user collaborating, socially enabling, application developing, corporate integrating, completely customizable platform for building the Internet. You are probably doubting us right now, but hopefully once you start using it, you see that it is true.');
+    ie_close('p');
+    ie_open('p');
+      itext('Liferay provides a robust ');
+      ie_open('em');
+        itext('platform');
+      ie_close('em');
+      itext(' to build your site quickly and serve it to all clients, be they desktop, mobile, or anything in between; it provides all the standard ');
+      ie_open('em');
+        itext('applications');
+      ie_close('em');
+      itext(' you need to run on your site; and it provides an easy to use development ');
+      ie_open('em');
+        itext('framework');
+      ie_close('em');
+      itext(' for new applications or customization. In addition to this, Liferay Portal is developed using an open source methodology, by people from around the world. The code base is solid and has been proved to be reliable and stable in mission critical deployments in diverse industries.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://dev.liferay.com/discover/portal');
+        itext('Read more about what Liferay is.');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('h2');
+      itext('Liferay versions');
+    ie_close('h2');
+    ie_open('p');
+      itext('There are two versions of Liferay - The Community Edition (CE) and Digital Experience Platform (DXP).');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('strong');
+          itext('Liferay Digital Experience Platform');
+        ie_close('strong');
+        itext(', DXP, is our enterprise product and requires a subscription. It is a suite of products that work together to allow companies to digitize business operations, deliver connect customer experiences, and gather actionable customer insight. The suite includes such products as Liferay Digital Enterprise, Mobile Experience, Liferay Connected Services, Developer Tools, Liferay Sync and much more.');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Liferay Digital Enterprise');
+        ie_close('strong');
+        itext(', DE is the primary component of Liferay DXP and the enterprise equivalent of Liferay Portal CE. Enterprise subscribers are often large enterprise companies who are looking for the stability, reliability, security, and performance. Purchasing a subscription gives customers access to enterprise features/products, as well as our Subscription Services team, which provides full support, regular fixpacks/updates, emergency fixes, and security alerts/patches.');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          itext('Liferay Portal Community Edition');
+        ie_close('strong');
+        itext(', CE, is the free, open source version that is free to anyone to download and use.  Updates to CE are released approximately every quarter and include fixes that had already been released to our enterprise subscribers. CE users also have access to the community versions of many of our other products, but do not have access to the subscription services. Forums and JIRA tickets are the primary ways that the community escalates and discusses issues.');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('p');
+      ie_open('a', null, null,
+          'href', 'https://www.liferay.com/resources/l?title=digital-experience-platform');
+        itext('Read more about Liferay\'s DXP platform.');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('h2');
+      itext('What is needed for Liferay?');
+    ie_close('h2');
+    ie_open('p');
+      itext('Liferay needs Java, an application server, and a database to run. Our baseline setup is to use ');
+      ie_open('strong');
+        itext('Apache Tomcat');
+      ie_close('strong');
+      itext(' as the application server and ');
+      ie_open('strong');
+        itext('HSQLDB');
+      ie_close('strong');
+      itext(' in a non-production environment, and ');
+      ie_open('strong');
+        itext('MySQL');
+      ie_close('strong');
+      itext(' in a production environment for the database.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What is an application server?');
+    ie_close('h3');
+    ie_open('p');
+      itext('An application server is a component-based software framework that resides in the middle-tier of a server centric architecture and provides the business logic for an application program. At the core, an application server handles communications to the database on one hand and connections to the web application (Liferay) on the other.');
+    ie_close('p');
+    ie_open('p');
+      itext('Liferay supports many of today\'s most popular application servers. Even better, there are already prepared and pre-configured distribution packages bundled with an application server.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('strong');
+        itext('Application servers supported by Liferay:');
+      ie_close('strong');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://geronimo.apache.org');
+          itext('Apache Geronimo');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', 'http://tomcat.apache.org');
+            itext('Apache Tomcat');
+          ie_close('a');
+        ie_close('strong');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://caucho.com');
+          itext('Caucho Resin');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.eclipse.org/jetty');
+          itext('Eclipse Jetty');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.ibm.com/cloud/websphere-application-platform');
+          itext('IBM Websphere');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://jonas.ow2.org/bin/view/Main');
+          itext('JOnAS');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'http://www.oracle.com/technetwork/middleware/glassfish/overview/index.html');
+          itext('Oracle Glassfish');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.oracle.com/middleware/weblogic/index.html');
+          itext('Oracle Weblogic');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.redhat.com/en/technologies/jboss-middleware');
+          itext('Red Hat JBoss');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h3');
+      itext('What is a database?');
+    ie_close('h3');
+    ie_open('p');
+      itext('A database is a collection of information that is organized so that it can be easily accessed, managed and updated.');
+    ie_close('p');
+    ie_open('p');
+      itext('Data is organized into rows, columns and tables, and it is indexed to make it easier to find relevant information. Data gets updated, expanded and deleted as new information is added. Databases process workloads to create and update themselves, querying the data they contain and running applications against it.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('strong');
+        itext('Databases supported by Liferay:');
+      ie_close('strong');
+    ie_close('p');
+    ie_open('ul');
+      ie_open('li');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', 'http://hsqldb.org');
+            itext('HSQLDB');
+          ie_close('a');
+        ie_close('strong');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.ibm.com/analytics/us/en/db2');
+          itext('IBM Db2');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.microsoft.com/en-us/sql-server/sql-server-2017');
+          itext('Microsoft SQL Server');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', 'https://www.mysql.com');
+            itext('MySQL');
+          ie_close('a');
+        ie_close('strong');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.oracle.com/database/index.html');
+          itext('Oracle Database');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.postgresql.org');
+          itext('PostgreSQL');
+        ie_close('a');
+      ie_close('li');
+      ie_open('li');
+        ie_open('a', null, null,
+            'href', 'https://www.sap.com/products/sybase-ase.html');
+          itext('SAP Sybase');
+        ie_close('a');
+      ie_close('li');
+    ie_close('ul');
+    ie_open('h2');
+      itext('Liferay\'s quick start guide');
+    ie_close('h2');
+    ie_open('p');
+      itext('If you wanted to get Liferay up and running quickly, you can follow the following steps. This is not necessary for the tutorial, but in case you wanted to see Liferay up and running quickly, you can use the bundle to get started.');
+    ie_close('p');
+    ie_open('p');
+      itext('This ');
+      ie_open('strong');
+        itext('does not');
+      ie_close('strong');
+      itext(' use Liferay\'s ');
+      ie_open('em');
+        itext('source');
+      ie_close('em');
+      itext(' code.');
+    ie_close('p');
+    ie_open('ol');
+      ie_open('li');
+        ie_open('p');
+          itext('Install Java. We should have completed this step previous.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Download a Liferay Portal CE bundle at ');
+          ie_open('a', null, null,
+              'href', 'https://www.liferay.com/downloads');
+            itext('https://www.liferay.com/downloads');
+          ie_close('a');
+          itext('. Select ');
+          ie_open('em');
+            itext('Bundled with Tomcat');
+          ie_close('em');
+          itext(' and click the ');
+          ie_open('em');
+            itext('Download');
+          ie_close('em');
+          itext(' button.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Extract the downloaded bundle into a folder. (e.g. ');
+          ie_open('code');
+            itext('liferay-portal');
+          ie_close('code');
+          itext(').');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Open a ');
+          ie_open('em');
+            itext('Terminal/Git Bash');
+          ie_close('em');
+          itext(' window.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Navigate to the ');
+          ie_open('code');
+            itext('bin');
+          ie_close('code');
+          itext(' folder within the location of the extracted bundle.');
+        ie_close('p');
+        $templateAlias2({code: 'cd /liferay-portal/liferay-ce-portal-7.0-ga1/tomcat-8.0.32/bin', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Start tomcat. On windows run the command below.');
+        ie_close('p');
+        $templateAlias2({code: 'startup.bat', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('On OS X/Linux, run the command below.');
+        ie_close('p');
+        $templateAlias2({code: './startup.sh', mode: 'shell'}, null, opt_ijData);
+      ie_close('li');
+    ie_close('ol');
+    ie_open('p');
+      itext('On windows, the server console window will open.');
+    ie_close('p');
+    ie_open('p');
+      itext('On OS X/Linux systems, there is no output in the console window since all logs are stored in ');
+      ie_open('code');
+        itext('tomcat-8.0.32/logs/catalina.out');
+      ie_close('code');
+      itext(' file.');
+    ie_close('p');
+    ie_open('ol', null, null,
+        'start', '7');
+      ie_open('li');
+        ie_open('p');
+          itext('Keep watching the console until you see the following.');
+        ie_close('p');
+        $templateAlias2({code: 'INFO [main] org.apache.catalina.startup.Catalina.start Server startup in NNN ms', mode: 'shell'}, null, opt_ijData);
+        ie_open('p');
+          itext('Liferay Portal is now running and ready to be used.');
+        ie_close('p');
+      ie_close('li');
+      ie_open('li');
+        ie_open('p');
+          itext('Upon startup, Liferay will automatically open your default browser to ');
+          ie_open('em');
+            itext('http://localhost:8080');
+          ie_close('em');
+          itext('. You can sign in using username: ');
+          ie_open('strong');
+            itext('test@liferay.com');
+          ie_close('strong');
+          itext(' and password: ');
+          ie_open('strong');
+            itext('test');
+          ie_close('strong');
+          itext('.');
+        ie_close('p');
+      ie_close('li');
+    ie_close('ol');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param1015}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'XKikN.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class XKikN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XKikN, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 253 */,
 /* 254 */,
 /* 255 */,
@@ -28687,7 +28831,25 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(phscP, templates);
 /* 261 */,
 /* 262 */,
 /* 263 */,
-/* 264 */
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28723,9 +28885,9 @@ __webpack_require__(132);
 
 __webpack_require__(133);
 
-var _debuggingEffectivelySoy = __webpack_require__(218);
+var _stepThreeSoy = __webpack_require__(252);
 
-var _debuggingEffectivelySoy2 = _interopRequireDefault(_debuggingEffectivelySoy);
+var _stepThreeSoy2 = _interopRequireDefault(_stepThreeSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28735,23 +28897,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var phscP = function (_Component) {
-  _inherits(phscP, _Component);
+var XKikN = function (_Component) {
+  _inherits(XKikN, _Component);
 
-  function phscP() {
-    _classCallCheck(this, phscP);
+  function XKikN() {
+    _classCallCheck(this, XKikN);
 
-    return _possibleConstructorReturn(this, (phscP.__proto__ || Object.getPrototypeOf(phscP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XKikN.__proto__ || Object.getPrototypeOf(XKikN)).apply(this, arguments));
   }
 
-  return phscP;
+  return XKikN;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(phscP, _debuggingEffectivelySoy2.default);
+_metalSoy2.default.register(XKikN, _stepThreeSoy2.default);
 
-exports.default = phscP;
+exports.default = XKikN;
 
 /***/ })
-],[264]);
+],[282]);
