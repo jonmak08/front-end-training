@@ -1,0 +1,27 @@
+{namespace TodoItem}
+
+/**
+ */
+{template .render}
+	{@param? index: ?}
+	{@param? todo: ?}
+
+	<div class="checkbox">
+	    <input data-onclick="handleClick" id="ck-1-{$index}" name="check-1"  type="checkbox" value="ck-1-{$index}">
+	    <label for="ck-1-{$index}">
+	    	<a href="{$todo.url}" target="_blank">{$todo.title} </a>
+    	</label>
+
+    	{let $displayTextArea kind="text"}
+    		text-area
+
+	    	{if $todo.done}
+	    		{sp}hide-text-area
+	    	{/if}
+    	{/let}
+
+    	<textarea class="{$displayTextArea}" disabled>{$todo.diff}</textarea>
+
+	</div>
+
+{/template}

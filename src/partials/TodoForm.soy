@@ -1,0 +1,20 @@
+{namespace TodoForm}
+
+/**
+ */
+{template .render}
+	{@param? value: string}
+
+	<form data-onsubmit="handleSubmit">
+		<div class="input-group">
+		    <div class="input-inner-addon input-inner-addon-right">
+				<input class="form-control" data-onkeyup="handleChange" id="input-regular" name="title" placeholder="provide pull request url" type="text" value="{$value}" />
+	  		</div>
+		    <span class="input-group-btn">
+		        <button class="btn btn-sm btn-accent" type="submit">Submit Link</button>
+		    </span>
+		</div>
+	</form>
+
+
+{/template}
