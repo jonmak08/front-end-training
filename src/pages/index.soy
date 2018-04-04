@@ -6,23 +6,25 @@ description: "Front-end internship training documents that will help and guide y
 {namespace pageIndex}
 
 /**
- * @param site
  */
 {template .render}
+	{@param site: ?}
+
 	{call main.render data="all"}
 		{param content kind="html"}
 			{call .header data="all" /}
 			{call .about /}
-			{call .what /}
-			{call .footer /}
+			{call .features /}
+			{call Footer.render data="all" /}
 		{/param}
 	{/call}
 {/template}
 
 /**
- * @param site
  */
 {template .header}
+	{@param site: ?}
+
 	<header class="header">
 		<div class="container">
 			<h1 class="header-title">{$site.title}</h1>
@@ -58,9 +60,8 @@ description: "Front-end internship training documents that will help and guide y
 {/template}
 
 /**
- *
  */
-{template .what}
+{template .features}
 	<div class="features">
 		<div class="container">
 			<div class="row">
@@ -83,22 +84,4 @@ description: "Front-end internship training documents that will help and guide y
 			</div>
 		</div>
 	</div>
-{/template}
-
-/**
- *
- */
-{template .footer}
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<p class="footer-description col-md-6 col-md-offset-2">
-					Copyright © 2017 <a href="https://liferay.com">Liferay, Inc</a>
-				</p>
-				<p class="footer-description col-md-6">
-					Powered by <a href="http://wedeploy.com">WeDeploy™</a>
-				</p>
-			</div>
-		</div>
-	</footer>
 {/template}
