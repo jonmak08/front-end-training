@@ -10,7 +10,7 @@ layout: "blog"
 
 {$page.description}
 
-Throughout the internship, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.
+Throughout the training, you will find yourself working with code that does not do what you want it to do, and you will wonder why. Instead of blankly staring at the code, hopefully these tips will the debugging process easier.
 
 ### Search for surrounding text
 
