@@ -2,7 +2,7 @@
 title: "Step 6: Setting up Git"
 description: "Learn how to set up Git."
 buttonTitle: "Step 6 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 6
 ---

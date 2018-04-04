@@ -2,7 +2,7 @@
 title: "Step 5: Understanding Git"
 description: "Understanding how Liferay and Git work together."
 buttonTitle: "Step 5 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 5
 ---

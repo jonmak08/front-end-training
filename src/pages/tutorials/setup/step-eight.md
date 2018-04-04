@@ -2,7 +2,7 @@
 title: "Step 8: Configuring Liferay's properties and settings"
 description: "Configuring Liferay's properties and settings."
 buttonTitle: "Step 8 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 8
 ---

@@ -2,7 +2,7 @@
 title: "Step 2: Setting up your environment"
 description: "Learn how to setup your computer's environment correctly."
 buttonTitle: "Step 2 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 2
 ---

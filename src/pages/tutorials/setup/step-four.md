@@ -2,7 +2,7 @@
 title: "Step 4: Understanding Liferay's code"
 description: "Making sense of Liferay's code."
 buttonTitle: "Step 4 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 4
 ---

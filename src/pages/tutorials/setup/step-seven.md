@@ -2,7 +2,7 @@
 title: "Step 7: Getting Liferay's source code"
 description: "Learn how to get Liferay's source code."
 buttonTitle: "Step 7 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 7
 ---

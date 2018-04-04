@@ -1,8 +1,8 @@
 ---
 title: "Step 1: Installing Software"
-description: "Download and install software that will be used throughout the internship."
+description: "Download and install software that will be used throughout the training."
 buttonTitle: "Step 1 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 1
 ---

@@ -2,7 +2,7 @@
 title: "Step 9: Compiling Liferay's source code"
 description: "Learn how to compile Liferay's source code."
 buttonTitle: "Step 9 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 9
 ---

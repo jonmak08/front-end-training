@@ -1,7 +1,7 @@
 ---
 title: "Step 11: Reviewing things you should know"
 description: "Take a quiz about things you should know about Liferay."
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 11
 ---

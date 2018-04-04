@@ -2,7 +2,7 @@
 title: "Step 3: What is Liferay?"
 description: "Explaining what Liferay is."
 buttonTitle: "Step 3 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 3
 ---

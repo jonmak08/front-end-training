@@ -2,7 +2,7 @@
 title: "Step 10: Reading the console"
 description: "Learn how to read and understand the console output."
 buttonTitle: "Step 10 Complete"
-parentId: "machine"
+parentId: "setup"
 layout: "tutorial"
 weight: 10
 ---
