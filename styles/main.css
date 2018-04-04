@@ -1717,49 +1717,49 @@ input[type="search"] {
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
     line-height: 60px; }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
-  .input-group-sm > input[type="date"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="date"].btn,
+  input[type="date"].input-sm, .input-group-sm > input.form-control[type="date"],
+  .input-group-sm > input.input-group-addon[type="date"],
+  .input-group-sm > .input-group-btn > input.btn[type="date"],
   .input-group-sm input[type="date"],
   input[type="time"].input-sm,
-  .input-group-sm > input[type="time"].form-control,
-  .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm > input.form-control[type="time"],
+  .input-group-sm > input.input-group-addon[type="time"],
+  .input-group-sm > .input-group-btn > input.btn[type="time"],
   .input-group-sm
   input[type="time"],
   input[type="datetime-local"].input-sm,
-  .input-group-sm > input[type="datetime-local"].form-control,
-  .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm > input.form-control[type="datetime-local"],
+  .input-group-sm > input.input-group-addon[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input.btn[type="datetime-local"],
   .input-group-sm
   input[type="datetime-local"],
   input[type="month"].input-sm,
-  .input-group-sm > input[type="month"].form-control,
-  .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm > input.form-control[type="month"],
+  .input-group-sm > input.input-group-addon[type="month"],
+  .input-group-sm > .input-group-btn > input.btn[type="month"],
   .input-group-sm
   input[type="month"] {
     line-height: 30px; }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
-  .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn,
+  input[type="date"].input-lg, .input-group-lg > input.form-control[type="date"],
+  .input-group-lg > input.input-group-addon[type="date"],
+  .input-group-lg > .input-group-btn > input.btn[type="date"],
   .input-group-lg input[type="date"],
   input[type="time"].input-lg,
-  .input-group-lg > input[type="time"].form-control,
-  .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn,
+  .input-group-lg > input.form-control[type="time"],
+  .input-group-lg > input.input-group-addon[type="time"],
+  .input-group-lg > .input-group-btn > input.btn[type="time"],
   .input-group-lg
   input[type="time"],
   input[type="datetime-local"].input-lg,
-  .input-group-lg > input[type="datetime-local"].form-control,
-  .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-lg > input.form-control[type="datetime-local"],
+  .input-group-lg > input.input-group-addon[type="datetime-local"],
+  .input-group-lg > .input-group-btn > input.btn[type="datetime-local"],
   .input-group-lg
   input[type="datetime-local"],
   input[type="month"].input-lg,
-  .input-group-lg > input[type="month"].form-control,
-  .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn,
+  .input-group-lg > input.form-control[type="month"],
+  .input-group-lg > input.input-group-addon[type="month"],
+  .input-group-lg > .input-group-btn > input.btn[type="month"],
   .input-group-lg
   input[type="month"] {
     line-height: 46px; } }
@@ -1862,9 +1862,9 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 select[multiple].input-sm,
-.input-group-sm > select[multiple].form-control,
-.input-group-sm > select[multiple].input-group-addon,
-.input-group-sm > .input-group-btn > select[multiple].btn {
+.input-group-sm > select.form-control[multiple],
+.input-group-sm > select.input-group-addon[multiple],
+.input-group-sm > .input-group-btn > select.btn[multiple] {
   height: auto; }
 
 .form-group-sm .form-control {
@@ -1908,9 +1908,9 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 select[multiple].input-lg,
-.input-group-lg > select[multiple].form-control,
-.input-group-lg > select[multiple].input-group-addon,
-.input-group-lg > .input-group-btn > select[multiple].btn {
+.input-group-lg > select.form-control[multiple],
+.input-group-lg > select.input-group-addon[multiple],
+.input-group-lg > .input-group-btn > select.btn[multiple] {
   height: auto; }
 
 .form-group-lg .form-control {
@@ -1952,18 +1952,14 @@ select[multiple].input-lg,
   text-align: center;
   pointer-events: none; }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
-.input-group-lg > .input-group-addon + .form-control-feedback,
-.input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px; }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
-.input-group-sm > .input-group-addon + .form-control-feedback,
-.input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
   width: 30px;
@@ -2679,10 +2675,7 @@ input[type="button"].btn-block {
 fieldset[disabled] .btn-primary {
   background-color: rgba(14, 20, 26, 0.8);
   color: #fff; }
-  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus,
-  .btn-primary[disabled]:hover,
-  .btn-primary[disabled]:focus,
-  .btn-primary[disabled].focus,
+  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
@@ -3907,16 +3900,20 @@ tbody.collapse.in {
     margin-right: 0;
     border-radius: 4px; }
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-  .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus,
+  .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
   @media (min-width: 600px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-    .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus,
+    .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #fff; } }
 
 .tab-content > .tab-pane {
@@ -6292,23 +6289,20 @@ button.close {
   overflow: hidden;
   text-align: center;
   text-decoration: none; }
-  .avatar img, .avatar-number img, .avatar-icon img, .avatar-icon-12 img,
-  .avatar-icon-16 img {
+  .avatar img, .avatar-number img, .avatar-icon img, .avatar-icon-12 img, .avatar-icon-16 img {
     width: inherit;
     height: inherit;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1; }
-  .avatar .avatar-initials, .avatar-number .avatar-initials, .avatar-icon .avatar-initials, .avatar-icon-12 .avatar-initials,
-  .avatar-icon-16 .avatar-initials {
+  .avatar .avatar-initials, .avatar-number .avatar-initials, .avatar-icon .avatar-initials, .avatar-icon-12 .avatar-initials, .avatar-icon-16 .avatar-initials {
     box-sizing: border-box;
     border: 1px solid white; }
 
 /* Topbar Variation (default primary)
    ========================================================================== */
-.topbar .avatar .avatar-initials, .topbar .avatar-number .avatar-initials, .topbar .avatar-icon .avatar-initials, .topbar .avatar-icon-12 .avatar-initials, .topbar
-.avatar-icon-16 .avatar-initials {
+.topbar .avatar .avatar-initials, .topbar .avatar-number .avatar-initials, .topbar .avatar-icon .avatar-initials, .topbar .avatar-icon-12 .avatar-initials, .topbar .avatar-icon-16 .avatar-initials {
   box-sizing: border-box;
   border: 1px solid #0e141a; }
 
@@ -7257,8 +7251,8 @@ button.close {
   text-transform: lowercase;
   color: rgba(14, 20, 26, 0.2); }
 
-.select.select-large .dropdown .btn .none .avatar, .select.select-large .dropdown .btn .none .avatar-number, .select.select-large .dropdown .btn .none .avatar-icon, .select.select-large .dropdown .btn .none .avatar-icon-12, .select.select-large .dropdown .btn .none
-.avatar-icon-16 {
+.select.select-large .dropdown .btn .none .avatar, .select.select-large .dropdown .btn .none .avatar-number, .select.select-large .dropdown .btn .none .avatar-icon, .select.select-large .dropdown .btn .none .avatar-icon-12,
+.select.select-large .dropdown .btn .none .avatar-icon-16 {
   width: 36px;
   height: 36px;
   margin-right: 20px;
@@ -7267,14 +7261,12 @@ button.close {
   margin-top: 12px;
   background: #fff; }
 
-.select.select-large .dropdown .btn .none .avatar [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-number [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-icon [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-icon-12 [class^="icon-16-"], .select.select-large .dropdown .btn .none
-.avatar-icon-16 [class^="icon-16-"],
+.select.select-large .dropdown .btn .none .avatar [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-number [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-icon [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-icon-12 [class^="icon-16-"], .select.select-large .dropdown .btn .none .avatar-icon-16 [class^="icon-16-"],
 .select.select-large .dropdown .btn .none .avatar [class*="icon-16-"],
 .select.select-large .dropdown .btn .none .avatar-number [class*="icon-16-"],
 .select.select-large .dropdown .btn .none .avatar-icon [class*="icon-16-"],
 .select.select-large .dropdown .btn .none .avatar-icon-12 [class*="icon-16-"],
-.select.select-large .dropdown .btn .none
-.avatar-icon-16 [class*="icon-16-"] {
+.select.select-large .dropdown .btn .none .avatar-icon-16 [class*="icon-16-"] {
   line-height: 36px;
   vertical-align: middle;
   text-align: center;
@@ -7297,8 +7289,8 @@ button.close {
   height: 36px;
   box-shadow: 0 2px 8px rgba(14, 20, 26, 0.1); }
 
-.select.select-large .dropdown .dropdown-menu li a .none .avatar, .select.select-large .dropdown .dropdown-menu li a .none .avatar-number, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-12, .select.select-large .dropdown .dropdown-menu li a .none
-.avatar-icon-16 {
+.select.select-large .dropdown .dropdown-menu li a .none .avatar, .select.select-large .dropdown .dropdown-menu li a .none .avatar-number, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-12,
+.select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-16 {
   width: 36px;
   height: 36px;
   float: left;
@@ -7306,8 +7298,7 @@ button.close {
   color: rgba(14, 20, 26, 0.5);
   background: #fff; }
 
-.select.select-large .dropdown .dropdown-menu li a .none .avatar span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-number span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-12 span, .select.select-large .dropdown .dropdown-menu li a .none
-.avatar-icon-16 span {
+.select.select-large .dropdown .dropdown-menu li a .none .avatar span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-number span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-12 span, .select.select-large .dropdown .dropdown-menu li a .none .avatar-icon-16 span {
   line-height: 36px; }
 
 /* ==========================================================================
