@@ -38,15 +38,12 @@ Liferay supports many of today's most popular application servers. Even better, 
 
 **Application servers supported by Liferay:**
 
-* [Apache Geronimo](http://geronimo.apache.org)
+* [Red Hat JBoss Enterprise Application Platform](https://developers.redhat.com/products/eap/overview)
+* [Pivotal tcServer](https://network.pivotal.io/products/pivotal-tcserver)
 * **[Apache Tomcat](http://tomcat.apache.org)**
-* [Caucho Resin](http://caucho.com)
-* [Eclipse Jetty](https://www.eclipse.org/jetty)
-* [IBM Websphere](https://www.ibm.com/cloud/websphere-application-platform)
-* [JOnAS](https://jonas.ow2.org/bin/view/Main)
-* [Oracle Glassfish](http://www.oracle.com/technetwork/middleware/glassfish/overview/index.html)
 * [Oracle Weblogic](https://www.oracle.com/middleware/weblogic/index.html)
-* [Red Hat JBoss](https://www.redhat.com/en/technologies/jboss-middleware)
+* [IBM Websphere](https://www.ibm.com/cloud/websphere-application-platform)
+* [WildFly](http://wildfly.org)
 
 ### What is a database?
 
@@ -56,12 +53,14 @@ Data is organized into rows, columns and tables, and it is indexed to make it ea
 
 **Databases supported by Liferay:**
 
+* [Amazon Aurora](https://aws.amazon.com/rds/aurora)
 * **[HSQLDB](http://hsqldb.org)**
 * [IBM Db2](https://www.ibm.com/analytics/us/en/db2)
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017)
+* [MariaDB](https://mariadb.org)
 * **[MySQL](https://www.mysql.com)**
 * [Oracle Database](https://www.oracle.com/database/index.html)
 * [PostgreSQL](https://www.postgresql.org)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017)
 * [SAP Sybase](https://www.sap.com/products/sybase-ase.html)
 
 ## Liferay's quick start guide
