@@ -8,23 +8,30 @@
 	{@param? percentage: ?}
 	{@param? todos: ?}
 
-	{call TodoProgressBar.render}
-		{param percentage: $percentage /}
-	{/call}
 
 	<div class="todo-app">
-	
-		{foreach $todo in $todos}
-			{call TodoItem.render}
-				{param events: ['todoClick' : $handleTodoClick] /}
-				{param index: index($todo) /}
-				{param todo: $todo /}
+		<div class="form-wrapper">
+			{call TodoForm.render}
+				{param events: ['todoAdd' : $handleTodoAdd] /}
 			{/call}
-		{/foreach}
+		</div>
 
-		{call TodoForm.render}
-			{param events: ['todoAdd' : $handleTodoAdd] /}
-		{/call}
+		<div class="results-wrapper">
+			<div class="progress-bar-wrapper">
+				{call TodoProgressBar.render}
+					{param percentage: $percentage /}
+				{/call}
+			</div>
+
+			<ol>
+				{foreach $todo in $todos}
+					{call TodoItem.render}
+						{param events: ['todoClick' : $handleTodoClick] /}
+						{param index: index($todo) /}
+						{param todo: $todo /}
+					{/call}
+				{/foreach}
+			</ol>
+		</div>
 	</div>
-
 {/template}

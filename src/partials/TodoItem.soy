@@ -6,22 +6,21 @@
 	{@param? index: ?}
 	{@param? todo: ?}
 
-	<div class="checkbox">
-	    <input data-onclick="handleClick" id="ck-1-{$index}" name="check-1"  type="checkbox" value="ck-1-{$index}">
-	    <label for="ck-1-{$index}">
-	    	<a href="{$todo.url}" target="_blank">{$todo.title} </a>
-    	</label>
+	<li class="checkbox item">
+		<input data-onclick="handleClick" id="ck-1-{$index}" name="check-1" type="checkbox" value="ck-1-{$index}" />
 
-    	{let $displayTextArea kind="text"}
-    		text-area
+		<label for="ck-1-{$index}">
+			<a href="{$todo.url}" target="_blank">{$todo.title} </a>
+		</label>
 
-	    	{if $todo.done}
-	    		{sp}hide-text-area
-	    	{/if}
-    	{/let}
+		{let $displayTextArea kind="text"}
+			text-area
 
-    	<textarea class="{$displayTextArea}" disabled>{$todo.diff}</textarea>
+			{if $todo.done}
+				{sp}hide
+			{/if}
+		{/let}
 
-	</div>
-
+		<textarea class="{$displayTextArea}" disabled>{$todo.diff}</textarea>
+	</li>
 {/template}

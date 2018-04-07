@@ -1,0 +1,31 @@
+.todo-app {
+	.results-wrapper {
+		border-top: 1px dashed #eee;
+		margin-top: 2rem;
+		padding-top: 1rem;
+
+		.progress-bar-wrapper {
+			h3 {
+				margin-bottom: 1rem;
+			}
+
+			.progress-bar {
+				background-color: #FF8600;
+			}
+		}
+
+		.item {
+			margin-bottom: 1.5rem;
+
+			.text-area {
+				background-color: rgba(14, 20, 26, 0.02);
+				border-width: 0;
+				height:200px;
+				margin-top: 0.5rem;
+				padding: 1.5rem;
+				resize: none;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -7,14 +7,13 @@
 
 	<form data-onsubmit="handleSubmit">
 		<div class="input-group">
-		    <div class="input-inner-addon input-inner-addon-right">
-				<input class="form-control" data-onkeyup="handleChange" id="input-regular" name="title" placeholder="provide pull request url" type="text" value="{$value}" />
-	  		</div>
-		    <span class="input-group-btn">
-		        <button class="btn btn-sm btn-accent" type="submit">Submit Link</button>
-		    </span>
+			<div class="input-inner-addon input-inner-addon-right">
+				<input class="form-control" data-onkeyup="handleChange" name="title" placeholder="Enter your GitHub pull request's URL" type="text" value="{$value}" />
+			</div>
+
+			<span class="input-group-btn">
+				<button class="btn btn-accent btn-sm" type="submit">Submit</button>
+			</span>
 		</div>
 	</form>
-
-
 {/template}

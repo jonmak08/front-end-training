@@ -1,0 +1,47 @@
+---
+title: "Liferay's Code Formatting"
+description: "Understanding Liferay's code formatting (so you WON'T get too many comments on your pull request)."
+date: "March 12, 2017"
+author: "Justin Kim"
+---
+
+{namespace pageBlogSecondPost}
+
+/**
+ */
+{template .render}
+	{@param site: ?}
+
+	{call blog.render data="all"}
+		{param content kind="html"}
+			<section>
+				<p>
+					Liferay has <em>a lot</em> of code formatting guidelines such as
+				</p>
+
+				<ul>
+					<li>
+						<a href="https://in.liferay.com/web/global.engineering/wiki/-/wiki/Core+Development+Main/Peer+Reviews+Checklist#section-Peer+Reviews+Checklist-Themes">Peer Reviews Checklist</a>
+					</li>
+					<li>
+						<a href="https://in.liferay.com/web/liferay-user-interface-design/wiki/-/wiki/Main/Theme+Standards">Theme Standards</a>
+					</li>
+				</ul>
+
+				<p>
+					This is mainly to improve readability so other developers, including yourself, can come to your code and understand what it is trying to do.
+				</p>
+
+				<p>
+					Whoever will be evaluating your code will undoubtedly catch some things, and will make the relevant comments on your pull request, but here is a tool to make it easier to keep track of the comments and your progress through them. All you have to do is input your pull request's url below.
+				</p>
+
+				<p>
+					You can also download the Liferay specific linter at <a href="https://github.com/liferay/liferay-frontend-source-formatter">https://github.com/liferay/liferay-frontend-source-formatter</a>.
+				</p>
+
+				{call TodoApp.render /}
+			</section>
+		{/param}
+	{/call}
+{/template}
