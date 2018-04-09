@@ -11,24 +11,24 @@ weight: 8
 
 We need to configure settings in Liferay to get it to build and run from the *source* code.
 
-### What is a \*.properties file?
+### What is a *.properties file?
 
-The ```\*.properties``` files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ```\*.properties``` file.
+The ```*.properties``` files are used to define paths for compiling and running Liferay; paths such as the location of the bundle, what application server to use, the version of the application server that will be used, etc are all customizable from within a custom ```*.properties``` file.
 
-Because we are going to be overriding default properties, the easiest way to accomplish this is through a ```\*.USER_NAME.properties```. (e.g. ```app.server.brianchan.properties``` or ```build.brianchan.properties```).
+Because we are going to be overriding default properties, the easiest way to accomplish this is through a ```*.USER_NAME.properties```. (e.g. ```app.server.brianchan.properties``` or ```build.brianchan.properties```).
 
-Liferay reads the ```\*.properties``` files in this order of precedence.
+Liferay reads the ```*.properties``` files in this order of precedence.
 1. *.USER_NAME.properties
 2. *.ENV_COMPUTERNAME.properties
 3. *.ENV_HOST.properties
 4. *.ENV_HOSTNAME.properties
 5. *.properties
 
-Therefore, whatever custom ```\*.properties``` file you set will supersede what is defined in the default file.
+Therefore, whatever custom ```*.properties``` file you set will supersede what is defined in the default file.
 
-To find out what the default property values are and what you can override, open the default.properties file (e.g. ```app.server.properties``` or ```build.properties```) and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ```\*.USER_NAME.properties``` file, changing its value.
+To find out what the default property values are and what you can override, open the default.properties file (e.g. ```app.server.properties``` or ```build.properties```) and search for the line(s) that set the property you want to override. Then, define the property you want to override in your ```*.USER_NAME.properties``` file, changing its value.
 
-#### Creating a custom ```build.\*.properties``` and ```app.server.\*.properties``` files
+#### Creating a custom ```build.*.properties``` and ```app.server.*.properties``` files
 
 1. Create a file called ```build._USER\_NAME_.properties``` and ```app.server._USER\_NAME_.properties``` inside the folder you cloned your Liferay *source* code.
     The *USER_NAME* is the user you login with, not your machine name. On Windows machines the default is, *liferay*.
