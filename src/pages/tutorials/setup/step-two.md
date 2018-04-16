@@ -86,7 +86,7 @@ Ant does almost everything for you; it uses scripts to automate tasks and compil
 4. Click on the *Advanced system settings* link.
 5. Click on the *Environment Variables...* button.
 6. Click on *New...* under the *System variables* section. We will be setting the ```ANT_HOME``` environment variable.
-7. Fill out the field values with *Variable name:* being **ANT_HOME** and *Variable value:* being the **Apache Ant path you coped in step 2**.
+7. Fill out the field values with *Variable name:* being **ANT_HOME** and *Variable value:* being the **Apache Ant path you copied in step 2**.
 8. Click *OK* to save this environment variable.
 9. Verify that the ```ANT_HOME``` variable is correct.
 10. In the *Environment Variables* window, go to the *System variables* section and look for a variable called ```PATH``` and click *Edit...*.  This variable should already exist and have values in it.
