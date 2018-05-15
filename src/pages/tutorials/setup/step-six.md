@@ -40,7 +40,7 @@ Please replace the place holders tokens in the following tutorials with the corr
     ```
     **Example**
     ```shell
-    git config --global user.name "brian.chan@liferay.com"
+    git config --global user.email "brian.chan@liferay.com"
     ```
 4. On a windows machine, you *might* run into an error because Git has a limit of 4096 characters for a file name; windows has a limit of 260 characters. You will need to set longpaths to true only on a **windows** machine. Run the following command to complete this action.
     ```shell
