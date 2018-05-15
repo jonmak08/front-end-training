@@ -92,7 +92,7 @@ Ant does almost everything for you; it uses scripts to automate tasks and compil
 10. In the *Environment Variables* window, go to the *System variables* section and look for a variable called ```PATH``` and click *Edit...*.  This variable should already exist and have values in it.
 12. **Do not delete this variable**. At the beginning of this variable, enter the code below. We are adding our ```ANT_HOME``` variable to the ```PATH``` variable.
     ```shell
-    %ANT_HOME%/bin;
+    %ANT_HOME%\bin;
     ```
 13. Open a new *Command Prompt*.
 14. Enter the command below in the *Command Prompt* to make sure Ant is installed correctly. A message *Buildfile: build.xml does not exist! Build failed*.
