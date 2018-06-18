@@ -97,6 +97,74 @@ In case you somehow missed out on this step, created a new file named <code>site
 
 **Disclaimer:** This was the most difficult part of the entire process. Prepare for spending most of your time fiddling here.
 
+According to [Liferay's Docs](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/creating-a-sitemap-for-the-resources-importer)
+
+>The <code>sitemap.json</code> specifies the site pages, layout templates, web content, assets, and portlet configurations provided with the theme. This file describes the contents and hierarchy of the site to import as a site or site template. If you’re developing themes for Liferay Marketplace, you must use the sitemap.json to specify resources to be imported with your theme.
+
+Now that you know what it does, just look at the example JSON and pattern match!
+
+Just kidding, that's where I tried that and told myself, at the end of all of this I was going to write a blog post to pay forward what I had learned during this unclear and confusing process to aid all future UI interns like myself.
+
+Let's breakdown this code snippet from [here](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/defining-layout-templates-in-a-sitemap)
+
+```javascript
+{
+  "layoutTemplateId":"2_columns_ii",
+  "publicPages": [
+      {
+        "friendlyURL": "/welcome-page",
+        "name": "Welcome",
+        "title": "Welcome"
+      },
+      {
+        "friendlyURL": "/custom-layout-page",
+        "name": "Custom Layout Page",
+        "title": "Custom Layout Page",
+        "layoutTemplateId": "2_columns_i"
+      },
+      {
+        "friendlyURL": "/hidden-page",
+        "name": "Hidden Page",
+        "title": "Hidden Page",
+        "hidden": "true"
+      }
+  ]
+}
+```
+To paraphrase the docs, the <code>layoutTemplateId</code> defined at the top sets the default layout template for all of your pages. If you define <code>layoutTemplateId</code> within a page like "Custom Layout Page", you will override the default layout template and use your newly defined value.
+
+__PRO TIP__ Use this [link](https://github.com/liferay/liferay-portal/blob/master/portal-web/docroot/WEB-INF/liferay-layout-templates.xml) I found while doing this that has the names for all of the layouts used for <code>sitemap.json</code>. The layout names aren't the same as they're described from your theme. For example "2 Columns (50/50)" is called <code>2_columns_i</code> and "2 Columns (30/70)" is called <code>2_columns_ii</code>.
+
+Now that you have a more detailed understanding of the first pattern of the <code>sitemap.json</code>, you can perform the first step and define the <code>layoutTemplateId</code> for all of the pages.
+
+1. Let's kill two birds with one stone actually and define all of the <code>publicPages</code> and <code>layoutTemplateId</code>.
+
+Using the above code snippet as starter code, you can copy + paste that into your <code>sitemap.json</code> and modify the values of the <code>friendlyUrl</code>, <code>name</code>, <code>title</code>, and if necessary <code>layoutTemplateId</code> to accurately represent all of the public pages inside your site's theme. If you have child or *gasp* grandchild pages nested throughout your site, no problem! Just do all of the parent pages and we'll get around to the kiddos next.
+
+2. Using <code>layouts</code> to create and configure child pages
+
+```javascript
+{      
+"friendlyURL": "/parent-page",
+"layouts": [
+    {
+        "friendlyURL": "/child-page-1",
+        "name": "Child Page 1",
+        "title": "Child Page 1"
+    },
+    {
+        "friendlyURL": "/child-page-2",
+        "name": "Child Page 2",
+        "title": "Child Page 2"
+    }
+],
+"name": "Parent Page",
+"title": "Parent Page"
+}
+```
+
+Take a few seconds to glance at this code snippet and answer these questions. What page is going to be defined? What will the layout template be? How many child pages does it have?
+
 
 
 ### Checking if your Theme and Resources Deployed Correctly
@@ -128,6 +196,14 @@ Now it's time to finally see if your theme and its resources deployed correctly.
 - If you imported into a site template, click site templates, then on the name of your theme to see your theme and resources in action.
 - If you imported directly into a site, click the actions menu (three vertical dots) and select _Go to Public Pages_ to see it.
 
-__HELP!__ I don't see any of my content showing up on my page. Don't worry, I got you.
+__HELP!__ I don't see any of my content showing up on my page.
 
-### Troubleshooting Tips
+* Try troubleshooting by checking your server console for any clues if something _may_ not be properly defined in <code>sitemap.json</code>
+* Double check that all of your folder directories are spelled correctly and that your templates use the name of the used structures, and the articles use the names of the used templates.
+* In the <code>sitemap.json</code> check the scoping to see if all of the braces are closing properly, there are no trailing commas, everything is in string object notation ("quotes")
+* <code>layoutTemplateId</code> is defined correctly. Some tricky examples are <code>1_column</code>, <code>1-2-1_columns_i</code>, or <code>2_columns_iii</code>.
+* After deploying, work your way backwards with what works and then trying to add additional code. Can I even view the site template? Do my theme styles come through? Does it display only pages but no content? Pages and modules but the modules aren't configured?
+
+### TL:DR
+
+Resources Importer Module is a cool tool that allows for theme developers to show off their themes with some preinstaled content, but can be a bit of a pain if you're not using the <code>archive.lar</code> method. Using Liferay's documentation will eventually get you to a working <code>sitemap.json</code> so that when you deploy your theme, it will have content included, but may be confusing to follow and lacking in instructions.
