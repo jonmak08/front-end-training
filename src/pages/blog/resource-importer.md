@@ -140,6 +140,7 @@ Now that you have a more detailed understanding of the first pattern of the <cod
 1. Let's kill two birds with one stone actually and define all of the <code>publicPages</code> and <code>layoutTemplateId</code>.
 
 Using the above code snippet as starter code, you can copy + paste that into your <code>sitemap.json</code> and modify the values of the <code>friendlyUrl</code>, <code>name</code>, <code>title</code>, and if necessary <code>layoutTemplateId</code> to accurately represent all of the public pages inside your site's theme. If you have child or *gasp* grandchild pages nested throughout your site, no problem! Just do all of the parent pages and we'll get around to the kiddos next.
+#
 
 2. Using <code>layouts</code> to create and configure child pages
 
@@ -165,7 +166,59 @@ Using the above code snippet as starter code, you can copy + paste that into you
 
 Take a few seconds to glance at this code snippet and answer these questions. What page is going to be defined? What will the layout template be? How many child pages does it have?
 
+Child pages get nested into a parent page under <code>layouts</code> as an array of objects. Using the same pattern, you can nest a grandchild page under <code>layouts</code> in a child page. You can also define <code>layoutTemplateId</code> individually for child and grandchild pages here.
+#
 
+3. Using <code>columns</code> to configure a page's columns
+
+```javascript
+{
+    "columns": [
+        [
+            {
+            	"portletId": "com_liferay_login_web_portlet_LoginPortlet"
+            }
+        ],
+        [
+            {
+            	"portletId": "com_liferay_hello_world_web_portlet_HelloWorldPortlet"
+            }
+        ]
+    ],
+    "friendlyURL": "/parent-page",
+    "name": "Parent Page",
+    "title": "Parent Page"
+},
+```
+
+I modified a [code snippet](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/creating-a-sitemap-for-the-resources-importer) to make it easier to follow and understand <code>columns</code>. Let me help break down what you're looking at. This is a two column page, with the first column having a login portlet (more on portlet configs later), and the second column having a hello world portlet.
+
+So <code>columns</code> is an array, with each entry being an array of objects.
+#
+
+4. Using <code>portletId</code> and <code>portletPrefernces</code> to configure your theme's portlets
+
+```javascript
+{
+    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+    "portletPreferences": {
+        "articleId": "Custom Title.xml",
+        "groupId": "${groupId}",
+        "portletSetupPortletDecoratorId": "decorate",
+        "portletSetupTitle_en_US": "Web Content Display with Custom Title",
+        "portletSetupUseCustomTitle": "true"
+    }
+}
+```
+__PRO TIP__ Use this [cheatsheet](https://dev.liferay.com/en/participate/liferaypedia/-/wiki/Main/Portlet+ID+Quick+Reference+Guide) to help you find the <code>portletId</code> for the portlets you've added inside of your theme.
+
+Now that you're a pro at looking at code snippets and taking away what you need from it, there's something I wanted to revisit. When you think of your site, it has many pages, and <code>layouts</code> define the look and layout of each page. That layout will dictate how many <code>columns</code> your page will also have. So the last step would be how many portlets are defined in each column.
+
+Nested inside of your <code>columns</code>, you'll have objects that will define the <code>portletId</code> and <code>portletPreferences</code>.
+
+Using the Portlet ID quick reference guide, we can lookup this <code>portletId</code> and see that we are defining a single Web Content Display with customized preferences. The <code>articleId</code> refers to the web content article you want displayed like our long running example <code>Welcome.xml</code>. If you're like me, you'll probably be setting many of your <code>portletSetupPortletDecoratorId</code> to <code>barebone</code>.
+
+#
 
 ### Checking if your Theme and Resources Deployed Correctly
 
