@@ -152,39 +152,39 @@ __PRO TIP__ Use this [link](https://github.com/liferay/liferay-portal/blob/maste
 
 Now that you have a more detailed understanding of the first pattern of the <code>sitemap.json</code>, you can perform the first step and define the <code>layoutTemplateId</code> for all of the pages.
 
-1. Let's kill two birds with one stone actually and define all of the <code>publicPages</code> and <code>layoutTemplateId</code>.
+__1. Let's kill two birds with one stone actually and define all of the <code>publicPages</code> and <code>layoutTemplateId</code>.__
 
 Copy + paste the code snippet to use as starter code into your <code>sitemap.json</code> and modify the values of the <code>friendlyUrl</code>, <code>name</code>, <code>title</code>, and if necessary <code>layoutTemplateId</code> to accurately represent all of the public pages inside your site's theme. If you have child or *gasp* grandchild pages nested throughout your site, no problem! Just define all of the parent pages first and we'll get around to the kiddos next.
 #
 
-2. Using <code>layouts</code> to create and configure child pages
+__2. Using <code>layouts</code> to create and configure child pages__
 
 ```javascript
 {      
-"friendlyURL": "/parent-page",
-"layouts": [
-    {
-        "friendlyURL": "/child-page-1",
-        "name": "Child Page 1",
-        "title": "Child Page 1"
-    },
-    {
-        "friendlyURL": "/child-page-2",
-        "name": "Child Page 2",
-        "title": "Child Page 2"
-    }
-],
-"name": "Parent Page",
-"title": "Parent Page"
+    "friendlyURL": "/parent-page",
+    "layouts": [
+        {
+            "friendlyURL": "/child-page-1",
+            "name": "Child Page 1",
+            "title": "Child Page 1"
+        },
+        {
+            "friendlyURL": "/child-page-2",
+            "name": "Child Page 2",
+            "title": "Child Page 2"
+        }
+    ],
+    "name": "Parent Page",
+    "title": "Parent Page"
 }
 ```
 
 Take a few seconds to glance at this code snippet and answer these questions. What page is going to be defined? What will the layout template be? How many child pages does it have?
 
-Child pages get nested into a parent page under <code>layouts</code> as an array of objects. Using the same pattern, you can nest a grandchild page under <code>layouts</code> in a child page. You can also define <code>layoutTemplateId</code> individually for child and grandchild pages here.
+Child pages get nested into a parent page under <code>layouts</code> as an array of objects. Using the same pattern, you can nest a grandchild page under <code>layouts</code> in a child page. You can also define individual <code>layoutTemplateId</code>  for child and grandchild pages here.
 #
 
-3. Using <code>columns</code> to configure a page's columns
+__3. Using <code>columns</code> to configure a page's columns__
 
 ```javascript
 {
@@ -206,9 +206,9 @@ Child pages get nested into a parent page under <code>layouts</code> as an array
 },
 ```
 
-I modified a [code snippet](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/creating-a-sitemap-for-the-resources-importer) to make it easier to follow and understand <code>columns</code>. Let me help break down what you're looking at. This is a two column page, with the first column having a login portlet (more on portlet configs later), and the second column having a hello world portlet.
+I modified a [code snippet](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/creating-a-sitemap-for-the-resources-importer) to make it easier to follow along. Let me help break down what you're looking at. This is a two column page, with the first column having a login portlet (more on portlet configs later), and the second column having a hello world portlet.
 
-So <code>columns</code> is an array, with each entry being an array of objects.
+So <code>columns</code> is an array, with each entry being an array of objects. If your layout is 2-1-2 columns, then your code will have three entries, and each column gets its own object that holds all of the portlet configs.
 #
 
 4. Using <code>portletId</code> and <code>portletPrefernces</code> to configure your theme's portlets
