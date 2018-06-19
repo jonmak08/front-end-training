@@ -94,7 +94,7 @@ Note: Merge conflicts often occur because the change you are applying has been a
 
 Between `<<<<<<< HEAD` and `=======` is the original code and between `=======` and `<<<<<<< 99daed2` (commit ID) is the `cherry-pick`ed code.
 
-**_Action:_** You will need to resolve the merge conflict before continuing, by merging the desired changes from the `cherry-pick` and the appropriate changes changes from the current file.  Most of the time, it is as easy as removing all the conflict markers (i.e. `<<<<<< HEAD`) and the HEAD content.  Once removed, it should look something like this:
+**_Action:_** You will need to resolve the merge conflict before continuing, by merging the desired changes from the `cherry-pick` and the appropriate changes from the current file.  Most of the time, it is as easy as removing all the conflict markers (i.e. `<<<<<< HEAD`) and the HEAD content.  Once removed, it should look something like this:
 
 ```
 <html>
