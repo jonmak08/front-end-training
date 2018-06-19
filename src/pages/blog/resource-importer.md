@@ -17,7 +17,7 @@ You can completely export a copy of your website as an <code>archive.lar</code> 
 
 __However,__ a LAR file is version-specific. Meaning it won't work on any version of Liferay Portal other than the one from which it was exported.
 
-To create the <code>archive.lar</code> file, from your site's leftside navigation menu click [your site name] > publishing > export. Follow the instructions and be sure to check off all of the pages / assets you want exported into the LAR file. After the file is ready for download, click the download icon. You'll need rename the file to archive.lar and place it in the proper directory for everything to be included in your theme.
+To create the <code>archive.lar</code> file, from your site's leftside navigation menu click [your site name] > publishing > export. Follow the instructions and be sure to check off all of the pages / assets you want exported into the LAR file. After the file is ready for download, click the __download icon__. You'll need rename the file to archive.lar and place it in the proper directory for everything to be included in your theme.
 
 ### The Not So Easy (but Necessary) Way
 
@@ -103,7 +103,7 @@ Congratulations! You have now configured your resources importer to include the 
 
 This step is pretty simple, you'll be copying over all of the documents and media (photos, videos, gifs, etc) into the <code>resources-importer/document_library/documents</code> folder.
 
-Navigate to Documents and Media from your site by clicking the leftside nav > [your site] > content > Documents and Media. Click the actions icon, download, and place them inside <code>resources-importer/document_library/documents</code>.
+Navigate to Documents and Media from your site by clicking the leftside nav > [your site] > content > Documents and Media. Click the actions icon, __download__, and place them inside <code>resources-importer/document_library/documents</code>.
 
 
 ### Step 5: Configuring the sitemap.json File
@@ -211,7 +211,7 @@ I modified a [code snippet](https://dev.liferay.com/en/develop/tutorials/-/knowl
 So <code>columns</code> is an array, with each entry being an array of objects. If your layout is 2-1-2 columns, then your code will have three entries, and each column gets its own object that holds all of the portlet configs.
 #
 
-4. Using <code>portletId</code> and <code>portletPrefernces</code> to configure your theme's portlets
+__4. Using <code>portletId</code> and <code>portletPrefernces</code> to configure your theme's portlets__
 
 ```javascript
 {
@@ -227,11 +227,11 @@ So <code>columns</code> is an array, with each entry being an array of objects. 
 ```
 __PRO TIP__ Use this [cheatsheet](https://dev.liferay.com/en/participate/liferaypedia/-/wiki/Main/Portlet+ID+Quick+Reference+Guide) to help you find the <code>portletId</code> for the portlets you've added inside of your theme.
 
-Now that you're a pro at looking at code snippets and taking away what you need from it, there's something I wanted to revisit. When you think of your site, it has many pages, and <code>layouts</code> define the look and layout of each page. That layout will dictate how many <code>columns</code> your page will also have. So the last step would be how many portlets are defined in each column.
+Now that we've familiarized ourselves with the patterns of <code>sitemap.json</code>, there's something I wanted to revisit. There is a particular way Liferay sites have been structured. A site has many pages, and each page has <code>layouts</code> to define the look. Each layout defines how many <code>columns</code> will exist. So following this pattern, the last step would be defining in each column what portlets it contains.
 
 Nested inside of your <code>columns</code>, you'll have objects that will define the <code>portletId</code> and <code>portletPreferences</code>.
 
-Using the Portlet ID quick reference guide, we can lookup this <code>portletId</code> and see that we are defining a single Web Content Display with customized preferences. The <code>articleId</code> refers to the web content article you want displayed like our long running example <code>Welcome.xml</code>. If you're like me, you'll probably be setting many of your <code>portletSetupPortletDecoratorId</code> to <code>barebone</code>.
+Using the Portlet ID quick reference guide, we can lookup the <code>portletId</code> of <code>com_liferay_journal_content_web_portlet_JournalContentPortlet</code> and see that we are defining a single Web Content Display with customized preferences. The <code>articleId</code> refers to the web content article you want displayed. Using our long running example, <code>Welcome.xml</code> would be the web content article you would display inside of the Web Content Display Portlet. If you're like me, you'll probably be setting many of your <code>portletSetupPortletDecoratorId</code> to <code>barebone</code>.
 
 #
 
@@ -239,7 +239,7 @@ Using the Portlet ID quick reference guide, we can lookup this <code>portletId</
 
 You can deliver the flavor of your theme two ways, either as a site template or as a site.
 
-This is set by the configuration in your <code>liferay-plugin-package.properties</code> file located in <code>[theme-name]/src/WEB-INF</code>.
+This is configured in your <code>liferay-plugin-package.properties</code> file located in <code>[theme-name]/src/WEB-INF</code>.
 
 By default, resources are imported into a new site template named after the theme and should look like this: 
 ```javascript
@@ -260,18 +260,18 @@ resources-importer-developer-mode-enabled=true
 
 If you want to learn how to import your resources into a new site, you can set additional settings as explained in [Liferay's docs](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/specifying-where-to-import-your-themes-resources).
 
-Now it's time to finally see if your theme and its resources deployed correctly. After deploying your theme with all of the latest changes to files under the resources-importer folder, navigate to the Control Panel in the leftside nav of your site.
-- If you imported into a site template, click site templates, then on the name of your theme to see your theme and resources in action.
-- If you imported directly into a site, click the actions menu (three vertical dots) and select _Go to Public Pages_ to see it.
+Now it's time to finally see if your theme and its resources deployed correctly. After deploying your theme, it should contain all that we've added to the resources-importer folder. Navigate to the Control Panel in the leftside nav of your site.
+* If you imported into a site template, click __Site Templates__, then on the name of your theme to see your theme and resources in action.
+* If you imported directly into a site, click the actions menu (three vertical dots) and select __Go to Public Pages__ to see it.
 
-__HELP!__ I don't see any of my content showing up on my page.
+__HELP!__ I don't see any of my content showing up on my page / I can't preview my site template.
 
 * Try troubleshooting by checking your server console for any clues if something _may_ not be properly defined in <code>sitemap.json</code>
 * Double check that all of your folder directories are spelled correctly and that your templates use the name of the used structures, and the articles use the names of the used templates.
-* In the <code>sitemap.json</code> check the scoping to see if all of the braces are closing properly, there are no trailing commas, everything is in string object notation ("quotes")
+* In the <code>sitemap.json</code> check the scoping to see if all of the braces are closed properly, there are no trailing commas, everything is in string object notation ("quotes")
 * <code>layoutTemplateId</code> is defined correctly. Some tricky examples are <code>1_column</code>, <code>1-2-1_columns_i</code>, or <code>2_columns_iii</code>.
-* After deploying, work your way backwards with what works and then trying to add additional code. Can I even view the site template? Do my theme styles come through? Does it display only pages but no content? Pages and modules but the modules aren't configured?
+* After deploying, work your way backwards with what works and then trying to add additional code. Can I view the site template? Do my theme styles come through? Does it display only pages but no content? Do the modules appear but aren't configured?
 
 ### TL:DR
 
-Resources Importer Module is a helpful tool that allows for theme developers to show off their themes with some preinstalled content, but can be a bit of a pain if you're not using the <code>archive.lar</code> method. Using Liferay's documentation will eventually get you to a working <code>sitemap.json</code> so that when you deploy your theme, it will have content included, but may be confusing to follow and lacking in instructions.
+Resources Importer Module is a helpful tool that allows for theme developers to show off their themes with some preinstalled content, but can be a bit of a pain if you're not using the <code>archive.lar</code> method. Using Liferay's documentation will eventually get you to a working <code>sitemap.json</code> so that when you deploy your theme, it will have content included, but can be confusing to follow along when starting from scratch.
