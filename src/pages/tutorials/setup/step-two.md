@@ -113,6 +113,32 @@ Liferay is written in Java, so you will need Java on your machine in order to ha
     ```shell
     java -version
     ```
+5. in your .bash_pro􀃶le we need to make two environment variables: one for JAVA_HOME,
+and one to place that JAVA_HOME variable at the front of your PATH.
+6. to get the JAVA_HOME variable we need to run a line in the terminal.
+    ```shell
+    sudo find/-name javac
+    ```
+This will return something similar to the lines below
+    ```shell
+    /usr/bin/javac
+    /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin/javac
+    /System/Library/Frameworks/JaveVM.framework/Versions/A/Commands/javac
+    find:/private/var/db/ConfigurationProfiles/Store: Operation not permitted
+    find:/private/var/folders/y5/abbasdf/0/SafariFamily: Operation not permitted
+    ```
+the second line (/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin/javac) is the one we need to copy.
+7. Back in your .bash_profile. Make a variable for JAVA_HOME.
+    ```shell
+    export JAVA_HOME="YOUR LINE GOES HERE."
+    ```
+Replace YOUR LINE GOES HERE with the line you copied from terminal.
+8. Now that we have the JAVA_HOME variable set it is time to set the PATH variable.
+make a new variable.
+    ```shell
+    export PATH=$JAVA_HOME/bin:$PATH
+    ```
+this has taken the variable we set for JAVA_HOME and set it at the front of the PATH with the highest precendence.
 
 #### Windows
 
