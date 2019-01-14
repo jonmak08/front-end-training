@@ -134,7 +134,7 @@ The second line ```/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/H
     ```
 Replace YOUR LINE GOES HERE with the line you copied from terminal.
 8. Now that we have the ```JAVA_HOME``` variable set it is time to set the PATH variable.
-make a new variable.
+Make a new variable.
     ```shell
     export PATH=$JAVA_HOME/bin:$PATH
     ```
