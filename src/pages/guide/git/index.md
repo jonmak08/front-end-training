@@ -41,5 +41,6 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 * [Git's user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
 * [GitHub.com](https://github.com)
 * [Pro Git](https://git-scm.com/book/en/v2)
+* [How to Teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 
 </article>
