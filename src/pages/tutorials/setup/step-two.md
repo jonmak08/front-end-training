@@ -113,32 +113,31 @@ Liferay is written in Java, so you will need Java on your machine in order to ha
     ```shell
     java -version
     ```
-5. In your ```.bash_proile``` we need to make two environment variables: one for ```JAVA_HOME```,
-and one to place that ```JAVA_HOME``` variable at the front of your PATH.
-6. To get the ```JAVA_HOME``` variable we need to run a line in the terminal.
+5. Find the path where Java is installed on your machine by running the command below in the *Terminal*.  A file path should return if Java is installed correctly.
     ```shell
-    sudo find / -name javac
+    which java
     ```
-This will return something similar to the lines below
+6. Copy the returned file path as it will be the value of the ```JAVA_HOME``` environment variable we will be setting.
+7. Create a ```.bash_profile``` if one does not already exist.
+8. Create a ```JAVA_HOME``` environment variable by entering the contents below in the ```.bash_profile```.  Use the value that was returned in Step 5 as the value of the ```JAVA_HOME``` environment variable.
     ```shell
-    /usr/bin/javac
-    /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin/javac
-    /System/Library/Frameworks/JaveVM.framework/Versions/A/Commands/javac
-    find:/private/var/db/ConfigurationProfiles/Store: Operation not permitted
-    find:/private/var/folders/y5/abbasdf/0/SafariFamily: Operation not permitted
+    export JAVA_HOME="Paste your Java file path returned in step 5 here"
     ```
-The second line ```/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin/javac``` is the one we need to copy.
-7. Back in your ```.bash_profile``` make a variable for ```JAVA_HOME```.
-    ```shell
-    export JAVA_HOME="YOUR LINE GOES HERE."
-    ```
-Replace YOUR LINE GOES HERE with the line you copied from terminal.
-8. Now that we have the ```JAVA_HOME``` variable set it is time to set the PATH variable.
-Make a new variable.
+9. Verify that the ```JAVA_HOME``` variable is correct.
+10. Append this newly created ```JAVA_HOME``` environment variable at the beginning of your ```PATH``` environment variable.  If a ```PATH``` environment variable in your ```.bash_profile``` does not already exist, enter the contents below in the ```.bash_profile```.
     ```shell
     export PATH=$JAVA_HOME/bin:$PATH
     ```
-This has taken the variable we set for ```JAVA_HOME``` and set it at the front of the PATH with the highest precendence.
+11. Save your ```.bash_profile`.
+12. Relaunch the *Terminal*.
+13. Enter the command below in the *Terminal* to make sure your ```JAVA_HOME``` environment variable is set correctly.  The returned results should match what you have entered as the value for your ```JAVA_HOME``` environment variable in your ```.bash_profile``` and what is returned from Step 5.
+    ```shell
+    echo $JAVA_HOME
+    ```
+13. Enter the command below in the *Terminal* to make sure your ```PATH``` environment variable is set correctly.  The returned results should have the file path from your ```JAVA_HOME``` environment variable or the returned value from Step 5 at the beginning of your value.
+    ```shell
+    echo $PATH
+    ```
 
 #### Windows
 
