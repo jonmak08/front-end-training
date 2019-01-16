@@ -40,6 +40,7 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 ## Other resources
 
 * [Codecademy's JavaScript glossary](https://www.codecademy.com/articles/glossary-javascript)
+* [Codewars Practice Problems](https://www.codewars.com/)
 * [w3school's JavaScript and HTML DOM reference](https://www.w3schools.com/jsref/default.asp)
 * [MDN's JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
