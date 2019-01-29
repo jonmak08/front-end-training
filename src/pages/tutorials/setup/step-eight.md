@@ -30,18 +30,18 @@ To find out what the default property values are and what you can override, open
 
 #### Creating a custom ```build.*.properties``` and ```app.server.*.properties``` files
 
-1. Create a file called ```build._USER\_NAME_.properties``` and ```app.server._USER\_NAME_.properties``` inside the folder you cloned your Liferay *source* code.
+1. Create a file called ```build.USER_NAME.properties``` and ```app.server.USER_NAME.properties``` inside the folder you cloned your Liferay *source* code.
     The *USER_NAME* is the user you login with, not your machine name. On Windows machines the default is, *liferay*.
-2. Edit your ```build._USER\_NAME_.properties``` file with the following lines in a text editor:
+2. Edit your ```build.USER_NAME.properties``` file with the following lines in a text editor:
 
     ```shell
     javac.memoryMaximumSize=1024m
     ```
-3. Edit your ```app.server._USER\_NAME_.properties``` file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.
+3. Edit your ```app.server.USER_NAME.properties``` file with the path to your desired location of where you want your bundle, where your application server is located, and what type of application server you are using.
 
     The *path* of your bundle should be outside of your cloned Liferay *source* code folder.
 
-    Your ```app.server._USER\_NAME_.properties``` file might look something like below when it is complete, if we are using apache tomcat as our application server.
+    Your ```app.server.USER_NAME.properties``` file might look something like below when it is complete, if we are using apache tomcat as our application server.
 
     ```shell
     app.server.type=tomcat
@@ -79,4 +79,4 @@ Values defined in the ```portal.properties``` file are configurations used withi
     velocity.engine.resource.modification.check.interval=0
     ```
 4. Set the ```javascript.fast.load``` property to **false**. *Set this value to **true**, if we are trying to replicate a production environment with minified JavaScript files.
-5. When all custom configurations are complete, move the ```portal-ext.properties``` file to one folder level above the application server directory defined in the ```app.server._USER\_NAME_.properties``` file. (i.e. ```PATH/bundles```).
+5. When all custom configurations are complete, move the ```portal-ext.properties``` file to one folder level above the application server directory defined in the ```app.server.USER_NAME.properties``` file. (i.e. ```PATH/bundles```).

@@ -22,9 +22,9 @@ If we want to use Liferay's default setup, we need to get Apache Tomcat on our m
     ant -f build-dist.xml unzip-tomcat
     ```
     * This command tells ant to look in the ```build-dist.xml``` file and execute the **unzip-tomcat** command.
-    * Ant will delete preexisting folder names matching the application server directory defined in the ```app.server._USER\_NAME_.properties``` file.
-    * Ant will download the version of Apache Tomcat defined in the ```app.server._USER\_NAME_.properties``` file.
-    * Ant will install Apache Tomcat to the folder specified in the ```app.server._USER\_NAME_.properties``` file
+    * Ant will delete preexisting folder names matching the application server directory defined in the ```app.server.USER_NAME.properties``` file.
+    * Ant will download the version of Apache Tomcat defined in the ```app.server.USER_NAME.properties``` file.
+    * Ant will install Apache Tomcat to the folder specified in the ```app.server.USER_NAME.properties``` file
 4. If this Ant task is successful, you will see a similar output as below.
     ```shell
     Buildfile: PATH/liferay-portal/build-dist.xml
