@@ -38,7 +38,6 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 
 Once you have a good understanding of everything (HTML, CSS, JavaScript, etc), put it all together using these advanced tutorials below.
 
-* [Codecademy's Make an Interactive Website](https://www.codecademy.com/skills/make-an-interactive-website)
 * [w3school's How To - Build a Web Site](https://www.w3schools.com/howto/howto_website.asp)
 
 </article>

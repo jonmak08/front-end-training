@@ -24,7 +24,7 @@ weight: 2
 
 Make sure to carefully read and follow the instructions in the tutorials below.
 
-* [Codecademy's HTML & CSS](http://www.codecademy.com/tracks/web)
+* [Codecademy's HTML & CSS](https://www.codecademy.com/catalog/language/html-css)
 * [Codecademy's Learn HTML](https://www.codecademy.com/learn/learn-html)
 * [Code Schools' Front-end Foundations](https://www.codeschool.com/courses/front-end-foundations)
 * [Code Schools' Front-end Formations](https://www.codeschool.com/courses/front-end-formations)

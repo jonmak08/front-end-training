@@ -24,7 +24,7 @@ weight: 4
 Make sure to carefully read and follow the instructions in the tutorials below.
 
 * [w3school's JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
-* [Codecademy's JavaScript](https://www.codecademy.com/tracks/javascript)
+* [Codecademy's JavaScript](https://www.codecademy.com/catalog/language/javascript)
 * [Codecademy's Learn JavaScript](https://www.codecademy.com/learn/learn-javascript)
 * [Code School's JavaSCript Road Trip Part 1](https://www.codeschool.com/courses/javascript-road-trip-part-1)
 * [Code School's JavaScript Road Trip Part 2](https://www.codeschool.com/courses/javascript-road-trip-part-2)

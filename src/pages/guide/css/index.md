@@ -24,7 +24,7 @@ weight: 3
 
 Make sure to carefully read and follow the instructions in the tutorials below.
 
-* [Codecademy's HTML & CSS](http://www.codecademy.com/tracks/web)
+* [Codecademy's HTML & CSS](https://www.codecademy.com/catalog/language/html-css)
 * [Code School's Adventures in Web Animations](https://www.codeschool.com/courses/adventures-in-web-animations)
 * [Code School's Blasting Off with Bootstrap](https://www.codeschool.com/courses/blasting-off-with-bootstrap)
 * [Code School's CSS Cross-Country](https://www.codeschool.com/courses/css-cross-country)
