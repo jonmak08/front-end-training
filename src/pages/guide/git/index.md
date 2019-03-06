@@ -29,6 +29,8 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 * [Learn Git Branching](http://pcottle.github.com/learnGitBranching)
 * [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3)
 * [Udacity's How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+* [Team Treehouse's Introduction to Git](https://teamtreehouse.com/library/introduction-to-git)
+* [Team Treehouse's Git Branches and Merging](https://teamtreehouse.com/library/git-branches-and-merging)
 
 </article>
 
