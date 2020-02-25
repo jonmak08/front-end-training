@@ -3,7 +3,7 @@
   "name": "front-end-training",
   "version": "2.0.12",
   "scripts": {
-    "start": "electric"
+    "start": "electric run"
   },
   "devDependencies": {
     "electric-cli": "^3.0.4",
