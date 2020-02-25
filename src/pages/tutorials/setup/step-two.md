@@ -13,6 +13,27 @@ weight: 2
 
 Change your computer name to something more user friendly because we will be using this later on when configuring Liferay.
 
+#### Linux
+
+1.  Launch the *Terminal*
+2.  Check your device name with the following command. If your hostname needs to be changed, follow one of the points in step 3.
+
+```shell
+hostname
+```
+
+3. Update hostname steps
+
+   - Open *Settings* -> Click *Details* -> Click *About* -> Change *Device Name*
+
+   - In your *Terminal* you can edit your *hostname* file with the following commands, then reboot to verify the changes were saved.
+
+```shell
+sudo nano /etc/hostname
+
+sudo nano /etc/hosts // Change the line that starts with 127.0.1.1
+```
+
 #### OS X
 
 1. Launch *System Preferences*.
@@ -30,42 +51,57 @@ Change your computer name to something more user friendly because we will be usi
 
 Show *hidden* files in the *Finder/File Explorer* because Liferay contains hidden files that we need to edit.
 
+#### Linux
+
+Hidden files in *File Explorer* should be visible by default
+
+Viewing files through the terminal should use the list and all options
+
+```shell
+ls -la
+```
+
 #### OS X
 
 1. Launch the *Terminal*.
 2. Enter the command below.
 
-    ```shell
-    defaults write com.apple.Finder AppleShowAllFiles TRUE
-    ```
+   ```shell
+   defaults write com.apple.Finder AppleShowAllFiles TRUE
+   ```
 
 3. Relaunch the Finder to make the changes take effect.
 
-    ```shell
-    killall Finder
-    ```
+   ```shell
+   killall Finder
+   ```
 
 #### Windows
 
 1. Click the *Start Menu* and search for *Folder Explorer Options*.
 2. Click on the *View* tab .
 3. Under the *Advanced settings:* section, make sure *Show hidden files, folders and drives* is selected.
-3. Make sure *Hide extensions for known file types* is unchecked.
+4. Make sure *Hide extensions for known file types* is unchecked.
 
 ### Set ANT_OPTS environment variable
 
 `ANT_OPTS` is an environment variable that provides a list of arguments that you want to pass to the Java Virtual Machine that will run Ant.
 
+#### Linux
+
+1. Create a `.bashrc` if one does not already exist.
+2. Enter the contents below into the `.bashrc`.
+   ```shell
+   export ANT_OPTS="-Xms2048m -Xmx4096m"
+   ```
+
 #### OS X
 
-1. Create a ```.bash_profile``` if one does not already exist.
-2. Enter the contents below into the ```.bash_profile```.
-
-    ```shell
-    export ANT_OPTS="-Xms2048m -Xmx4096m"
-    ```
-
-3. Relaunch the *Terminal*.
+1. Create a `.bash_profile` if one does not already exist.
+2. Enter the contents below into the `.bash_profile`.
+   ```shell
+   export ANT_OPTS="-Xms2048m -Xmx4096m"
+   ```
 
 #### Windows
 
@@ -78,7 +114,7 @@ Show *hidden* files in the *Finder/File Explorer* because Liferay contains hidde
 
 ### Setup Apache Ant
 
-Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the [Apache Ant](http://ant.apache.org/) in the previous step.  This will help you install and set it up.
+Ant does almost everything for you; it uses scripts to automate tasks and compile Liferay. You should have already downloaded the [Apache Ant](http://ant.apache.org/) in the previous step. This will help you install and set it up.
 
 #### Windows
 
@@ -107,7 +143,29 @@ Ant does almost everything for you; it uses scripts to automate tasks and compil
 
 ### Setup Java JDK
 
-Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR) in the previous step.  This will help you install and set it up.
+Liferay is written in Java, so you will need Java on your machine in order to have it run. You should have already downloaded the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html#jdk-8u101-oth-JPR) in the previous step. This will help you install and set it up.
+
+#### Linux
+
+1. Extract the downloaded `tar.gz` file from the previous step.
+2. Create the following directory structure if it does not exist: `/usr/lib/jvm`
+
+   ```shell
+   mkdir -p /usr/lib/jvm
+   ```
+
+3. Copy the extracted java folder to the newly created `jvm` directory
+4. Create a symbolic link pointing to the `java` executable
+
+   ```shell
+   sudo ln -s /usr/lib/jvm/JAVA_DIRECTORY_NAME/jre/bin/java /usr/bin/java
+   ```
+5. To check if Java is installed, launch the *Terminal*.
+6. Enter the command below in the *Terminal* to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.
+
+   ```shell
+   java -version
+   ```
 
 #### OS X
 
