@@ -18,21 +18,21 @@ Change your computer name to something more user friendly because we will be usi
 1.  Launch the *Terminal*
 2.  Check your device name with the following command. If your hostname needs to be changed, follow one of the points in step 3.
 
-```shell
-hostname
-```
+    ```shell
+    hostname
+    ```
 
 3. Update hostname steps
 
-   - Open *Settings* -> Click *Details* -> Click *About* -> Change *Device Name*
+   - Open *Settings* -> Click *Details* -> Click *About* -> Change *Device Name*.
 
-   - In your *Terminal* you can edit your *hostname* file with the following commands, then reboot to verify the changes were saved.
+   - In your *Terminal* you can edit your *hostname* file with the following commands, then reboot to verify the changes were saved. (in `hosts` change the line that starts with 127.0.1.1).
 
-```shell
-sudo nano /etc/hostname
+      ```shell
+      sudo nano /etc/hostname
 
-sudo nano /etc/hosts // Change the line that starts with 127.0.1.1
-```
+      sudo nano /etc/hosts
+      ```
 
 #### OS X
 
@@ -53,9 +53,9 @@ Show *hidden* files in the *Finder/File Explorer* because Liferay contains hidde
 
 #### Linux
 
-Hidden files in *File Explorer* should be visible by default
+Hidden files in *File Explorer* should be visible by default.
 
-Viewing files through the terminal should use the list and all options
+Viewing files through the terminal should use the `list` and `all` options.
 
 ```shell
 ls -la
@@ -148,14 +148,14 @@ Liferay is written in Java, so you will need Java on your machine in order to ha
 #### Linux
 
 1. Extract the downloaded `tar.gz` file from the previous step.
-2. Create the following directory structure if it does not exist: `/usr/lib/jvm`
+2. Create the following directory structure if it does not exist: `/usr/lib/jvm`.
 
    ```shell
    mkdir -p /usr/lib/jvm
    ```
 
-3. Copy the extracted java folder to the newly created `jvm` directory
-4. Create a symbolic link pointing to the `java` executable
+3. Copy the extracted java folder to the newly created `jvm` directory.
+4. Create a symbolic link pointing to the `java` executable.
 
    ```shell
    sudo ln -s /usr/lib/jvm/JAVA_DIRECTORY_NAME/jre/bin/java /usr/bin/java
