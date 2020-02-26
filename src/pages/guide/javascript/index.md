@@ -64,6 +64,6 @@ Once you have a good understanding of JavaScript, please review these advanced t
 * [ECMASCript 6 Tutorial](http://ccoenraets.github.io/es6-tutorial)
 * [Metal.js Tutorials](https://metaljs.com/docs/tutorials)
 * [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
-* [Redux Tutorial](https://redux.js.org/docs/basics/)
+* [Redux Tutorial](https://redux.js.org/basics/basic-tutorial)
 
 </article>
