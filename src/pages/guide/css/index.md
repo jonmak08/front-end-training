@@ -38,13 +38,11 @@ Make sure to carefully read and follow the instructions in the tutorials below.
 ## Other resources
 
 * [Codecademy's CSS glossary](https://www.codecademy.com/articles/glossary-css)
+* [Flexbox Playground](https://codepen.io/enxaneta/full/adLPwv)
+* [Flexbox Zombies Game](https://mastery.games/p/flexbox-zombies)
 * [MDN's CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [w3school's CSS reference](https://www.w3schools.com/cssref/default.asp)
 * [w3school's CSS reference](https://www.w3schools.com/cssref/default.asp)
-* [Flexbox Game](https://mastery.games/p/flexbox-zombies)
-* [Flexbox Playground](https://codepen.io/enxaneta/full/adLPwv)
-
-
 
 </article>
 
