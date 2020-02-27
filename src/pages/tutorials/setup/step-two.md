@@ -15,23 +15,35 @@ Change your computer name to something more user friendly because we will be usi
 
 #### Linux
 
-1.  Launch the *Terminal*
-2.  Check your device name with the following command. If your hostname needs to be changed, follow one of the points in step 3.
+1.  Launch the *Terminal*.
+2.  Enter the contents below to check your hostname.
 
     ```shell
     hostname
     ```
 
-3. Update hostname steps
+    If your hostname needs to be changed, continue with the steps below.
 
-   - Open *Settings* -> Click *Details* -> Click *About* -> Change *Device Name*.
-
-   - In your *Terminal* you can edit your *hostname* file with the following commands, then reboot to verify the changes were saved. (in `hosts` change the line that starts with 127.0.1.1).
+3. Enter the contents below to edit your hostname.
 
       ```shell
       sudo nano /etc/hostname
+      ```
 
+4. Replace the contents in this file with your desired new hostname.
+5. Save and close the file.
+6. Enter the contents below to update the file that reads your hostname.
+
+      ```shell
       sudo nano /etc/hosts
+      ```
+
+6. Replace any occurrences of the existing computer name with the new one you entered in step 4 in this file. (Usually the line that starts with 127.0.1.1 will need to be updated).
+7. Save and close the file.
+7. Enter the contents below to reboot your system to allow the changes to take effect.
+
+      ```shell
+      sudo reboot
       ```
 
 #### OS X
@@ -55,16 +67,10 @@ Show *hidden* files in the *Finder/File Explorer* because Liferay contains hidde
 
 Hidden files in *File Explorer* should be visible by default.
 
-Viewing files through the terminal should use the `list` and `all` options.
-
-```shell
-ls -la
-```
-
 #### OS X
 
 1. Launch the *Terminal*.
-2. Enter the command below.
+2. Enter the contents below.
 
    ```shell
    defaults write com.apple.Finder AppleShowAllFiles TRUE
@@ -91,6 +97,7 @@ ls -la
 
 1. Create a `.bashrc` if one does not already exist.
 2. Enter the contents below into the `.bashrc`.
+
    ```shell
    export ANT_OPTS="-Xms2048m -Xmx4096m"
    ```
@@ -99,6 +106,7 @@ ls -la
 
 1. Create a `.bash_profile` if one does not already exist.
 2. Enter the contents below into the `.bash_profile`.
+
    ```shell
    export ANT_OPTS="-Xms2048m -Xmx4096m"
    ```
@@ -147,19 +155,27 @@ Liferay is written in Java, so you will need Java on your machine in order to ha
 
 #### Linux
 
-1. Extract the downloaded `tar.gz` file from the previous step.
-2. Create the following directory structure if it does not exist: `/usr/lib/jvm`.
+1. Enter the contents below to go to the `jvm` directory located at `/usr/lib/jvm`.
+
+    ```shell
+    cd /usr/lib/jvm
+    ```
+
+    If the `jvm` directory exists, skip to Step 3.
+
+2. Enter the contents below to create the `jvm` directory.
 
    ```shell
    mkdir -p /usr/lib/jvm
    ```
 
-3. Copy the extracted java folder to the newly created `jvm` directory.
-4. Create a symbolic link pointing to the `java` executable.
+3. Extract the downloaded Java JDK `tar.gz` file this the newly created `jvm` folder.
+4. Enter the contents below to create a symbolic link pointing to the `java` executable.
 
    ```shell
    sudo ln -s /usr/lib/jvm/JAVA_DIRECTORY_NAME/jre/bin/java /usr/bin/java
    ```
+
 5. To check if Java is installed, launch the *Terminal*.
 6. Enter the command below in the *Terminal* to make sure Java is installed correctly. A message regarding your Java version should be displayed. Make sure your version displayed matches the Java JDK version you downloaded.
 
